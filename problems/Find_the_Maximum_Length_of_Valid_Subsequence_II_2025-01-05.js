@@ -3,4 +3,7 @@ function maxLengthValidSubsequence(arr) {
     // Sort the array
     arr.sort((a, b) => a - b);
     
-    const n = a
+    const n = arr.length;
+    const dp = new Array(n).fill(1); // Initialize dp array with 1
+
+    let maxLength = 1; // At least on
