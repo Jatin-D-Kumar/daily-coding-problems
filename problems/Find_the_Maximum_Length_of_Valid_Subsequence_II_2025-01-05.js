@@ -9,4 +9,6 @@ function maxLengthValidSubsequence(arr) {
     let maxLength = 1; // At least one element can be a valid subsequence
 
     // Iterate through the array to fill the dp array
-    for (let i = 1; i < 
+    for (let i = 1; i < n; i++) {
+        for (let j = 0; j < i; j++) {
+            // Check if arr[j] can be part of the subsequence ending
