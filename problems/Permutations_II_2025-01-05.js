@@ -20,4 +20,17 @@ function backtrack(nums, path, used, results) {
         if (i > 0 && nums[i] === nums[i - 1] && !used[i - 1]) continue;
 
         used[i] = true; // Mark the number as used
-        path.push(nums[i]); // Add the num
+        path.push(nums[i]); // Add the number to the current path
+
+        backtrack(nums, path, used, results); // Recurse
+
+        // Backtrack
+        used[i] = false; // Unmark the number
+        path.pop(); // Remove the last number from the current path
+    }
+}
+
+// Example usage:
+const nums = [1, 1, 2];
+const uniquePermutations = permuteUnique(nums);
+console.log(uniquePermutations);
