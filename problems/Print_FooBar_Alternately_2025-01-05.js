@@ -20,4 +20,27 @@ function shortestBridge(grid) {
         }
     }
 
-    // Fi
+    // Find the first island and mark it
+    let found = false;
+    for (let r = 0; r < rows; r++) {
+        for (let c = 0; c < cols; c++) {
+            if (grid[r][c] === 1) {
+                dfs(r, c);
+                found = true;
+                break;
+            }
+            if (found) break;
+        }
+        if (found) break;
+    }
+
+    // Perform BFS to find the shortest bridge
+    let steps = 0;
+    while (queue.length > 0) {
+        const size = queue.length;
+        for (let i = 0; i < size; i++) {
+            const [r, c] = queue.shift();
+            for (const [dr, dc] of directions) {
+                const newR = r + dr;
+                const newC = c + dc;
+              
