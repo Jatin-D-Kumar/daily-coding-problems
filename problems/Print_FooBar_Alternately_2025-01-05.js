@@ -43,4 +43,27 @@ function shortestBridge(grid) {
             for (const [dr, dc] of directions) {
                 const newR = r + dr;
                 const newC = c + dc;
-              
+                if (newR >= 0 && newR < rows && newC >= 0 && newC < cols) {
+                    if (grid[newR][newC] === 1) {
+                        return steps; // Found the second island
+                    }
+                    if (grid[newR][newC] === 0 && !visited.has(`${newR},${newC}`)) {
+                        visited.add(`${newR},${newC}`);
+                        queue.push([newR, newC]);
+                    }
+                }
+            }
+        }
+        steps++;
+    }
+
+    return -1; // In case there is no bridge found (should not happen in valid input)
+}
+
+// Example usage:
+const grid = [
+    [0, 1],
+    [0, 0],
+    [0, 1]
+];
+console.log(shortestBridge(grid)); // Output: 1
