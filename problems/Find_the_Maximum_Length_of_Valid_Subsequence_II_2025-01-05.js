@@ -23,4 +23,5 @@ function maxLengthValidSubsequence(arr) {
 }
 
 // Example usage:
-const arr = 
+const arr = [1, 3, 2, 1, 5];
+console.log(maxLengthValidSubsequence(arr)); // Output the maximum length of valid subsequence
