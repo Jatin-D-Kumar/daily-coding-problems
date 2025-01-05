@@ -34,4 +34,14 @@ function splitArrayToMakeCoprimeProducts(arr) {
 
         // Check if they are coprime
         if (gcd(prod1, prod2) === 1) {
-            return [part1, part
+            return [part1, part2];
+        }
+    }
+
+    return null; // Return null if no valid split is found
+}
+
+// Example usage:
+const arr = [2, 3, 4, 5];
+const result = splitArrayToMakeCoprimeProducts(arr);
+console.log(result);
