@@ -29,4 +29,16 @@ class WordDistance {
             if (index1 < index2) {
                 i++;
             } else {
-                
+                j++;
+            }
+        }
+
+        return minDistance;
+    }
+}
+
+// Example usage:
+const wordsDict = ["practice", "makes", "perfect", "coding", "makes"];
+const wordDistance = new WordDistance(wordsDict);
+console.log(wordDistance.shortest("coding", "practice")); // Output: 3
+console.log(wordDistance.shortest("makes", "coding"));    // Output: 1
