@@ -11,4 +11,8 @@ function maxLengthValidSubsequence(arr) {
     // Iterate through the array to fill the dp array
     for (let i = 1; i < n; i++) {
         for (let j = 0; j < i; j++) {
-            // Check if arr[j] can be part of the subsequence ending
+            // Check if arr[j] can be part of the subsequence ending at arr[i]
+            if (arr[i] > arr[j]) {
+                dp[i] = Math.max(dp[i], dp[j] + 1);
+            }
+    
