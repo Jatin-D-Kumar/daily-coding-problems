@@ -11,3 +11,11 @@ function gcd(a, b) {
 function product(arr) {
     return arr.reduce((acc, val) => acc * val, 1);
 }
+
+function splitArrayToMakeCoprimeProducts(arr) {
+    const n = arr.length;
+
+    // Check all possible splits
+    for (let i = 1; i < (1 << n); i++) {
+        const part1 = [];
+        const part2 = [];
