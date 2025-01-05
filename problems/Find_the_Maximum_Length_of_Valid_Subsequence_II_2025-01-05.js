@@ -15,4 +15,12 @@ function maxLengthValidSubsequence(arr) {
             if (arr[i] > arr[j]) {
                 dp[i] = Math.max(dp[i], dp[j] + 1);
             }
-    
+        }
+        maxLength = Math.max(maxLength, dp[i]);
+    }
+
+    return maxLength;
+}
+
+// Example usage:
+const arr = 
