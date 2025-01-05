@@ -28,4 +28,10 @@ function splitArrayToMakeCoprimeProducts(arr) {
             }
         }
 
-        // C
+        // Calculate products
+        const prod1 = product(part1);
+        const prod2 = product(part2);
+
+        // Check if they are coprime
+        if (gcd(prod1, prod2) === 1) {
+            return [part1, part
