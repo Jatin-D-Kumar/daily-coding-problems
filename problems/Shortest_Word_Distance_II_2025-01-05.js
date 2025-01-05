@@ -20,4 +20,13 @@ class WordDistance {
         let i = 0, j = 0;
 
         // Use two pointers to find the minimum distance
-        while (i < indices
+        while (i < indices1.length && j < indices2.length) {
+            const index1 = indices1[i];
+            const index2 = indices2[j];
+            minDistance = Math.min(minDistance, Math.abs(index1 - index2));
+
+            // Move the pointer that points to the smaller index
+            if (index1 < index2) {
+                i++;
+            } else {
+                
