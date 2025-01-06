@@ -23,4 +23,8 @@ function maximizeProfit(weights, profits, capacity) {
 
 // Example usage
 const weights = [2, 3, 4, 5]; // Weights of the items
-const profits = [3, 4, 5, 
+const profits = [3, 4, 5, 6]; // Profits of the items
+const capacity = 5; // Maximum weight capacity
+
+const maxProfit = maximizeProfit(weights, profits, capacity);
+console.log(`Maximum Profit: ${maxProfit}`); // Output: Maximum Profit: 7
