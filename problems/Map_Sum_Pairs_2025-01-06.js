@@ -12,4 +12,17 @@ class MapSum {
         let node = this.trie;
         for (const char of key) {
             if (!node[char]) {
-   
+                node[char] = { sum: 0 };
+            }
+            node[char].sum += delta;
+            node = node[char];
+        }
+    }
+
+    sum(prefix) {
+        let node = this.trie;
+        for (const char of prefix) {
+            if (!node[char]) {
+                return 0; // No such prefix
+            }
+  
