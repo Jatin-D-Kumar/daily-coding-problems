@@ -13,4 +13,7 @@ function stoneGameVII(stones) {
     const dp = Array.from({ length: n }, () => new Array(n).fill(0));
 
     for (let length = 1; length <= n; length++) {
-        for (let i = 0; i <=
+        for (let i = 0; i <= n - length; i++) {
+            const j = i + length - 1; // right index
+            const leftScore = prefixSum[j + 1] - prefixSum[i + 1]; // score if we remove from left
+            const rightScore = prefixSum[j] - prefixSum[i]; // score if we r
