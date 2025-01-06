@@ -15,3 +15,12 @@ function maximizeProfit(weights, profits, capacity) {
                 dp[i][w] = dp[i - 1][w];
             }
         }
+    }
+
+    // The maximum profit will be in the bottom-right corner of the dp array
+    return dp[n][capacity];
+}
+
+// Example usage
+const weights = [2, 3, 4, 5]; // Weights of the items
+const profits = [3, 4, 5, 
