@@ -25,4 +25,15 @@ class MapSum {
             if (!node[char]) {
                 return 0; // No such prefix
             }
-  
+            node = node[char];
+        }
+        return node.sum; // Return the sum of all keys with the given prefix
+    }
+}
+
+// Example usage:
+const mapSum = new MapSum();
+mapSum.insert("apple", 3);
+console.log(mapSum.sum("ap")); // Output: 3
+mapSum.insert("app", 2);
+console.log(mapSum.sum("ap")); // Output: 5
