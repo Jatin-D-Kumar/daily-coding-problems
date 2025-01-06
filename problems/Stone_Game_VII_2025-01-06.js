@@ -8,4 +8,9 @@ function stoneGameVII(stones) {
         prefixSum[i + 1] = prefixSum[i] + stones[i];
     }
 
-    // dp[
+    // dp[i][j] will store the maximum score the first player can achieve
+    // from stones[i] to stones[j]
+    const dp = Array.from({ length: n }, () => new Array(n).fill(0));
+
+    for (let length = 1; length <= n; length++) {
+        for (let i = 0; i <=
