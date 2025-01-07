@@ -1,3 +1,6 @@
 
 function countArguments() {
-    retur
+    return arguments.length;
+}
+
+// Example usag
