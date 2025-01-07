@@ -3,4 +3,5 @@ function countArguments() {
     return arguments.length;
 }
 
-// Example usag
+// Example usage:
+console.log(countArguments(1, 2, 3)
