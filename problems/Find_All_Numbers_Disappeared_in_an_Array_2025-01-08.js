@@ -8,3 +8,10 @@ function findDisappearedNumbers(nums) {
         if (!numSet.has(i)) {
             missingNumbers.push(i);
         }
+    }
+
+    return missingNumbers;
+}
+
+// Example usage:
+const
