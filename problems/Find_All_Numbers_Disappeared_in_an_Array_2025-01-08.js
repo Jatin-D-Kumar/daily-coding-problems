@@ -5,4 +5,6 @@ function findDisappearedNumbers(nums) {
     const missingNumbers = [];
 
     for (let i = 1; i <= n; i++) {
-        if (!n
+        if (!numSet.has(i)) {
+            missingNumbers.push(i);
+        }
