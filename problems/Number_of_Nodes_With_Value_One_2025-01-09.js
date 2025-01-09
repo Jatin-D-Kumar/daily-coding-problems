@@ -18,4 +18,13 @@ function countNodesWithValueOne(root) {
 
     // Recursively count in the left and right subtrees
     count += countNodesWithValueOne(root.left);
-    count += countNodesWithValueOne(root.r
+    count += countNodesWithValueOne(root.right);
+
+    return count; // Return the total count
+}
+
+// Example usage:
+// Constructing a binary tree:
+//        1
+//       / \
+//      0   1
