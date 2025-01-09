@@ -3,4 +3,10 @@ function findColumnWidths(grid) {
     // Check if the grid is empty
     if (grid.length === 0) return [];
 
-    // Initialize an array to hold the maximum widths of eac
+    // Initialize an array to hold the maximum widths of each column
+    const columnWidths = [];
+
+    // Iterate through each row in the grid
+    for (const row of grid) {
+        // Iterate through each column in the row
+     
