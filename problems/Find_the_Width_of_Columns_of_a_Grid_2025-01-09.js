@@ -25,4 +25,11 @@ function findColumnWidths(grid) {
 }
 
 // Example usage:
-const
+const grid = [
+    [1, 'apple', 12345],
+    [22, 'banana', 678],
+    [333, 'cherry', 9]
+];
+
+const widths = findColumnWidths(grid);
+console.log(widths); // Output: [3, 6, 5]
