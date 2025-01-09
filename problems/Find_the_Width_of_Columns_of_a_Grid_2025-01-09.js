@@ -12,4 +12,7 @@ function findColumnWidths(grid) {
         for (let col = 0; col < row.length; col++) {
             // Get the string representation of the current cell
             const cellValue = String(row[col]);
-       
+            // Update the column width if necessary
+            if (columnWidths[col] === undefined) {
+                columnWidths[col] = cellValue.length;
+            } else
