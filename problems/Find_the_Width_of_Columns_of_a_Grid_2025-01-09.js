@@ -15,4 +15,14 @@ function findColumnWidths(grid) {
             // Update the column width if necessary
             if (columnWidths[col] === undefined) {
                 columnWidths[col] = cellValue.length;
-            } else
+            } else {
+                columnWidths[col] = Math.max(columnWidths[col], cellValue.length);
+            }
+        }
+    }
+
+    return columnWidths;
+}
+
+// Example usage:
+const
