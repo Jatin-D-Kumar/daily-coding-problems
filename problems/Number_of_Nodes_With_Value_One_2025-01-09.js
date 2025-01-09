@@ -33,4 +33,8 @@ function countNodesWithValueOne(root) {
 const root = new TreeNode(1);
 root.left = new TreeNode(0);
 root.right = new TreeNode(1);
-root.left.left = new 
+root.left.left = new TreeNode(1);
+root.left.right = new TreeNode(0);
+root.right.right = new TreeNode(1);
+
+console.log(countNodesWithValueOne(root)); // Output: 4
