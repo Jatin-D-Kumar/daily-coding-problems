@@ -16,4 +16,6 @@ function countNodesWithValueOne(root) {
     // Count the current node if its value is 1
     let count = (root.val === 1) ? 1 : 0;
 
-    
+    // Recursively count in the left and right subtrees
+    count += countNodesWithValueOne(root.left);
+    count += countNodesWithValueOne(root.r
