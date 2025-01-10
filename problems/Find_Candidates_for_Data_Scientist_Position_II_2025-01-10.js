@@ -4,4 +4,11 @@ const candidates = [
     { name: "Alice", skills: ["Python", "Machine Learning"], experience: 5 },
     { name: "Bob", skills: ["Java", "Data Analysis"], experience: 3 },
     { name: "Charlie", skills: ["Python", "Deep Learning"], experience: 4 },
-    { name: "David", skills:
+    { name: "David", skills: ["R", "Statistics"], experience: 6 },
+    { name: "Eve", skills: ["Python", "Data Visualization"], experience: 2 }
+];
+
+// Function to find candidates for the Data Scientist position
+function findDataScientistCandidates(candidates, requiredSkills, minExperience) {
+    return candidates.filter(candidate => {
+   
