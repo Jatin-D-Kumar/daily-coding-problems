@@ -11,4 +11,11 @@ const candidates = [
 // Function to find candidates for the Data Scientist position
 function findDataScientistCandidates(candidates, requiredSkills, minExperience) {
     return candidates.filter(candidate => {
-   
+        const hasRequiredSkills = requiredSkills.every(skill => candidate.skills.includes(skill));
+        const hasEnoughExperience = candidate.experience >= minExperience;
+        return hasRequiredSkills && hasEnoughExperience;
+    });
+}
+
+// Define the criteria for the Data Scientist position
+const requiredSkil
