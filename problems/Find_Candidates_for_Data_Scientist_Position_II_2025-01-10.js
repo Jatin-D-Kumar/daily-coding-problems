@@ -18,4 +18,12 @@ function findDataScientistCandidates(candidates, requiredSkills, minExperience) 
 }
 
 // Define the criteria for the Data Scientist position
-const requiredSkil
+const requiredSkills = ["Python", "Machine Learning"];
+const minExperience = 3;
+
+// Find suitable candidates
+const suitableCandidates = findDataScientistCandidates(candidates, requiredSkills, minExperience);
+
+// Output the results
+console.log("Suitable Candidates for Data Scientist Position:");
+console.log(suitableCandidates);
