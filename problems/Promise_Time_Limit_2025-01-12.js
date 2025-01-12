@@ -20,4 +20,16 @@ function promiseWithTimeout(promise, timeLimit) {
 }
 
 // Example usage:
-const examplePromise = new Promis
+const examplePromise = new Promise((resolve) => {
+    setTimeout(() => {
+        resolve('Success!');
+    }, 2000); // This promise resolves after 2 seconds
+});
+
+promiseWithTimeout(examplePromise, 1000) // Set a time limit of 1 second
+    .then((result) => {
+        console.log(result);
+    })
+    .catch((error) => {
+        console.error(error.message); // This will log "Promise timed out"
+    });
