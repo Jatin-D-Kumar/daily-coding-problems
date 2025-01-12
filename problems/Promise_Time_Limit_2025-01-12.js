@@ -8,4 +8,16 @@ function promiseWithTimeout(promise, timeLimit) {
 
         // Execute the original promise
         promise
-            .then((res
+            .then((result) => {
+                clearTimeout(timeoutId); // Clear the timeout if the promise resolves
+                resolve(result);
+            })
+            .catch((error) => {
+                clearTimeout(timeoutId); // Clear the timeout if the promise rejects
+                reject(error);
+            });
+    });
+}
+
+// Example usage:
+const examplePromise = new Promis
