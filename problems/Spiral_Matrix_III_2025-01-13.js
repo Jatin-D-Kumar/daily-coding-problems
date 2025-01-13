@@ -10,4 +10,9 @@ function spiralMatrixIII(R, C, r0, c0) {
     
     let x = r0, y = c0;
     let steps = 0; // Number of steps to take in the current direction
-    let directionIndex = 0; // Start wit
+    let directionIndex = 0; // Start with the first direction (right)
+    
+    while (result.length < R * C) {
+        // Take steps in the current direction
+        for (let i = 0; i < steps; i++) {
+          
