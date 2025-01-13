@@ -19,4 +19,9 @@ function spiralMatrixIII(R, C, r0, c0) {
             if (x >= 0 && x < R && y >= 0 && y < C) {
                 result.push([x, y]);
             }
-            /
+            // Move in the current direction
+            x += directions[directionIndex][0];
+            y += directions[directionIndex][1];
+        }
+        
+        // Change direc
