@@ -15,4 +15,8 @@ function spiralMatrixIII(R, C, r0, c0) {
     while (result.length < R * C) {
         // Take steps in the current direction
         for (let i = 0; i < steps; i++) {
-          
+            // Check if the current position is within bounds
+            if (x >= 0 && x < R && y >= 0 && y < C) {
+                result.push([x, y]);
+            }
+            /
