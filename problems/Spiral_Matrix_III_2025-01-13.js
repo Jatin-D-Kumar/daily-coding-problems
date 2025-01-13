@@ -24,4 +24,8 @@ function spiralMatrixIII(R, C, r0, c0) {
             y += directions[directionIndex][1];
         }
         
-        // Change direc
+        // Change direction
+        directionIndex = (directionIndex + 1) % 4;
+        
+        // After completing two directions, increase the number of steps
+        if (directionIndex % 2 =
