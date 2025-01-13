@@ -28,4 +28,14 @@ function spiralMatrixIII(R, C, r0, c0) {
         directionIndex = (directionIndex + 1) % 4;
         
         // After completing two directions, increase the number of steps
-        if (directionIndex % 2 =
+        if (directionIndex % 2 === 0) {
+            steps++;
+        }
+    }
+    
+    return result;
+}
+
+// Example usage:
+const R = 5, C = 6, r0 = 1, c0 = 4;
+console.log(spiralMatrixIII(R, C, r0, c0));
