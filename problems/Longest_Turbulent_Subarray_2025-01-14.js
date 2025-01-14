@@ -14,4 +14,15 @@ function longestTurbulentSubarray(arr) {
             currentLength++;
         } else {
             // Reset current length
-            currentLength
+            currentLength = 2; // Start a new turbulent subarray with the last two elements
+        }
+
+        maxLength = Math.max(maxLength, currentLength);
+    }
+
+    return maxLength;
+}
+
+// Example usage:
+const arr = [9, 4, 2, 10, 7, 8, 8, 1, 3];
+console.log(longestTurbulentSubarray(arr)); // Output: 5
