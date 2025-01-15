@@ -6,4 +6,6 @@ function dailyTemperatures(temperatures) {
     for (let i = 0; i < temperatures.length; i++) {
         // While there are indices in the stack and the current temperature is greater
         // than the temperature at the index stored at the top of the stack
-        while (stack.length > 0 && temperatures[i] > temperatures[s
+        while (stack.length > 0 && temperatures[i] > temperatures[stack[stack.length - 1]]) {
+            const index = stack.pop(); // Get the index of the last temperature
+            result[index] = i - index; // Calcul
