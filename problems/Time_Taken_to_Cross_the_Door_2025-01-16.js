@@ -6,4 +6,10 @@ function timeToCrossDoor(width, speed) {
     }
     
     // Calculate time taken to cross the door
-    const time = w
+    const time = width / speed;
+    
+    return time; // time in seconds
+}
+
+// Example usage:
+const 
