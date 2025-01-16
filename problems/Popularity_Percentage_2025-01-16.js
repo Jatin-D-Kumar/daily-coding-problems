@@ -1,3 +1,4 @@
 
 const items = [
-    { name: "I
+    { name: "Item A", score: 50 },
+    { name
