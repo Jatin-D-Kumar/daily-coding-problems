@@ -15,4 +15,5 @@ function timeToCrossDoor(width, speed) {
 const doorWidth = 1.2; // width of the door in meters
 const personSpeed = 1.5; // speed of the person in meters per second
 
-const timeTaken = timeToCrossDoor(doorWidth, p
+const timeTaken = timeToCrossDoor(doorWidth, personSpeed);
+console.log(`Time taken to cross the door: ${timeTaken} seconds`);
