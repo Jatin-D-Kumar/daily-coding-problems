@@ -12,4 +12,5 @@ function timeToCrossDoor(width, speed) {
 }
 
 // Example usage:
-const 
+const doorWidth = 1.2; // width of the door in meters
+const personSpeed = 1.5; // speed 
