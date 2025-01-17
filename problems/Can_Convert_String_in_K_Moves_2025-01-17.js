@@ -7,4 +7,6 @@ function canConvertString(s1, s2, k) {
 
     let movesNeeded = 0;
 
-    // C
+    // Calculate the number of moves needed
+    for (let i = 0; i < s1.length; i++) {
+        if (s1[i] !
