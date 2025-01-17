@@ -19,4 +19,8 @@ function canConvertString(s1, s2, k) {
 }
 
 // Example usage:
-const s1 = 
+const s1 = "abc";
+const s2 = "bcd";
+const k = 3;
+
+console.log(canConvertString(s1, s2, k)); // Output: true
