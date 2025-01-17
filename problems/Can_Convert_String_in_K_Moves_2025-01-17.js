@@ -14,4 +14,9 @@ function canConvertString(s1, s2, k) {
         }
     }
 
-    // Check if we can convert within k m
+    // Check if we can convert within k moves
+    return movesNeeded <= k && (k - movesNeeded) % 2 === 0;
+}
+
+// Example usage:
+const s1 = 
