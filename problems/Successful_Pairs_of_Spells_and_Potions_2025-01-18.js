@@ -16,4 +16,11 @@ function successfulPairs(spells, potions, success) {
         while (left < right) {
             const mid = Math.floor((left + right) / 2);
             if (potions[mid] < minPotionPower) {
-                left = mid + 1; //
+                left = mid + 1; // Move right
+            } else {
+                right = mid; // Move left
+            }
+        }
+        
+        // The number of successful pairs for this spell
+        result.push(potions.length - left);
