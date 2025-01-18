@@ -6,4 +6,9 @@ function successfulPairs(spells, potions, success) {
     const result = [];
     
     for (let spell of spells) {
-        // Calculate the 
+        // Calculate the minimum potion power needed for this spell
+        const minPotionPower = success / spell;
+        
+        // Use binary search to find the first potion that meets the requirement
+        let left = 0;
+      
