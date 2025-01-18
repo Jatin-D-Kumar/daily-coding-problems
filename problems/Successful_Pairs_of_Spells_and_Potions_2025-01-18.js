@@ -24,3 +24,14 @@ function successfulPairs(spells, potions, success) {
         
         // The number of successful pairs for this spell
         result.push(potions.length - left);
+    }
+    
+    return result;
+}
+
+// Example usage:
+const spells = [10, 20, 30];
+const potions = [5, 15, 25];
+const success = 100;
+
+console.log(successfulPairs(spells, potions, success)); // Output: [3, 3, 2]
