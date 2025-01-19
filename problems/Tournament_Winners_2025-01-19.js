@@ -26,4 +26,10 @@ function tournamentWinners(matches) {
     }
 
     // Find the team(s) with the highest score
-    let
+    let maxScore = -1;
+    const winners = [];
+
+    for (const [team, score] of Object.entries(teamScores)) {
+        if (score > maxScore) {
+            maxScore = score;
+            winners.length = 0; // C
