@@ -18,4 +18,12 @@ function tournamentWinners(matches) {
         if (scoreA > scoreB) {
             teamScores[teamA] += 3; // Team A wins
         } else if (scoreB > scoreA) {
-            teamScores[tea
+            teamScores[teamB] += 3; // Team B wins
+        } else {
+            teamScores[teamA] += 1; // Draw
+            teamScores[teamB] += 1; // Draw
+        }
+    }
+
+    // Find the team(s) with the highest score
+    let
