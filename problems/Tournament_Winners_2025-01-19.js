@@ -32,4 +32,15 @@ function tournamentWinners(matches) {
     for (const [team, score] of Object.entries(teamScores)) {
         if (score > maxScore) {
             maxScore = score;
-            winners.length = 0; // C
+            winners.length = 0; // Clear the winners array
+            winners.push(team);
+        } else if (score === maxScore) {
+            winners.push(team);
+        }
+    }
+
+    return winners;
+}
+
+// Example usage:
+const matches =
