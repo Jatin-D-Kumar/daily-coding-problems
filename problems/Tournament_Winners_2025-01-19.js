@@ -43,4 +43,11 @@ function tournamentWinners(matches) {
 }
 
 // Example usage:
-const matches =
+const matches = [
+    ['Team A', 3, 'Team B', 1],
+    ['Team C', 2, 'Team D', 2],
+    ['Team A', 1, 'Team C', 0],
+    ['Team B', 0, 'Team D', 3],
+];
+
+console.log(tournamentWinners(matches)); // Output: ['Team D']
