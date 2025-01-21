@@ -15,4 +15,9 @@ function advantageShuffle(A, B) {
             j++;
         }
         // If we found a card in A that can beat B[j], use it
-        if (j < 
+        if (j < n) {
+            result[i] = A[i];
+            used[j] = true; // Mark this card as used
+            j++; // Move to the next card in B
+        } else {
+            // If
