@@ -34,4 +34,8 @@ function advantageShuffle(A, B) {
     return result;
 }
 
-// 
+// Example usage:
+const A = [12, 24, 8, 32];
+const B = [13, 25, 41, 5];
+const result = advantageShuffle(A, B);
+console.log(result); // Output the rearranged cards in A
