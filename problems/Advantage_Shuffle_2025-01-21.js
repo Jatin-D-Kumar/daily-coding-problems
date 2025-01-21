@@ -23,4 +23,15 @@ function advantageShuffle(A, B) {
             // If no card can beat B[j], use the smallest remaining card in A
             for (let k = 0; k < n; k++) {
                 if (!used[k]) {
-                    result[i] = A[k
+                    result[i] = A[k];
+                    used[k] = true; // Mark this card as used
+                    break;
+                }
+            }
+        }
+    }
+    
+    return result;
+}
+
+// 
