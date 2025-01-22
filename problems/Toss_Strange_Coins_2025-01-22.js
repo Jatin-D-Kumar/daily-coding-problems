@@ -10,4 +10,12 @@ function tossStrangeCoins(n, p) {
         if (randomValue < p) {
             results.push('H'); // Heads
         } else {
-            results.push('T'); //
+            results.push('T'); // Tails
+        }
+    }
+    
+    return results;
+}
+
+// Example usage:
+const numberOfTosses = 10; // Nu
