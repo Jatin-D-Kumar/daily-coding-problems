@@ -7,4 +7,7 @@ function tossStrangeCoins(n, p) {
         const randomValue = Math.random();
         
         // If the random value is less than p, it's heads; otherwise, it's tails
-        if (randomVa
+        if (randomValue < p) {
+            results.push('H'); // Heads
+        } else {
+            results.push('T'); //
