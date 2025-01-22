@@ -18,4 +18,6 @@ function tossStrangeCoins(n, p) {
 }
 
 // Example usage:
-const numberOfTosses = 10; // Nu
+const numberOfTosses = 10; // Number of times to toss the coin
+const probabilityOfHeads = 0.7; // Probability of getting heads
+const 
