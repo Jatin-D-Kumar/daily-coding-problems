@@ -11,4 +11,11 @@ function longestOnes(nums, k) {
         }
 
         // If the count of zeros exceeds k, we need to shrink the window
-        while (zeroCount > k)
+        while (zeroCount > k) {
+            if (nums[left] === 0) {
+                zeroCount--;
+            }
+            left++;
+        }
+
+        // Calc
