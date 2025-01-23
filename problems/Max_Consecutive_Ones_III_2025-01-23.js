@@ -24,3 +24,8 @@ function longestOnes(nums, k) {
 
     return maxLength;
 }
+
+// Example usage:
+const nums = [1, 1, 0, 0, 1, 1, 1, 0, 1];
+const k = 2;
+console.log(longestOnes(nums, k)); // Output: 7
