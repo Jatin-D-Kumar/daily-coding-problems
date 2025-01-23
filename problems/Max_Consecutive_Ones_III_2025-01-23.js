@@ -18,4 +18,9 @@ function longestOnes(nums, k) {
             left++;
         }
 
-        // Calc
+        // Calculate the maximum length of the window
+        maxLength = Math.max(maxLength, right - left + 1);
+    }
+
+    return maxLength;
+}
