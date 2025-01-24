@@ -19,4 +19,10 @@ function simplifyPath(path) {
         }
     }
 
-    // Join the stack to form the 
+    // Join the stack to form the simplified path
+    return '/' + stack.join('/');
+}
+
+// Example usage:
+const path = "/a/./b/../../c/";
+console.log(simplifyPath(path)); // Output: "/c"
