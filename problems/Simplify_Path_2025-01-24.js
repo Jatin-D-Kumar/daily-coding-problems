@@ -12,4 +12,11 @@ function simplifyPath(path) {
             // Go up to the parent directory if possible
             if (stack.length > 0) {
                 stack.pop();
-            
+            }
+        } else {
+            // Add the valid directory to the stack
+            stack.push(part);
+        }
+    }
+
+    // Join the stack to form the 
