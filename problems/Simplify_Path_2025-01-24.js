@@ -4,4 +4,8 @@ function simplifyPath(path) {
     const parts = path.split('/');
     const stack = [];
 
-    for (const part of parts) 
+    for (const part of parts) {
+        if (part === '' || part === '.') {
+            // Ignore empty parts and current directory references
+            continue;
+        } else if 
