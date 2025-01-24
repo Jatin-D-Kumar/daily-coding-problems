@@ -8,4 +8,8 @@ function simplifyPath(path) {
         if (part === '' || part === '.') {
             // Ignore empty parts and current directory references
             continue;
-        } else if 
+        } else if (part === '..') {
+            // Go up to the parent directory if possible
+            if (stack.length > 0) {
+                stack.pop();
+            
