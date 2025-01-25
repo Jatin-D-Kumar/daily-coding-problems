@@ -36,4 +36,10 @@ function largestMagicSquare(matrix) {
     for (let size = 1; size <= Math.min(rows, cols); size++) {
         for (let i = 0; i <= rows - size; i++) {
             for (let j = 0; j <= cols - size; j++) {
-      
+                const square = [];
+                for (let k = 0; k < size; k++) {
+                    square.push(matrix[i + k].slice(j, j + size));
+                }
+                if (isMagicSquare(square)) {
+                    maxSize = Math.max(maxSize, size);
+  
