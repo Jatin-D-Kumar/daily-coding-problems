@@ -11,4 +11,9 @@ function findOriginalArray(changed) {
     }
 
     // Sort the keys to process smaller numbers first
-   
+    const keys = Array.from(count.keys()).sort((a, b) => a - b);
+
+    for (const num of keys) {
+        if (count.get(num) > 0) {
+            const doubleNum = num * 2;
+            const occu
