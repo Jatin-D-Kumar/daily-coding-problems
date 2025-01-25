@@ -42,4 +42,20 @@ function largestMagicSquare(matrix) {
                 }
                 if (isMagicSquare(square)) {
                     maxSize = Math.max(maxSize, size);
-  
+                }
+            }
+        }
+    }
+
+    return maxSize;
+}
+
+// Example usage:
+const matrix = [
+    [4, 9, 2, 3],
+    [3, 5, 7, 8],
+    [8, 1, 6, 4],
+    [1, 6, 8, 7]
+];
+
+console.log(largestMagicSquare(matrix)); // Output: Size of the largest magic square
