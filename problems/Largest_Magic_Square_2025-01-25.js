@@ -18,3 +18,14 @@ function isMagicSquare(square) {
 
     // Check diagonals
     let diag1Sum = 0;
+    let diag2Sum = 0;
+    for (let i = 0; i < n; i++) {
+        diag1Sum += square[i][i];
+        diag2Sum += square[i][n - 1 - i];
+    }
+
+    return diag1Sum === magicSum && diag2Sum === magicSum;
+}
+
+function largestMagicSquare(matrix) {
+    const rows = matrix.l
