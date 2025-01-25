@@ -28,4 +28,12 @@ function isMagicSquare(square) {
 }
 
 function largestMagicSquare(matrix) {
-    const rows = matrix.l
+    const rows = matrix.length;
+    if (rows === 0) return 0;
+    const cols = matrix[0].length;
+    let maxSize = 0;
+
+    for (let size = 1; size <= Math.min(rows, cols); size++) {
+        for (let i = 0; i <= rows - size; i++) {
+            for (let j = 0; j <= cols - size; j++) {
+      
