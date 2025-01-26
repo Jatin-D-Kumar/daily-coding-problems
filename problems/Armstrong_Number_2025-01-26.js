@@ -7,4 +7,13 @@ function isArmstrongNumber(num) {
     // Calculate the sum of each digit raised to the power of the number of digits
     let sum = 0;
     for (let i = 0; i < numDigits; i++) {
-        const digit = parseInt
+        const digit = parseInt(strNum[i], 10);
+        sum += Math.pow(digit, numDigits);
+    }
+
+    // Check if the sum is equal to the original number
+    return sum === num;
+}
+
+// Example usage:
+const
