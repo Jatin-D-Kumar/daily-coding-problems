@@ -16,4 +16,9 @@ function isArmstrongNumber(num) {
 }
 
 // Example usage:
-const
+const number = 153;
+if (isArmstrongNumber(number)) {
+    console.log(`${number} is an Armstrong number.`);
+} else {
+    console.log(`${number} is not an Armstrong number.`);
+}
