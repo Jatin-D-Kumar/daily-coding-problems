@@ -14,4 +14,7 @@ const df = new danfo.DataFrame(data);
 // Get the size of the DataFrame
 const size = {
     rows: df.shape[0], // Number of rows
-    columns: df.shape
+    columns: df.shape[1] // Number of columns
+};
+
+console.log(`Size of DataFrame: ${size.rows} rows and ${size.columns} columns`);
