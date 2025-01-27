@@ -10,3 +10,8 @@ const data = {
 
 // Create a DataFrame
 const df = new danfo.DataFrame(data);
+
+// Get the size of the DataFrame
+const size = {
+    rows: df.shape[0], // Number of rows
+    columns: df.shape
