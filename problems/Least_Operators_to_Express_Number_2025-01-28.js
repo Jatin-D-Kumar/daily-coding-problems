@@ -17,4 +17,10 @@ function leastOperatorsToExpressNumber(n, target) {
             if (addResult === target) return steps + 1;
             if (addResult < target && !visited.has(addResult)) {
                 visited.add(addResult);
-                queue.push({ value: addResult,
+                queue.push({ value: addResult, steps: steps + 1 });
+            }
+
+            // Multiplication
+            const mulResult = value * i;
+            if (mulResult === target) return steps + 1;
+            if (mulResult < target 
