@@ -30,4 +30,10 @@ function leastOperatorsToExpressNumber(n, target) {
         }
     }
 
-    return -1; // If target ca
+    return -1; // If target cannot be expressed
+}
+
+// Example usage:
+const n = 5; // Allowed numbers are 1 to 5
+const target = 12;
+console.log(leastOperatorsToExpressNumber(n, target)); // Output: Minimum number of operations
