@@ -8,4 +8,10 @@ function leastOperatorsToExpressNumber(n, target) {
     visited.add(1);
 
     while (queue.length > 0) {
- 
+        const { value, steps } = queue.shift();
+
+        // Try all possible operations
+        for (let i = 1; i <= n; i++) {
+            // Addition
+            const addResult = value + i;
+        
