@@ -14,4 +14,14 @@ function minimumTrainingDays(initialSkill, targetSkill, hoursPerDay, skillIncrea
     // Calculate the number of days needed
     const daysNeeded = Math.ceil(skillNeeded / skillIncreasePerDay);
 
-    return d
+    return daysNeeded;
+}
+
+// Example usage:
+const initialSkill = 10;
+const targetSkill = 50;
+const hoursPerDay = 2;
+const skillIncreasePerHour = 5;
+
+const result = minimumTrainingDays(initialSkill, targetSkill, hoursPerDay, skillIncreasePerHour);
+console.log(`Minimum days of training required: ${result}`);
