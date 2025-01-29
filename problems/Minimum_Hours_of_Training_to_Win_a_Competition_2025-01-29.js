@@ -4,4 +4,14 @@ function minimumTrainingDays(initialSkill, targetSkill, hoursPerDay, skillIncrea
     const skillNeeded = targetSkill - initialSkill;
 
     // If the initial skill is already greater than or equal to the target skill
-    if (skillNeeded <
+    if (skillNeeded <= 0) {
+        return 0; // No training needed
+    }
+
+    // Calculate the total skill increase per day
+    const skillIncreasePerDay = hoursPerDay * skillIncreasePerHour;
+
+    // Calculate the number of days needed
+    const daysNeeded = Math.ceil(skillNeeded / skillIncreasePerDay);
+
+    return d
