@@ -32,4 +32,10 @@ function getPrimaryDepartments(employees) {
     return employees.map(employee => {
         // Find the department with the highest priority
         const primaryDepartment = employee.departments.reduce((prev, current) => {
-            return (prev.pri
+            return (prev.priority > current.priority) ? prev : current;
+        });
+
+        return {
+            id: employee.id,
+            name: employee.name,
+            primaryDepartment: primaryDep
