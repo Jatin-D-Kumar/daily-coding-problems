@@ -38,4 +38,13 @@ function getPrimaryDepartments(employees) {
         return {
             id: employee.id,
             name: employee.name,
-            primaryDepartment: primaryDep
+            primaryDepartment: primaryDepartment.name
+        };
+    });
+}
+
+// Get the primary departments for each employee
+const result = getPrimaryDepartments(employees);
+
+// Output the result
+console.log(result);
