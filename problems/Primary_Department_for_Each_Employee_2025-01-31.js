@@ -14,4 +14,12 @@ const employees = [
         name: "Bob",
         departments: [
             { name: "IT", priority: 3 },
-            { name
+            { name: "HR", priority: 1 }
+        ]
+    },
+    {
+        id: 3,
+        name: "Charlie",
+        departments: [
+            { name: "Finance", priority: 2 },
+            { name: "IT
