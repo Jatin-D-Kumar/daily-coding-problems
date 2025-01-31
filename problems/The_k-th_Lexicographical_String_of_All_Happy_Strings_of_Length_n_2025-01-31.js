@@ -23,4 +23,12 @@ function getHappyString(n, k) {
     
     // Sort the happy strings lexicographically
     happyStrings.sort();
-   
+    
+    // Return the k-th happy string (1-indexed)
+    return k <= happyStrings.length ? happyStrings[k - 1] : '';
+}
+
+// Example usage:
+const n = 3; // Length of the happy string
+const k = 5; // k-th lexicographical string
+console.log(getHappyString(n, k)); // Output: "cab"
