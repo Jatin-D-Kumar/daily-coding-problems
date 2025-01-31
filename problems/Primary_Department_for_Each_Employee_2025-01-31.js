@@ -22,4 +22,11 @@ const employees = [
         name: "Charlie",
         departments: [
             { name: "Finance", priority: 2 },
-            { name: "IT
+            { name: "IT", priority: 1 }
+        ]
+    }
+];
+
+// Function to determine the primary department for each employee
+function getPrimaryDepartments(employees) {
+    return employees.map(emplo
