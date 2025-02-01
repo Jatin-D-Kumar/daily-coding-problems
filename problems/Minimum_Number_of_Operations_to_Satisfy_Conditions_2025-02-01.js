@@ -5,4 +5,9 @@ function minOperations(arr) {
     
     // Calculate the number of operations needed to make all elements equal to the average
     let operations = 0;
-    for (let nu
+    for (let num of arr) {
+        operations += Math.abs(num - average);
+    }
+    
+    return operations;
+}
