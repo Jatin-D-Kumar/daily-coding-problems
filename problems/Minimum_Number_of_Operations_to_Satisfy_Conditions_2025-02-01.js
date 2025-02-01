@@ -11,3 +11,7 @@ function minOperations(arr) {
     
     return operations;
 }
+
+// Example usage:
+const arr = [1, 2, 3, 4, 5];
+console.log(minOperations(arr)); // Output: 4
