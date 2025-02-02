@@ -8,4 +8,13 @@ function findActiveMinutes(logs, k) {
         if (!userActivity[userId]) {
             userActivity[userId] = new Set();
         }
-        // Add 
+        // Add the active minute to the user's set
+        userActivity[userId].add(time);
+    }
+
+    // Prepare the result array
+    const result = new Array(k).fill(0);
+
+    // Count the number of unique active minutes for each user
+    for (const userId in userActivity) {
+        const activeMinutes = userActivity[userId].si
