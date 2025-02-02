@@ -17,4 +17,25 @@ function findActiveMinutes(logs, k) {
 
     // Count the number of unique active minutes for each user
     for (const userId in userActivity) {
-        const activeMinutes = userActivity[userId].si
+        const activeMinutes = userActivity[userId].size;
+        if (activeMinutes <= k) {
+            result[activeMinutes - 1]++;
+        }
+    }
+
+    return result;
+}
+
+// Example usage:
+const logs = [
+    [1, 1],
+    [2, 2],
+    [2, 3],
+    [1, 2],
+    [1, 3],
+    [1, 3],
+    [3, 1]
+];
+const k = 3;
+
+console.log(findActiveMinutes(logs, k)); // Output: [2, 1, 0]
