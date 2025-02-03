@@ -35,4 +35,15 @@ function lowestCommonAncestor(root, nodes) {
 }
 
 // Example usage:
-// Con
+// Constructing a binary tree
+//         3
+//        / \
+//       5   1
+//      / \ / \
+//     6  2 0  8
+//       / \
+//      7   4
+
+const root = new TreeNode(3);
+root.left = new TreeNode(5);
+root.right = new 
