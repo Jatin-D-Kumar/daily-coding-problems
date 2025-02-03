@@ -23,4 +23,16 @@ function lowestCommonAncestor(root, nodes) {
         const right = dfs(node.right);
 
         // If both left and right are not null, this node is the LCA
- 
+        if (left && right) {
+            return node;
+        }
+
+        // Otherwise return the non-null child
+        return left ? left : right;
+    }
+
+    return dfs(root);
+}
+
+// Example usage:
+// Con
