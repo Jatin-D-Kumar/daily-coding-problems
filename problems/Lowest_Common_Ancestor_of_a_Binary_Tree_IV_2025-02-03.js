@@ -52,4 +52,8 @@ root.left.right = new TreeNode(2);
 root.right.left = new TreeNode(0);
 root.right.right = new TreeNode(8);
 root.left.right.left = new TreeNode(7);
-root.left.
+root.left.right.right = new TreeNode(4);
+
+const nodes = [5, 1, 4]; // Example nodes to find LCA
+const lca = lowestCommonAncestor(root, nodes);
+console.log(lca ? lca.val : null); // Output the value of the LCA
