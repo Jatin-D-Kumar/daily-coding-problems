@@ -16,4 +16,11 @@ function lowestCommonAncestor(root, nodes) {
         // If the current node is one of the nodes we're looking for
         if (nodeSet.has(node.val)) {
             return node;
-    
+        }
+
+        // Search in the left and right subtrees
+        const left = dfs(node.left);
+        const right = dfs(node.right);
+
+        // If both left and right are not null, this node is the LCA
+ 
