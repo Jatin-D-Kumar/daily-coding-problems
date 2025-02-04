@@ -8,4 +8,10 @@ function lengthOfLIS(nums) {
     // Fill the dp array
     for (let i = 1; i < nums.length; i++) {
         for (let j = 0; j < i; j++) {
-            if (nu
+            if (nums[i] > nums[j]) {
+                dp[i] = Math.max(dp[i], dp[j] + 1);
+            }
+        }
+    }
+
+    // The length of the longest increasing subsequence is 
