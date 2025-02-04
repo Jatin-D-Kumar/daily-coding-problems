@@ -14,4 +14,10 @@ function lengthOfLIS(nums) {
         }
     }
 
-    // The length of the longest increasing subsequence is 
+    // The length of the longest increasing subsequence is the maximum value in dp
+    return Math.max(...dp);
+}
+
+// Example usage:
+const nums = [10, 9, 2, 5, 3, 7, 101, 18];
+console.log(lengthOfLIS(nums)); // Output: 4
