@@ -15,4 +15,8 @@ function splitMessage(message, limit) {
     // Initialize a temporary string to build the current message
     let currentMessage = '';
 
-    // Iterate 
+    // Iterate through each word
+    for (const word of words) {
+        // Check if adding the next word exceeds the limit
+        if (currentMessage.length + word.length + 1 <= limit) {
+            // If it's not the first word, add a space before addin
