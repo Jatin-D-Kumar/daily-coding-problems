@@ -34,4 +34,14 @@ function splitMessage(message, limit) {
 
     // Push the last message if it exists
     if (currentMessage) {
-        messages.push(currentM
+        messages.push(currentMessage);
+    }
+
+    return messages;
+}
+
+// Example usage:
+const message = "This is a sample message that needs to be split based on a character limit.";
+const limit = 20;
+const result = splitMessage(message, limit);
+console.log(result);
