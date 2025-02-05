@@ -26,4 +26,12 @@ function splitMessage(message, limit) {
             currentMessage += word;
         } else {
             // If the limit is exceeded, push the current message to the array
-          
+            messages.push(currentMessage);
+            // Start a new message with the current word
+            currentMessage = word;
+        }
+    }
+
+    // Push the last message if it exists
+    if (currentMessage) {
+        messages.push(currentM
