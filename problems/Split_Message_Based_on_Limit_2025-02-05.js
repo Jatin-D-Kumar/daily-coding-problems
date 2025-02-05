@@ -19,4 +19,11 @@ function splitMessage(message, limit) {
     for (const word of words) {
         // Check if adding the next word exceeds the limit
         if (currentMessage.length + word.length + 1 <= limit) {
-            // If it's not the first word, add a space before addin
+            // If it's not the first word, add a space before adding the word
+            if (currentMessage) {
+                currentMessage += ' ';
+            }
+            currentMessage += word;
+        } else {
+            // If the limit is exceeded, push the current message to the array
+          
