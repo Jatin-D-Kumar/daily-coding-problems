@@ -17,4 +17,9 @@ function checkGrid(grid) {
     for (let j = 0; j < n; j++) {
         const colSet = new Set();
         for (let i = 0; i < n; i++) {
-            if (grid[i][j
+            if (grid[i][j] < 1 || grid[i][j] > n || colSet.has(grid[i][j])) {
+                return false; // Invalid value or duplicate in column
+            }
+            colSet.add(grid[i][j]);
+        }
+ 
