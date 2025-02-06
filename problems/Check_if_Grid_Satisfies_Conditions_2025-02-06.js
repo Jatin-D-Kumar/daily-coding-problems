@@ -22,4 +22,16 @@ function checkGrid(grid) {
             }
             colSet.add(grid[i][j]);
         }
- 
+    }
+
+    return true; // All conditions satisfied
+}
+
+// Example usage:
+const grid = [
+    [1, 2, 3],
+    [2, 3, 1],
+    [3, 1, 2]
+];
+
+console.log(checkGrid(grid)); // Output: true
