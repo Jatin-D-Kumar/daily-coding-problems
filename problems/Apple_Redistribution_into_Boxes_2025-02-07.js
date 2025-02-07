@@ -12,4 +12,14 @@ function redistributeApples(n, k) {
 
     // Distribute the remainder apples
     for (let i = 0; i < remainder; i++) {
-        distr
+        distribution[i]++;
+    }
+
+    return distribution;
+}
+
+// Example usage:
+const n = 10; // Total number of apples
+const k = 3;  // Total number of boxes
+const result = redistributeApples(n, k);
+console.log(result); // Output: [4, 3, 3]
