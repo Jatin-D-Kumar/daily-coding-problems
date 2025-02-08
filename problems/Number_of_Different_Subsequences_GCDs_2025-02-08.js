@@ -11,4 +11,8 @@ function countDifferentGCDs(nums) {
 
     // Iterate through all possible GCDs from 1 to maxNum
     for (let g = 1; g <= maxNum; g++) {
-  
+        let totalCount = 0;
+
+        // Check multiples of g
+        for (let multiple = g; multiple <= maxNum; multiple += g) {
+        
