@@ -25,4 +25,9 @@ function countDifferentGCDs(nums) {
     }
 
     // Count the number of different GCDs
-    return gcdCount.
+    return gcdCount.reduce((acc, val) => acc + val, 0);
+}
+
+// Example usage:
+const nums = [6, 10, 15];
+console.log(countDifferentGCDs(nums)); // Output: 5
