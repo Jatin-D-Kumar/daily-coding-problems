@@ -19,4 +19,10 @@ function countDifferentGCDs(nums) {
         }
 
         // If there is at least one number that is a multiple of g, g can be a GCD
-   
+        if (totalCount > 0) {
+            gcdCount[g] = 1;
+        }
+    }
+
+    // Count the number of different GCDs
+    return gcdCount.
