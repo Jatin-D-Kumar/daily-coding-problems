@@ -15,4 +15,8 @@ function countDifferentGCDs(nums) {
 
         // Check multiples of g
         for (let multiple = g; multiple <= maxNum; multiple += g) {
-        
+            totalCount += numCount[multiple];
+        }
+
+        // If there is at least one number that is a multiple of g, g can be a GCD
+   
