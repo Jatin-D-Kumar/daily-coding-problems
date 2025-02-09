@@ -14,4 +14,8 @@ function firstUniqueCharacter(s) {
         }
     }
 
-    return -
+    return -1; // Return -1 if there is no unique character
+}
+
+// Example usage:
+const str = "l
