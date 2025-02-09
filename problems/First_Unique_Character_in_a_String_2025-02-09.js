@@ -10,4 +10,8 @@ function firstUniqueCharacter(s) {
     // Find the first unique character
     for (let i = 0; i < s.length; i++) {
         if (charCount[s[i]] === 1) {
-            return
+            return i; // Return the index of the first unique character
+        }
+    }
+
+    return -
