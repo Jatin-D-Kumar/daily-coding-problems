@@ -18,4 +18,5 @@ function firstUniqueCharacter(s) {
 }
 
 // Example usage:
-const str = "l
+const str = "leetcode";
+console.log(firstUniqueCharacter(str)); // Output: 0 (the index of 'l')
