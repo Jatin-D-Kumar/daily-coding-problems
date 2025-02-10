@@ -21,4 +21,19 @@ function averageOfLevels(root) {
             const node = queue.shift();
             levelSum += node.val;
 
-            if (node.lef
+            if (node.left) queue.push(node.left);
+            if (node.right) queue.push(node.right);
+        }
+
+        result.push(levelSum / levelCount);
+    }
+
+    return result;
+}
+
+// Example usage:
+// Constructing a binary tree:
+//         3
+//        / \
+//       9  20
+// 
