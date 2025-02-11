@@ -18,4 +18,8 @@ function countPoints(points, queries) {
     return results;
 }
 
-// Examp
+// Example usage:
+const points = [[1, 2], [3, 4], [5, 6]];
+const queries = [[3, 3, 3], [1, 1, 1]];
+const result = countPoints(points, queries);
+console.log(result); // Output: [2, 1]
