@@ -27,3 +27,12 @@ function minimizeMaxDifference(nums) {
     // Binary search to find the minimum possible maximum difference
     while (left < right) {
         let mid = Math.floor((left + right) / 2);
+        
+        if (canAchieveMaxDiff(mid)) {
+            right = mid; // Try for a smaller maximum difference
+        } else {
+            left = mid + 1; // Increase the maximum difference
+        }
+    }
+    
+    re
