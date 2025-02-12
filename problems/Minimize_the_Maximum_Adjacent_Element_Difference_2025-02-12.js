@@ -13,4 +13,11 @@ function minimizeMaxDifference(nums) {
         let count = 0;
         
         for (let i = 1; i < n; i++) {
-            if (nu
+            if (nums[i] - prev > maxDiff) {
+                count++;
+                prev = nums[i - 1]; // Move to the last element that was accepted
+            } else {
+                prev = nums[i];
+            }
+        }
+        
