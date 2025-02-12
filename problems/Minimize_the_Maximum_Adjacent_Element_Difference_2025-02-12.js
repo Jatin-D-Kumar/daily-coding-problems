@@ -21,3 +21,9 @@ function minimizeMaxDifference(nums) {
             }
         }
         
+        return count <= 1; // We can have at most one "jump"
+    };
+    
+    // Binary search to find the minimum possible maximum difference
+    while (left < right) {
+        let mid = Math.floor((left + right) / 2);
