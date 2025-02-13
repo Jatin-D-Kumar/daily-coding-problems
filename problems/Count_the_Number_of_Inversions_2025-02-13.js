@@ -45,4 +45,15 @@ function countInversions(arr) {
         const mergedResult = mergeAndCount(leftResult.sorted, rightResult.sorted);
         return {
             sorted: mergedResult.merged,
-         
+            inversions: leftResult.inversions + rightResult.inversions + mergedResult.inversions
+        };
+    }
+
+    const result = mergeSortAndCount(arr);
+    return result.inversions;
+}
+
+// Example usage:
+const arr = [2, 3, 8, 6, 1];
+const inversionCount = countInversions(arr);
+console.log(`Number of inversions: ${inversionCount}`); // Output: Number of inversions: 5
