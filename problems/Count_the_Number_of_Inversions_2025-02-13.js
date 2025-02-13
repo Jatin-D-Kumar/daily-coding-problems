@@ -35,4 +35,14 @@ function countInversions(arr) {
     // Recursive function to sort the array and count inversions
     function mergeSortAndCount(arr) {
         if (arr.length < 2) {
-            return { sor
+            return { sorted: arr, inversions: 0 };
+        }
+
+        const mid = Math.floor(arr.length / 2);
+        const leftResult = mergeSortAndCount(arr.slice(0, mid));
+        const rightResult = mergeSortAndCount(arr.slice(mid));
+
+        const mergedResult = mergeAndCount(leftResult.sorted, rightResult.sorted);
+        return {
+            sorted: mergedResult.merged,
+         
