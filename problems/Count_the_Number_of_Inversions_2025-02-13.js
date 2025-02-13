@@ -9,4 +9,15 @@ function countInversions(arr) {
         while (i < left.length && j < right.length) {
             if (left[i] <= right[j]) {
                 merged.push(left[i]);
-               
+                i++;
+            } else {
+                // There are left.length - i inversions, because all remaining elements in left
+                // are greater than right[j]
+                inversions += left.length - i;
+                merged.push(right[j]);
+                j++;
+            }
+        }
+
+        // Add remaining elements
+        while (i < left.length)
