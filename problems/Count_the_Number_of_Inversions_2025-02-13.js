@@ -20,4 +20,19 @@ function countInversions(arr) {
         }
 
         // Add remaining elements
-        while (i < left.length)
+        while (i < left.length) {
+            merged.push(left[i]);
+            i++;
+        }
+        while (j < right.length) {
+            merged.push(right[j]);
+            j++;
+        }
+
+        return { merged, inversions };
+    }
+
+    // Recursive function to sort the array and count inversions
+    function mergeSortAndCount(arr) {
+        if (arr.length < 2) {
+            return { sor
