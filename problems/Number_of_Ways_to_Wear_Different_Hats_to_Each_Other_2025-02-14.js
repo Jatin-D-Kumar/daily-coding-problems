@@ -12,4 +12,4 @@ function numberOfWaysToWearHats(n) {
 
 // Example usage:
 const n = 5; // Number of people and hats
-console.log(`Number of ways to wear differ
+console.log(`Number of ways to wear different hats: ${numberOfWaysToWearHats(n)}`);
