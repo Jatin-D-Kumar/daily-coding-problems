@@ -6,4 +6,8 @@ function factorial(n) {
     return n * factorial(n - 1);
 }
 
-function numberOfWaysToWea
+function numberOfWaysToWearHats(n) {
+    return factorial(n);
+}
+
+// Examp
