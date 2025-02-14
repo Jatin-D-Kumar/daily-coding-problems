@@ -10,4 +10,5 @@ function numberOfWaysToWearHats(n) {
     return factorial(n);
 }
 
-// Examp
+// Example usage:
+const n = 5; // Number of people and 
