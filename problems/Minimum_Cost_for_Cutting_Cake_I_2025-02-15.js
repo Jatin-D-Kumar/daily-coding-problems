@@ -5,4 +5,10 @@ function minCostToCutCake(costs) {
     dp[0] = 0;
 
     for (let i = 1; i <= n; i++) {
-        for (let j = i - 1; j >= 0; j
+        for (let j = i - 1; j >= 0; j--) {
+            dp[i] = Math.min(dp[i], dp[j] + costs[j]);
+        }
+    }
+
+    return dp[n];
+}
