@@ -23,4 +23,6 @@ function singleNumber(nums) {
 }
 
 // Example usage:
-const nums = [1
+const nums = [1, 2, 1, 3, 2, 5];
+const result = singleNumber(nums);
+console.log(result); // Output: [3, 5] or [5, 3]
