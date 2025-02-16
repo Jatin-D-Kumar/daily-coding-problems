@@ -15,4 +15,12 @@ function singleNumber(nums) {
         if (num & rightmostSetBit) {
             num1 ^= num; // Group with the set bit
         } else {
-            num2 ^= num; // Gr
+            num2 ^= num; // Group without the set bit
+        }
+    }
+
+    return [num1, num2];
+}
+
+// Example usage:
+const nums = [1
