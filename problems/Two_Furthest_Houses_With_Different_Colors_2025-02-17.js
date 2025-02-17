@@ -1,2 +1,2 @@
 
-Input: colors = [1, 1, 
+Input: colors = [1, 1, 2, 1, 3,
