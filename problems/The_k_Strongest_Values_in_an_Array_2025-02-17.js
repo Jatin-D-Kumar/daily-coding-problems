@@ -8,4 +8,10 @@ function getStrongest(arr, k) {
     const median = n % 2 === 0 ? (arr[n / 2 - 1] + arr[n / 2]) / 2 : arr[Math.floor(n / 2)];
     
     // Step 3: Create an array of strengths
-    const strengths = ar
+    const strengths = arr.map(value => ({
+        value: value,
+        strength: Math.abs(value - median)
+    }));
+    
+    // Step 4: Sort by strength and then by value
+    strengths.
