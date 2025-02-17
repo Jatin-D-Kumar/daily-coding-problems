@@ -22,4 +22,10 @@ function getStrongest(arr, k) {
     });
     
     // Step 5: Extract the top k strongest values
-    return st
+    return strengths.slice(0, k).map(item => item.value);
+}
+
+// Example usage:
+const arr = [1, 2, 3, 4, 5];
+const k = 2;
+console.log(getStrongest(arr, k)); // Output: [5, 4]
