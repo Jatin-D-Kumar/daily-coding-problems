@@ -17,4 +17,9 @@ function getStrongest(arr, k) {
     strengths.sort((a, b) => {
         if (b.strength === a.strength) {
             return b.value - a.value; // Sort by value in descending order if strengths are equal
-     
+        }
+        return b.strength - a.strength; // Sort by strength in descending order
+    });
+    
+    // Step 5: Extract the top k strongest values
+    return st
