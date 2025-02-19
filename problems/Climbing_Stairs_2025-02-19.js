@@ -12,4 +12,8 @@ function climbStairs(n) {
         dp[i] = dp[i - 1] + dp[i - 2]; // The number of ways to reach step i
     }
 
-   
+    return dp[n]; // The number of ways to reach the top (n steps)
+}
+
+// Example usage:
+console.log(climbStairs(5)); // Output: 8
