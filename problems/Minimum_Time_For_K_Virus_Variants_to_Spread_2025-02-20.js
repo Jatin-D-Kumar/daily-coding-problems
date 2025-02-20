@@ -76,4 +76,29 @@ class MinHeap {
                 }
             }
 
-            if (rightChildIndex <
+            if (rightChildIndex < length) {
+                rightChild = this.heap[rightChildIndex];
+                if (
+                    (swap === null && rightChild < element) ||
+                    (swap !== null && rightChild < leftChild)
+                ) {
+                    swap = rightChildIndex;
+                }
+            }
+
+            if (swap === null) break;
+            this.heap[index] = this.heap[swap];
+            this.heap[swap] = element;
+            index = swap;
+        }
+    }
+
+    isEmpty() {
+        return this.heap.length === 0;
+    }
+}
+
+// Example usage:
+const variants = [1, 2, 3]; // Initial spread times for each variant
+const K = 5; // Number of variants we want to spread
+console.log(minTimeToSpread(variants, K)); // Output the minimum time
