@@ -20,4 +20,36 @@ function minTimeToSpread(variants, K) {
         timeElapsed = currentTime; // Update the time elapsed
         count++; // One more variant has spread
 
-        // Each variant can creat
+        // Each variant can create a new variant after it spreads
+        minHeap.insert(currentTime + currentTime); // Simulate the new variant
+    }
+
+    return timeElapsed;
+}
+
+// MinHeap implementation
+class MinHeap {
+    constructor() {
+        this.heap = [];
+    }
+
+    insert(val) {
+        this.heap.push(val);
+        this.bubbleUp();
+    }
+
+    extractMin() {
+        if (this.heap.length === 0) return null;
+        if (this.heap.length === 1) return this.heap.pop();
+        
+        const min = this.heap[0];
+        this.heap[0] = this.heap.pop();
+        this.bubbleDown();
+        return min;
+    }
+
+    bubbleUp() {
+        let index = this.heap.length - 1;
+        while (index > 0) {
+            const parentIndex = Math.floor((index - 1) / 2);
+            if (this.hea
