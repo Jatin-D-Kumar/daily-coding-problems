@@ -18,4 +18,11 @@ function getMonthlyTotals(transactions) {
         if (!monthlyTotals[monthYear]) {
             monthlyTotals[monthYear] = 0;
         }
-       
+        monthlyTotals[monthYear] += transaction.amount;
+    });
+
+    return monthlyTotals;
+}
+
+const totals = getMonthlyTotals(transactions);
+console.log(totals);
