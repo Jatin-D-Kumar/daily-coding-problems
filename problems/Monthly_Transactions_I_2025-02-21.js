@@ -13,4 +13,9 @@ function getMonthlyTotals(transactions) {
 
     transactions.forEach(transaction => {
         const date = new Date(transaction.date);
-        const monthYear = `${date.ge
+        const monthYear = `${date.getFullYear()}-${date.getMonth() + 1}`; // Format: YYYY-MM
+
+        if (!monthlyTotals[monthYear]) {
+            monthlyTotals[monthYear] = 0;
+        }
+       
