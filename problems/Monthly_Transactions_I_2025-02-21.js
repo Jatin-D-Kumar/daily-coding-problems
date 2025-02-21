@@ -9,3 +9,8 @@ const transactions = [
 ];
 
 function getMonthlyTotals(transactions) {
+    const monthlyTotals = {};
+
+    transactions.forEach(transaction => {
+        const date = new Date(transaction.date);
+        const monthYear = `${date.ge
