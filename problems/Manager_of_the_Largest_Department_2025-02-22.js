@@ -22,4 +22,12 @@ function managerOfLargestDepartment(employees) {
     for (const department in departmentSizes) {
         if (departmentSizes[department] > maxSize) {
             maxSize = departmentSizes[department];
-     
+            largestDepartment = department;
+        }
+    }
+
+    // Return the manager of the largest department
+    return largestDepartment ? departmentManagers[largestDepartment] : null;
+}
+
+// Example usage:
