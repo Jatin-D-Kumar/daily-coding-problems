@@ -16,4 +16,10 @@ function managerOfLargestDepartment(employees) {
     }
 
     // Determine the department with the largest size
-    let larg
+    let largestDepartment = null;
+    let maxSize = 0;
+    
+    for (const department in departmentSizes) {
+        if (departmentSizes[department] > maxSize) {
+            maxSize = departmentSizes[department];
+     
