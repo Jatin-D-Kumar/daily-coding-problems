@@ -11,3 +11,15 @@ function findLongestEqualSubarray(arr) {
         } else {
             maxLength = Math.max(maxLength, currentLength); // Update maxLength if needed
             currentLength = 1; // Reset currentLength for the new element
+        }
+    }
+
+    // Final check to update maxLength in case the longest subarray is at the end
+    maxLength = Math.max(maxLength, currentLength);
+
+    return maxLength;
+}
+
+// Example usage:
+const arr = [1, 1, 0, 1, 1, 1, 0, 0, 1];
+console.log(findLongestEqualSubarray(arr)); // Output: 3
