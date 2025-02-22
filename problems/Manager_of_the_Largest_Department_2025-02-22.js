@@ -35,3 +35,8 @@ const employees = [
     { name: 'John', manager: 'Alice', department: 'Sales' },
     { name: 'Doe', manager: 'Alice', department: 'Sales' },
     { name: 'Jane', manager: 'Bob', department: 'Marketing' },
+    { name: 'Smith', manager: 'Bob', department: 'Marketing' },
+    { name: 'Mike', manager: 'Bob', department: 'Marketing' },
+];
+
+console.log(managerOfLargestDepartment(employees)); // Output: 'Bob'
