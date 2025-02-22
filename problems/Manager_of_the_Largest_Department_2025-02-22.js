@@ -31,3 +31,7 @@ function managerOfLargestDepartment(employees) {
 }
 
 // Example usage:
+const employees = [
+    { name: 'John', manager: 'Alice', department: 'Sales' },
+    { name: 'Doe', manager: 'Alice', department: 'Sales' },
+    { name: 'Jane', manager: 'Bob', department: 'Marketing' },
