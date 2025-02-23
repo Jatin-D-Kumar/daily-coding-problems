@@ -16,4 +16,12 @@ function minKeypresses(s) {
     // Iterate over the sorted frequencies and calculate keypresses
     for (let i = 0; i < frequencies.length; i++) {
         keypresses += frequencies[i] * pressesRequired;
-        pressesRequired = (pressesRequired % 9)
+        pressesRequired = (pressesRequired % 9) + 1; // Increment press count, reset after 9
+    }
+
+    return keypresses;
+}
+
+// Example usage:
+const input = "hello world";
+console.log(minKeypresses(input)); // Output: Minimum keypresses needed for the input string
