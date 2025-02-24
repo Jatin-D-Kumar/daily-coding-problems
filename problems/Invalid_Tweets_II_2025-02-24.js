@@ -21,4 +21,5 @@ function isValidTweet(tweet) {
 // Example usage
 const tweets = [
     "This is a valid tweet!",
-    "This tweet is too long .................
+    "This tweet is too long ........................................................................... (280 characters)",
+    "This is a spam message!"
