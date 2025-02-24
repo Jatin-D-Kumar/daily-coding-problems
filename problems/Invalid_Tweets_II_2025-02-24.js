@@ -18,4 +18,7 @@ function isValidTweet(tweet) {
     return true;
 }
 
-//
+// Example usage
+const tweets = [
+    "This is a valid tweet!",
+    "This tweet is too long .................
