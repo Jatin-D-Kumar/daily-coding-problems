@@ -5,4 +5,9 @@ function isValidTweet(tweet) {
 
     // Check length
     if (tweet.length > maxLength) {
-        re
+        return false;
+    }
+
+    // Check for inappropriate words
+    for (let word of inappropriateWords) {
+        
