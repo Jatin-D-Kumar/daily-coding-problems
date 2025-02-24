@@ -22,4 +22,9 @@ function isValidTweet(tweet) {
 const tweets = [
     "This is a valid tweet!",
     "This tweet is too long ........................................................................... (280 characters)",
-    "This is a spam message!"
+    "This is a spam message!",
+];
+
+tweets.forEach(tweet => {
+    console.log(`Tweet: "${tweet}" is valid: ${isValidTweet(tweet)}`);
+});
