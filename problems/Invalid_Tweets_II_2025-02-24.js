@@ -10,4 +10,12 @@ function isValidTweet(tweet) {
 
     // Check for inappropriate words
     for (let word of inappropriateWords) {
-        
+        if (tweet.toLowerCase().includes(word)) {
+            return false;
+        }
+    }
+
+    return true;
+}
+
+//
