@@ -13,4 +13,7 @@ function hasMoreOnesThanZeroes(s) {
         } else if (s[i] === '0') {
             countZeroes++;
             countOnes = 0; // reset one counter
-  
+        }
+
+        maxOnes = Math.max(maxOnes, countOnes);
+        maxZeroes = Math.max(maxZeroes, co
