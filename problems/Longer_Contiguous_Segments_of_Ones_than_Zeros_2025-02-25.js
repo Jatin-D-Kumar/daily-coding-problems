@@ -10,4 +10,7 @@ function hasMoreOnesThanZeroes(s) {
         if (s[i] === '1') {
             countOnes++;
             countZeroes = 0; // reset zero counter
-        } els
+        } else if (s[i] === '0') {
+            countZeroes++;
+            countOnes = 0; // reset one counter
+  
