@@ -23,4 +23,5 @@ function hasMoreOnesThanZeroes(s) {
 }
 
 // Example usage:
-console.log(hasMoreOnesThan
+console.log(hasMoreOnesThanZeroes("110011")); // Output: true
+console.log(hasMoreOnesThanZeroes("001100")); // Output: false
