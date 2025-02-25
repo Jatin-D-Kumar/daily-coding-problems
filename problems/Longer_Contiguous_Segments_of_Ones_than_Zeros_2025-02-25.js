@@ -7,4 +7,7 @@ function hasMoreOnesThanZeroes(s) {
     let countZeroes = 0;
     
     for (let i = 0; i < s.length; i++) {
-        if (s[i] =
+        if (s[i] === '1') {
+            countOnes++;
+            countZeroes = 0; // reset zero counter
+        } els
