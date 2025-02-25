@@ -16,4 +16,11 @@ function hasMoreOnesThanZeroes(s) {
         }
 
         maxOnes = Math.max(maxOnes, countOnes);
-        maxZeroes = Math.max(maxZeroes, co
+        maxZeroes = Math.max(maxZeroes, countZeroes);
+    }
+
+    return maxOnes > maxZeroes;
+}
+
+// Example usage:
+console.log(hasMoreOnesThan
