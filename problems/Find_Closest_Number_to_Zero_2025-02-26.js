@@ -9,4 +9,5 @@ function findClosestToZero(numbers) {
     for (let i = 1; i < numbers.length; i++) {
         const current = numbers[i];
 
-        // C
+        // Check if the current number is closer to zero
+        if (Math.abs(current) < Math.abs(clos
