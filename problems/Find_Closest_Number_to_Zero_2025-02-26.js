@@ -20,4 +20,5 @@ function findClosestToZero(numbers) {
 }
 
 // Example usage:
-cons
+const numbers = [-4, -1, 2, 3, 1];
+console.log(findClosestToZero(numbers)); // Output: 1
