@@ -6,4 +6,7 @@ function findClosestToZero(numbers) {
 
     let closest = numbers[0];
 
-    fo
+    for (let i = 1; i < numbers.length; i++) {
+        const current = numbers[i];
+
+        // C
