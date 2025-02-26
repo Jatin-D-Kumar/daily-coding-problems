@@ -10,4 +10,9 @@ function countPossibleRootNodes(edges) {
 
     // The total number of nodes is the number of unique parents plus unique children
     const allNodes = new Set();
-    for (con
+    for (const [parent, child] of edges) {
+        allNodes.add(parent);
+        allNodes.add(child);
+    }
+
+    // The possible root nodes are tho
