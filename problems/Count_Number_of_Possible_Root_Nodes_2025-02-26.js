@@ -29,3 +29,9 @@ function countPossibleRootNodes(edges) {
 // Example usage:
 const edges = [
     [1, 2],
+    [1, 3],
+    [3, 4],
+    [5, 6]
+];
+
+console.log(countPossibleRootNodes(edges)); // Output: 3 (nodes 1, 5, and 6 can be roots)
