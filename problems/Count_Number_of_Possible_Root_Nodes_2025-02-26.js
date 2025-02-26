@@ -15,4 +15,7 @@ function countPossibleRootNodes(edges) {
         allNodes.add(child);
     }
 
-    // The possible root nodes are tho
+    // The possible root nodes are those that are not in the childNodes set
+    let possibleRootCount = 0;
+    for (const node of allNodes) {
+        if (!childNodes.has(nod
