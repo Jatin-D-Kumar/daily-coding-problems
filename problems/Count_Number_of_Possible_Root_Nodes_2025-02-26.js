@@ -18,4 +18,14 @@ function countPossibleRootNodes(edges) {
     // The possible root nodes are those that are not in the childNodes set
     let possibleRootCount = 0;
     for (const node of allNodes) {
-        if (!childNodes.has(nod
+        if (!childNodes.has(node)) {
+            possibleRootCount++;
+        }
+    }
+
+    return possibleRootCount;
+}
+
+// Example usage:
+const edges = [
+    [1, 2],
