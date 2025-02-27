@@ -5,4 +5,13 @@ function buildEquation(num1, num2, operator) {
     // Check the operator and build the equation string accordingly
     switch (operator) {
         case '+':
-            equation = `${num1} + ${num2
+            equation = `${num1} + ${num2}`;
+            break;
+        case '-':
+            equation = `${num1} - ${num2}`;
+            break;
+        case '*':
+            equation = `${num1} * ${num2}`;
+            break;
+        case '/':
+            if (num
