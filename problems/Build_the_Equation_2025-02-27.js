@@ -30,4 +30,7 @@ function buildEquation(num1, num2, operator) {
 // Example usage:
 console.log(buildEquation(5, 3, '+')); // Output: "5 + 3"
 console.log(buildEquation(10, 2, '-')); // Output: "10 - 2"
-console.log(buildEquation(4, 5, '*')); // Output: "
+console.log(buildEquation(4, 5, '*')); // Output: "4 * 5"
+console.log(buildEquation(20, 4, '/')); // Output: "20 / 4"
+console.log(buildEquation(20, 0, '/')); // Output: "Error: Division by zero"
+console.log(buildEquation(10, 5, '%')); // Output: "Error: Invalid operator"
