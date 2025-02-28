@@ -9,4 +9,10 @@ function isPalindrome(num) {
     
     // Check characters from both ends towards the center
     while (left < right) {
-        if (str[left] !== st
+        if (str[left] !== str[right]) {
+            return false; // Not a palindrome
+        }
+        left++;
+        right--;
+    }
+    
