@@ -16,3 +16,9 @@ function isPalindrome(num) {
         right--;
     }
     
+    return true; // Is a palindrome
+}
+
+// Example usage:
+console.log(isPalindrome(121)); // true
+console.log(isP
