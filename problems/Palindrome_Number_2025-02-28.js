@@ -21,4 +21,6 @@ function isPalindrome(num) {
 
 // Example usage:
 console.log(isPalindrome(121)); // true
-console.log(isP
+console.log(isPalindrome(-121)); // false
+console.log(isPalindrome(10)); // false
+console.log(isPalindrome(12321)); // true
