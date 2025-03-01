@@ -24,4 +24,20 @@ function countPairsOfEqualSubstrings(s) {
         if (len > 1) {
             for (let i = 0; i < len - 1; i++) {
                 for (let j = i + 1; j < len; j++) {
-    
+                    // Only consider pairs with the minimum difference
+                    const difference = Math.abs(indices[i] - indices[j]);
+                    if (difference === 1) { // We can adjust the condition as needed
+                        count++;
+                    }
+                }
+            }
+        }
+    }
+
+    return count;
+}
+
+// Sample usage
+const inputString = "ababc";
+const result = countPairsOfEqualSubstrings(inputString);
+console.log(result);
