@@ -10,3 +10,18 @@ function countPairsOfEqualSubstrings(s) {
             if (!substringMap.has(substring)) {
                 substringMap.set(substring, []);
             }
+            substringMap.get(substring).push(start);
+        }
+    }
+
+    let count = 0;
+
+    // For each set of starting indices, calculate the pairs with minimum difference
+    for (const indices of substringMap.values()) {
+        const len = indices.length;
+        
+        // If there are two or more indices for this substring, count pairs
+        if (len > 1) {
+            for (let i = 0; i < len - 1; i++) {
+                for (let j = i + 1; j < len; j++) {
+    
