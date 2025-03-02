@@ -13,4 +13,9 @@ function findNthValueAfterKSeconds(startValue, increment, n, k) {
 }
 
 // Example usage:
-const startValue = 5; // Starting va
+const startValue = 5; // Starting value of the sequence
+const increment = 3;   // Increment value added each second
+const n = 4;          // We're interested in the 4th value
+const k = 5;          // After 5 seconds
+
+console.log(findNthValueAfterKSeconds(startValue, increment, n, k)); // Output: 26
