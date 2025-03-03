@@ -23,4 +23,19 @@ function maxHeightOfTriangle(points) {
                 // Calculate area
                 const A = area(x1, y1, x2, y2, x3, y3);
 
-                // Calculate he
+                // Calculate height (if base is not zero)
+                if (base > 0) {
+                    const height = (2 * A) / base;
+                    // Update maxHeight if this height is greater
+                    maxHeight = Math.max(maxHeight, height);
+                }
+            }
+        }
+    }
+
+    return maxHeight;
+}
+
+// Example usage:
+const points = [[0, 0], [4, 0], [2, 4], [1, 2]];
+console.log(maxHeightOfTriangle(points)); // Output the maximum height
