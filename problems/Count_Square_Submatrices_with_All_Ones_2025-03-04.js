@@ -12,4 +12,12 @@ function countSquareSubmatrices(matrix) {
     const dp = Array.from({ length: rows }, () => Array(cols).fill(0));
     
     // Fill the DP table
-    for (l
+    for (let r = 0; r < rows; r++) {
+        for (let c = 0; c < cols; c++) {
+            if (matrix[r][c] === 1) {
+                // If we're in the first row or first column, just copy the value
+                if (r === 0 || c === 0) {
+                    dp[r][c] = 1;
+                } else {
+                    // Update the DP value based on the minimum of the neighboring cells
+   
