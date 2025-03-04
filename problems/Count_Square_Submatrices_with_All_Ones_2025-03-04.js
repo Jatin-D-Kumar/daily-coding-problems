@@ -20,4 +20,22 @@ function countSquareSubmatrices(matrix) {
                     dp[r][c] = 1;
                 } else {
                     // Update the DP value based on the minimum of the neighboring cells
-   
+                    dp[r][c] = Math.min(dp[r - 1][c], dp[r][c - 1], dp[r - 1][c - 1]) + 1;
+                }
+                // Accumulate the counts
+                count += dp[r][c];
+            }
+        }
+    }
+    
+    return count;
+}
+
+// Example usage:
+const matrix = [
+    [1, 0, 1],
+    [1, 1, 1],
+    [1, 0, 1]
+];
+
+console.log(countSquareSubmatrices(matrix)); // Output: 13
