@@ -27,4 +27,14 @@ function maxCoinCollection(grid) {
     }
 
     // The maximum coins collected would be at the bottom-right corner
-    return dp[r
+    return dp[rows - 1][cols - 1];
+}
+
+// Example usage:
+const grid = [
+    [0, 2, 1],
+    [1, 3, 1],
+    [2, 1, 0],
+];
+
+console.log(maxCoinCollection(grid)); // Output: 7 (0 → 2 → 3 → 1 → 0)
