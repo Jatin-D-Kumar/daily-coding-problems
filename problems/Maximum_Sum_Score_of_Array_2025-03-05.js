@@ -20,4 +20,5 @@ function maxSumScore(arr) {
 
 // Example usage:
 const array = [-2, 1, -3, 4, -1, 2, 1, -5, 4];
-const res
+const result = maxSumScore(array);
+console.log(result); // Output: 6 (the maximum sum contiguous subarray is [4, -1, 2, 1])
