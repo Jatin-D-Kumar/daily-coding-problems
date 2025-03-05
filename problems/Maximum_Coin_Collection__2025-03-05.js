@@ -22,4 +22,9 @@ function maxCoinCollection(grid) {
     // Fill the rest of the dp array
     for (let i = 1; i < rows; i++) {
         for (let j = 1; j < cols; j++) {
- 
+            dp[i][j] = Math.max(dp[i - 1][j], dp[i][j - 1]) + grid[i][j];
+        }
+    }
+
+    // The maximum coins collected would be at the bottom-right corner
+    return dp[r
