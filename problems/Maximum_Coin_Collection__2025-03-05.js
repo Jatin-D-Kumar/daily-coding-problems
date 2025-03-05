@@ -15,4 +15,11 @@ function maxCoinCollection(grid) {
     }
 
     // Fill the first column (can only come from above)
-    for (let i = 1; i < rows; 
+    for (let i = 1; i < rows; i++) {
+        dp[i][0] = dp[i - 1][0] + grid[i][0];
+    }
+
+    // Fill the rest of the dp array
+    for (let i = 1; i < rows; i++) {
+        for (let j = 1; j < cols; j++) {
+ 
