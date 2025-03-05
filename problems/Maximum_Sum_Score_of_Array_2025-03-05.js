@@ -12,4 +12,12 @@ function maxSumScore(arr) {
         maxEndingHere = Math.max(arr[i], maxEndingHere + arr[i]);
 
         // Update maxSoFar if maxEndingHere is greater
-        maxSoFar = Math.max(maxSoFar, ma
+        maxSoFar = Math.max(maxSoFar, maxEndingHere);
+    }
+
+    return maxSoFar;
+}
+
+// Example usage:
+const array = [-2, 1, -3, 4, -1, 2, 1, -5, 4];
+const res
