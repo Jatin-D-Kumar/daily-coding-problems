@@ -9,4 +9,7 @@ function maxSumScore(arr) {
 
     for (let i = 1; i < arr.length; i++) {
         // Calculate maxEndingHere: either start a new subarray at arr[i] or continue the existing one
-        maxEndingHere = Math.max(arr[i], ma
+        maxEndingHere = Math.max(arr[i], maxEndingHere + arr[i]);
+
+        // Update maxSoFar if maxEndingHere is greater
+        maxSoFar = Math.max(maxSoFar, ma
