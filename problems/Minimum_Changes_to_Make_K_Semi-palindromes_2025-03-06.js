@@ -24,4 +24,15 @@ function minChangesToKSemiPalindromes(s, K) {
         for (let i = 1; i <= n; i++) {
             for (let k = 0; k < i; k++) {
                 const changes = semiPalindromeChanges(k, i - 1);
-           
+                dp[i][j] = Math.min(dp[i][j], dp[k][j - 1] + changes);
+            }
+        }
+    }
+
+    return dp[n][K] === Infinity ? -1 : dp[n][K];
+}
+
+// Example usage:
+const s = "ababa";
+const K = 2;
+console.log(minChangesToKSemiPalindromes(s, K)); // Output the minimum changes
