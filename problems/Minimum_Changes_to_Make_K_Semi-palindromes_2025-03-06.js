@@ -17,4 +17,11 @@ function minChangesToKSemiPalindromes(s, K) {
 
     // DP table
     const dp = Array.from({ length: n + 1 }, () => Array(K + 1).fill(Infinity));
-    dp[0][0] = 0; // Bas
+    dp[0][0] = 0; // Base case: 0 changes for 0 characters and 0 semi-palindromes
+
+    // Fill the DP table
+    for (let j = 1; j <= K; j++) {
+        for (let i = 1; i <= n; i++) {
+            for (let k = 0; k < i; k++) {
+                const changes = semiPalindromeChanges(k, i - 1);
+           
