@@ -21,4 +21,13 @@ function smallestSubarrays(arr) {
             // The length of the subarray is from i to j (inclusive)
             result[i] = j - i + 1; // +1 because j is exclusive
         } else {
-            result[i] = -1; // If not fou
+            result[i] = -1; // If not found, assign -1
+        }
+    }
+
+    return result;
+}
+
+// Example usage:
+const arr = [1, 2, 3];
+console.log(smallestSubarrays(arr)); // Output: [2, 1, 1]
