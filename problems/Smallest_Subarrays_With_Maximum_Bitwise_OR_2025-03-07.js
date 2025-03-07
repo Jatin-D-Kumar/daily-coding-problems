@@ -13,3 +13,9 @@ function smallestSubarrays(arr) {
 
         while (j < n && currentOr | arr[j] !== maxOr) {
             currentOr |= arr[j];
+            j++;
+        }
+
+        // Check if we've reached the maximum OR
+        if (currentOr | arr[j] === maxOr) {
+            // The length of the su
