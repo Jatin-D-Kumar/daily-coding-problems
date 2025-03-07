@@ -18,4 +18,7 @@ function smallestSubarrays(arr) {
 
         // Check if we've reached the maximum OR
         if (currentOr | arr[j] === maxOr) {
-            // The length of the su
+            // The length of the subarray is from i to j (inclusive)
+            result[i] = j - i + 1; // +1 because j is exclusive
+        } else {
+            result[i] = -1; // If not fou
