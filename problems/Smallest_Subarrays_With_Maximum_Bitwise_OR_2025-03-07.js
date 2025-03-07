@@ -7,4 +7,9 @@ function smallestSubarrays(arr) {
     const maxOr = arr.reduce((acc, curr) => acc | curr, 0);
     
     // Step 2: Find the smallest contiguous subarrays with max OR
-    for (let i
+    for (let i = 0; i < n; i++) {
+        let currentOr = 0;
+        let j = i;
+
+        while (j < n && currentOr | arr[j] !== maxOr) {
+            currentOr |= arr[j];
