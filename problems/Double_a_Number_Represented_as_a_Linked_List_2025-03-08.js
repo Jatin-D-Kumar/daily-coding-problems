@@ -1,3 +1,4 @@
 
 class ListNode {
-    constructor(value = 
+    constructor(value = 0, next = null) {
+   
