@@ -16,4 +16,16 @@ function findExtraCharacters(s, t) {
         } else {
             // If it is also in `t`, we can decrease the count
             charCount[char]--;
-            if (charCount[char] === 
+            if (charCount[char] === 0) {
+                delete charCount[char]; // Remove entry when count reaches zero to save space
+            }
+        }
+    }
+
+    return extraChars;
+}
+
+// Example usage:
+const s = "aabbccdde";
+const t = "abc";
+console.log(findExtraCharacters(s, t)); // Output: ['a', 'a', 'b', 'b', 'c', 'c', 'd', 'd', 'e']
