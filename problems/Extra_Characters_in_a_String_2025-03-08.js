@@ -9,4 +9,11 @@ function findExtraCharacters(s, t) {
     }
 
     // Check each character in the original string `s`
-  
+    for (const char of s) {
+        if (!charCount[char]) {
+            // If the character is not in `t`, it is an extra character
+            extraChars.push(char);
+        } else {
+            // If it is also in `t`, we can decrease the count
+            charCount[char]--;
+            if (charCount[char] === 
