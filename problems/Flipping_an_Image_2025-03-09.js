@@ -6,4 +6,9 @@ function flipAndInvertImage(image) {
         let left = 0;
         let right = image[i].length - 1;
         
-        
+        while (left <= right) {
+            // Swap the left and right elements
+            // and also invert their values
+            if (left === right) {
+                // If both pointers meet (odd-length row), just invert the middle element
+       
