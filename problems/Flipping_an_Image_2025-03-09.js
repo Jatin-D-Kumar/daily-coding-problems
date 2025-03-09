@@ -11,4 +11,11 @@ function flipAndInvertImage(image) {
             // and also invert their values
             if (left === right) {
                 // If both pointers meet (odd-length row), just invert the middle element
-       
+                image[i][left] = image[i][left] ^ 1; // Invert
+            } else {
+                // Swap and invert
+                [image[i][left], image[i][right]] = [image[i][right] ^ 1, image[i][left] ^ 1];
+            }
+
+            left++;
+     
