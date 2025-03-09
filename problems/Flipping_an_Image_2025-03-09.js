@@ -18,4 +18,20 @@ function flipAndInvertImage(image) {
             }
 
             left++;
-     
+            right--;
+        }
+    }
+
+    return image;
+}
+
+// Example usage:
+const image = [
+    [1, 1, 0],
+    [1, 0, 0],
+    [0, 0, 0]
+];
+
+const result = flipAndInvertImage(image);
+console.log(result);
+// Output: [[1, 0, 0], [0, 1, 1], [0, 0, 0]]
