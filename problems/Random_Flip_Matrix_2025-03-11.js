@@ -8,4 +8,10 @@ class RandomFlipMatrix {
     }
 
     flip() {
-        if (this.flipp
+        if (this.flippedCells.size === this.totalCells) {
+            throw new Error("All cells are already flipped.");
+        }
+
+        let randomIndex;
+        do {
+            randomIndex = Math.floor(Math.random() * thi
