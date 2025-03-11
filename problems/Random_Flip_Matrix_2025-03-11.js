@@ -14,4 +14,10 @@ class RandomFlipMatrix {
 
         let randomIndex;
         do {
-            randomIndex = Math.floor(Math.random() * thi
+            randomIndex = Math.floor(Math.random() * this.totalCells);
+        } while (this.flippedCells.has(randomIndex));
+
+        this.flippedCells.add(randomIndex);
+
+        const row = Math.floor(randomIndex / this.n);
+        const col = randomIndex % t
