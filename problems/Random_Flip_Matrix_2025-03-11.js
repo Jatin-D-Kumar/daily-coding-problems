@@ -32,4 +32,6 @@ class RandomFlipMatrix {
 
 // Example usage:
 const matrix = new RandomFlipMatrix(3, 3);
-console.log(matrix.flip()); // Randomly fli
+console.log(matrix.flip()); // Randomly flips a cell and returns its coordinates
+console.log(matrix.flip()); // Randomly flips another cell and returns its coordinates
+matrix.reset(); // Resets the matrix, allowing all cells to be flipped again
