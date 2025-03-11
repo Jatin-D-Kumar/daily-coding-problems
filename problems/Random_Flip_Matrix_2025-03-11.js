@@ -20,4 +20,16 @@ class RandomFlipMatrix {
         this.flippedCells.add(randomIndex);
 
         const row = Math.floor(randomIndex / this.n);
-        const col = randomIndex % t
+        const col = randomIndex % this.n;
+
+        return [row, col];
+    }
+
+    reset() {
+        this.flippedCells.clear();
+    }
+}
+
+// Example usage:
+const matrix = new RandomFlipMatrix(3, 3);
+console.log(matrix.flip()); // Randomly fli
