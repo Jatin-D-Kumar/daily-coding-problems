@@ -19,4 +19,9 @@ function maxTotalFruits(fruits, startPos, k) {
         const remainingSteps = k - stepsToLeft;
 
         // If we can reach this position and still collect fruits
-        i
+        if (remainingSteps >= 0) {
+            let totalFruits = 0;
+            for (let i = left; i <= right; i++) {
+                totalFruits += fruits[i][1];
+            }
+            maxFruits = Math.max(maxFruits
