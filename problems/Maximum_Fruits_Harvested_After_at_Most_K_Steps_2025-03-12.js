@@ -14,4 +14,9 @@ function maxTotalFruits(fruits, startPos, k) {
             right++;
         }
 
-        // Calculate the number of steps needed to
+        // Calculate the number of steps needed to reach the leftmost position
+        const stepsToLeft = Math.abs(startPos - minPos);
+        const remainingSteps = k - stepsToLeft;
+
+        // If we can reach this position and still collect fruits
+        i
