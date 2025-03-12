@@ -24,4 +24,15 @@ function maxTotalFruits(fruits, startPos, k) {
             for (let i = left; i <= right; i++) {
                 totalFruits += fruits[i][1];
             }
-            maxFruits = Math.max(maxFruits
+            maxFruits = Math.max(maxFruits, totalFruits);
+        }
+    }
+
+    return maxFruits;
+}
+
+// Example usage:
+const fruits = [[0,3],[6,4],[8,5]];
+const startPos = 3;
+const k = 2;
+console.log(maxTotalFruits(fruits, startPos, k)); // Output: 0
