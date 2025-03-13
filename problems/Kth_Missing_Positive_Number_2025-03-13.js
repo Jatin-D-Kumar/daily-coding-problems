@@ -10,4 +10,9 @@ function findKthPositive(arr, k) {
             arrIndex++;
         } else {
             // If current is missing, increase the missing count
-            miss
+            missingCount++;
+        }
+        current++; // Move to the next integer
+    }
+
+    // The last "current" increments one extra time when missingCount reaches k, so
