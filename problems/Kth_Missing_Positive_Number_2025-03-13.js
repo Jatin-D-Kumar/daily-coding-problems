@@ -6,4 +6,8 @@ function findKthPositive(arr, k) {
 
     while (missingCount < k) {
         if (arrIndex < arr.length && arr[arrIndex] === current) {
-            // If current is found in the 
+            // If current is found in the array, move to next element in array
+            arrIndex++;
+        } else {
+            // If current is missing, increase the missing count
+            miss
