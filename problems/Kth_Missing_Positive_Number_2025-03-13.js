@@ -15,4 +15,11 @@ function findKthPositive(arr, k) {
         current++; // Move to the next integer
     }
 
-    // The last "current" increments one extra time when missingCount reaches k, so
+    // The last "current" increments one extra time when missingCount reaches k, so return current - 1
+    return current - 1;
+}
+
+// Example usage:
+const arr = [2, 3, 4, 7, 11];
+const k = 5;
+console.log(findKthPositive(arr, k)); // Output: 9
