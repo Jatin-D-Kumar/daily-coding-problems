@@ -13,4 +13,6 @@ function findXorBeauty(arr) {
     return xorBeauty;
 }
 
-// Exampl
+// Example usage:
+const arr = [1, 2, 3];
+console.log(findXorBeauty(arr)); // Output: 6
