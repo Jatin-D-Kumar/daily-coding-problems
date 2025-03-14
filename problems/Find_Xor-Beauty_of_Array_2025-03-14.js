@@ -6,4 +6,11 @@ function findXorBeauty(arr) {
     // Loop through each unique pair
     for (let i = 0; i < n; i++) {
         for (let j = i + 1; j < n; j++) {
-            xorBeauty += arr[i] ^ arr[j]; // Calcul
+            xorBeauty += arr[i] ^ arr[j]; // Calculate XOR and add to the beauty
+        }
+    }
+
+    return xorBeauty;
+}
+
+// Exampl
