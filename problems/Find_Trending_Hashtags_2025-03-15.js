@@ -19,4 +19,12 @@ function findTrendingHashtags(hashtags, topN) {
     hashtagEntries.sort((a, b) => b[1] - a[1]);
 
     // Extract the top N trending hashtags
-    const trending
+    const trendingHashtags = hashtagEntries.slice(0, topN).map(entry => entry[0]);
+
+    return trendingHashtags;
+}
+
+// Example usage:
+const hashtags = [
+    "#javascript", "#coding", "#javascript", "#webdev", 
+    "#coding", "#javascript", "
