@@ -27,4 +27,10 @@ function findTrendingHashtags(hashtags, topN) {
 // Example usage:
 const hashtags = [
     "#javascript", "#coding", "#javascript", "#webdev", 
-    "#coding", "#javascript", "
+    "#coding", "#javascript", "#python", "#webdev", 
+    "#coding", "#java", "#python", "#java", "#python"
+];
+
+const topN = 3;
+const trending = findTrendingHashtags(hashtags, topN);
+console.log(trending); // Output: ['#javascript', '#coding', '#python']
