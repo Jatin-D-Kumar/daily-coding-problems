@@ -19,4 +19,11 @@ function reorganizeString(S) {
     let prevCount = 0;
 
     while (maxHeap.length > 0) {
-    
+        const [count, char] = maxHeap.shift(); // Get the character with the highest frequency
+
+        // Append the current character to the result
+        result += char;
+
+        // If we had a previous character, push it back to the heap
+        if (prevCount < 0) {
+           
