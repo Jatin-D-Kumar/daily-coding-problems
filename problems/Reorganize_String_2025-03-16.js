@@ -26,4 +26,13 @@ function reorganizeString(S) {
 
         // If we had a previous character, push it back to the heap
         if (prevCount < 0) {
-           
+            maxHeap.push([prevCount, prevChar]);
+            maxHeap.sort(); // Re-sort after adding back
+        }
+
+        // Update the count of the current character
+        prevChar = char;
+        prevCount = count + 1; // Decrease the count
+    }
+
+    // If the result length is not 
