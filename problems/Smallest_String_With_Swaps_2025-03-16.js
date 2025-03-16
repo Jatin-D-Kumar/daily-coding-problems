@@ -51,4 +51,18 @@ function smallestStringWithSwaps(s, pairs) {
     const result = Array.from(s);
 
     // Sort characters in each group and place them back in the result
-    for (c
+    for (const indices of Object.values(groups)) {
+        const chars = indices.map(i => s[i]).sort();
+        indices.sort((a, b) => a - b); // Sort indices to place characters back in order
+        for (let j = 0; j < indices.length; j++) {
+            result[indices[j]] = chars[j];
+        }
+    }
+
+    return result.join('');
+}
+
+// Example usage:
+const s = "dcab";
+const pairs = [[0, 3], [1, 2]];
+console.log(smallestStringWithSwaps(s, pairs)); // Output: "abcd"
