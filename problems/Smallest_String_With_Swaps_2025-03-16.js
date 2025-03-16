@@ -17,3 +17,20 @@ class UnionFind {
         const rootY = this.find(y);
         
         if (rootX !== rootY) {
+            if (this.rank[rootX] > this.rank[rootY]) {
+                this.parent[rootY] = rootX;
+            } else if (this.rank[rootX] < this.rank[rootY]) {
+                this.parent[rootX] = rootY;
+            } else {
+                this.parent[rootY] = rootX;
+                this.rank[rootX]++;
+            }
+        }
+    }
+}
+
+function smallestStringWithSwaps(s, pairs) {
+    const uf = new UnionFind(s.length);
+
+    // Union the pairs
+    for (con
