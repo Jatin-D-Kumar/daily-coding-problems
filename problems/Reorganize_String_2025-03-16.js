@@ -35,4 +35,10 @@ function reorganizeString(S) {
         prevCount = count + 1; // Decrease the count
     }
 
-    // If the result length is not 
+    // If the result length is not equal to the original string, return an empty string
+    return result.length === S.length ? result : '';
+}
+
+// Example usage:
+console.log(reorganizeString("aabbcc")); // Output could be "abcabc" or any valid rearrangement
+console.log(reorganizeString("aaab"));    // Output: ""
