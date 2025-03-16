@@ -33,4 +33,22 @@ function smallestStringWithSwaps(s, pairs) {
     const uf = new UnionFind(s.length);
 
     // Union the pairs
-    for (con
+    for (const [x, y] of pairs) {
+        uf.union(x, y);
+    }
+
+    // Group characters by their root parent
+    const groups = {};
+    for (let i = 0; i < s.length; i++) {
+        const root = uf.find(i);
+        if (!groups[root]) {
+            groups[root] = [];
+        }
+        groups[root].push(i);
+    }
+
+    // Create an array to hold the result
+    const result = Array.from(s);
+
+    // Sort characters in each group and place them back in the result
+    for (c
