@@ -20,4 +20,12 @@ function validMountainArray(arr) {
         i++;
     }
 
-    // If we reached the end of the array, it's a valid mountain arr
+    // If we reached the end of the array, it's a valid mountain array
+    return i === n - 1;
+}
+
+// Example usage:
+console.log(validMountainArray([2, 1])); // false
+console.log(validMountainArray([3, 5, 5])); // false
+console.log(validMountainArray([0, 3, 2, 1])); // true
+console.log(validMountainArray([0, 2, 3, 4, 5, 2, 1, 0])); // true
