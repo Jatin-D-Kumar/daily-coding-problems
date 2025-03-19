@@ -19,4 +19,15 @@ function longestWPI(hours) {
     }
 
     // Now we will find the longest interval
-    for (let i 
+    for (let i = n; i >= 0; i--) {
+        while (stack.length > 0 && prefixSum[i] > prefixSum[stack[stack.length - 1]]) {
+            maxLength = Math.max(maxLength, i - stack.pop());
+        }
+    }
+
+    return maxLength;
+}
+
+// Example usage:
+const hours = [9, 9, 6, 0, 6, 6, 9];
+console.log(longestWPI(hours)); // Output: 3
