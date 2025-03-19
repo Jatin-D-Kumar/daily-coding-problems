@@ -13,4 +13,13 @@ function searchMatrix(matrix, target) {
         let mid = Math.floor((left + right) / 2);
         let midValue = matrix[Math.floor(mid / cols)][mid % cols];
 
-  
+        if (midValue === target) {
+            return true;
+        } else if (midValue < target) {
+            left = mid + 1;
+        } else {
+            right = mid - 1;
+        }
+    }
+
+    re
