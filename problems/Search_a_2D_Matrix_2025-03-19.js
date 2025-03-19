@@ -6,4 +6,11 @@ function searchMatrix(matrix, target) {
 
     let rows = matrix.length;
     let cols = matrix[0].length;
-    l
+    let left = 0;
+    let right = rows * cols - 1;
+
+    while (left <= right) {
+        let mid = Math.floor((left + right) / 2);
+        let midValue = matrix[Math.floor(mid / cols)][mid % cols];
+
+  
