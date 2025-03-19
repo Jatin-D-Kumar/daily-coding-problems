@@ -9,4 +9,14 @@ function longestWPI(hours) {
     }
 
     const stack = [];
-  
+    let maxLength = 0;
+
+    // Use a stack to find the longest well-performing interval
+    for (let i = 0; i <= n; i++) {
+        if (stack.length === 0 || prefixSum[i] < prefixSum[stack[stack.length - 1]]) {
+            stack.push(i);
+        }
+    }
+
+    // Now we will find the longest interval
+    for (let i 
