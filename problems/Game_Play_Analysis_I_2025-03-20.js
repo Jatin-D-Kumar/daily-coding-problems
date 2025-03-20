@@ -8,4 +8,9 @@ function countPlayersAboveTarget(scores, target) {
         }
     }
 
-    return count;  // Return the total count of players who m
+    return count;  // Return the total count of players who met or exceeded the target
+}
+
+// Example usage
+const scores = [100, 150, 200, 250];
+con
