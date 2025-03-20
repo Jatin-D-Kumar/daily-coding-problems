@@ -13,4 +13,5 @@ function countPlayersAboveTarget(scores, target) {
 
 // Example usage
 const scores = [100, 150, 200, 250];
-con
+const target = 150;
+console.log(countPlayersAboveTarget(scores, target)); // Output: 3
