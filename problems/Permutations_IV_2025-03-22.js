@@ -18,4 +18,13 @@ function backtrack(nums, path, used, results) {
         
         used[i] = true; // Mark the element as used
         path.push(nums[i]); // Add the element to the current path
-        backtrack(nu
+        backtrack(nums, path, used, results); // Recur
+        path.pop(); // Backtrack
+        used[i] = false; // Unmark the element
+    }
+}
+
+// Example usage:
+const nums = [1, 1, 2];
+const uniquePermutations = permuteUnique(nums);
+console.log(uniquePermutations);
