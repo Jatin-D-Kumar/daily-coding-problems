@@ -6,4 +6,11 @@ function permuteUnique(nums) {
     return results;
 }
 
-function backtrack(nums, path, u
+function backtrack(nums, path, used, results) {
+    if (path.length === nums.length) {
+        results.push([...path]); // Add a copy of the current path to results
+        return;
+    }
+    
+    for (let i = 0; i < nums.length; i++) {
+        if (used[i]) continue; // Skip used 
