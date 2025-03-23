@@ -7,4 +7,9 @@ function isRightTriangle(a, b, c) {
     const [side1, side2, hypotenuse] = sides;
 
     // Check the Pythagorean theorem
-    return (side1 * side1 + side2 * side2) === (hypotenuse * hy
+    return (side1 * side1 + side2 * side2) === (hypotenuse * hypotenuse);
+}
+
+// Example usage:
+console.log(isRightTriangle(3, 4, 5)); // true
+console.log(isRightTriangle(5, 12, 
