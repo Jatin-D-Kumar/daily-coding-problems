@@ -12,4 +12,6 @@ function isRightTriangle(a, b, c) {
 
 // Example usage:
 console.log(isRightTriangle(3, 4, 5)); // true
-console.log(isRightTriangle(5, 12, 
+console.log(isRightTriangle(5, 12, 13)); // true
+console.log(isRightTriangle(1, 1, 1)); // false
+console.log(isRightTriangle(8, 15, 17)); // true
