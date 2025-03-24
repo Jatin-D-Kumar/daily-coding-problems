@@ -42,4 +42,12 @@ var flatten = function(root) {
 //  3   4   6
 const root = new TreeNode(1);
 root.left = new TreeNode(2);
-root.right = ne
+root.right = new TreeNode(5);
+root.left.left = new TreeNode(3);
+root.left.right = new TreeNode(4);
+root.right.right = new TreeNode(6);
+
+// Flatten the binary tree
+flatten(root);
+
+// Function to print the f
