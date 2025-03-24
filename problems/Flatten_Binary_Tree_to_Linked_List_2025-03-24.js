@@ -50,4 +50,13 @@ root.right.right = new TreeNode(6);
 // Flatten the binary tree
 flatten(root);
 
-// Function to print the f
+// Function to print the flattened linked list
+const printLinkedList = (node) => {
+    while (node) {
+        console.log(node.val);
+        node = node.right;
+    }
+};
+
+// Print the result
+printLinkedList(root);
