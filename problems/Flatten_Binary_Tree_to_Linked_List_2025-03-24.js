@@ -17,4 +17,10 @@ var flatten = function(root) {
     // Store the right subtree
     const rightSubtree = root.right;
 
-    
+    // Set the right child to the left subtree
+    root.right = root.left;
+
+    // Set the left child to null
+    root.left = null;
+
+    // Move to the end of the new right subtree to attach the
