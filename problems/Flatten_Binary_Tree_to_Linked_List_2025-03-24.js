@@ -31,3 +31,15 @@ var flatten = function(root) {
 
     // Attach the original right subtree
     current.right = rightSubtree;
+};
+
+// Example usage:
+// Constructing the binary tree:
+//      1
+//     / \
+//    2   5
+//   / \   \
+//  3   4   6
+const root = new TreeNode(1);
+root.left = new TreeNode(2);
+root.right = ne
