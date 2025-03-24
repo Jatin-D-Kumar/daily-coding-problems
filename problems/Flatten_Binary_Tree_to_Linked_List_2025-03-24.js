@@ -23,4 +23,11 @@ var flatten = function(root) {
     // Set the left child to null
     root.left = null;
 
-    // Move to the end of the new right subtree to attach the
+    // Move to the end of the new right subtree to attach the original right subtree
+    let current = root;
+    while (current.right) {
+        current = current.right;
+    }
+
+    // Attach the original right subtree
+    current.right = rightSubtree;
