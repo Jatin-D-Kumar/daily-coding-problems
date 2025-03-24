@@ -8,3 +8,13 @@ class TreeNode {
 }
 
 var flatten = function(root) {
+    if (!root) return;
+
+    // Flatten left and right subtrees
+    flatten(root.left);
+    flatten(root.right);
+    
+    // Store the right subtree
+    const rightSubtree = root.right;
+
+    
