@@ -25,4 +25,24 @@ function calculateTaskDurations(tasks) {
                    (new Date(startTime).getTime() < existingEndTime && new Date(startTime).getTime() >= new Date(existingTask.startTime).getTime());
         });
 
-        i
+        if (isConcurrent) {
+            taskDurations[employeeId].concurrentTasks += 1;
+        }
+
+        // Store the task details
+        taskDurations[employeeId].taskDetails.push({ duration, startTime });
+    });
+
+    return taskDurations;
+}
+
+// Example usage:
+const tasks = [
+    { employeeId: 1, duration: 30, startTime: '2023-10-01T09:00:00Z' },
+    { employeeId: 1, duration: 45, startTime: '2023-10-01T09:15:00Z' },
+    { employeeId: 2, duration: 60, startTime: '2023-10-01T10:00:00Z' },
+    { employeeId: 1, duration: 20, startTime: '2023-10-01T10:30:00Z' },
+];
+
+const result = calculateTaskDurations(tasks);
+console.log(result);
