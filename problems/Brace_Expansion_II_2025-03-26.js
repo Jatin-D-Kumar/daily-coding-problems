@@ -14,4 +14,10 @@ function braceExpansionII(expression) {
                     currentStr = '';
                 }
                 let j = i + 1, braceCount = 1;
-                while (braceCoun
+                while (braceCount > 0) {
+                    if (expr[j] === '{') braceCount++;
+                    if (expr[j] === '}') braceCount--;
+                    j++;
+                }
+                const innerSet = parseExpression(expr.slice(i + 1, j - 1));
+                stack.push(currentS
