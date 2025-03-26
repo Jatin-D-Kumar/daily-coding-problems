@@ -20,4 +20,12 @@ function braceExpansionII(expression) {
                     j++;
                 }
                 const innerSet = parseExpression(expr.slice(i + 1, j - 1));
-                stack.push(currentS
+                stack.push(currentSet);
+                currentSet = innerSet;
+                i = j;
+            } else if (expr[i] === ',') {
+                if (currentStr) currentSet.add(currentStr);
+                currentStr = '';
+                i++;
+            } else {
+                currentStr +=
