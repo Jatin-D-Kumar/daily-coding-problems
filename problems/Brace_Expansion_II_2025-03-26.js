@@ -51,4 +51,11 @@ function braceExpansionII(expression) {
     }
 
     const resultSet = parseExpression(expression);
-    con
+    const resultArray = Array.from(resultSet).sort();
+    
+    return resultArray;
+}
+
+// Example usage:
+console.log(braceExpansionII("{a,b}{c,{d,e}}")); // ["ac", "ad", "ae", "bc", "bd", "be"]
+console.log(braceExpansionII("{{a,z},a{b,c},{ab,z}}")); // ["ab", "a", "a", "z", "z"]
