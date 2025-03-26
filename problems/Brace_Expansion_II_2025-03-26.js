@@ -28,4 +28,15 @@ function braceExpansionII(expression) {
                 currentStr = '';
                 i++;
             } else {
-                currentStr +=
+                currentStr += expr[i];
+                i++;
+            }
+        }
+
+        if (currentStr) currentSet.add(currentStr);
+
+        // Combine with the previous sets
+        let resultSet = new Set();
+        for (const str of currentSet) {
+            if (stack.length) {
+               
