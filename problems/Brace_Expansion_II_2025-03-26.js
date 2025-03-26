@@ -7,4 +7,11 @@ function braceExpansionII(expression) {
         let currentStr = '';
         let i = 0;
 
-        whil
+        while (i < expr.length) {
+            if (expr[i] === '{') {
+                if (currentStr) {
+                    currentSet.add(currentStr);
+                    currentStr = '';
+                }
+                let j = i + 1, braceCount = 1;
+                while (braceCoun
