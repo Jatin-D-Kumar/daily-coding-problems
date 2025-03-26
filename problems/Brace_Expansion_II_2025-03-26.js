@@ -39,4 +39,16 @@ function braceExpansionII(expression) {
         let resultSet = new Set();
         for (const str of currentSet) {
             if (stack.length) {
-               
+                for (const prev of stack.pop()) {
+                    resultSet.add(prev + str);
+                }
+            } else {
+                resultSet.add(str);
+            }
+        }
+
+        return resultSet;
+    }
+
+    const resultSet = parseExpression(expression);
+    con
