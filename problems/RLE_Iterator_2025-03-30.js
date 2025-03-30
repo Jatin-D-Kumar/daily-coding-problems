@@ -16,4 +16,10 @@ class RLEIterator {
 
             // If n is less than or equal to the remaining count
             if (n <= this.count) {
- 
+                this.count -= n; // Decrease the count by n
+                return this.A[this.index - 1]; // Return the current value
+            }
+
+            // If n is greater than the remaining count
+            n -= this.count; // Decrease n by the remaining count
+            this.count = 0; // Reset count for the next valu
