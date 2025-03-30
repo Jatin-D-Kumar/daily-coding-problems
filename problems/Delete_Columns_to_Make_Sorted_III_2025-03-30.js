@@ -23,4 +23,10 @@ var minDeletionSize = function(strs) {
         dp[j + 1] = Math.max(dp[j], lis[j]);
     }
     
-    // The number of columns to dele
+    // The number of columns to delete is total columns minus the largest increasing subsequence
+    return m - dp[m];
+};
+
+// Example Usage
+const strs = ["babca", "bbazb"];
+console.log(minDeletionSize(strs)); // Output: 3
