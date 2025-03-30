@@ -10,4 +10,10 @@ var minDeletionSize = function(strs) {
     for (let j = 0; j < m; j++) {
         for (let k = 0; k < j; k++) {
             let isValid = true;
-   
+            for (let i = 0; i < n; i++) {
+                if (strs[i][k] > strs[i][j]) {
+                    isValid = false;
+                    break;
+                }
+            }
+        
