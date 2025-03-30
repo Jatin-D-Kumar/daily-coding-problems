@@ -16,4 +16,11 @@ var minDeletionSize = function(strs) {
                     break;
                 }
             }
-        
+            if (isValid) {
+                lis[j] = Math.max(lis[j], lis[k] + 1);
+            }
+        }
+        dp[j + 1] = Math.max(dp[j], lis[j]);
+    }
+    
+    // The number of columns to dele
