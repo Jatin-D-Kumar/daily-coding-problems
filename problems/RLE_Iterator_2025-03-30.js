@@ -22,4 +22,16 @@ class RLEIterator {
 
             // If n is greater than the remaining count
             n -= this.count; // Decrease n by the remaining count
-            this.count = 0; // Reset count for the next valu
+            this.count = 0; // Reset count for the next value
+        }
+
+        return -1; // If we run out of values, return -1
+    }
+}
+
+// Example usage:
+const iterator = new RLEIterator([3, 8, 0, 9, 2, 5]);
+console.log(iterator.next(2)); // Output: 8
+console.log(iterator.next(1)); // Output: 8
+console.log(iterator.next(1)); // Output: 5
+console.log(iterator.next(2)); // Output: -1
