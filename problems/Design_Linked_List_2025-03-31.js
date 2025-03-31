@@ -67,4 +67,14 @@ class MyLinkedList {
             return; // Do nothing if index is invalid
         }
         if (index === 0) {
-            this.he
+            this.head = this.head.next; // If head needs to be deleted
+        } else {
+            let current = this.head;
+            for (let i = 0; i < index - 1; i++) {
+                current = current.next; // Traverse to the (index-1)-th node
+            }
+            current.next = current.next.next; // Bypass the deleted node
+        }
+        this.size--; // Decrement size of linked list
+    }
+}
