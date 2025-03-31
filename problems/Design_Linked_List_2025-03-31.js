@@ -33,4 +33,16 @@ class MyLinkedList {
     addAtTail(val) {
         const newNode = new ListNode(val);  // Create a new node with the given value
         if (this.size === 0) {
-            this.head = newNode;             // If list is empty, head i
+            this.head = newNode;             // If list is empty, head is new node
+        } else {
+            let current = this.head;
+            while (current.next) {
+                current = current.next;      // Traverse to the last node
+            }
+            current.next = newNode;          // Append the new node at the end
+        }
+        this.size++;                         // Increment size of linked list
+    }
+
+    addAtIndex(index, val) {
+     
