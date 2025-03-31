@@ -14,4 +14,15 @@ class MyLinkedList {
 
     get(index) {
         if (index < 0 || index >= this.size) {
-            return -1; // Return -1 if the index is inva
+            return -1; // Return -1 if the index is invalid
+        }
+        let current = this.head;
+        for (let i = 0; i < index; i++) {
+            current = current.next; // Traverse to the index-th node
+        }
+        return current.val; // Return the value at the specified index
+    }
+
+    addAtHead(val) {
+        const newNode = new ListNode(val); // Create a new node with the given value
+        newNode.next = this.head;           
