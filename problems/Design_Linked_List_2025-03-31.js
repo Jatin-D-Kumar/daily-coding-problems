@@ -45,4 +45,13 @@ class MyLinkedList {
     }
 
     addAtIndex(index, val) {
-     
+        if (index < 0 || index > this.size) {
+            return; // Do nothing if index is invalid
+        }
+        if (index === 0) {
+            this.addAtHead(val); // If index is 0, add at head
+        } else {
+            const newNode = new ListNode(val);
+            let current = this.head;
+            for (let i = 0; i < index - 1; i++) {
+                current = current.next; // Travers
