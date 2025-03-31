@@ -54,4 +54,17 @@ class MyLinkedList {
             const newNode = new ListNode(val);
             let current = this.head;
             for (let i = 0; i < index - 1; i++) {
-                current = current.next; // Travers
+                current = current.next; // Traverse to the (index-1)-th node
+            }
+            newNode.next = current.next; // Insert new node
+            current.next = newNode;
+            this.size++; // Increment size of linked list
+        }
+    }
+
+    deleteAtIndex(index) {
+        if (index < 0 || index >= this.size) {
+            return; // Do nothing if index is invalid
+        }
+        if (index === 0) {
+            this.he
