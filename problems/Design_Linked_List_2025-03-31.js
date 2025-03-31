@@ -25,4 +25,12 @@ class MyLinkedList {
 
     addAtHead(val) {
         const newNode = new ListNode(val); // Create a new node with the given value
-        newNode.next = this.head;           
+        newNode.next = this.head;           // Point new node next to head
+        this.head = newNode;                // Update head to new node
+        this.size++;                        // Increment size of linked list
+    }
+
+    addAtTail(val) {
+        const newNode = new ListNode(val);  // Create a new node with the given value
+        if (this.size === 0) {
+            this.head = newNode;             // If list is empty, head i
