@@ -9,4 +9,14 @@ function minMountainTripletSum(arr) {
         // Treat arr[i] as the peak
         let peak = arr[i];
         
-        // Find the left minimum (
+        // Find the left minimum (less than peak)
+        let leftMin = Infinity;
+        for (let j = 0; j < i; j++) {
+            if (arr[j] < peak) {
+                leftMin = Math.min(leftMin, arr[j]);
+            }
+        }
+        
+        // Find the right minimum (greater than peak)
+        let rightMin = Infinity;
+        for (l
