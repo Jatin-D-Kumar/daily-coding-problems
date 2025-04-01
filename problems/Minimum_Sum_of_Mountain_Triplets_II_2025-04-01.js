@@ -27,4 +27,14 @@ function minMountainTripletSum(arr) {
         
         // If both left and right mins were found, check the sum
         if (leftMin !== Infinity && rightMin !== Infinity) {
-            let currentSum = le
+            let currentSum = leftMin + peak + rightMin;
+            minSum = Math.min(minSum, currentSum);
+        }
+    }
+    
+    return minSum === Infinity ? -1 : minSum; // Return -1 if no triplets found
+}
+
+// Example usage:
+const arr = [1, 2, 3, 4, 5, 6];
+console.log(minMountainTripletSum(arr)); // Replace arr with your test case
