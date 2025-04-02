@@ -15,3 +15,5 @@ function maxPointsAfterBattles(battles) {
 
 // Example usage:
 const battles = [5, -3, 7, -10, 12];
+const result = maxPointsAfterBattles(battles);
+console.log(result); // Output: maximum points after battles
