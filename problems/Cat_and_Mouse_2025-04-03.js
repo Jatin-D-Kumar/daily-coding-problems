@@ -12,4 +12,8 @@ function catAndMouse(catA, catB, mouse) {
     }
 }
 
-// Exam
+// Example usage:
+console.log(catAndMouse(1, 2, 3)); // Outputs: "Cat B"
+console.log(catAndMouse(1, 3, 2)); // Outputs: "Cat A"
+console.log(catAndMouse(1, 2, 1)); // Outputs: "Cat A"
+console.log(catAndMouse(2, 3, 1)); // Outputs: "Mouse escapes"
