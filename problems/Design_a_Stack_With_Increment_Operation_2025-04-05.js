@@ -13,4 +13,12 @@ class CustomStack {
     }
 
     pop() {
-        if (th
+        if (this.stack.length === 0) {
+            return -1;
+        }
+        const index = this.stack.length - 1;
+        const value = this.stack.pop() + this.increment[index]; // Add the increment
+        if (index > 0) {
+            this.increment[index - 1] += this.increment[index]; // Carry over increment
+        }
+        th
