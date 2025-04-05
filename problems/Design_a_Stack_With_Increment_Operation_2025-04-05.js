@@ -21,4 +21,11 @@ class CustomStack {
         if (index > 0) {
             this.increment[index - 1] += this.increment[index]; // Carry over increment
         }
-        th
+        this.increment[index] = 0; // Reset the increment for the popped element
+        return value;
+    }
+
+    increment(k, val) {
+        const effectiveK = Math.min(k, this.stack.length); // Only increment the available elements
+        if (effectiveK > 0) {
+            this.increment[effectiveK - 1] += val; // Increment the
