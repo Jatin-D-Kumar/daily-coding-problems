@@ -40,4 +40,9 @@ stack.push(2);          // Stack: [1, 2]
 console.log(stack.pop()); // Returns 2, Stack: [1]
 stack.push(2);          // Stack: [1, 2]
 stack.push(3);          // Stack: [1, 2, 3]
-stack.push(4);        
+stack.push(4);          // Stack: [1, 2, 3], no change as max size is 3
+stack.increment(5, 100); // Stack: [101, 102, 103]
+console.log(stack.pop()); // Returns 103, Stack: [101, 102]
+console.log(stack.pop()); // Returns 102, Stack: [101]
+console.log(stack.pop()); // Returns 101, Stack: []
+console.log(stack.pop()); // Returns -1, Stack: []
