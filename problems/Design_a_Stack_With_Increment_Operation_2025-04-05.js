@@ -28,4 +28,16 @@ class CustomStack {
     increment(k, val) {
         const effectiveK = Math.min(k, this.stack.length); // Only increment the available elements
         if (effectiveK > 0) {
-            this.increment[effectiveK - 1] += val; // Increment the
+            this.increment[effectiveK - 1] += val; // Increment the right index
+        }
+    }
+}
+
+// Example usage:
+const stack = new CustomStack(3);
+stack.push(1);          // Stack: [1]
+stack.push(2);          // Stack: [1, 2]
+console.log(stack.pop()); // Returns 2, Stack: [1]
+stack.push(2);          // Stack: [1, 2]
+stack.push(3);          // Stack: [1, 2, 3]
+stack.push(4);        
