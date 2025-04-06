@@ -8,4 +8,8 @@ function divideIntoIncreasingSequences(arr) {
     for (let i = 1; i < arr.length; i++) {
         const num = arr[i];
 
-        // Check if the current number can be added to the last seque
+        // Check if the current number can be added to the last sequence
+        if (num > currentSequence[currentSequence.length - 1]) {
+            currentSequence.push(num);
+        } else {
+            // If 
