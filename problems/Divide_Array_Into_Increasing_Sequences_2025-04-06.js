@@ -25,4 +25,6 @@ function divideIntoIncreasingSequences(arr) {
 }
 
 // Example usage:
-const
+const inputArray = [1, 2, 3, 2, 5];
+const result = divideIntoIncreasingSequences(inputArray);
+console.log(result); // Output: [[1, 2, 3], [2, 5]]
