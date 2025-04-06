@@ -12,4 +12,6 @@ function divideIntoIncreasingSequences(arr) {
         if (num > currentSequence[currentSequence.length - 1]) {
             currentSequence.push(num);
         } else {
-            // If 
+            // If not, push the current sequence to the result and start a new one
+            result.push(currentSequence);
+            currentSequence = [num];
