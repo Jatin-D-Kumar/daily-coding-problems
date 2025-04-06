@@ -15,3 +15,14 @@ function divideIntoIncreasingSequences(arr) {
             // If not, push the current sequence to the result and start a new one
             result.push(currentSequence);
             currentSequence = [num];
+        }
+    }
+
+    // Don't forget to add the last sequence
+    result.push(currentSequence);
+
+    return result;
+}
+
+// Example usage:
+const
