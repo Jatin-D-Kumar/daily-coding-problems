@@ -13,4 +13,11 @@ function maxTransactionsPerDay(transactions) {
         transactionDates[date]++;
     });
 
-    // Finding the maximum tr
+    // Finding the maximum transactions in a single day
+    const maxTransactions = Math.max(...Object.values(transactionDates));
+    
+    return maxTransactions;
+}
+
+// Example usage
+const transac
