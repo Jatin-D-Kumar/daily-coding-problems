@@ -20,4 +20,10 @@ function maxTransactionsPerDay(transactions) {
 }
 
 // Example usage
-const transac
+const transactions = [
+    '2025-04-01T10:00:00Z',
+    '2025-04-01T12:30:00Z',
+    '2025-04-01T15:00:00Z',
+    '2025-04-02T09:00:00Z',
+    '2025-04-02T11:00:00Z',
+    '2025-04-03T1
