@@ -1,2 +1,2 @@
 
-Input: J =
+Input: J = "aA", S = 
