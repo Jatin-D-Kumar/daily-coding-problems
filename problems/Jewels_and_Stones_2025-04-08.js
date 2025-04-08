@@ -1,2 +1,3 @@
 
-Input: J = "aA", S = 
+Input: J = "aA", S = "aAAbbbb"
+O
