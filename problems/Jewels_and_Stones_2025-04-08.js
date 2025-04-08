@@ -1,3 +1,3 @@
 
 Input: J = "aA", S = "aAAbbbb"
-O
+Output: 3
