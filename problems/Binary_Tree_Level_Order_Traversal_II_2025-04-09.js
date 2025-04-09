@@ -9,4 +9,6 @@ function levelOrderBottom(root) {
         const levelSize = queue.length;
         const currentLevel = [];
 
-        for (
+        for (let i = 0; i < levelSize; i++) {
+            const node = queue.shift();
+            currentLevel.push(node.val);
