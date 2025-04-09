@@ -16,3 +16,9 @@ function levelOrderBottom(root) {
             if (node.left) queue.push(node.left);
             if (node.right) queue.push(node.right);
         }
+
+        result.unshift(currentLevel); // Add the current level at the beginning
+    }
+
+    return result;
+}
