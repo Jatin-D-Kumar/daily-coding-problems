@@ -18,4 +18,14 @@ function rearrangeSpaces(text) {
     // Create the space string
     const spaceString = ' '.repeat(spaceBetweenWords);
     
-    // Jo
+    // Join the words with the calculated spaces
+    const result = words.join(spaceString);
+    
+    // Add any extra spaces at the beginning
+    return ' '.repeat(extraSpaces) + result;
+}
+
+// Example usage:
+const text = "  this   is  a sentence ";
+const rearranged = rearrangeSpaces(text);
+console.log(rearranged); // Output: "  this is a sentence"
