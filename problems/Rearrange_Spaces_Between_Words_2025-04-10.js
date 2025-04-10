@@ -7,4 +7,15 @@ function rearrangeSpaces(text) {
     const totalSpaces = text.length - words.join('').length;
     
     // If there are no words, return an empty string
-    if (words.length ==
+    if (words.length === 0) {
+        return '';
+    }
+    
+    // Calculate the number of spaces to distribute between words
+    const spaceBetweenWords = Math.floor(totalSpaces / (words.length - 1));
+    const extraSpaces = totalSpaces % (words.length - 1);
+    
+    // Create the space string
+    const spaceString = ' '.repeat(spaceBetweenWords);
+    
+    // Jo
