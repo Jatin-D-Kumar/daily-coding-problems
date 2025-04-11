@@ -15,4 +15,11 @@ function findBestValue(arr, target) {
 
         if (currentSum < target) {
             if (Math.abs(currentSum - target) < Math.abs(closestSum - target)) {
-               
+                closestSum = currentSum;
+                bestValue = mid;
+            }
+            left = mid + 1; // Increase the mid value
+        } else {
+            if (Math.abs(currentSum - target) < Math.abs(closestSum - target)) {
+                closestSum = currentSum;
+   
