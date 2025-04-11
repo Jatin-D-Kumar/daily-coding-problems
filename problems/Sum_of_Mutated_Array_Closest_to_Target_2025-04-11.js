@@ -22,4 +22,16 @@ function findBestValue(arr, target) {
         } else {
             if (Math.abs(currentSum - target) < Math.abs(closestSum - target)) {
                 closestSum = currentSum;
-   
+                bestValue = mid;
+            }
+            right = mid - 1; // Decrease the mid value
+        }
+    }
+
+    return bestValue;
+}
+
+// Example usage:
+const arr = [2, 3, 5];
+const target = 10;
+console.log(findBestValue(arr, target)); // Output: the best value
