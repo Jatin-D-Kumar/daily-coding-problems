@@ -7,4 +7,12 @@ function findBestValue(arr, target) {
 
     while (left <= right) {
         const mid = Math.floor((left + right) / 2);
-        const currentSum = arr.reduce((sum,
+        const currentSum = arr.reduce((sum, num) => sum + Math.min(num, mid), 0);
+
+        if (currentSum === target) {
+            return mid; // Found the exact target
+        }
+
+        if (currentSum < target) {
+            if (Math.abs(currentSum - target) < Math.abs(closestSum - target)) {
+               
