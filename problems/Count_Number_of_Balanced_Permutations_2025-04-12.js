@@ -40,4 +40,13 @@ function countBalancedPermutations(s) {
     // Factorial of each frequency (which are all the same)
     const frequencyFactorial = factorial(k);
     
-    // Si
+    // Since they are all the same, we need to divide by frequencyFactorial^numberOfDistinctChars
+    totalPermutations /= Math.pow(frequencyFactorial, n);
+    
+    return totalPermutations;
+}
+
+// Example usage:
+const inputString = "aabb"; // Example input
+const result = countBalancedPermutations(inputString);
+console.log(result); // Output: 6 (for "aabb", permutations: "aabb", "abab", "abba", "baab", "baba", "abba")
