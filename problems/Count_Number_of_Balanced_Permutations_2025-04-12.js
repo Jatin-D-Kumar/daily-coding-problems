@@ -30,4 +30,14 @@ function countBalancedPermutations(s) {
     }
 
     // Calculate the number of balanced permutations
-    const n = frequencies.length; // number o
+    const n = frequencies.length; // number of distinct characters
+    const k = firstFrequency; // frequency of each character
+    const totalLength = n * k; // total length of the string
+
+    // Total permutations (totalLength)! / (frequency1! * frequency2! * ... * frequencyN!)
+    let totalPermutations = factorial(totalLength);
+    
+    // Factorial of each frequency (which are all the same)
+    const frequencyFactorial = factorial(k);
+    
+    // Si
