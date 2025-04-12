@@ -16,4 +16,18 @@ function countBalancedPermutations(s) {
         if (charCount[char]) {
             charCount[char]++;
         } else {
-            charCount[char
+            charCount[char] = 1;
+        }
+    }
+
+    // Get the frequencies of the characters
+    const frequencies = Object.values(charCount);
+    
+    // Check if all frequencies are the same
+    const firstFrequency = frequencies[0];
+    if (frequencies.some(freq => freq !== firstFrequency)) {
+        return 0; // Not balanced
+    }
+
+    // Calculate the number of balanced permutations
+    const n = frequencies.length; // number o
