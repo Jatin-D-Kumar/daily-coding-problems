@@ -18,4 +18,10 @@ function maxPrimeDifference(arr) {
     }
     
     let maxPrime = Math.max(...primes);
-    let minPrime = Math.m
+    let minPrime = Math.min(...primes);
+    
+    return maxPrime - minPrime;
+}
+
+// Example usage:
+const numbers = [10, 15, 3, 7, 2,
