@@ -15,4 +15,15 @@ function maxCoins(nums) {
             for (let i = left + 1; i < right; i++) {
                 // Calculate coins for bursting balloon i last
                 const coins = balloons[left] * balloons[i] * balloons[right] + dp[left][i] + dp[i][right];
-        
+                dp[left][right] = Math.max(dp[left][right], coins);
+            }
+        }
+    }
+    
+    // The result is in dp[0][n-1]
+    return dp[0][n - 1];
+}
+
+// Example usage:
+const nums = [3, 1, 5, 8];
+console.log(maxCoins(nums)); // Output: 167
