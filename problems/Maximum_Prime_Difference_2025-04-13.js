@@ -11,4 +11,7 @@ function isPrime(num) {
 }
 
 function maxPrimeDifference(arr) {
-  
+    let primes = arr.filter(isPrime);
+    
+    if (primes.length < 2) {
+        return -1; // Not enough pri
