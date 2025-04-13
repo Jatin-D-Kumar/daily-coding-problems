@@ -14,4 +14,8 @@ function maxPrimeDifference(arr) {
     let primes = arr.filter(isPrime);
     
     if (primes.length < 2) {
-        return -1; // Not enough pri
+        return -1; // Not enough primes to calculate a difference
+    }
+    
+    let maxPrime = Math.max(...primes);
+    let minPrime = Math.m
