@@ -24,4 +24,6 @@ function maxPrimeDifference(arr) {
 }
 
 // Example usage:
-const numbers = [10, 15, 3, 7, 2,
+const numbers = [10, 15, 3, 7, 2, 11, 13, 17];
+const result = maxPrimeDifference(numbers);
+console.log(result); // Output: 15 (17 - 2)
