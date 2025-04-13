@@ -11,4 +11,8 @@ function maxCoins(nums) {
     for (let length = 2; length < n; length++) {
         for (let left = 0; left < n - length; left++) {
             const right = left + length;
-            // Try bursting each balloon in the rang
+            // Try bursting each balloon in the range [left, right]
+            for (let i = left + 1; i < right; i++) {
+                // Calculate coins for bursting balloon i last
+                const coins = balloons[left] * balloons[i] * balloons[right] + dp[left][i] + dp[i][right];
+        
