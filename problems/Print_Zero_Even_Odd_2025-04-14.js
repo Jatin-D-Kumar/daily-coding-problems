@@ -23,4 +23,26 @@ class ZeroEvenOdd {
     async even(printEven) {
         for (let i = 2; i <= this.n; i += 2) {
             await new Promise(resolve => {
-                thi
+                this.evenQueue.push(resolve);
+                this.checkAndPrint();
+            });
+            printEven(i); // Print even number
+        }
+    }
+
+    // Print odd
+    async odd(printOdd) {
+        for (let i = 1; i <= this.n; i += 2) {
+            await new Promise(resolve => {
+                this.oddQueue.push(resolve);
+                this.checkAndPrint();
+            });
+            printOdd(i); // Print odd number
+        }
+    }
+
+    // Check and print based on the current state
+    checkAndPrint() {
+        if (this.current === 0 && this.zeroQueue.length > 0) {
+            this.zeroQueue.shift()(); // Resolve the zero promise
+            this.cur
