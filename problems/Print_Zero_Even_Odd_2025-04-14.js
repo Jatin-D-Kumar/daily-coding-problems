@@ -45,4 +45,21 @@ class ZeroEvenOdd {
     checkAndPrint() {
         if (this.current === 0 && this.zeroQueue.length > 0) {
             this.zeroQueue.shift()(); // Resolve the zero promise
-            this.cur
+            this.current = 1; // Move to even
+        } else if (this.current === 1 && this.evenQueue.length > 0) {
+            this.evenQueue.shift()(); // Resolve the even promise
+            this.current = 0; // Move back to zero
+        } else if (this.current === 2 && this.oddQueue.length > 0) {
+            this.oddQueue.shift()(); // Resolve the odd promise
+            this.current = 0; // Move back to zero
+        }
+    }
+}
+
+// Example usage:
+const n = 5; // Change this value to test with different n
+const zeroEvenOdd = new ZeroEvenOdd(n);
+
+zeroEvenOdd.zero(() => console.log(0));
+zeroEvenOdd.even(num => console.log(num));
+zeroEvenOdd.odd(num => console.log(num));
