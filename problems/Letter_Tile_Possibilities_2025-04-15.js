@@ -17,4 +17,9 @@ function numTilePossibilities(tiles) {
     }
 
     backtrack('', Array(tiles.length).fill(false));
-    return results.size; // Return the number
+    return results.size; // Return the number of distinct combinations
+}
+
+// Example usage:
+const tiles = "AAB";
+console.log(numTilePossibilities(tiles)); // Output: 8
