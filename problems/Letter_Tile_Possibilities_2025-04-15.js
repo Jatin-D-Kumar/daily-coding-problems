@@ -10,4 +10,6 @@ function numTilePossibilities(tiles) {
 
         for (let i = 0; i < tiles.length; i++) {
             if (used[i]) continue; // Skip if already used
-            used[i] = true; // Mark
+            used[i] = true; // Mark as used
+            backtrack(path + tiles[i], used); // Recur with the current letter added
+            used[i] = false; //
