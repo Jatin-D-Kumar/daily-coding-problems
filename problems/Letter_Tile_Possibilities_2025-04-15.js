@@ -8,4 +8,6 @@ function numTilePossibilities(tiles) {
             results.add(path);
         }
 
-        for (let i
+        for (let i = 0; i < tiles.length; i++) {
+            if (used[i]) continue; // Skip if already used
+            used[i] = true; // Mark
