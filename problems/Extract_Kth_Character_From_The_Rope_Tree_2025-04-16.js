@@ -10,4 +10,6 @@ function extractKthCharacter(rope, k) {
 }
 
 // Test cases
-console.log(e
+console.log(extractKthCharacter("hello", 3)); // "l"
+console.log(extractKthCharacter("world", 5)); // "d"
+console.log(extractKthCharacter("rope", 6)); // "Invalid K value"
