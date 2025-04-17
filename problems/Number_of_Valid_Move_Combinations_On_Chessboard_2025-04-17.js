@@ -20,3 +20,12 @@ function countKnightMoves(x, y, remainingMoves, memo) {
         [2, 1], [2, -1], [-2, 1], [-2, -1],
         [1, 2], [1, -2], [-1, 2], [-1, -2]
     ];
+
+    let totalMoves = 0;
+
+    // Explore all possible knight moves
+    for (const [dx, dy] of moves) {
+        const newX = x + dx;
+        const newY = y + dy;
+        if (isValidMove(newX, newY)) {
+            totalMoves += countKnightMoves(newX, newY, remainingMo
