@@ -28,4 +28,15 @@ function countKnightMoves(x, y, remainingMoves, memo) {
         const newX = x + dx;
         const newY = y + dy;
         if (isValidMove(newX, newY)) {
-            totalMoves += countKnightMoves(newX, newY, remainingMo
+            totalMoves += countKnightMoves(newX, newY, remainingMoves - 1, memo);
+        }
+    }
+
+    // Store the result in memoization object
+    memo[key] = totalMoves;
+    return totalMoves;
+}
+
+function numberOfValidMoveCombinations(startX, startY, moves) {
+    const memo = {};
+    return countKnightMoves(startX, startY, moves
