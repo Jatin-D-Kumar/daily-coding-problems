@@ -9,4 +9,14 @@ function countKnightMoves(x, y, remainingMoves, memo) {
         return 1;
     }
 
-    // Check if the result is already
+    // Check if the result is already computed
+    const key = `${x},${y},${remainingMoves}`;
+    if (memo[key] !== undefined) {
+        return memo[key];
+    }
+
+    // Possible knight moves
+    const moves = [
+        [2, 1], [2, -1], [-2, 1], [-2, -1],
+        [1, 2], [1, -2], [-1, 2], [-1, -2]
+    ];
