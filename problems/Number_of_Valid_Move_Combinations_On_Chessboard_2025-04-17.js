@@ -39,4 +39,11 @@ function countKnightMoves(x, y, remainingMoves, memo) {
 
 function numberOfValidMoveCombinations(startX, startY, moves) {
     const memo = {};
-    return countKnightMoves(startX, startY, moves
+    return countKnightMoves(startX, startY, moves, memo);
+}
+
+// Example usage:
+const startX = 0; // Starting x position
+const startY = 0; // Starting y position
+const moves = 2; // Number of moves to make
+console.log(numberOfValidMoveCombinations(startX, startY, moves)); // Output the number of valid combinations
