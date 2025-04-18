@@ -36,4 +36,27 @@ function verticalOrder(root) {
     }
 
     // Prepare the result array
-    const r
+    const result = [];
+    for (let i = minColumn; i <= maxColumn; i++) {
+        if (columnTable.has(i)) {
+            result.push(columnTable.get(i));
+        }
+    }
+
+    return result;
+}
+
+// Example usage:
+// Constructing a binary tree:
+//        3
+//       / \
+//      9  20
+//         /  \
+//        15   7
+const root = new TreeNode(3);
+root.left = new TreeNode(9);
+root.right = new TreeNode(20);
+root.right.left = new TreeNode(15);
+root.right.right = new TreeNode(7);
+
+console.log(verticalOrder(root)); // Output: [[9], [3, 15], [20], [7]]
