@@ -17,4 +17,6 @@ function repeatString(str, num) {
 }
 
 // Example usage:
-console.log(repeatString('abc', 3));
+console.log(repeatString('abc', 3)); // Output: 'abcabcabc'
+console.log(repeatString('hello', 0)); // Output: ''
+console.log(repeatString('world', -2)); // Output: ''
