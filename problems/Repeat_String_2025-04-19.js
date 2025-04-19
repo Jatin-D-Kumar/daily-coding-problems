@@ -5,4 +5,8 @@ function repeatString(str, num) {
         return '';
     }
     
-    // Ini
+    // Initialize an empty string to hold the result
+    let result = '';
+    
+    // Use a loop to append the string 'num' times
+    for (let 
