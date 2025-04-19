@@ -9,4 +9,12 @@ function repeatString(str, num) {
     let result = '';
     
     // Use a loop to append the string 'num' times
-    for (let 
+    for (let i = 0; i < num; i++) {
+        result += str;
+    }
+    
+    return result;
+}
+
+// Example usage:
+console.log(repeatString('abc', 3));
