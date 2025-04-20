@@ -15,4 +15,7 @@ function myFunction() {
 }
 
 // Schedule the function to run after 2000 milliseconds (2 seconds)
-const cancelTimeout = cancel
+const cancelTimeout = cancellable(myFunction, 2000);
+
+// To cancel the timeout, call the returned function
+// cancelTimeout(); // Uncommenting this line will cancel the timeout
