@@ -10,4 +10,9 @@ function cancellable(fn, t) {
 }
 
 // Example usage:
-function myF
+function myFunction() {
+    console.log("Function executed!");
+}
+
+// Schedule the function to run after 2000 milliseconds (2 seconds)
+const cancelTimeout = cancel
