@@ -9,4 +9,8 @@ function makeElementsZero(arr) {
     // Calculate GCD of the array elements
     let currentGCD = arr[0];
     for (let i = 1; i < arr.length; i++) {
-        currentGCD = gcd(currentGCD,
+        currentGCD = gcd(currentGCD, arr[i]);
+    }
+
+    // Subtract the GCD from each element until all elements are zero
+    for (let i = 0; i < 
