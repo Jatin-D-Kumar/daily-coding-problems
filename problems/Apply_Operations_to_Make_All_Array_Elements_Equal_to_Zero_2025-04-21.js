@@ -6,4 +6,7 @@ function makeElementsZero(arr) {
         return gcd(b, a % b);
     }
 
-    // Calculate GCD of the array elemen
+    // Calculate GCD of the array elements
+    let currentGCD = arr[0];
+    for (let i = 1; i < arr.length; i++) {
+        currentGCD = gcd(currentGCD,
