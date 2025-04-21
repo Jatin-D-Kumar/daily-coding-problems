@@ -19,4 +19,9 @@ function makeElementsZero(arr) {
         }
     }
 
-    return a
+    return arr;
+}
+
+// Example usage:
+const arr = [10, 15, 20];
+console.log(makeElementsZero(arr)); // Output: [0, 0, 0]
