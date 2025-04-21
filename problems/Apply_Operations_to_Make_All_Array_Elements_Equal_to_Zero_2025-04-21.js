@@ -13,4 +13,10 @@ function makeElementsZero(arr) {
     }
 
     // Subtract the GCD from each element until all elements are zero
-    for (let i = 0; i < 
+    for (let i = 0; i < arr.length; i++) {
+        while (arr[i] > 0) {
+            arr[i] -= currentGCD;
+        }
+    }
+
+    return a
