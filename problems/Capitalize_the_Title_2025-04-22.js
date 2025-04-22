@@ -18,4 +18,6 @@ function capitalizeTitle(title) {
 }
 
 // Example usage:
-console.log(capitalizeTitle("hello world from the capitalizer")); //
+console.log(capitalizeTitle("hello world from the capitalizer")); // "Hello World From the Capitalizer"
+console.log(capitalizeTitle("a quick brown fox jumps over the lazy dog")); // "A Quick Brown Fox Jumps Over the Lazy Dog"
+console.log(capitalizeTitle("Capitalize this title")); // "Capitalize This Title"
