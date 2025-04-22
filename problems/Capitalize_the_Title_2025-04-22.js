@@ -9,4 +9,13 @@ function capitalizeTitle(title) {
         if (index === 0 || index === words.length - 1 || word.length > 2) {
             return word.charAt(0).toUpperCase() + word.slice(1);
         }
-     
+        // Return the word as is
+        return word;
+    });
+    
+    // Join the capitalized words back into a string
+    return capitalizedWords.join(' ');
+}
+
+// Example usage:
+console.log(capitalizeTitle("hello world from the capitalizer")); //
