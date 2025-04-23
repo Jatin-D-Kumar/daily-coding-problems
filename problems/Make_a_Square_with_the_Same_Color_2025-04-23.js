@@ -1,3 +1,4 @@
 
 const grid = [
-  ['red', 'red', '
+  ['red', 'red', 'blue'],
+  ['red', 'red', 'blue'],
