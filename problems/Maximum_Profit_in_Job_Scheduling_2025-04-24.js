@@ -27,4 +27,7 @@ function scheduleJobs(jobs) {
         }
     }
 
-    // Filter out the undefined slots and return th
+    // Filter out the undefined slots and return the scheduled jobs and total profit
+    const scheduledJobs = result.filter(job => job !== undefined);
+    const totalProfit = scheduledJobs.reduce((total, jobId) => {
+        const job = jobs.find(j => j.id ==
