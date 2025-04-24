@@ -20,4 +20,11 @@ function scheduleJobs(jobs) {
         // Find a free slot for this job (We traverse the slots backward)
         for (let j = Math.min(n, jobs[i].deadline) - 1; j >= 0; j--) {
             if (!slot[j]) {
-   
+                slot[j] = true;
+                result[j] = jobs[i].id; // Store the job id in the result
+                break;
+            }
+        }
+    }
+
+    // Filter out the undefined slots and return th
