@@ -41,4 +41,11 @@ function scheduleJobs(jobs) {
 const jobs = [
     new Job('a', 2, 100),
     new Job('b', 1, 19),
-    new J
+    new Job('c', 2, 27),
+    new Job('d', 1, 25),
+    new Job('e', 3, 15)
+];
+
+const result = scheduleJobs(jobs);
+console.log("Scheduled Jobs:", result.scheduledJobs);
+console.log("Total Profit:", result.totalProfit);
