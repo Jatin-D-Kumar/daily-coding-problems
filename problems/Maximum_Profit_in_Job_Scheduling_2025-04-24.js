@@ -16,4 +16,8 @@ function scheduleJobs(jobs) {
     const slot = new Array(n).fill(false);
 
     // Iterate through all jobs
-  
+    for (let i = 0; i < n; i++) {
+        // Find a free slot for this job (We traverse the slots backward)
+        for (let j = Math.min(n, jobs[i].deadline) - 1; j >= 0; j--) {
+            if (!slot[j]) {
+   
