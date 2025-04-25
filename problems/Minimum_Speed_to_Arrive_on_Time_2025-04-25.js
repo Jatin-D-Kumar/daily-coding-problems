@@ -21,4 +21,16 @@ function minSpeedOnTime(distances, hour) {
         const mid = Math.floor((left + right) / 2);
         if (canArriveOnTime(mid)) {
             result = mid;
-            right = mid - 1;  // Try to find a smaller spe
+            right = mid - 1;  // Try to find a smaller speed
+        } else {
+            left = mid + 1;  // Increase speed
+        }
+    }
+
+    return result;
+}
+
+// Example usage
+const distances = [1, 3, 2];
+const hour = 6;
+console.log(minSpeedOnTime(distances, hour));  // Output: Minimum speed to arrive on time
