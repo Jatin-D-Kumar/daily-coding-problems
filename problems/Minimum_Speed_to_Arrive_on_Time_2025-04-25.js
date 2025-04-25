@@ -14,4 +14,11 @@ function minSpeedOnTime(distances, hour) {
         return timeNeeded <= hour;
     };
     
-    // Bi
+    // Binary search to find the minimum speed
+    let result = -1;
+
+    while (left <= right) {
+        const mid = Math.floor((left + right) / 2);
+        if (canArriveOnTime(mid)) {
+            result = mid;
+            right = mid - 1;  // Try to find a smaller spe
