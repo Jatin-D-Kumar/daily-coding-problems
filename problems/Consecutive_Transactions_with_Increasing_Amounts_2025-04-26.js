@@ -26,4 +26,11 @@ function findLongestIncreasingSequence(transactions) {
     // Check the last increasing sequence
     if (currentLength > maxLength) {
         maxLength = currentLength;
-        max
+        maxStartIndex = currentStartIndex;
+    }
+
+    return transactions.slice(maxStartIndex, maxStartIndex + maxLength);
+}
+
+// Example usage:
+const transactio
