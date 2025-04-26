@@ -33,4 +33,6 @@ function findLongestIncreasingSequence(transactions) {
 }
 
 // Example usage:
-const transactio
+const transactions = [10, 11, 12, 10, 15, 17, 18, 7, 8, 9];
+const result = findLongestIncreasingSequence(transactions);
+console.log(result); // Output: [10, 11, 12]
