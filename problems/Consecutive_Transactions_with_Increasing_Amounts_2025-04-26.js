@@ -19,4 +19,11 @@ function findLongestIncreasingSequence(transactions) {
             }
 
             currentLength = 1;
-            currentStartInde
+            currentStartIndex = i;
+        }
+    }
+
+    // Check the last increasing sequence
+    if (currentLength > maxLength) {
+        maxLength = currentLength;
+        max
