@@ -14,4 +14,9 @@ function findLongestIncreasingSequence(transactions) {
             currentLength++;
         } else {
             if (currentLength > maxLength) {
-                max
+                maxLength = currentLength;
+                maxStartIndex = currentStartIndex;
+            }
+
+            currentLength = 1;
+            currentStartInde
