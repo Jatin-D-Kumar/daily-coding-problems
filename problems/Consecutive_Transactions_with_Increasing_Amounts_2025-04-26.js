@@ -10,4 +10,8 @@ function findLongestIncreasingSequence(transactions) {
     let currentStartIndex = 0;
 
     for (let i = 1; i < transactions.length; i++) {
-        if (tr
+        if (transactions[i] > transactions[i - 1]) {
+            currentLength++;
+        } else {
+            if (currentLength > maxLength) {
+                max
