@@ -7,4 +7,5 @@ function findAndReplace(str, oldSubstr, newSubstr) {
 
 // Example usage:
 const originalString = "Hello World! Welcome to the World!";
-const resultString = findAndReplace(originalString, "World", "
+const resultString = findAndReplace(originalString, "World", "Universe");
+console.log(resultString); // Output: "Hello Universe! Welcome to the Universe!"
