@@ -6,4 +6,5 @@ function findAndReplace(str, oldSubstr, newSubstr) {
 }
 
 // Example usage:
-const originalString = "Hello 
+const originalString = "Hello World! Welcome to the World!";
+const resultString = findAndReplace(originalString, "World", "
