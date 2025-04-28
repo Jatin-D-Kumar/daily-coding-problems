@@ -27,4 +27,11 @@ function findDuplicateEmails(emails) {
 // Example usage:
 const emailList = [
     "test.email+alex@leetcode.com",
-    
+    "test.e.mail+bob@leetcode.com",
+    "testemail@leetcode.com",
+    "test.email@leetcode.com",
+    "testemail+alex@leetcode.com"
+];
+
+const duplicates = findDuplicateEmails(emailList);
+console.log(duplicates);
