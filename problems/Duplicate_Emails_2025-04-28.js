@@ -10,4 +10,9 @@ function findDuplicateEmails(emails) {
         // Process the local part: remove dots and ignore characters after '+'
         local = local.split('.').join('').split('+')[0];
         
-        // Re
+        // Rebuild the email address
+        const processedEmail = `${local}@${domain}`;
+        
+        // Check for duplicates
+        if (uniqueEmails.has(processedEmail)) {
+            duplicateEmails.add(processedE
