@@ -15,4 +15,16 @@ function findDuplicateEmails(emails) {
         
         // Check for duplicates
         if (uniqueEmails.has(processedEmail)) {
-            duplicateEmails.add(processedE
+            duplicateEmails.add(processedEmail);
+        } else {
+            uniqueEmails.add(processedEmail);
+        }
+    }
+
+    return Array.from(duplicateEmails);
+}
+
+// Example usage:
+const emailList = [
+    "test.email+alex@leetcode.com",
+    
