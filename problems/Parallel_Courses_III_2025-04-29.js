@@ -8,3 +8,17 @@ function minimumTime(n, relations, time) {
     for (const [u, v] of relations) {
         graph[u].push(v);
         inDegree[v]++;
+    }
+
+    const queue = [];
+    const completionOrder = [];
+
+    // Initialize the queue with courses that have no prerequisites
+    for (let i = 1; i <= n; i++) {
+        if (inDegree[i] === 0) {
+            queue.push(i);
+            dp[i] = time[i - 1]; // Set the time for the course itself
+        }
+    }
+
+    // 
