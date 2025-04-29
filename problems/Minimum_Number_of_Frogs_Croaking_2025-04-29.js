@@ -23,4 +23,16 @@ function minNumberOfFrogs(croakOfFrogs) {
         
         // Check if there's a corresponding previous character
         if (index > 0) {
-            // If not enough previous character, return 
+            // If not enough previous character, return -1
+            if (croakCount[index] > croakCount[index - 1]) {
+                return -1; 
+            }
+        }
+
+        // If it's the last character 'k', we finish one frog croaking
+        if (char === 'k') {
+            frogs--;
+        }
+    }
+
+    // At the end, all fro
