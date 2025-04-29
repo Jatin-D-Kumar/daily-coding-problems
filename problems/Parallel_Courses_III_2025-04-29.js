@@ -38,4 +38,13 @@ function minimumTime(n, relations, time) {
         }
     }
 
-    // The minimum time to complete all courses is the max
+    // The minimum time to complete all courses is the maximum value in dp array
+    return Math.max(...dp);
+}
+
+// Example usage:
+const n = 4; // Number of courses
+const relations = [[2, 1], [3, 1], [1, 4]]; // Pre-requisite relations
+const time = [3, 2, 1, 5]; // Duration of each course
+
+console.log(minimumTime(n, relations, time)); // Should print the minimum time required
