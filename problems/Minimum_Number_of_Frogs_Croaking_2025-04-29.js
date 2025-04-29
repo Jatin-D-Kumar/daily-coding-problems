@@ -15,4 +15,12 @@ function minNumberOfFrogs(croakOfFrogs) {
         // If it's the first character 'c', we start a new frog croaking
         if (char === 'c') {
             frogs++;
-            maxFrog
+            maxFrogs = Math.max(maxFrogs, frogs);
+        }
+
+        // Increase the count for the current character
+        croakCount[index]++;
+        
+        // Check if there's a corresponding previous character
+        if (index > 0) {
+            // If not enough previous character, return 
