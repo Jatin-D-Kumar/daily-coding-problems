@@ -35,4 +35,11 @@ function minNumberOfFrogs(croakOfFrogs) {
         }
     }
 
-    // At the end, all fro
+    // At the end, all frogs should have completed croaking
+    return frogs === 0 ? maxFrogs : -1;
+}
+
+// Example usage:
+console.log(minNumberOfFrogs("croakcroak")); // Output: 1
+console.log(minNumberOfFrogs("croakcrook")); // Output: -1
+console.log(minNumberOfFrogs("croakcroaacrroa")); // Output: -1
