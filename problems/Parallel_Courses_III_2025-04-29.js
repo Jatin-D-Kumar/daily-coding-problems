@@ -28,4 +28,14 @@ function minimumTime(n, relations, time) {
 
         for (const neighbor of graph[course]) {
             // Update the minimum completion time for the dependent course
-            dp[neighbor] = Math.max(dp[neighbor
+            dp[neighbor] = Math.max(dp[neighbor], dp[course] + time[neighbor - 1]);
+            inDegree[neighbor]--;
+
+            // If in-degree of the neighbor becomes zero, add it to the queue
+            if (inDegree[neighbor] === 0) {
+                queue.push(neighbor);
+            }
+        }
+    }
+
+    // The minimum time to complete all courses is the max
