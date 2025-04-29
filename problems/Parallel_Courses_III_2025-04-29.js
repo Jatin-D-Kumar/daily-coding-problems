@@ -21,4 +21,11 @@ function minimumTime(n, relations, time) {
         }
     }
 
-    // 
+    // Process the graph in a topological fashion
+    while (queue.length > 0) {
+        const course = queue.shift();
+        completionOrder.push(course);
+
+        for (const neighbor of graph[course]) {
+            // Update the minimum completion time for the dependent course
+            dp[neighbor] = Math.max(dp[neighbor
