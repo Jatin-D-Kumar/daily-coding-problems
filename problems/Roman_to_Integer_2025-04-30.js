@@ -16,4 +16,11 @@ function romanToInt(s) {
     for (let i = 0; i < s.length; i++) {
         const currentValue = romanMap[s[i]];
 
-        // Subtract value if 
+        // Subtract value if the previous value is less (indicating a subtractive combination)
+        if (currentValue > prevValue) {
+            total += currentValue - 2 * prevValue; // we add currentValue but subtract twice the prevValue
+        } else {
+            total += currentValue;
+        }
+
+        // Update prevValue to the current value for the nex
