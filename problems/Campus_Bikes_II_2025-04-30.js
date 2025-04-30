@@ -7,4 +7,9 @@ const assignBikes = (workers, bikes) => {
 
     for (let mask = 0; mask < (1 << n); mask++) {
         const workerIndex = countBits(mask);
-        if (workerIndex >= m) c
+        if (workerIndex >= m) continue;
+
+        for (let bikeIndex = 0; bikeIndex < n; bikeIndex++) {
+            if ((mask & (1 << bikeIndex)) === 0) { // If the bike is not already assigned
+                const newMask = mask | (1 << bikeIndex);
+                const distance = getDistance(workers[workerIndex], bikes[
