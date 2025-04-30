@@ -23,4 +23,16 @@ function romanToInt(s) {
             total += currentValue;
         }
 
-        // Update prevValue to the current value for the nex
+        // Update prevValue to the current value for the next iteration
+        prevValue = currentValue;
+    }
+
+    return total;
+}
+
+// Example usage:
+console.log(romanToInt("III"));   // Output: 3
+console.log(romanToInt("IV"));    // Output: 4
+console.log(romanToInt("IX"));    // Output: 9
+console.log(romanToInt("LVIII"));  // Output: 58
+console.log(romanToInt("MCMXCIV")); // Output: 1994
