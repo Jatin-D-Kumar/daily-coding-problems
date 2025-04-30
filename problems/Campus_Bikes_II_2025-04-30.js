@@ -27,4 +27,14 @@ const countBits = (mask) => {
         count += mask & 1;
         mask >>= 1;
     }
-    return count
+    return count;
+};
+
+const getDistance = (worker, bike) => {
+    return Math.abs(worker[0] - bike[0]) + Math.abs(worker[1] - bike[1]);
+};
+
+// Example usage:
+const workers = [[0, 0], [1, 1]];
+const bikes = [[1, 0], [2, 2], [0, 1]];
+console.log(assignBikes(workers, bikes)); // Output the minimum distance
