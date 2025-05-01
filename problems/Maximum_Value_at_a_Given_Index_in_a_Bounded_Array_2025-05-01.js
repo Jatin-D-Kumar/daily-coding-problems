@@ -11,4 +11,14 @@ function maxValue(n, index, maxValue) {
         
         // If we can create the array with this mid value at index
         // we should try for a larger value, we move our left pointer
-      
+        if (count <= n) {
+            left = mid; // mid can be the value at array[index]
+        } else {
+            right = mid - 1; // mid too large
+        }
+    }
+
+    return left;
+}
+
+// Function to calculate the number of elements we can accommodate with v
