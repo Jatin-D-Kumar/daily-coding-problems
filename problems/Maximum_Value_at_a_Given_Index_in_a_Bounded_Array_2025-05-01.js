@@ -21,4 +21,9 @@ function maxValue(n, index, maxValue) {
     return left;
 }
 
-// Function to calculate the number of elements we can accommodate with v
+// Function to calculate the number of elements we can accommodate with value
+function countElements(n, index, value) {
+    const leftCount = Math.max(0, value - 1); // Number of elements we can fill on the left
+    const rightCount = Math.max(0, value - 1); // Number of elements we can fill on the right
+    
+    // Calculate ho
