@@ -26,4 +26,10 @@ function countElements(n, index, value) {
     const leftCount = Math.max(0, value - 1); // Number of elements we can fill on the left
     const rightCount = Math.max(0, value - 1); // Number of elements we can fill on the right
     
-    // Calculate ho
+    // Calculate how many indices we can fill on the left
+    const leftFill = Math.min(leftCount, index);
+    // Calculate how many indices we can fill on the right
+    const rightFill = Math.min(rightCount, n - 1 - index);
+    
+    // Elements filled on the left and right
+ 
