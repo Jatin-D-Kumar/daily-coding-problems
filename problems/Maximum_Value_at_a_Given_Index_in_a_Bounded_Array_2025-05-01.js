@@ -32,4 +32,11 @@ function countElements(n, index, value) {
     const rightFill = Math.min(rightCount, n - 1 - index);
     
     // Elements filled on the left and right
- 
+    let totalCount = leftFill + rightFill + 1; // +1 for the value at index itself
+    
+    // Adjust the totalCount if we are limited by n
+    return totalCount;
+}
+
+// Example usage:
+console.log(maxValue(5, 2, 3)); // Output will depend on the parameters
