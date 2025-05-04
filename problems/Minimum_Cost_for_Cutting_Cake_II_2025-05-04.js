@@ -17,4 +17,16 @@ function minCost(cuts) {
     let hi = horizontalCuts.length - 1;
     let vi = verticalCuts.length - 1;
 
-    // Ini
+    // Initialize the number of horizontal and vertical pieces (initially there is one piece)
+    let horizontalPieces = 1;
+    let verticalPieces = 1;
+
+    // Iterate until we run out of cuts
+    while (hi >= 0 || vi >= 0) {
+        // Determine the next cut to make
+        let horizontalCost = hi >= 0 ? horizontalCuts[hi] : Infinity;
+        let verticalCost = vi >= 0 ? verticalCuts[vi] : Infinity;
+
+        // Choose the cheaper cut between horizontal and vertical
+        if (horizontalCost <= verticalCost) {
+            // If we make
