@@ -29,4 +29,22 @@ function minCost(cuts) {
 
         // Choose the cheaper cut between horizontal and vertical
         if (horizontalCost <= verticalCost) {
-            // If we make
+            // If we make a horizontal cut
+            totalCost += horizontalCost * verticalPieces;
+            horizontalPieces++;
+            hi--;
+        } else {
+            // If we make a vertical cut
+            totalCost += verticalCost * horizontalPieces;
+            verticalPieces++;
+            vi--;
+        }
+    }
+
+    return totalCost;
+}
+
+// Example usage:
+const cuts = [1, 2, 3, 4, 5, 6]; // Example costs for horizontal and vertical cuts
+const minCutCost = minCost(cuts);
+console.log(`Minimum cost for cutting the cake: ${minCutCost}`);
