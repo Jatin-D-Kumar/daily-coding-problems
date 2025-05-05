@@ -15,4 +15,7 @@ function findBallHolder(n, start, k, direction) {
   return position;
 }
 
-/
+// Example usage:
+const n = 5;       // Number of children
+const start = 2;   // Starting child index
+const k = 3; 
