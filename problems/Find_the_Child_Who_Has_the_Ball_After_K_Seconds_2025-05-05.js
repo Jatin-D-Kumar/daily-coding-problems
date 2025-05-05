@@ -18,4 +18,7 @@ function findBallHolder(n, start, k, direction) {
 // Example usage:
 const n = 5;       // Number of children
 const start = 2;   // Starting child index
-const k = 3; 
+const k = 3;       // Number of passes
+const direction = 1; // 1 for clockwise, -1 for counter-clockwise
+
+const result = findBa
