@@ -21,4 +21,5 @@ const start = 2;   // Starting child index
 const k = 3;       // Number of passes
 const direction = 1; // 1 for clockwise, -1 for counter-clockwise
 
-const result = findBa
+const result = findBallHolder(n, start, k, direction);
+console.log(`The child who has the ball after ${k} seconds is: ${result}`);
