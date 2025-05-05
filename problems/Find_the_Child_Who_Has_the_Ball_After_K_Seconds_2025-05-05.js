@@ -7,4 +7,12 @@ function findBallHolder(n, start, k, direction) {
       // Clockwise
       position = (position + 1) % n;
     } else {
-      // Counter-clockwi
+      // Counter-clockwise
+      position = (position - 1 + n) % n; // + n ensures we don't go negative
+    }
+  }
+
+  return position;
+}
+
+/
