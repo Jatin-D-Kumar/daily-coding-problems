@@ -28,4 +28,10 @@ function minimumTime(n, relations, time) {
         const course = queue.shift();
         totalTime = Math.max(totalTime, minTime[course]); // track maximum time taken so far
         
-        for (const nextCourse of graph[
+        for (const nextCourse of graph[course]) {
+            // Decrease the indegree of nextCourse
+            indegree[nextCourse]--;
+            // Update the minimum time needed to complete the nextCourse
+            minTime[nextCourse] = Math.max(minTime[nextCourse], minTime[course] + time[nextCourse]);
+            
+            // If indegree becomes 0,
