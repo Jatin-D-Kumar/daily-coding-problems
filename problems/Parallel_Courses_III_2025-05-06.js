@@ -43,4 +43,15 @@ function minimumTime(n, relations, time) {
     
     // If there's a cycle, we can't finish all courses
     if (totalTime === 0 || indegree.some(i => i > 0)) {
-        return -1; // Return -1 if it's not possible to complete all 
+        return -1; // Return -1 if it's not possible to complete all courses
+    }
+    
+    return totalTime;
+}
+
+// Example usage:
+const n = 5; // Number of courses
+const relations = [[2, 1], [3, 1], [1, 4], [4, 5]]; // Prerequisites
+const time = [3, 2, 1, 4, 5]; // Time to complete each course
+
+console.log(minimumTime(n, relations, time)); // Output: minimum time to complete all courses
