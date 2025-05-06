@@ -34,4 +34,13 @@ function minimumTime(n, relations, time) {
             // Update the minimum time needed to complete the nextCourse
             minTime[nextCourse] = Math.max(minTime[nextCourse], minTime[course] + time[nextCourse]);
             
-            // If indegree becomes 0,
+            // If indegree becomes 0, add it to the queue
+            if (indegree[nextCourse] === 0) {
+                queue.push(nextCourse);
+            }
+        }
+    }
+    
+    // If there's a cycle, we can't finish all courses
+    if (totalTime === 0 || indegree.some(i => i > 0)) {
+        return -1; // Return -1 if it's not possible to complete all 
