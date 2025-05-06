@@ -16,4 +16,16 @@ function minimumTime(n, relations, time) {
     // Initialize the minTime with the time to complete each course
     for (let i = 0; i < n; i++) {
         minTime[i] = time[i];
-        // Add courses with no prerequisites to the que
+        // Add courses with no prerequisites to the queue
+        if (indegree[i] === 0) {
+            queue.push(i);
+        }
+    }
+    
+    let totalTime = 0;
+    
+    while (queue.length > 0) {
+        const course = queue.shift();
+        totalTime = Math.max(totalTime, minTime[course]); // track maximum time taken so far
+        
+        for (const nextCourse of graph[
