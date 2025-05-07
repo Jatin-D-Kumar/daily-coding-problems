@@ -26,3 +26,12 @@ function findMinMaxBetweenCriticalPoints(head) {
     }
 
     if (criticalPoints.length < 2) {
+        return [-1, -1]; // Less than 2 critical points
+    }
+
+    // Calculate the minimum and maximum distance between critical points
+    let minDistance = Infinity;
+    let maxDistance = 0;
+
+    for (let i = 1; i < criticalPoints.length; i++) {
+        let distance = criticalPoints[i
