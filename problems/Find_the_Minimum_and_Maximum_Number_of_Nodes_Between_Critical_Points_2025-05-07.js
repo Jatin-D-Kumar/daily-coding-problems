@@ -34,4 +34,15 @@ function findMinMaxBetweenCriticalPoints(head) {
     let maxDistance = 0;
 
     for (let i = 1; i < criticalPoints.length; i++) {
-        let distance = criticalPoints[i
+        let distance = criticalPoints[i] - criticalPoints[i - 1];
+        minDistance = Math.min(minDistance, distance);
+        maxDistance = Math.max(maxDistance, distance);
+    }
+
+    return [minDistance, maxDistance];
+}
+
+// Example usage:
+let head = new ListNode(1);
+head.next = new ListNode(3);
+head.next.next = new ListNo
