@@ -9,4 +9,12 @@ class ListNode {
 function findMinMaxBetweenCriticalPoints(head) {
     if (!head || !head.next || !head.next.next) {
         return [-1, -1]; // Not enough nodes for critical points
- 
+    }
+
+    let criticalPoints = [];
+    let position = 0;
+    let prevNode = head;
+
+    for (let current = head.next; current.next; current = current.next) {
+        // Check if current node is a critical point
+        if ((prevNode.value < current.value && current.value > current.next.va
