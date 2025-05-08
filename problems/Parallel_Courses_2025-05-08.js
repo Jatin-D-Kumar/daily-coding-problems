@@ -25,4 +25,19 @@ function canFinish(numCourses, prerequisites) {
         processedCount++;
         
         // Decrease the indegree of neighbor courses
-        for (const nextCourse of adjList[co
+        for (const nextCourse of adjList[course]) {
+            indegree[nextCourse]--;
+            if (indegree[nextCourse] === 0) {
+                queue.push(nextCourse);
+            }
+        }
+    }
+
+    // Step 5: If processedCount equals numCourses, return true, otherwise false
+    return processedCount === numCourses;
+}
+
+// Example usage:
+const numCourses = 5;
+const prerequisites = [[0, 1], [0, 2], [1, 3], [2, 3], [3, 4]];
+console.log(canFinish(numCourses, prerequisites)); // Output: true
