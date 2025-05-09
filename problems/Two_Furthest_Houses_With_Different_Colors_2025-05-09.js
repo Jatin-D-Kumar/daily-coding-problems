@@ -20,4 +20,17 @@ function maxDistance(houses) {
 
     // If there is a different color house on the left
     if (leftIndex < n) {
-   
+        maxDist = Math.max(maxDist, n - 1 - leftIndex);
+    }
+
+    // If there is a different color house on the right
+    if (rightIndex >= 0) {
+        maxDist = Math.max(maxDist, rightIndex);
+    }
+
+    return maxDist;
+}
+
+// Example Usage:
+const houses = [1, 1, 1, 6, 1, 1, 1];
+console.log(maxDistance(houses)); // Output: 3
