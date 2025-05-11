@@ -61,4 +61,17 @@ class MinHeap {
     }
 }
 
-function minInterval(intervals, queries)
+function minInterval(intervals, queries) {
+    // Sort intervals by the start point
+    intervals.sort((a, b) => a[0] - b[0]);
+
+    // Sort queries and keep track of the original indexes
+    const sortedQueries = queries.map((q, idx) => ({ query: q, index: idx }));
+    sortedQueries.sort((a, b) => a.query - b.query);
+
+    const result = new Array(queries.length);
+    const minHeap = new MinHeap();
+    let i = 0;
+
+    for (let q of sortedQueries) {
+        // Add all
