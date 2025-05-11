@@ -85,4 +85,18 @@ function minInterval(intervals, queries) {
             minHeap.extractMin();
         }
 
-        // If the heap is not empty, the smallest interval c
+        // If the heap is not empty, the smallest interval covering the query is at the root
+        if (minHeap.getMin()) {
+            result[q.index] = minHeap.getMin()[1] - minHeap.getMin()[0] + 1;
+        } else {
+            result[q.index] = -1; // No interval covers the query
+        }
+    }
+
+    return result;
+}
+
+// Example Usage:
+const intervals = [[1, 4], [2, 4], [3, 6]];
+const queries = [2, 3, 4, 5];
+console.log(minInterval(intervals, queries)); // Output: [3, 3, 3, 4]
