@@ -44,4 +44,21 @@ class MinHeap {
         const right = 2 * index + 2;
 
         if (left < this.heap.length && this.heap[left][1] < this.heap[smallest][1]) {
-           
+            smallest = left;
+        }
+        if (right < this.heap.length && this.heap[right][1] < this.heap[smallest][1]) {
+            smallest = right;
+        }
+        if (smallest !== index) {
+            this.swap(index, smallest);
+            this.heapifyDown(smallest);
+        }
+    }
+
+    // Get the root element (minimum) of the heap
+    getMin() {
+        return this.heap[0];
+    }
+}
+
+function minInterval(intervals, queries)
