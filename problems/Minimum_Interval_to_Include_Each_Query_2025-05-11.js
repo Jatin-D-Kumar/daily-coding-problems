@@ -29,4 +29,19 @@ class MinHeap {
     // Extract the root element (minimum) from the heap
     extractMin() {
         if (this.heap.length === 0) return null;
-        if (this.heap.length === 1) return th
+        if (this.heap.length === 1) return this.heap.pop();
+
+        const root = this.heap[0];
+        this.heap[0] = this.heap.pop();
+        this.heapifyDown(0);
+        return root;
+    }
+
+    // Restore heap property by moving down the element
+    heapifyDown(index) {
+        let smallest = index;
+        const left = 2 * index + 1;
+        const right = 2 * index + 2;
+
+        if (left < this.heap.length && this.heap[left][1] < this.heap[smallest][1]) {
+           
