@@ -74,4 +74,15 @@ function minInterval(intervals, queries) {
     let i = 0;
 
     for (let q of sortedQueries) {
-        // Add all
+        // Add all intervals that start before or at the query
+        while (i < intervals.length && intervals[i][0] <= q.query) {
+            minHeap.insert(intervals[i]);
+            i++;
+        }
+
+        // Remove all intervals from the heap that don't cover the query
+        while (minHeap.getMin() && minHeap.getMin()[1] < q.query) {
+            minHeap.extractMin();
+        }
+
+        // If the heap is not empty, the smallest interval c
