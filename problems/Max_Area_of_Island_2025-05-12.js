@@ -17,4 +17,12 @@ function maxAreaOfIsland(grid) {
         // Explore all 4 directions: up, down, left, right
         area += dfs(i + 1, j); // down
         area += dfs(i - 1, j); // up
-        area += dfs(i, j
+        area += dfs(i, j + 1); // right
+        area += dfs(i, j - 1); // left
+
+        return area;
+    }
+
+    for (let i = 0; i < grid.length; i++) {
+        for (let j = 0; j < grid[0].length; j++) {
+            if
