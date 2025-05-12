@@ -11,4 +11,10 @@ function maxAreaOfIsland(grid) {
         // Mark the current cell as visited
         grid[i][j] = 0;
         
-        // Initialize the area for the curr
+        // Initialize the area for the current island
+        let area = 1;
+
+        // Explore all 4 directions: up, down, left, right
+        area += dfs(i + 1, j); // down
+        area += dfs(i - 1, j); // up
+        area += dfs(i, j
