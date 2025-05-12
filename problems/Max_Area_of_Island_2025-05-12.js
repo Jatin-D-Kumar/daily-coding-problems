@@ -25,4 +25,12 @@ function maxAreaOfIsland(grid) {
 
     for (let i = 0; i < grid.length; i++) {
         for (let j = 0; j < grid[0].length; j++) {
-            if
+            if (grid[i][j] === 1) {
+                // Call DFS for every unvisited land cell
+                maxArea = Math.max(maxArea, dfs(i, j));
+            }
+        }
+    }
+
+    return maxArea;
+}
