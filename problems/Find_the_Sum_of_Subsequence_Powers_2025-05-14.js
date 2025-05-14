@@ -9,4 +9,6 @@ function sumOfSubsequencePowers(arr) {
     let powerOfTwo = 1;
     let result = 0;
     
-    // Itera
+    // Iterate over the array and calculate the sum
+    for (let i = 0; i < n; i++) {
+        // Current number contribution to all subse
