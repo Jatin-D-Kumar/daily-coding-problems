@@ -16,4 +16,9 @@ function sumOfSubsequencePowers(arr) {
         powerOfTwo = (powerOfTwo * 2) % MOD;
     }
 
-  
+    return result;
+}
+
+// Example usage:
+let arr = [1, 2, 3];
+console.log(sumOfSubsequencePowers(arr)); // Output the result
