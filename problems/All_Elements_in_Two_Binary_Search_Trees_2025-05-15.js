@@ -8,4 +8,10 @@ class TreeNode {
 }
 
 function getAllElements(root1, root2) {
-    const element
+    const elements1 = [];
+    const elements2 = [];
+
+    // Helper function to perform in-order traversal
+    function inOrderTraversal(node, elements) {
+        if (!node) return;
+        inOrderTrave
