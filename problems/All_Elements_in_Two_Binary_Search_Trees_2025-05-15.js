@@ -63,4 +63,9 @@ const root1 = new TreeNode(2);
 root1.left = new TreeNode(1);
 root1.right = new TreeNode(4);
 
-const root2 = new T
+const root2 = new TreeNode(1);
+root2.right = new TreeNode(3);
+
+// Getting all elements from both BSTs
+const result = getAllElements(root1, root2);
+console.log(result); // Output: [1, 1, 2, 3, 4]
