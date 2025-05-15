@@ -52,3 +52,15 @@ function mergeSortedArrays(arr1, arr2) {
     while (j < arr2.length) {
         merged.push(arr2[j]);
         j++;
+    }
+
+    return merged;
+}
+
+// Example usage:
+// Constructing two BSTs
+const root1 = new TreeNode(2);
+root1.left = new TreeNode(1);
+root1.right = new TreeNode(4);
+
+const root2 = new T
