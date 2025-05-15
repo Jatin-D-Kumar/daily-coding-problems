@@ -20,4 +20,11 @@ function getAllElements(root1, root2) {
     }
 
     // Get elements from both trees
-    inOrderTraversal(root1, eleme
+    inOrderTraversal(root1, elements1);
+    inOrderTraversal(root2, elements2);
+
+    // Merge the two sorted arrays
+    return mergeSortedArrays(elements1, elements2);
+}
+
+// Helper function to merge two sorted arrays
