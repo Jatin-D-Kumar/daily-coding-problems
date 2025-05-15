@@ -43,4 +43,12 @@ function mergeSortedArrays(arr1, arr2) {
     }
 
     // If there are remaining elements in arr1
-    while (i < a
+    while (i < arr1.length) {
+        merged.push(arr1[i]);
+        i++;
+    }
+
+    // If there are remaining elements in arr2
+    while (j < arr2.length) {
+        merged.push(arr2[j]);
+        j++;
