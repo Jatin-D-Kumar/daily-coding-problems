@@ -14,4 +14,10 @@ function getAllElements(root1, root2) {
     // Helper function to perform in-order traversal
     function inOrderTraversal(node, elements) {
         if (!node) return;
-        inOrderTrave
+        inOrderTraversal(node.left, elements);
+        elements.push(node.val);
+        inOrderTraversal(node.right, elements);
+    }
+
+    // Get elements from both trees
+    inOrderTraversal(root1, eleme
