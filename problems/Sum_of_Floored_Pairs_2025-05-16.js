@@ -14,4 +14,11 @@ function sumFlooredPairs(n) {
             k0 = numerator / jBigInt;
         }
         let sum1 = 0n;
-        if (k0
+        if (k0 >= 1n) {
+            sum1 = (jBigInt * k0 * (k0 + 1n) * (2n * k0 + 1n)) / 6n;
+        }
+        let sum2 = 0n;
+        const k_start = k0 + 1n;
+        if (k_start <= k_max) {
+            const a = k_start;
+            const b =
