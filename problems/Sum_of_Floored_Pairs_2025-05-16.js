@@ -25,4 +25,12 @@ function sumFlooredPairs(n) {
             // Compute S2 = sum of squares from a to b
             const S2 = (b * (b + 1n) * (2n * b + 1n) - (a - 1n) * a * (2n * (a - 1n) + 1n)) / 6n;
             // Compute S3 = sum of cubes from a to b
-            con
+            const x = (b * (b + 1n)) / 2n;
+            const y = ((a - 1n) * a) / 2n;
+            const S3 = x * x - y * y;
+            sum2 = ((m + 1n) * S2) - (jBigInt * S3);
+        }
+        total += sum1 + sum2;
+    }
+    return total;
+}
