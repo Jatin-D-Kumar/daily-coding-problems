@@ -21,4 +21,8 @@ function sumFlooredPairs(n) {
         const k_start = k0 + 1n;
         if (k_start <= k_max) {
             const a = k_start;
-            const b =
+            const b = k_max;
+            // Compute S2 = sum of squares from a to b
+            const S2 = (b * (b + 1n) * (2n * b + 1n) - (a - 1n) * a * (2n * (a - 1n) + 1n)) / 6n;
+            // Compute S3 = sum of cubes from a to b
+            con
