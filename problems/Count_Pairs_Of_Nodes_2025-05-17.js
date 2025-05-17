@@ -27,4 +27,17 @@ function countPairs(root, distance) {
         }
 
         // Increment distances for the current node
-        const currentDistances = leftDistances.map(d => d + 1).concat
+        const currentDistances = leftDistances.map(d => d + 1).concat(rightDistances.map(d => d + 1));
+        currentDistances.push(1); // Include the current node itself
+
+        return currentDistances;
+    }
+
+    dfs(root);
+    return count;
+}
+
+// Example usage:
+const root = new TreeNode(1);
+root.left = new TreeNode(2);
+roo
