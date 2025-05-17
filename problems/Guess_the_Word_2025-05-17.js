@@ -8,4 +8,8 @@ function getRandomWord() {
 }
 
 function guessTheWord() {
-    const sec
+    const secretWord = getRandomWord();
+    let attemptsLeft = maxAttempts;
+    let guessedCorrectly = false;
+
+    console.log("Welcome to 'Guess 
