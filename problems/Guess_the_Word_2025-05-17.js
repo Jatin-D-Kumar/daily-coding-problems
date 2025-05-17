@@ -22,4 +22,10 @@ function guessTheWord() {
             guessedCorrectly = true;
             console.log("Congratulations! You've guessed the word!");
         } else {
-            attemptsLeft--
+            attemptsLeft--;
+            console.log(`Wrong guess! You have ${attemptsLeft} attempts left.`);
+        }
+    }
+
+    if (!guessedCorrectly) {
+    
