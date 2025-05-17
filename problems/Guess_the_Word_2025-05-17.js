@@ -28,4 +28,9 @@ function guessTheWord() {
     }
 
     if (!guessedCorrectly) {
-    
+        console.log(`Sorry, you've run out of attempts. The word was: ${secretWord}`);
+    }
+}
+
+// Start the game
+guessTheWord();
