@@ -15,4 +15,8 @@ function guessTheWord() {
     console.log("Welcome to 'Guess the Word'!");
     console.log(`You have ${maxAttempts} attempts to guess the word.`);
 
-    while (attemptsLeft > 0 && !guessedCorrect
+    while (attemptsLeft > 0 && !guessedCorrectly) {
+        const userGuess = prompt("Enter your guess:").toLowerCase();
+
+        if (userGuess === secretWord) {
+            guess
