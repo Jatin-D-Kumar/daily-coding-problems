@@ -13,4 +13,10 @@ function countPairs(root, distance) {
     function dfs(node) {
         if (!node) return [];
 
-        // Ge
+        // Get the distances from the left and right subtrees
+        const leftDistances = dfs(node.left);
+        const rightDistances = dfs(node.right);
+
+        // Count pairs between left and right subtrees
+        for (let l of leftDistances) {
+            for (let r
