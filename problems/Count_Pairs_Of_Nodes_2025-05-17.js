@@ -19,4 +19,12 @@ function countPairs(root, distance) {
 
         // Count pairs between left and right subtrees
         for (let l of leftDistances) {
-            for (let r
+            for (let r of rightDistances) {
+                if (l + r + 2 <= distance) {
+                    count++;
+                }
+            }
+        }
+
+        // Increment distances for the current node
+        const currentDistances = leftDistances.map(d => d + 1).concat
