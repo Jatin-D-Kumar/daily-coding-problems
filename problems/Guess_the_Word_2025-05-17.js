@@ -19,4 +19,7 @@ function guessTheWord() {
         const userGuess = prompt("Enter your guess:").toLowerCase();
 
         if (userGuess === secretWord) {
-            guess
+            guessedCorrectly = true;
+            console.log("Congratulations! You've guessed the word!");
+        } else {
+            attemptsLeft--
