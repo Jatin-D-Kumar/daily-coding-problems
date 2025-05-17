@@ -12,4 +12,7 @@ function guessTheWord() {
     let attemptsLeft = maxAttempts;
     let guessedCorrectly = false;
 
-    console.log("Welcome to 'Guess 
+    console.log("Welcome to 'Guess the Word'!");
+    console.log(`You have ${maxAttempts} attempts to guess the word.`);
+
+    while (attemptsLeft > 0 && !guessedCorrect
