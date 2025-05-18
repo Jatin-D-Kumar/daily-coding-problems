@@ -8,3 +8,5 @@ function minOperationsToMakeDivisibleByThree(arr) {
         if (remainder === 1) {
             // Minimum operations to make it divisible by 3
             totalOperations += 1; // Decrement by 1
+        } else if (remainder === 2) {
+            // Minimum operations
