@@ -20,4 +20,4 @@ function minOperationsToMakeDivisibleByThree(arr) {
 
 // Example usage:
 const arr = [4, 5, 6, 7, 8];
-c
+console.log(minOperationsToMakeDivisibleByThree(arr)); // Output: 4
