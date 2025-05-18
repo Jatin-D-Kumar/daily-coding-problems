@@ -15,4 +15,9 @@ function minOperationsToMakeDivisibleByThree(arr) {
         // If remainder is 0, do nothing
     }
 
-    ret
+    return totalOperations;
+}
+
+// Example usage:
+const arr = [4, 5, 6, 7, 8];
+c
