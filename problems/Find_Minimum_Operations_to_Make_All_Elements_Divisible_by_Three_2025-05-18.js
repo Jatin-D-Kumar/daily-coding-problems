@@ -10,4 +10,9 @@ function minOperationsToMakeDivisibleByThree(arr) {
             totalOperations += 1; // Decrement by 1
         } else if (remainder === 2) {
             // Minimum operations to make it divisible by 3
-            totalOperations += 1; // Incremen
+            totalOperations += 1; // Increment by 1
+        }
+        // If remainder is 0, do nothing
+    }
+
+    ret
