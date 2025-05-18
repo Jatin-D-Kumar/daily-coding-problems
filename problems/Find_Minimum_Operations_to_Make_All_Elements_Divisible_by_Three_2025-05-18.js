@@ -4,3 +4,6 @@ function minOperationsToMakeDivisibleByThree(arr) {
 
     for (let num of arr) {
         const remainder = num % 3;
+
+        if (remainder === 1) {
+            // Minimum operations to ma
