@@ -13,4 +13,12 @@ function canAttendMeetings(intervals) {
         // If the start time of the current meeting is less than the end time of the previous meeting, there is an overlap
         if (intervals[i][0] < intervals[i - 1][1]) {
             return false;
- 
+        }
+    }
+
+    // If no overlaps were found, return true
+    return true;
+}
+
+// Example usage:
+co
