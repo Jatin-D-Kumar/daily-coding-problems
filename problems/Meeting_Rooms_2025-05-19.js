@@ -21,4 +21,5 @@ function canAttendMeetings(intervals) {
 }
 
 // Example usage:
-co
+const meetings = [[0, 30], [5, 10], [15, 20]];
+console.log(canAttendMeetings(meetings)); // Output: fals
