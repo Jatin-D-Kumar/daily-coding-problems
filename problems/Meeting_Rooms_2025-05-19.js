@@ -6,4 +6,7 @@ function canAttendMeetings(intervals) {
     }
 
     // Sort the intervals by start time
-    intervals.so
+    intervals.sort((a, b) => a[0] - b[0]);
+
+    // Check for overlaps
+    for (let i = 1; i < intervals.length; i++) {
