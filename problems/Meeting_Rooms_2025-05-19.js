@@ -10,3 +10,4 @@ function canAttendMeetings(intervals) {
 
     // Check for overlaps
     for (let i = 1; i < intervals.length; i++) {
+        // If the start time of the current meeting is less than the end time of the previous meeting
