@@ -17,4 +17,6 @@ function selectData(users, criteria) {
 
 // Usage example
 const criteria = { gender: 'female' }; // Selecting female users
-con
+const selectedUsers = selectData(users, criteria);
+
+console.log(selectedUsers);
