@@ -11,4 +11,8 @@ const users = [
 function selectData(users, criteria) {
     return users.filter(user => {
         // Match criteria dynamically
-        return Object.
+        return Object.keys(criteria).every(key => user[key] === criteria[key]);
+    });
+}
+
+// Usage
