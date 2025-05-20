@@ -15,4 +15,6 @@ function selectData(users, criteria) {
     });
 }
 
-// Usage
+// Usage example
+const criteria = { gender: 'female' }; // Selecting female users
+con
