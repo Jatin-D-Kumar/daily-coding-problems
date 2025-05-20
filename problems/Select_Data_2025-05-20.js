@@ -7,4 +7,6 @@ const users = [
     { id: 4, name: 'Diana', age: 28, gender: 'female' },
 ];
 
-// Function to filter use
+// Function to filter users based on criteria
+function selectData(users, criteria) {
+    return users.
