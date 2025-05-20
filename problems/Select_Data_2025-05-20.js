@@ -9,4 +9,6 @@ const users = [
 
 // Function to filter users based on criteria
 function selectData(users, criteria) {
-    return users.
+    return users.filter(user => {
+        // Match criteria dynamically
+        return Object.
