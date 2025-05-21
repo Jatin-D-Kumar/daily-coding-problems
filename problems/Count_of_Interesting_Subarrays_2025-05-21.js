@@ -5,4 +5,10 @@ function countInterestingSubarrays(nums, k) {
     let result = 0;
     
     for (let right = 0; right < nums.length; right++) {
-        // Chec
+        // Check if current number is odd
+        if (nums[right] % 2 === 1) {
+            oddCount++;
+        }
+
+        // When oddCount is at least k, we will look to count all subarrays
+        
