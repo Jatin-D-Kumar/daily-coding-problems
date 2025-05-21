@@ -11,4 +11,8 @@ function countInterestingSubarrays(nums, k) {
         }
 
         // When oddCount is at least k, we will look to count all subarrays
-        
+        while (oddCount >= k) {
+            // Count the number of interesting subarrays for this right endpoint
+            result += (nums.length - right);
+
+            // Move left pointer
