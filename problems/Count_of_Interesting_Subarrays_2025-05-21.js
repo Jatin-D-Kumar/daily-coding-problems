@@ -26,4 +26,7 @@ function countInterestingSubarrays(nums, k) {
     return result;
 }
 
-// 
+// Example usage:
+const nums = [1, 2, 3, 4, 5]; // Sample input
+const k = 2; // Given k
+console.log(countInterestingSubarrays(nums, k)); // Output the count of interesting subarrays
