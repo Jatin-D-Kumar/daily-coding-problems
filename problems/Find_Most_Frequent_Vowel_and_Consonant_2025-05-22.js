@@ -9,4 +9,12 @@ function findMostFrequentVowelAndConsonant(str) {
     const consonantCount = {};
     
     // Iterate through the string
-    for (let 
+    for (let char of str) {
+        // Check if the character is a letter
+        if (/[a-z]/.test(char)) {
+            if (vowels.includes(char)) {
+                // Count vowels
+                vowelCount[char] = (vowelCount[char] || 0) + 1;
+            } else {
+                // Count consonants
+                consonantC
