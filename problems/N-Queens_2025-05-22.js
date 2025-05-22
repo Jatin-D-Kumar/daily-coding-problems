@@ -10,4 +10,7 @@ function solveNQueens(n) {
         }
         // Check the upper left diagonal
         for (let i = row, j = col; i >= 0 && j >= 0; i--, j--) {
-            if 
+            if (board[i][j] === 'Q') return false;
+        }
+        // Check the upper right diagonal
+        for (let i = row, j = col; i >= 0 && j < 
