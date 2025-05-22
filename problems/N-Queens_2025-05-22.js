@@ -24,4 +24,7 @@ function solveNQueens(n) {
             results.push(board.map(r => r.join('')));
             return;
         }
-        for (let col = 0; c
+        for (let col = 0; col < n; col++) {
+            if (isSafe(row, col)) {
+                board[row][col] = 'Q'; // Place the queen
+                backtrack(
