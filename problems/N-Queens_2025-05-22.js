@@ -27,4 +27,9 @@ function solveNQueens(n) {
         for (let col = 0; col < n; col++) {
             if (isSafe(row, col)) {
                 board[row][col] = 'Q'; // Place the queen
-                backtrack(
+                backtrack(row + 1); // Move to the next row
+                board[row][col] = '.'; // Remove the queen (backtrack)
+            }
+        }
+    };
+
