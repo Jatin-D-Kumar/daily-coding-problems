@@ -13,4 +13,10 @@ function solveNQueens(n) {
             if (board[i][j] === 'Q') return false;
         }
         // Check the upper right diagonal
-        for (let i = row, j = col; i >= 0 && j < 
+        for (let i = row, j = col; i >= 0 && j < n; i--, j++) {
+            if (board[i][j] === 'Q') return false;
+        }
+        return true;
+    };
+
+    const backtrack = (row) => {
