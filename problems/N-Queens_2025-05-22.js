@@ -20,3 +20,8 @@ function solveNQueens(n) {
     };
 
     const backtrack = (row) => {
+        if (row === n) {
+            results.push(board.map(r => r.join('')));
+            return;
+        }
+        for (let col = 0; c
