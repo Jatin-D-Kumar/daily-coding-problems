@@ -39,4 +39,14 @@ function findMostFrequentVowelAndConsonant(str) {
     
     // Find the most frequent vowel and consonant
     const mostFrequentVowel = findMostFrequent(vowelCount);
-    const mos
+    const mostFrequentConsonant = findMostFrequent(consonantCount);
+    
+    return {
+        mostFrequentVowel,
+        mostFrequentConsonant
+    };
+}
+
+// Example usage:
+const result = findMostFrequentVowelAndConsonant("Hello World!");
+console.log(result); // Output: { mostFrequentVowel: 'o', mostFrequentConsonant: 'l' }
