@@ -33,3 +33,11 @@ function solveNQueens(n) {
         }
     };
 
+    backtrack(0);
+    return results;
+}
+
+// Example usage:
+const n = 4;
+const solutions = solveNQueens(n);
+console.log(solutions);
