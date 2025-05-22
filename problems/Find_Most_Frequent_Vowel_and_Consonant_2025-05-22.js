@@ -28,4 +28,15 @@ function findMostFrequentVowelAndConsonant(str) {
         let mostFrequentChar = '';
         
         for (let char in countMap) {
-            if
+            if (countMap[char] > maxCount) {
+                maxCount = countMap[char];
+                mostFrequentChar = char;
+            }
+        }
+        
+        return mostFrequentChar;
+    }
+    
+    // Find the most frequent vowel and consonant
+    const mostFrequentVowel = findMostFrequent(vowelCount);
+    const mos
