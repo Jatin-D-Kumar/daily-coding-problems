@@ -6,4 +6,6 @@ function rearrangeArray(arr) {
     // Loop through the array and separate positive and negative numbers
     for (let num of arr) {
         if (num >= 0) {
-            positiv
+            positiveArray.push(num); // If the number is positive, add to positive array
+        } else {
+            negativeArray.push(
