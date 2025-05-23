@@ -12,4 +12,10 @@ function rearrangeArray(arr) {
         }
     }
 
-    // Combine the positive and negative ar
+    // Combine the positive and negative arrays
+    return [...positiveArray, ...negativeArray];
+}
+
+// Example usage:
+const inputArray = [1, -2, 3, -4, 5, -6];
+c
