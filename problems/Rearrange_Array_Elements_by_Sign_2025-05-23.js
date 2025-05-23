@@ -8,4 +8,8 @@ function rearrangeArray(arr) {
         if (num >= 0) {
             positiveArray.push(num); // If the number is positive, add to positive array
         } else {
-            negativeArray.push(
+            negativeArray.push(num); // If the number is negative, add to negative array
+        }
+    }
+
+    // Combine the positive and negative ar
