@@ -18,4 +18,5 @@ function rearrangeArray(arr) {
 
 // Example usage:
 const inputArray = [1, -2, 3, -4, 5, -6];
-c
+const rearrangedArray = rearrangeArray(inputArray);
+console.log(rearrangedArray); // Output: [1, 3, 5, -2, -4, -6]
