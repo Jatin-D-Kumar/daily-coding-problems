@@ -40,4 +40,24 @@ class Table {
     }
 
     delete(whereClause) {
-        th
+        this.data = this.data.filter(row => {
+            let match = false;
+            for (let key in whereClause) {
+                if (row[key] === whereClause[key]) {
+                    match = true;
+                    break;
+                }
+            }
+            return !match; // Remove if it matches
+        });
+    }
+}
+
+class Database {
+    constructor() {
+        this.tables = {};
+    }
+
+    createTable(tableName) {
+        if (!this.tables[tableName]) {
+            th
