@@ -92,4 +92,20 @@ class Database {
         if (this.tables[tableName]) {
             this.tables[tableName].delete(whereClause);
         } else {
-            throw new Error(`Table ${tableName} d
+            throw new Error(`Table ${tableName} does not exist.`);
+        }
+    }
+}
+
+// Example usage:
+const db = new Database();
+
+db.createTable('users');
+db.insert('users', { id: 1, name: 'Alice', age: 30 });
+db.insert('users', { id: 2, name: 'Bob', age: 25 });
+
+console.log(db.select('users', '*')); // Select all rows
+db.update('users', { id: 1 }, { age: 31 });
+console.log(db.select('users', '*')); // Select all after update
+db.delete('users', { id: 2 });
+console.log(db.select('users', '*')); // Select all after delete
