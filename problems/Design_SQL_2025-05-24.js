@@ -76,4 +76,20 @@ class Database {
         if (this.tables[tableName]) {
             return this.tables[tableName].select(columns);
         } else {
-            throw new Error(`Table ${tableName} does no
+            throw new Error(`Table ${tableName} does not exist.`);
+        }
+    }
+
+    update(tableName, whereClause, setClause) {
+        if (this.tables[tableName]) {
+            this.tables[tableName].update(whereClause, setClause);
+        } else {
+            throw new Error(`Table ${tableName} does not exist.`);
+        }
+    }
+
+    delete(tableName, whereClause) {
+        if (this.tables[tableName]) {
+            this.tables[tableName].delete(whereClause);
+        } else {
+            throw new Error(`Table ${tableName} d
