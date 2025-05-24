@@ -22,4 +22,22 @@ class Table {
         });
     }
 
-    update(where
+    update(whereClause, setClause) {
+        for (let row of this.data) {
+            let match = true;
+            for (let key in whereClause) {
+                if (row[key] !== whereClause[key]) {
+                    match = false;
+                    break;
+                }
+            }
+            if (match) {
+                for (let key in setClause) {
+                    row[key] = setClause[key];
+                }
+            }
+        }
+    }
+
+    delete(whereClause) {
+        th
