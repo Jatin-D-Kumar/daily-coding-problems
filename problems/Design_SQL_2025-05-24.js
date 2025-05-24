@@ -60,4 +60,20 @@ class Database {
 
     createTable(tableName) {
         if (!this.tables[tableName]) {
-            th
+            this.tables[tableName] = new Table(tableName);
+        }
+    }
+
+    insert(tableName, row) {
+        if (this.tables[tableName]) {
+            this.tables[tableName].insert(row);
+        } else {
+            throw new Error(`Table ${tableName} does not exist.`);
+        }
+    }
+
+    select(tableName, columns) {
+        if (this.tables[tableName]) {
+            return this.tables[tableName].select(columns);
+        } else {
+            throw new Error(`Table ${tableName} does no
