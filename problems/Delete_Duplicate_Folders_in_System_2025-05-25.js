@@ -27,4 +27,16 @@ function deleteDuplicateFolders(root) {
             const items = fs.readdirSync(folderPath);
 
             for (const item of items) {
-                const itemPath = path.join(folderPat
+                const itemPath = path.join(folderPath, item);
+                if (fs.statSync(itemPath).isDirectory()) {
+                    traverseAndDelete(itemPath);
+                }
+            }
+        }
+    }
+
+    traverseAndDelete(root);
+}
+
+// Example usage
+deleteDuplicateFolders('/path/to/your/root/directory');
