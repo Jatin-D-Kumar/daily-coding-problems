@@ -14,4 +14,10 @@ function deleteDuplicateFolders(root) {
         return JSON.stringify(files); // Use a string representation of the folder content
     }
 
-    fun
+    function traverseAndDelete(folderPath) {
+        const key = getFolderKey(folderPath);
+        
+        if (map.has(key)) {
+            // Duplicate found, we can remove this folder
+            console.log(`Removing duplicate folder: ${folderPath}`);
+            fs.rmdirSync(fo
