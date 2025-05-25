@@ -20,4 +20,11 @@ function deleteDuplicateFolders(root) {
         if (map.has(key)) {
             // Duplicate found, we can remove this folder
             console.log(`Removing duplicate folder: ${folderPath}`);
-            fs.rmdirSync(fo
+            fs.rmdirSync(folderPath, { recursive: true });
+        } else {
+            // Store the key and proceed
+            map.set(key, folderPath);
+            const items = fs.readdirSync(folderPath);
+
+            for (const item of items) {
+                const itemPath = path.join(folderPat
