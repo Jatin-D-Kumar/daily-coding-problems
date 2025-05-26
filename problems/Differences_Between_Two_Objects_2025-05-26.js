@@ -34,4 +34,10 @@ const obj1 = {
 };
 
 const obj2 = {
-    n
+    name: "Alice",
+    age: 30,
+    country: "USA"
+};
+
+const result = getObjectDifferences(obj1, obj2);
+console.log(result);
