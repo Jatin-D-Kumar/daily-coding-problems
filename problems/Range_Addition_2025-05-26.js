@@ -6,4 +6,8 @@ function getModifiedArray(length, updates) {
     for (const [startIndex, endIndex, increment] of updates) {
         nums[startIndex] += increment; // Start the increment at startIndex
         if (endIndex + 1 < length) {
-            nums[endIndex + 1] 
+            nums[endIndex + 1] -= increment; // Cancel the increment after endIndex
+        }
+    }
+
+    // Now calculate the prefix
