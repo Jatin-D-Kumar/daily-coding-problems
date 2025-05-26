@@ -8,4 +8,6 @@ function getObjectDifferences(obj1, obj2) {
             if (!obj2.hasOwnProperty(key)) {
                 // Property is only in obj1
                 differences[key] = { valueInObj1: obj1[key], valueInObj2: undefined };
-            } else i
+            } else if (obj1[key] !== obj2[key]) {
+                // Property is in both but values are different
+                differences[ke
