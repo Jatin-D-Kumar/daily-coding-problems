@@ -4,4 +4,6 @@ function getModifiedArray(length, updates) {
 
     // Apply the range update logic using the difference array concept
     for (const [startIndex, endIndex, increment] of updates) {
-        nums[startIndex] += increment; // S
+        nums[startIndex] += increment; // Start the increment at startIndex
+        if (endIndex + 1 < length) {
+            nums[endIndex + 1] 
