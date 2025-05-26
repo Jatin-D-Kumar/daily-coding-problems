@@ -26,4 +26,5 @@ const updates = [
     [0, 2, -2]
 ];
 
-c
+const result = getModifiedArray(length, updates);
+console.log(result); // Output: [-2, 0, 3, 5, 3]
