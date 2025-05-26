@@ -18,4 +18,9 @@ function getObjectDifferences(obj1, obj2) {
     // Check properties in obj2
     for (const key in obj2) {
         if (obj2.hasOwnProperty(key) && !obj1.hasOwnProperty(key)) {
-            // Property is on
+            // Property is only in obj2
+            differences[key] = { valueInObj1: undefined, valueInObj2: obj2[key] };
+        }
+    }
+
+    return di
