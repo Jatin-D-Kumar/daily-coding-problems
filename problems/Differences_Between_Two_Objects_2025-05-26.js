@@ -23,4 +23,15 @@ function getObjectDifferences(obj1, obj2) {
         }
     }
 
-    return di
+    return differences;
+}
+
+// Example usage:
+const obj1 = {
+    name: "Alice",
+    age: 25,
+    city: "New York"
+};
+
+const obj2 = {
+    n
