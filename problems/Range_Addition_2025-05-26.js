@@ -10,4 +10,6 @@ function getModifiedArray(length, updates) {
         }
     }
 
-    // Now calculate the prefix
+    // Now calculate the prefix sum to get the final values in the array
+    for (let i = 1; i < length; i++) {
+        nums[i] += n
