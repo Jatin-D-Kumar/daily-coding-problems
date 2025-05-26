@@ -18,4 +18,12 @@ function getModifiedArray(length, updates) {
     return nums; // Return the modified array
 }
 
-//
+// Example usage
+const length = 5;
+const updates = [
+    [1, 3, 2],
+    [2, 4, 3],
+    [0, 2, -2]
+];
+
+c
