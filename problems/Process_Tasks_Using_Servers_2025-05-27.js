@@ -12,4 +12,11 @@ function processTasks(servers, tasks) {
         let minIndex = serverTimers.indexOf(Math.min(...serverTimers));
         // Assign the task to this server
         serverTimers[minIndex] += tasks[i];
-        
+        // Keep track of when each task is completed
+        taskCompletion[i] = serverTimers[minIndex];
+    }
+
+    return taskCompletion;
+}
+
+// Example usag
