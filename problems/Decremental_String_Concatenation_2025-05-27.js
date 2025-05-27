@@ -9,4 +9,6 @@ function decrementalStringConcatenation(input) {
     return result;
 }
 
-// Example u
+// Example usage:
+const inputString = "abc";
+consol
