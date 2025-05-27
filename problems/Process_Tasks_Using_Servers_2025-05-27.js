@@ -9,4 +9,7 @@ function processTasks(servers, tasks) {
 
     for (let i = 0; i < tasks.length; i++) {
         // Find the next available server (this is the server with the minimum time)
-        let minIn
+        let minIndex = serverTimers.indexOf(Math.min(...serverTimers));
+        // Assign the task to this server
+        serverTimers[minIndex] += tasks[i];
+        
