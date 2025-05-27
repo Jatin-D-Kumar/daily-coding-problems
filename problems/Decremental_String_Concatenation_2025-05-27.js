@@ -2,4 +2,4 @@
 function decrementalStringConcatenation(input) {
     let result = '';
 
-    fo
+    for (let i = input.length; i > 0; i--) {
