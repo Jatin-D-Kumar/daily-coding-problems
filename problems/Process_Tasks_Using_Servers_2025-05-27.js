@@ -19,4 +19,8 @@ function processTasks(servers, tasks) {
     return taskCompletion;
 }
 
-// Example usag
+// Example usage:
+const servers = [2, 2, 3]; // Server time limits
+const tasks = [1, 2, 3, 2, 4]; // Task durations
+
+console.log(processTasks(servers, tasks));
