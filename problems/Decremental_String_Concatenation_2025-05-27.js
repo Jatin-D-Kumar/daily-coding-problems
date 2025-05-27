@@ -4,4 +4,9 @@ function decrementalStringConcatenation(input) {
 
     for (let i = input.length; i > 0; i--) {
         result += input.slice(0, i);
-  
+    }
+
+    return result;
+}
+
+// Example u
