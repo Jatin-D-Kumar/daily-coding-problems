@@ -11,4 +11,4 @@ function decrementalStringConcatenation(input) {
 
 // Example usage:
 const inputString = "abc";
-console.log(decrementalStringConcatenation(in
+console.log(decrementalStringConcatenation(inputString)); // Outputs: "abcab"
