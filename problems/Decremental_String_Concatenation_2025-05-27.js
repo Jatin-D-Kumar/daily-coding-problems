@@ -1,2 +1,5 @@
 
-function decrementalStringConcatenatio
+function decrementalStringConcatenation(input) {
+    let result = '';
+
+    fo
