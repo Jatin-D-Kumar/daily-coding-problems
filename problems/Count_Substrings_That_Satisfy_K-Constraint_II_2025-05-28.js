@@ -5,4 +5,8 @@ function countSubstringsWithKDistinct(s, k) {
         let left = 0;
         let count = 0;
 
-        for (le
+        for (let right = 0; right < s.length; right++) {
+            charCount.set(s[right], (charCount.get(s[right]) || 0) + 1);
+
+            while (charCount.size > k) {
+                c
