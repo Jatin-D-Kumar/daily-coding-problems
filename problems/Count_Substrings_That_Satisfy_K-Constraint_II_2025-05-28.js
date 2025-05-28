@@ -9,4 +9,8 @@ function countSubstringsWithKDistinct(s, k) {
             charCount.set(s[right], (charCount.get(s[right]) || 0) + 1);
 
             while (charCount.size > k) {
-                c
+                charCount.set(s[left], charCount.get(s[left]) - 1);
+                if (charCount.get(s[left]) === 0) {
+                    charCount.delete(s[left]);
+                }
+      
