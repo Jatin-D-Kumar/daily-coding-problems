@@ -18,4 +18,13 @@ function countSubstringsWithKDistinct(s, k) {
             // Add the number of new substrings ending with `right` index
             count += right - left + 1;
         }
-        return coun
+        return count;
+    }
+
+    return atMostK(k) - atMostK(k - 1);
+}
+
+// Example usage
+const s = "abcabc";
+const k = 2;
+console.log(countSubstringsWithKDistinct(s, k)); // Output example
