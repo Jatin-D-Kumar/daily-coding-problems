@@ -13,4 +13,9 @@ function countSubstringsWithKDistinct(s, k) {
                 if (charCount.get(s[left]) === 0) {
                     charCount.delete(s[left]);
                 }
-      
+                left++;
+            }
+            // Add the number of new substrings ending with `right` index
+            count += right - left + 1;
+        }
+        return coun
