@@ -8,4 +8,11 @@ class TrieNode {
 class Trie {
     constructor() {
         this.root = new TrieNode();
-  
+    }
+
+    insert(num) {
+        let node = this.root;
+        for (let i = 31; i >= 0; i--) {
+            const bit = (num >> i) & 1;
+            if (!node.children[bit]) {
+      
