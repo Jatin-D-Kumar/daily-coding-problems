@@ -15,4 +15,12 @@ class Trie {
         for (let i = 31; i >= 0; i--) {
             const bit = (num >> i) & 1;
             if (!node.children[bit]) {
-      
+                node.children[bit] = new TrieNode();
+            }
+            node = node.children[bit];
+        }
+    }
+
+    maxXOR(num) {
+        let node = this.root;
+        let m
