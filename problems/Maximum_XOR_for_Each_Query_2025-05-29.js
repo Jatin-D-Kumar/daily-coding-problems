@@ -38,4 +38,10 @@ class Trie {
     }
 }
 
-fu
+function maximizeXor(arr, queries) {
+    const trie = new Trie();
+    
+    // Insert all numbers from arr into the Trie
+    for (const num of arr) {
+        trie.insert(num);
+    }
