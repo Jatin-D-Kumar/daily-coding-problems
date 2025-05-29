@@ -26,4 +26,7 @@ class Trie {
         let maxXorNum = 0;
         for (let i = 31; i >= 0; i--) {
             const bit = (num >> i) & 1;
-            const oppositeBit = 1 - bit; // we want to take the opposite bit for max
+            const oppositeBit = 1 - bit; // we want to take the opposite bit for maximum XOR
+            if (node.children[oppositeBit]) {
+                maxXorNum |= (1 << i); // if the opposite bit exists, take it
+                node = node.children[opposite
