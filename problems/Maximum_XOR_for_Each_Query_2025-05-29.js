@@ -45,3 +45,12 @@ function maximizeXor(arr, queries) {
     for (const num of arr) {
         trie.insert(num);
     }
+
+    const result = [];
+    // For each query, find the maximum XOR value
+    for (const query of queries) {
+        result.push(trie.maxXOR(query));
+    }
+
+    return result;
+}
