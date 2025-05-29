@@ -54,3 +54,9 @@ function maximizeXor(arr, queries) {
 
     return result;
 }
+
+// Example usage:
+const arr = [3, 10, 5, 25, 2, 8];
+const queries = [5, 25, 2, 8];
+const result = maximizeXor(arr, queries);
+console.log(result); // Output: [2, 28, 7, 15]
