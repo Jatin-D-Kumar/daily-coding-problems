@@ -20,4 +20,15 @@ function checkValidString(s) {
             low = 0; // Reset low to 0, as we can't have negative open parentheses
         }
 
-        // If high is negative, we have more ')' than we can m
+        // If high is negative, we have more ')' than we can match with '(' or '*'
+        if (high < 0) {
+            return false; // Not valid
+        }
+    }
+
+    // At the end, low should be 0 for the string to be valid
+    return low === 0;
+}
+
+// Example usage:
+console.log(chec
