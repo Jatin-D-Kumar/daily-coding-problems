@@ -31,4 +31,8 @@ function checkValidString(s) {
 }
 
 // Example usage:
-console.log(chec
+console.log(checkValidString("(*)")); // true
+console.log(checkValidString("(*))")); // true
+console.log(checkValidString("((*)")); // true
+console.log(checkValidString(")(")); // false
+console.log(checkValidString("((**)")); // true
