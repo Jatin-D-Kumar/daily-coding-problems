@@ -15,4 +15,9 @@ function checkValidString(s) {
             high++; // Treat '*' as '('
         }
 
-        // If 
+        // If low is negative, we have more ')' than '('
+        if (low < 0) {
+            low = 0; // Reset low to 0, as we can't have negative open parentheses
+        }
+
+        // If high is negative, we have more ')' than we can m
