@@ -6,4 +6,13 @@ function checkValidString(s) {
     for (let char of s) {
         if (char === '(') {
             low++;
-         
+            high++;
+        } else if (char === ')') {
+            low--;
+            high--;
+        } else { // char === '*'
+            low--; // Treat '*' as ')'
+            high++; // Treat '*' as '('
+        }
+
+        // If 
