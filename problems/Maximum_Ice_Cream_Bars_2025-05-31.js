@@ -4,4 +4,6 @@ function maxIceCream(costs, coins) {
     costs.sort((a, b) => a - b);
     
     let count = 0; // To count the number of ice cream bars
-    for (let co
+    for (let cost of costs) {
+        if (coins >= cost) {
+            coins -= cost; // Deduct the cost from t
