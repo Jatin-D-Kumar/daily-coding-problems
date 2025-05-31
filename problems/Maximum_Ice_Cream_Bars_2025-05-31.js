@@ -17,4 +17,6 @@ function maxIceCream(costs, coins) {
 }
 
 // Example usage:
-const c
+const costs = [1, 3, 2, 4, 1];
+const coins = 7;
+console.log(maxIceCream(costs, coins)); // Output: 4
