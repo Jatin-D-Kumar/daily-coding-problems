@@ -13,4 +13,8 @@ function maxIceCream(costs, coins) {
         }
     }
     
-  
+    return count; // Return the total number of ice cream bars bought
+}
+
+// Example usage:
+const c
