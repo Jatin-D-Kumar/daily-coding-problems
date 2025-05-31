@@ -6,4 +6,7 @@ function maxIceCream(costs, coins) {
     let count = 0; // To count the number of ice cream bars
     for (let cost of costs) {
         if (coins >= cost) {
-            coins -= cost; // Deduct the cost from t
+            coins -= cost; // Deduct the cost from the budget
+            count++; // Increment the count of ice cream bars
+        } else {
+       
