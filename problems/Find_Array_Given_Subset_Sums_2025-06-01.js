@@ -42,4 +42,15 @@ function findArrayFromSubsetSums(subsetSums) {
             if (backtrack(sum)) {
                 return originalArray;
             }
-            o
+            originalArray.pop();
+            used.delete(sum);
+        }
+    }
+
+    return [];
+}
+
+// Example usage:
+const subsetSums = [0, 1, 2, 3, 4, 5]; // Example input
+const originalArray = findArrayFromSubsetSums(subsetSums);
+console.log(originalArray);
