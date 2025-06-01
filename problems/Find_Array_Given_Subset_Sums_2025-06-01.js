@@ -23,4 +23,15 @@ function findArrayFromSubsetSums(subsetSums) {
             const newSum = currentSum + num;
             if (!used.has(newSum)) {
                 used.add(newSum);
-       
+                if (backtrack(newSum)) {
+                    return true;
+                }
+                used.delete(newSum);
+            }
+        }
+
+        return false;
+    }
+
+    // Try to find the original array
+    for (let i = 1; i < subsetSu
