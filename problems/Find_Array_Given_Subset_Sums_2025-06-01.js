@@ -15,4 +15,12 @@ function findArrayFromSubsetSums(subsetSums) {
     // Function to find the original array
     function backtrack(currentSum) {
         // If we have found all subset sums, return true
- 
+        if (used.size === subsetSums.length) {
+            return true;
+        }
+
+        for (let num of originalArray) {
+            const newSum = currentSum + num;
+            if (!used.has(newSum)) {
+                used.add(newSum);
+       
