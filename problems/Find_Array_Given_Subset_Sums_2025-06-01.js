@@ -8,4 +8,11 @@ function findArrayFromSubsetSums(subsetSums) {
         return [];
     }
 
-   
+    const originalArray = [];
+    const used = new Set();
+    used.add(0); // Start with the empty subset sum
+
+    // Function to find the original array
+    function backtrack(currentSum) {
+        // If we have found all subset sums, return true
+ 
