@@ -34,4 +34,12 @@ function findArrayFromSubsetSums(subsetSums) {
     }
 
     // Try to find the original array
-    for (let i = 1; i < subsetSu
+    for (let i = 1; i < subsetSums.length; i++) {
+        const sum = subsetSums[i];
+        if (!used.has(sum)) {
+            originalArray.push(sum);
+            used.add(sum);
+            if (backtrack(sum)) {
+                return originalArray;
+            }
+            o
