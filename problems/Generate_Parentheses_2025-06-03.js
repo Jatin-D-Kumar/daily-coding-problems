@@ -16,4 +16,13 @@ function generateParenthesis(n) {
 
         // If we can add a close parenthesis, do it
         if (close < open) {
-            backtrack(current + 
+            backtrack(current + ')', open, close + 1);
+        }
+    }
+
+    backtrack('', 0, 0);
+    return result;
+}
+
+// Example usage:
+cons
