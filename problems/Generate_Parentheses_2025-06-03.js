@@ -9,4 +9,9 @@ function generateParenthesis(n) {
             return;
         }
 
-        // If we can add an open par
+        // If we can add an open parenthesis, do it
+        if (open < n) {
+            backtrack(current + '(', open + 1, close);
+        }
+
+   
