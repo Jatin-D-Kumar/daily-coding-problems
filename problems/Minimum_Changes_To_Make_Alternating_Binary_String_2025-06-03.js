@@ -9,4 +9,10 @@ function minChangesToMakeAlternatingBinaryString(s) {
         const expectedCharForPattern2 = (i % 2 === 0) ? '1' : '0'; // Pattern 2: 101010...
 
         // Count changes needed for pattern 1
-        if (s[i] !== expectedCharForPattern1) 
+        if (s[i] !== expectedCharForPattern1) {
+            changesForPattern1++;
+        }
+
+        // Count changes needed for pattern 2
+        if (s[i] !== expectedCharForPattern2) {
+  
