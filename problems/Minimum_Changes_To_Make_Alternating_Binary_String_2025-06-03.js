@@ -20,4 +20,9 @@ function minChangesToMakeAlternatingBinaryString(s) {
     }
 
     // Return the minimum changes needed
-    return Math.min(changesForPattern1, changesForPat
+    return Math.min(changesForPattern1, changesForPattern2);
+}
+
+// Example usage:
+const binaryString = "0100";
+console.log(minChangesToMakeAlternatingBinaryString(binaryString)); // Output: 1
