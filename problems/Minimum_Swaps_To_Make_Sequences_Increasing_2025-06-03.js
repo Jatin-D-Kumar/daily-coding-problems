@@ -26,3 +26,10 @@ function minSwaps(A, B) {
     }
 
     // The answer is the minimum of the last elements in dp
+    return Math.min(dp[n - 1][0], dp[n - 1][1]);
+}
+
+// Example usage:
+const A = [1, 5, 3, 4];
+const B = [1, 2, 3, 7];
+console.log(minSwaps(A, B)); // Output: 1
