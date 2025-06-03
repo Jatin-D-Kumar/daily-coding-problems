@@ -14,4 +14,6 @@ function generateParenthesis(n) {
             backtrack(current + '(', open + 1, close);
         }
 
-   
+        // If we can add a close parenthesis, do it
+        if (close < open) {
+            backtrack(current + 
