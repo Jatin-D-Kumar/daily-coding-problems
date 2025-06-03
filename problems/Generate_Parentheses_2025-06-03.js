@@ -25,4 +25,5 @@ function generateParenthesis(n) {
 }
 
 // Example usage:
-cons
+const n = 3;
+console.log(generateParenthesis(n)); // Output: ["((()))","(()())","(())()","()(())","()()()"]
