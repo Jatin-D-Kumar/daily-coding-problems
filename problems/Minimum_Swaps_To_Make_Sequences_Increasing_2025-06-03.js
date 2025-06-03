@@ -15,4 +15,9 @@ function minSwaps(A, B) {
         // Check if we can keep the current elements without swapping
         if (A[i] > A[i - 1] && B[i] > B[i - 1]) {
             dp[i][0] = Math.min(dp[i][0], dp[i - 1][0]);
-            dp[i][0] = Math.min(dp[i][
+            dp[i][0] = Math.min(dp[i][0], dp[i - 1][1]);
+        }
+
+        // Check if we can swap the current elements
+        if (A[i] > B[i - 1] && B[i] > A[i - 1]) {
+            dp[i][1] = Math.min(d
