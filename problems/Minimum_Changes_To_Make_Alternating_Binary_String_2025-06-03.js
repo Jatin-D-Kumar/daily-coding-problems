@@ -15,4 +15,9 @@ function minChangesToMakeAlternatingBinaryString(s) {
 
         // Count changes needed for pattern 2
         if (s[i] !== expectedCharForPattern2) {
-  
+            changesForPattern2++;
+        }
+    }
+
+    // Return the minimum changes needed
+    return Math.min(changesForPattern1, changesForPat
