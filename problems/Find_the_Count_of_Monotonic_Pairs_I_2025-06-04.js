@@ -11,4 +11,11 @@ function countMonotonicPairs(arr) {
         } else {
             // If the sequence breaks, count the pairs formed
             count += (nonDecreasingCount * (nonDecreasingCount + 1)) / 2;
-            nonDecreasingCount
+            nonDecreasingCount = 0; // Reset the count
+        }
+    }
+    // Count the remaining pairs if the last sequence was non-decreasing
+    count += (nonDecreasingCount * (nonDecreasingCount + 1)) / 2;
+
+    // Count non-increasing pairs
+  
