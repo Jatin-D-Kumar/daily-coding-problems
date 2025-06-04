@@ -7,3 +7,8 @@ function countMonotonicPairs(arr) {
     let nonDecreasingCount = 0;
     for (let i = 1; i < n; i++) {
         if (arr[i] >= arr[i - 1]) {
+            nonDecreasingCount++;
+        } else {
+            // If the sequence breaks, count the pairs formed
+            count += (nonDecreasingCount * (nonDecreasingCount + 1)) / 2;
+            nonDecreasingCount
