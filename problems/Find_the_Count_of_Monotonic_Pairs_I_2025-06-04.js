@@ -18,4 +18,10 @@ function countMonotonicPairs(arr) {
     count += (nonDecreasingCount * (nonDecreasingCount + 1)) / 2;
 
     // Count non-increasing pairs
-  
+    let nonIncreasingCount = 0;
+    for (let i = 1; i < n; i++) {
+        if (arr[i] <= arr[i - 1]) {
+            nonIncreasingCount++;
+        } else {
+            // If the sequence breaks, count the pairs formed
+    
