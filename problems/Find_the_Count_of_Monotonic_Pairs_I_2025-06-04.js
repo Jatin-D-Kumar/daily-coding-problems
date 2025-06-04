@@ -29,4 +29,11 @@ function countMonotonicPairs(arr) {
         }
     }
     // Count the remaining pairs if the last sequence was non-increasing
-   
+    count += (nonIncreasingCount * (nonIncreasingCount + 1)) / 2;
+
+    return count;
+}
+
+// Example usage:
+const arr = [1, 2, 2, 3, 1, 1, 1];
+console.log(countMonotonicPairs(arr)); // Output the count of monotonic pairs
