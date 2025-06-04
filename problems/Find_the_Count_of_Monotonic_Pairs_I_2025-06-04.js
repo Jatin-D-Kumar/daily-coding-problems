@@ -24,4 +24,9 @@ function countMonotonicPairs(arr) {
             nonIncreasingCount++;
         } else {
             // If the sequence breaks, count the pairs formed
-    
+            count += (nonIncreasingCount * (nonIncreasingCount + 1)) / 2;
+            nonIncreasingCount = 0; // Reset the count
+        }
+    }
+    // Count the remaining pairs if the last sequence was non-increasing
+   
