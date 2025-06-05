@@ -14,4 +14,18 @@ class MinHeap {
         const element = this.heap[index];
 
         while (index > 0) {
-            let parentIndex = Math.floor((index - 1) 
+            let parentIndex = Math.floor((index - 1) / 2);
+            let parent = this.heap[parentIndex];
+
+            if (element[1] >= parent[1]) break;
+
+            this.heap[index] = parent;
+            index = parentIndex;
+        }
+        this.heap[index] = element;
+    }
+
+    extractMin() {
+        const min = this.heap[0];
+        const end = this.heap.pop();
+        if (th
