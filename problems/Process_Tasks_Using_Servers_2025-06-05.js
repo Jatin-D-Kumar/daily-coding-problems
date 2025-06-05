@@ -42,4 +42,15 @@ class MinHeap {
 
         while (true) {
             let leftChildIndex = 2 * index + 1;
-            let rightCh
+            let rightChildIndex = 2 * index + 2;
+            let leftChild, rightChild;
+            let swap = null;
+
+            if (leftChildIndex < length) {
+                leftChild = this.heap[leftChildIndex];
+                if (leftChild[1] < element[1]) {
+                    swap = leftChildIndex;
+                }
+            }
+
+            if (
