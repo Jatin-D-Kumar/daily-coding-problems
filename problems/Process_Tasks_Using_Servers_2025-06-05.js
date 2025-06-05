@@ -61,4 +61,21 @@ class MinHeap {
                 ) {
                     swap = rightChildIndex;
                 }
-         
+            }
+
+            if (swap === null) break;
+
+            this.heap[index] = this.heap[swap];
+            index = swap;
+        }
+        this.heap[index] = element;
+    }
+
+    isEmpty() {
+        return this.heap.length === 0;
+    }
+}
+
+function processTasks(servers, tasks) {
+    const minHeap = new MinHeap();
+    const serverLoad = 
