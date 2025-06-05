@@ -78,4 +78,13 @@ class MinHeap {
 
 function processTasks(servers, tasks) {
     const minHeap = new MinHeap();
-    const serverLoad = 
+    const serverLoad = new Array(servers).fill(0);
+
+    // Initialize the heap with servers
+    for (let i = 0; i < servers; i++) {
+        minHeap.insert([i, 0]); // [serverIndex, currentLoad]
+    }
+
+    for (const task of tasks) {
+        const [serverIndex, currentLoad] = minHeap.extractMin();
+        serverLoad[serverIndex] += task; // Assign task to 
