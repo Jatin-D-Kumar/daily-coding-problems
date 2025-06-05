@@ -87,4 +87,15 @@ function processTasks(servers, tasks) {
 
     for (const task of tasks) {
         const [serverIndex, currentLoad] = minHeap.extractMin();
-        serverLoad[serverIndex] += task; // Assign task to 
+        serverLoad[serverIndex] += task; // Assign task to the server
+        minHeap.insert([serverIndex, serverLoad[serverIndex]]); // Update server load
+    }
+
+    return Math.max(...serverLoad); // Return the maximum load of any server
+}
+
+// Example usage:
+const servers = 3;
+const tasks = [1, 2, 3, 4, 5];
+const result = processTasks(servers, tasks);
+console.log(result); // Output: 7
