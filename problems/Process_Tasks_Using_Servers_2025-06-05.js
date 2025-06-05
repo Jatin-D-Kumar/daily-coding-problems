@@ -28,4 +28,18 @@ class MinHeap {
     extractMin() {
         const min = this.heap[0];
         const end = this.heap.pop();
-        if (th
+        if (this.heap.length > 0) {
+            this.heap[0] = end;
+            this.sinkDown();
+        }
+        return min;
+    }
+
+    sinkDown() {
+        let index = 0;
+        const length = this.heap.length;
+        const element = this.heap[0];
+
+        while (true) {
+            let leftChildIndex = 2 * index + 1;
+            let rightCh
