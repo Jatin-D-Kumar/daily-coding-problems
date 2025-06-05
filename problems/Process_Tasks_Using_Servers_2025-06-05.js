@@ -53,4 +53,12 @@ class MinHeap {
                 }
             }
 
-            if (
+            if (rightChildIndex < length) {
+                rightChild = this.heap[rightChildIndex];
+                if (
+                    (swap === null && rightChild[1] < element[1]) ||
+                    (swap !== null && rightChild[1] < leftChild[1])
+                ) {
+                    swap = rightChildIndex;
+                }
+         
