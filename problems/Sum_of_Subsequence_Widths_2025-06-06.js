@@ -22,4 +22,6 @@ function sumSubseqWidths(A) {
     return totalWidth;
 }
 
-// Example 
+// Example usage:
+const A = [2, 1, 3];
+console.log(sumSubseqWidths(A)); // Output: 6
