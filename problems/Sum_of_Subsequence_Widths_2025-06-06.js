@@ -13,4 +13,6 @@ function sumSubseqWidths(A) {
         pow2[i] = (pow2[i - 1] * 2) % mod;
     }
 
-    // Calculate
+    // Calculate the total width
+    for (let i = 0; i < n; i++) {
+        // Contribution o
