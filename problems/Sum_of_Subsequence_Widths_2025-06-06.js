@@ -16,4 +16,10 @@ function sumSubseqWidths(A) {
     // Calculate the total width
     for (let i = 0; i < n; i++) {
         // Contribution of A[i] as max and min
-        totalWidth = (totalWidth + (A[i] * (pow2[i] - 
+        totalWidth = (totalWidth + (A[i] * (pow2[i] - pow2[n - i - 1])) % mod) % mod;
+    }
+
+    return totalWidth;
+}
+
+// Example 
