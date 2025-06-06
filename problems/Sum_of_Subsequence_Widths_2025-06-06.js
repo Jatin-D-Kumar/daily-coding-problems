@@ -7,4 +7,6 @@ function sumSubseqWidths(A) {
     let totalWidth = 0;
     const mod = 1e9 + 7; // To prevent overflow, we can use modulo
 
-    // Precompute powers 
+    // Precompute powers of 2 up to n
+    const pow2 = new Array(n).fill(1);
+    for (let i = 1; i < 
