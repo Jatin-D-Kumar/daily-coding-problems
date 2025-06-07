@@ -17,3 +17,6 @@ function maxQuestions(questions) {
 }
 
 // Example usage:
+const questions = [
+    [5, 2], // 5 points, 2 brainpower
+    [3, 1], // 3 points,
