@@ -5,4 +5,6 @@ function maxQuestions(questions) {
 
     for (let i = 0; i < n; i++) {
         const [points, brainpower] = questions[i];
-        // Iterate backwards to avoid overwriting the 
+        // Iterate backwards to avoid overwriting the dp array
+        for (let j = n; j >= 0; j--) {
+            if (j + brainpower <= n
