@@ -19,4 +19,5 @@ function isPrefixOfWord(sentence, searchWord) {
 // Example usage:
 const sentence = "I love programming in JavaScript";
 const searchWord = "pro";
-const result
+const result = isPrefixOfWord(sentence, searchWord);
+console.log(result); // Output: 3
