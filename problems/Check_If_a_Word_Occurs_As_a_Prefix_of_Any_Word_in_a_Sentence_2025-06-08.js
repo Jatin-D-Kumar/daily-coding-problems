@@ -5,4 +5,5 @@ function isPrefixOfWord(sentence, searchWord) {
 
     // Iterate through each word in the sentence
     for (let i = 0; i < words.length; i++) {
-        
+        // Check if the current word starts with the searchWord
+        if (words[i]
