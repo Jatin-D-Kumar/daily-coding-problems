@@ -7,4 +7,9 @@ function isPrefixOfWord(sentence, searchWord) {
     for (let i = 0; i < words.length; i++) {
         // Check if the current word starts with the searchWord
         if (words[i].startsWith(searchWord)) {
-            // Return the position (1-based index
+            // Return the position (1-based index)
+            return i + 1;
+        }
+    }
+
+    // If no word starts with t
