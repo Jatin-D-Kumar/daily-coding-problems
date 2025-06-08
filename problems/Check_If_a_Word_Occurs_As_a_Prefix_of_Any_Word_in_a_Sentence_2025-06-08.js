@@ -12,4 +12,9 @@ function isPrefixOfWord(sentence, searchWord) {
         }
     }
 
-    // If no word starts with t
+    // If no word starts with the searchWord, return -1
+    return -1;
+}
+
+// Example usage:
+const sentence 
