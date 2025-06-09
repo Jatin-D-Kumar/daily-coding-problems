@@ -1,2 +1,4 @@
 
-function applyTransform(arr, transfor
+function applyTransform(arr, transform) {
+    return arr.map(transform);
+}
