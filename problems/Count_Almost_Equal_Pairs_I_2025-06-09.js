@@ -6,4 +6,5 @@ function countAlmostEqualPairs(arr, threshold) {
     // Iterate through each pair of indices (i, j)
     for (let i = 0; i < n; i++) {
         for (let j = i + 1; j < n; j++) {
-            // Check if the a
+            // Check if the absolute difference is within the threshold
+            if (Math
