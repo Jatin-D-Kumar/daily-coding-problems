@@ -16,4 +16,7 @@ function countAlmostEqualPairs(arr, threshold) {
     return count;
 }
 
-// Example 
+// Example usage:
+const arr = [1, 2, 3, 4, 5];
+const threshold = 1;
+consol
