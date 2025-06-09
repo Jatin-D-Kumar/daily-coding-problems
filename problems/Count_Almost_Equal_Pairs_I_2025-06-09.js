@@ -9,3 +9,11 @@ function countAlmostEqualPairs(arr, threshold) {
             // Check if the absolute difference is within the threshold
             if (Math.abs(arr[i] - arr[j]) <= threshold) {
                 count++;
+            }
+        }
+    }
+
+    return count;
+}
+
+// Example 
