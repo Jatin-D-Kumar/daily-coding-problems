@@ -7,4 +7,4 @@ function applyTransform(arr, transform) {
 const numbers = [1, 2, 3, 4, 5];
 const transformFunction = (num) => num * 2;
 
-const transformed
+const transformedArray = applyTransform(numbers, transf
