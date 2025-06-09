@@ -5,4 +5,6 @@ function applyTransform(arr, transform) {
 
 // Example usage:
 const numbers = [1, 2, 3, 4, 5];
-const transformFunction 
+const transformFunction = (num) => num * 2;
+
+const transformed
