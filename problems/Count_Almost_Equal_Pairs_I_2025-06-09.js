@@ -19,4 +19,4 @@ function countAlmostEqualPairs(arr, threshold) {
 // Example usage:
 const arr = [1, 2, 3, 4, 5];
 const threshold = 1;
-consol
+console.log(countAlmostEqualPairs(arr, threshold)); // Output: 4
