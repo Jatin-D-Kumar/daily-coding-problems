@@ -10,4 +10,9 @@
 /**
  * @param {TreeNode} root
  * @param {number} x
- * @param {numb
+ * @param {number} y
+ * @return {boolean}
+ */
+var isCousins = function(root, x, y) {
+    let xParent = null;
+    let yP
