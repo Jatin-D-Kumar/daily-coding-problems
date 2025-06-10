@@ -35,4 +35,10 @@ var isCousins = function(root, x, y) {
         }
 
         dfs(node.left, node, depth + 1);
-        dfs(node.right, node
+        dfs(node.right, node, depth + 1);
+    }
+
+    dfs(root, null, 0);
+
+    return xDepth === yDepth && xParent !== yParent;
+};
