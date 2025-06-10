@@ -31,4 +31,8 @@ var isCousins = function(root, x, y) {
 
         if (node.val === y) {
             yParent = parent;
-    
+            yDepth = depth;
+        }
+
+        dfs(node.left, node, depth + 1);
+        dfs(node.right, node
