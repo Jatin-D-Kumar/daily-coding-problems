@@ -26,3 +26,9 @@ var isCousins = function(root, x, y) {
 
         if (node.val === x) {
             xParent = parent;
+            xDepth = depth;
+        }
+
+        if (node.val === y) {
+            yParent = parent;
+    
