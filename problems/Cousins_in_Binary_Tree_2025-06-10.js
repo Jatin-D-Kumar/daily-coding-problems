@@ -15,4 +15,9 @@
  */
 var isCousins = function(root, x, y) {
     let xParent = null;
-    let yP
+    let yParent = null;
+    let xDepth = -1;
+    let yDepth = -1;
+
+    function dfs(node, parent, depth) {
+       
