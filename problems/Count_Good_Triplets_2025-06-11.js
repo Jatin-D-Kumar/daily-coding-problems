@@ -11,4 +11,14 @@ function countGoodTriplets(arr, a, b, c) {
                     Math.abs(arr[i] - arr[k]) <= c) {
                     count++;
                 }
-       
+            }
+        }
+    }
+
+    return count;
+}
+
+// Example usage:
+const arr = [1, 2, 3, 4];
+const a = 1;
+const
