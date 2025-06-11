@@ -21,4 +21,6 @@ function countGoodTriplets(arr, a, b, c) {
 // Example usage:
 const arr = [1, 2, 3, 4];
 const a = 1;
-const
+const b = 1;
+const c = 1;
+console.log(countGoodTriplets(arr, a, b, c)); // Output the count of good triplets
