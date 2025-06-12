@@ -9,4 +9,6 @@ function maxContainers(weights, capacity) {
     // Iterate through the sorted weights
     for (let weight of weights) {
         // Check if adding the current weight exceeds the capacity
-        if (totalWeight + 
+        if (totalWeight + weight <= capacity) {
+            totalWeight += weight; // Add the weight to the total
+            count++; // In
