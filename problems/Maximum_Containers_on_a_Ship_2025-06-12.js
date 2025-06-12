@@ -21,4 +21,6 @@ function maxContainers(weights, capacity) {
 }
 
 // Example usage:
-const containerWeights = [1
+const containerWeights = [1, 2, 3, 4, 5];
+const shipCapacity = 7;
+console.log(maxContainers(containerWeights, shipCapacity)); // Output: 3
