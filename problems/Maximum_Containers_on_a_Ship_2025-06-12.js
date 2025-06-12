@@ -11,4 +11,8 @@ function maxContainers(weights, capacity) {
         // Check if adding the current weight exceeds the capacity
         if (totalWeight + weight <= capacity) {
             totalWeight += weight; // Add the weight to the total
-            count++; // In
+            count++; // Increment the count of containers
+        } else {
+            break; // Stop if we exceed the capacity
+        }
+  
