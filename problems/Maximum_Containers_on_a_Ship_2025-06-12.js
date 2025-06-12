@@ -15,4 +15,10 @@ function maxContainers(weights, capacity) {
         } else {
             break; // Stop if we exceed the capacity
         }
-  
+    }
+
+    return count; // Return the maximum number of containers
+}
+
+// Example usage:
+const containerWeights = [1
