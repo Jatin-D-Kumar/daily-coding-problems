@@ -8,3 +8,8 @@ function maxScore(stones) {
     // Thus, the score cannot exceed totalStones // 2 since each operation 
     // removes at least 2 points and if there's an odd stone left, that does not count.
     return Math.floor(totalStones / 2);
+}
+
+// Example usage:
+const stones = [5, 4, 9];
+console.log(maxScore(stones)); // Output: 9
