@@ -26,4 +26,7 @@ function countAndSay(n) {
     return result;
 }
 
-// Example usag
+// Example usage
+console.log(countAndSay(1)); // Output: "1"
+console.log(countAndSay(2)); // Output: "11"
+console.log(countAndSay(3)
