@@ -20,4 +20,10 @@ function countAndSay(n) {
         }
     }
     
-    // Append the last counted
+    // Append the last counted digit
+    result += count.toString() + previousTerm[previousTerm.length - 1];
+
+    return result;
+}
+
+// Example usag
