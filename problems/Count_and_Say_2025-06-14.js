@@ -13,4 +13,6 @@ function countAndSay(n) {
         // If the current digit is the same as the previous one, increment count
         if (previousTerm[i] === previousTerm[i - 1]) {
             count++;
-        } el
+        } else {
+            // Append the count and the digit to the result
+            result += count.toString() + previousTer
