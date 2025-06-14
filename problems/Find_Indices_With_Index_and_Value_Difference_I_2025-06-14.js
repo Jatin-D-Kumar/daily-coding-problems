@@ -12,4 +12,6 @@ function findIndicesWithDifference(arr, k) {
 }
 
 // Example usage:
-const arr = [0, 2, 1, 3, 4]
+const arr = [0, 2, 1, 3, 4];
+const k = 1;
+const indices = findIndicesWithDifferenc
