@@ -8,4 +8,8 @@ function findIndicesWithDifference(arr, k) {
         }
     }
     
-    return r
+    return result;
+}
+
+// Example usage:
+const arr = [0, 2, 1, 3, 4]
