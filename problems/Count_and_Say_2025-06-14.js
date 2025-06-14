@@ -8,4 +8,6 @@ function countAndSay(n) {
     let result = '';
     let count = 1;
 
-    // Loop through the previous term to build 
+    // Loop through the previous term to build the new term
+    for (let i = 1; i < previousTerm.length; i++) {
+        // If the current digit is the same as the p
