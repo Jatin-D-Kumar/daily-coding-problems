@@ -15,4 +15,9 @@ function countAndSay(n) {
             count++;
         } else {
             // Append the count and the digit to the result
-            result += count.toString() + previousTer
+            result += count.toString() + previousTerm[i - 1];
+            count = 1; // Reset count for the new digit
+        }
+    }
+    
+    // Append the last counted
