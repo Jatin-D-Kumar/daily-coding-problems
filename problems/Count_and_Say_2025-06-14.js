@@ -10,4 +10,7 @@ function countAndSay(n) {
 
     // Loop through the previous term to build the new term
     for (let i = 1; i < previousTerm.length; i++) {
-        // If the current digit is the same as the p
+        // If the current digit is the same as the previous one, increment count
+        if (previousTerm[i] === previousTerm[i - 1]) {
+            count++;
+        } el
