@@ -20,4 +20,9 @@ function canReach(sx, sy, tx, ty) {
             }
         }
     }
-    return sx === tx && sy <=
+    return sx === tx && sy <= ty && (ty - sy) % sx === 0 || 
+           sy === ty && sx <= tx && (tx - sx) % sy === 0;
+}
+
+// Example usage
+console.log(
