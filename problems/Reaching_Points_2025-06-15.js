@@ -8,4 +8,8 @@ function canReach(sx, sy, tx, ty) {
                 tx %= ty;
             } else {
                 // If ty is at or below sy, we can only keep moving to (sx, sy)
-                ret
+                return (tx - sx) % ty === 0;
+            }
+        } else {
+            // If ty is greater than tx, reduce ty
+            if
