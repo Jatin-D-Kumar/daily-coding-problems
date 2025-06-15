@@ -25,4 +25,6 @@ function canReach(sx, sy, tx, ty) {
 }
 
 // Example usage
-console.log(
+console.log(canReach(1, 1, 3, 5)); // true
+console.log(canReach(1, 1, 2, 2)); // false
+console.log(canReach(1, 1, 5, 3)); // true
