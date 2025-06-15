@@ -12,4 +12,7 @@ function canReach(sx, sy, tx, ty) {
             }
         } else {
             // If ty is greater than tx, reduce ty
-            if
+            if (tx > sx) {
+                ty %= tx;
+            } else {
+                // If tx is at or below sx, we can only keep m
