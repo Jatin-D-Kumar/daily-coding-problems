@@ -15,4 +15,9 @@ function canReach(sx, sy, tx, ty) {
             if (tx > sx) {
                 ty %= tx;
             } else {
-                // If tx is at or below sx, we can only keep m
+                // If tx is at or below sx, we can only keep moving to (sx, sy)
+                return (ty - sy) % tx === 0;
+            }
+        }
+    }
+    return sx === tx && sy <=
