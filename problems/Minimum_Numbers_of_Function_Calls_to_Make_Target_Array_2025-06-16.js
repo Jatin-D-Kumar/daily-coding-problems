@@ -4,4 +4,6 @@ function minFunctionCalls(target) {
     let calls = 0;
 
     while (target > 0) {
-        // If target is even, we can
+        // If target is even, we can assume it came from a doubling
+        if (target % 2 === 0) {
+            target /= 
