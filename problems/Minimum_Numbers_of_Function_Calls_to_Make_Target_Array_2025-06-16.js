@@ -6,4 +6,6 @@ function minFunctionCalls(target) {
     while (target > 0) {
         // If target is even, we can assume it came from a doubling
         if (target % 2 === 0) {
-            target /= 
+            target /= 2; // reverse the doubling operation
+        } else {
+            target -= 1; // reve
