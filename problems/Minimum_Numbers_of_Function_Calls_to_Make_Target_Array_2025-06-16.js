@@ -18,3 +18,4 @@ function minFunctionCalls(target) {
 
 // Example usage
 const targetArray = 5; // any number you want to reach
+console.log(minFunctionCalls(targetArray)); // Output the number of calls needed
