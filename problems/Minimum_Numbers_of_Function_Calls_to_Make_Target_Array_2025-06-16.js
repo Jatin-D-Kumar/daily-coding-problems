@@ -8,4 +8,9 @@ function minFunctionCalls(target) {
         if (target % 2 === 0) {
             target /= 2; // reverse the doubling operation
         } else {
-            target -= 1; // reve
+            target -= 1; // reverse the addition of 1
+        }
+        calls++; // count the operation
+    }
+
+    ret
