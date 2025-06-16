@@ -13,4 +13,8 @@ function minFunctionCalls(target) {
         calls++; // count the operation
     }
 
-    ret
+    return calls;
+}
+
+// Example usage
+const targetArray = 5; // any number you want to reach
