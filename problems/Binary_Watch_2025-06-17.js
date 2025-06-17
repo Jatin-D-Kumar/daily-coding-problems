@@ -13,4 +13,10 @@ function readBinaryWatch(turnedOn) {
         }
     }
     
- 
+    return result;
+}
+
+function countBits(num) {
+    let count = 0;
+    while (num) {
+        count += num & 1; // Inc
