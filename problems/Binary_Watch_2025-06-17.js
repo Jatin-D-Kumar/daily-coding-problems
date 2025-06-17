@@ -7,4 +7,10 @@ function readBinaryWatch(turnedOn) {
             // Count the number of 1s in the binary representation of hours and minutes
             const count = countBits(h) + countBits(m);
             if (count === turnedOn) {
-                // Format t
+                // Format the time as "h:mm"
+                result.push(`${h}:${m < 10 ? '0' : ''}${m}`);
+            }
+        }
+    }
+    
+ 
