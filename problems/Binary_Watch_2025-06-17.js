@@ -23,3 +23,7 @@ function countBits(num) {
         num >>= 1; // Right shift to process the next bit
     }
     return count;
+}
+
+// Example usage:
+console.log(readBinaryWatch(1)); // Output: ["0:01", "0:02", "0:04", ..., "1:00", "2:00", ...]
