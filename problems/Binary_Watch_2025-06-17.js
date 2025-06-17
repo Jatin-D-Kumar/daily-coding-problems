@@ -19,4 +19,7 @@ function readBinaryWatch(turnedOn) {
 function countBits(num) {
     let count = 0;
     while (num) {
-        count += num & 1; // Inc
+        count += num & 1; // Increment count if the last bit is 1
+        num >>= 1; // Right shift to process the next bit
+    }
+    return count;
