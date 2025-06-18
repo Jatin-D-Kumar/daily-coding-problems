@@ -6,3 +6,6 @@ class ListNode {
     }
 }
 
+function hasCycle(head) {
+    if (!head || !head.next) {
+        return false; // If the list is empty or has only one node
