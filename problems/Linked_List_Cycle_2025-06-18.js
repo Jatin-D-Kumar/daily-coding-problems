@@ -26,4 +26,7 @@ function hasCycle(head) {
     return false; // No cycle found
 }
 
-// 
+// Example usage:
+// Creating a linked list: 3 -> 2 -> 0 -> -4
+// and then creating a cycle: -4 -> 2
+let node1 = new ListNode(
