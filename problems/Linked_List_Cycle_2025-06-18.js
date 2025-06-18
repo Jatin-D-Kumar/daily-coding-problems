@@ -14,4 +14,8 @@ function hasCycle(head) {
     let slow = head; // Tortoise
     let fast = head; // Hare
 
-    while (fast && fast.next
+    while (fast && fast.next) {
+        slow = slow.next; // Move slow by one step
+        fast = fast.next.next; // Move fast by two steps
+
+        if
