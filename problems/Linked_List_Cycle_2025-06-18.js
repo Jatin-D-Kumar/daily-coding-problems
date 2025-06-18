@@ -18,4 +18,12 @@ function hasCycle(head) {
         slow = slow.next; // Move slow by one step
         fast = fast.next.next; // Move fast by two steps
 
-        if
+        if (slow === fast) {
+            return true; // There is a cycle
+        }
+    }
+
+    return false; // No cycle found
+}
+
+// 
