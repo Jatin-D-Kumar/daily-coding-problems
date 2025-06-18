@@ -8,4 +8,10 @@ class ListNode {
 
 function hasCycle(head) {
     if (!head || !head.next) {
-        return false; // If the list is empty or has only one node
+        return false; // If the list is empty or has only one node, there can't be a cycle
+    }
+
+    let slow = head; // Tortoise
+    let fast = head; // Hare
+
+    while (fast && fast.next
