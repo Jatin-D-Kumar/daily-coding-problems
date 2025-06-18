@@ -29,4 +29,10 @@ function hasCycle(head) {
 // Example usage:
 // Creating a linked list: 3 -> 2 -> 0 -> -4
 // and then creating a cycle: -4 -> 2
-let node1 = new ListNode(
+let node1 = new ListNode(3);
+let node2 = new ListNode(2);
+let node3 = new ListNode(0);
+let node4 = new ListNode(-4);
+
+node1.next = node2;
+node2.next
