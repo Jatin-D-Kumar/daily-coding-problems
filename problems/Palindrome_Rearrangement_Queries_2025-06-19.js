@@ -7,4 +7,7 @@ function canFormPalindrome(s) {
         charCount[char] = (charCount[char] || 0) + 1;
     }
     
-    le
+    let oddCount = 0;
+    
+    // Count how many characters have an odd count
+    for (let count of Object.val
