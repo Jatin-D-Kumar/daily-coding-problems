@@ -20,4 +20,6 @@ function canFormPalindrome(s) {
     return oddCount <= 1;
 }
 
-// Ex
+// Example usage:
+const queries = ["aabb", "abc", "civic", "ivicc", "hello"];
+const results = queries.map(que
