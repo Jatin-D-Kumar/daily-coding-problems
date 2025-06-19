@@ -22,4 +22,6 @@ function canFormPalindrome(s) {
 
 // Example usage:
 const queries = ["aabb", "abc", "civic", "ivicc", "hello"];
-const results = queries.map(que
+const results = queries.map(query => canFormPalindrome(query));
+
+console.log(results); // Output: [true, false, true, true, false]
