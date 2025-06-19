@@ -16,4 +16,8 @@ function canFormPalindrome(s) {
         }
     }
     
-    // A s
+    // A string can form a palindrome if it has at most one odd character count
+    return oddCount <= 1;
+}
+
+// Ex
