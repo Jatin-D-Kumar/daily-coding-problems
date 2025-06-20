@@ -8,4 +8,8 @@ function canBeMadeStrictlyIncreasing(arr) {
             count++;
             // If we've already modified an element, return false
             if (count > 1) {
-                return
+                return false;
+            }
+            // Modify the current element or the previous one to make the array strictly increasing
+            if (i === 1 || arr[i] > arr[i - 2]) {
+                // Modify 
