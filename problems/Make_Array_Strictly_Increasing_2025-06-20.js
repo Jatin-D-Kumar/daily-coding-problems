@@ -17,4 +17,13 @@ function canBeMadeStrictlyIncreasing(arr) {
             } else {
                 // Otherwise modify arr[i] to arr[i - 1] + 1
                 arr[i] = arr[i - 1] + 1;
-        
+            }
+        }
+    }
+
+    return true; // It's possible to make the array strictly increasing
+}
+
+// Example usage:
+const arr1 = [1, 5, 3, 6];
+console.log(canBeMadeStrictlyIncreasing(arr1)); // Outp
