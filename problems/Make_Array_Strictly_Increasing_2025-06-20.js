@@ -26,4 +26,10 @@ function canBeMadeStrictlyIncreasing(arr) {
 
 // Example usage:
 const arr1 = [1, 5, 3, 6];
-console.log(canBeMadeStrictlyIncreasing(arr1)); // Outp
+console.log(canBeMadeStrictlyIncreasing(arr1)); // Output: true
+
+const arr2 = [1, 2, 3, 4];
+console.log(canBeMadeStrictlyIncreasing(arr2)); // Output: true
+
+const arr3 = [1, 1, 2, 3];
+console.log(canBeMadeStrictlyIncreasing(arr3)); // Output: false
