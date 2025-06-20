@@ -12,4 +12,9 @@ function canBeMadeStrictlyIncreasing(arr) {
             }
             // Modify the current element or the previous one to make the array strictly increasing
             if (i === 1 || arr[i] > arr[i - 2]) {
-                // Modify 
+                // Modify arr[i - 1] to arr[i] - 1
+                arr[i - 1] = arr[i] - 1; 
+            } else {
+                // Otherwise modify arr[i] to arr[i - 1] + 1
+                arr[i] = arr[i - 1] + 1;
+        
