@@ -12,4 +12,9 @@ function minInitialValue(nums) {
     return Math.max(1 - minPrefixSum, 1);
 }
 
-// Example usag
+// Example usage:
+const nums = [-1, -2, -3, -4];
+console.log(minInitialValue(nums)); // Output: 10
+
+const nums2 = [1, 2, 3];
+console.log(
