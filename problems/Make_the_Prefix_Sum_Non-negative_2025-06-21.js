@@ -17,4 +17,7 @@ const nums = [-1, -2, -3, -4];
 console.log(minInitialValue(nums)); // Output: 10
 
 const nums2 = [1, 2, 3];
-console.log(
+console.log(minInitialValue(nums2)); // Output: 1
+
+const nums3 = [3, 2, -4, 3, -1];
+console.log(minInitialValue(nums3)); // Output: 1
