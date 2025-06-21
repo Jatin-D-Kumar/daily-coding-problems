@@ -8,4 +8,8 @@ function minInitialValue(nums) {
         minPrefixSum = Math.min(minPrefixSum, currentPrefixSum);
     }
 
-    // If minPrefixS
+    // If minPrefixSum is negative, we need to add enough to make it non-negative
+    return Math.max(1 - minPrefixSum, 1);
+}
+
+// Example usag
