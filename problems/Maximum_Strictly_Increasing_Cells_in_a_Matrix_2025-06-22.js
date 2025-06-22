@@ -24,4 +24,6 @@ function maxIncreasingCells(matrix) {
         for (const [dx, dy] of directions) {
             const newRow = r + dx;
             const newCol = c + dy;
-            if (isInBo
+            if (isInBounds(newRow, newCol) && matrix[newRow][newCol] > matrix[r][c]) {
+                maxPath = Math.max(maxPath, 1 + dfs(newRow, newCol));
+      
