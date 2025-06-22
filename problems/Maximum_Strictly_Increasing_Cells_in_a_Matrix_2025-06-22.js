@@ -43,4 +43,8 @@ function maxIncreasingCells(matrix) {
 
 // Example usage:
 const matrix = [
- 
+    [1, 2, 3],
+    [6, 5, 4],
+    [7, 8, 9]
+];
+console.log(maxIncreasingCells(matrix)); // Output: 5 (increasing path: 1 -> 2 -> 3 -> 4 -> 5)
