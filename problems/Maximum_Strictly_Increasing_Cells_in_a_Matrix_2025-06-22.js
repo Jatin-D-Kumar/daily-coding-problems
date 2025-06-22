@@ -20,4 +20,8 @@ function maxIncreasingCells(matrix) {
         }
         
         let maxPath = 1; // the cell itself
-     
+        
+        for (const [dx, dy] of directions) {
+            const newRow = r + dx;
+            const newCol = c + dy;
+            if (isInBo
