@@ -26,4 +26,11 @@ function maxIncreasingCells(matrix) {
             const newCol = c + dy;
             if (isInBounds(newRow, newCol) && matrix[newRow][newCol] > matrix[r][c]) {
                 maxPath = Math.max(maxPath, 1 + dfs(newRow, newCol));
-      
+            }
+        }
+        
+        return dp[r][c] = maxPath;
+    };
+
+    for (let i = 0; i < rows; i++) {
+        for (let j = 0; j < cols; 
