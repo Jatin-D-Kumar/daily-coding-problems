@@ -33,4 +33,14 @@ function maxIncreasingCells(matrix) {
     };
 
     for (let i = 0; i < rows; i++) {
-        for (let j = 0; j < cols; 
+        for (let j = 0; j < cols; j++) {
+            maxLength = Math.max(maxLength, dfs(i, j));
+        }
+    }
+
+    return maxLength;
+}
+
+// Example usage:
+const matrix = [
+ 
