@@ -14,4 +14,10 @@ function maxIncreasingCells(matrix) {
 
     const isInBounds = (x, y) => x >= 0 && x < rows && y >= 0 && y < cols;
 
-    const dfs =
+    const dfs = (r, c) => {
+        if (dp[r][c] !== -1) {
+            return dp[r][c];
+        }
+        
+        let maxPath = 1; // the cell itself
+     
