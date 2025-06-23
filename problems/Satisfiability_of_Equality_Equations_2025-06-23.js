@@ -24,4 +24,16 @@ class UnionFind {
                 this.parent[rootX] = rootY;
             } else {
                 this.parent[rootY] = rootX;
-                this.rank
+                this.rank[rootX]++;
+            }
+        }
+    }
+}
+
+function equationsPossible(equations) {
+    const uf = new UnionFind(26); // 26 letters from 'a' to 'z'
+
+    // First pass: union for all equality equations
+    for (let eq of equations) {
+        if (eq[1] === '=') {
+  
