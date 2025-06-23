@@ -53,4 +53,12 @@ function equationsPossible(equations) {
         }
     }
 
-    
+    return true; // all equations are satisfiable
+}
+
+// Example Usage:
+const equations = ["a==b", "b!=a"];
+console.log(equationsPossible(equations)); // Output: false
+
+const equations2 = ["b==a", "a==b"];
+console.log(equationsPossible(equations2)); // Output: true
