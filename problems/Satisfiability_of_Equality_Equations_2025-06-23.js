@@ -44,4 +44,13 @@ function equationsPossible(equations) {
 
     // Second pass: check for inequality equations
     for (let eq of equations) {
-        if (eq[1] 
+        if (eq[1] === '!') {
+            const u = eq.charCodeAt(0) - 'a'.charCodeAt(0);
+            const v = eq.charCodeAt(3) - 'a'.charCodeAt(0);
+            if (uf.find(u) === uf.find(v)) {
+                return false; // contradiction found
+            }
+        }
+    }
+
+    
