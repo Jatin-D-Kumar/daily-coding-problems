@@ -7,4 +7,15 @@ class UnionFind {
 
     find(x) {
         if (this.parent[x] !== x) {
-            this.parent[x] = this.find(this.parent
+            this.parent[x] = this.find(this.parent[x]); // path compression
+        }
+        return this.parent[x];
+    }
+
+    union(x, y) {
+        const rootX = this.find(x);
+        const rootY = this.find(y);
+        
+        if (rootX !== rootY) {
+            // union by rank
+            if (this.rank[rootX
