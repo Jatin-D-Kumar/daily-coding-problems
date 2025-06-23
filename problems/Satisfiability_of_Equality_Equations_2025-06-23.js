@@ -36,4 +36,12 @@ function equationsPossible(equations) {
     // First pass: union for all equality equations
     for (let eq of equations) {
         if (eq[1] === '=') {
-  
+            const u = eq.charCodeAt(0) - 'a'.charCodeAt(0);
+            const v = eq.charCodeAt(3) - 'a'.charCodeAt(0);
+            uf.union(u, v);
+        }
+    }
+
+    // Second pass: check for inequality equations
+    for (let eq of equations) {
+        if (eq[1] 
