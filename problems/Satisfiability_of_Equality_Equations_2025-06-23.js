@@ -18,4 +18,10 @@ class UnionFind {
         
         if (rootX !== rootY) {
             // union by rank
-            if (this.rank[rootX
+            if (this.rank[rootX] > this.rank[rootY]) {
+                this.parent[rootY] = rootX;
+            } else if (this.rank[rootX] < this.rank[rootY]) {
+                this.parent[rootX] = rootY;
+            } else {
+                this.parent[rootY] = rootX;
+                this.rank
