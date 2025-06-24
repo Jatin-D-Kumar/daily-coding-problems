@@ -14,4 +14,9 @@ function maximizePartitions(arr, maxValue) {
         }
     }
 
-    // Count the
+    // Count the last partition if it's not empty
+    if (currentSum > 0) {
+        partitions++;
+    }
+
+    return parti
