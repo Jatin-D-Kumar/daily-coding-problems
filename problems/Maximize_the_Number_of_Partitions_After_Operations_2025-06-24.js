@@ -9,4 +9,9 @@ function maximizePartitions(arr, maxValue) {
             currentSum += arr[i]; // Add to the current segment
         } else {
             // If it exceeds, we need to create a new partition
-          
+            partitions++;
+            currentSum = arr[i]; // Start new partition
+        }
+    }
+
+    // Count the
