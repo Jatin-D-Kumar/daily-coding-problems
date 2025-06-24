@@ -4,4 +4,6 @@ function maximizePartitions(arr, maxValue) {
     let currentSum = 0;
 
     for (let i = 0; i < arr.length; i++) {
-        // Check if we can include the current element in the current pa
+        // Check if we can include the current element in the current partition
+        if (currentSum + arr[i] <= maxValue) {
+            currentSum += arr[i]; // Add to the cu
