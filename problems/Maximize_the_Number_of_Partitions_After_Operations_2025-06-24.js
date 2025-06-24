@@ -6,4 +6,7 @@ function maximizePartitions(arr, maxValue) {
     for (let i = 0; i < arr.length; i++) {
         // Check if we can include the current element in the current partition
         if (currentSum + arr[i] <= maxValue) {
-            currentSum += arr[i]; // Add to the cu
+            currentSum += arr[i]; // Add to the current segment
+        } else {
+            // If it exceeds, we need to create a new partition
+          
