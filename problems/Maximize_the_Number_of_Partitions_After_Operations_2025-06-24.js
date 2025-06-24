@@ -19,4 +19,10 @@ function maximizePartitions(arr, maxValue) {
         partitions++;
     }
 
-    return parti
+    return partitions;
+}
+
+// Example usage:
+const arr = [1, 2, 3, 4, 5];
+const maxValue = 5;
+const result = maximizeParti
