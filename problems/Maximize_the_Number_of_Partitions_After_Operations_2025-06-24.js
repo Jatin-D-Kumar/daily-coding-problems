@@ -25,4 +25,5 @@ function maximizePartitions(arr, maxValue) {
 // Example usage:
 const arr = [1, 2, 3, 4, 5];
 const maxValue = 5;
-const result = maximizeParti
+const result = maximizePartitions(arr, maxValue);
+console.log(`Maximum partitions: ${result}`); // Output will depend on the logic
