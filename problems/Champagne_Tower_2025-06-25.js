@@ -22,4 +22,12 @@ function champagneTower(poured, query_row, query_glass) {
         }
     }
 
-    // The result for
+    // The result for the queried glass is the minimum between its volume and 1.
+    return Math.min(tower[query_row][query_glass], 1);
+}
+
+// Example usage:
+const poured = 5;
+const query_row = 2;
+const query_glass = 1;
+console.log(champagneTower(poured, query_row, query_glass)); // Output: 0.5
