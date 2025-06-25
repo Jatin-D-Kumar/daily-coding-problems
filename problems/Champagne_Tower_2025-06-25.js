@@ -9,4 +9,8 @@ function champagneTower(poured, query_row, query_glass) {
     // Iterate through each level of the tower up to the query_row.
     for (let row = 0; row <= query_row; row++) {
         for (let glass = 0; glass <= row; glass++) {
-            // If there is more than 1 unit of 
+            // If there is more than 1 unit of champagne in the current glass:
+            if (tower[row][glass] > 1) {
+                // Calculate the excess champagne that overflows.
+                const overflow = tower[row][glass] - 1;
+                tower[row][glass] = 1; // Only 1 unit can be held in the glass.
