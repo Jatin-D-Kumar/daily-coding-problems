@@ -14,3 +14,12 @@ function champagneTower(poured, query_row, query_glass) {
                 // Calculate the excess champagne that overflows.
                 const overflow = tower[row][glass] - 1;
                 tower[row][glass] = 1; // Only 1 unit can be held in the glass.
+
+                // Distribute the overflow to the glasses below.
+                tower[row + 1][glass] += overflow / 2; // Left glass below
+                tower[row + 1][glass + 1] += overflow / 2; // Right glass below
+            }
+        }
+    }
+
+    // The result for
