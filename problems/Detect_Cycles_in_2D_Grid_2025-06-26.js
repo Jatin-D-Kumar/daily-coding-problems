@@ -36,4 +36,10 @@ function containsCycle(grid) {
                 }
             }
         }
-  
+        return false;
+    }
+
+    for (let i = 0; i < rows; i++) {
+        for (let j = 0; j < cols; j++) {
+            if (!visited[i][j]) {
+                if (dfs(i, j, -1, 
