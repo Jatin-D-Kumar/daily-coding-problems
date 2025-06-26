@@ -11,4 +11,10 @@ function containsCycle(grid) {
         [0, -1] // left
     ];
 
-    function isValid(x, y, parentX, pare
+    function isValid(x, y, parentX, parentY) {
+        return (
+            x >= 0 &&
+            x < rows &&
+            y >= 0 &&
+            y < cols &&
+            grid[x][y] === grid[parentX][parentY] && // s
