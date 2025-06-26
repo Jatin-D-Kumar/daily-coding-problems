@@ -53,4 +53,10 @@ function containsCycle(grid) {
 }
 
 // Example Usage
-const gri
+const grid = [
+    ['a', 'b', 'b', 'a'],
+    ['a', 'b', 'b', 'a'],
+    ['b', 'a', 'a', 'a']
+];
+
+console.log(containsCycle(grid)); // Output: True or False based on cycle detection
