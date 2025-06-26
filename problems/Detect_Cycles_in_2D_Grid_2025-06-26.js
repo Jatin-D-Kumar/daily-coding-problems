@@ -30,4 +30,10 @@ function containsCycle(grid) {
         for (const [dx, dy] of directions) {
             const newX = x + dx;
             const newY = y + dy;
-            if (i
+            if (isValid(newX, newY, x, y)) {
+                if (visited[newX][newY] || dfs(newX, newY, x, y)) {
+                    return true;
+                }
+            }
+        }
+  
