@@ -17,4 +17,10 @@ function containsCycle(grid) {
             x < rows &&
             y >= 0 &&
             y < cols &&
-            grid[x][y] === grid[parentX][parentY] && // s
+            grid[x][y] === grid[parentX][parentY] && // same character
+            (x !== parentX || y !== parentY) // not the parent
+        );
+    }
+
+    function dfs(x, y, parentX, parentY) {
+        if (visited[x][y]) return t
