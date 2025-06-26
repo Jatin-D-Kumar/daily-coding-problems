@@ -42,4 +42,15 @@ function containsCycle(grid) {
     for (let i = 0; i < rows; i++) {
         for (let j = 0; j < cols; j++) {
             if (!visited[i][j]) {
-                if (dfs(i, j, -1, 
+                if (dfs(i, j, -1, -1)) {
+                    return true; // cycle detected
+                }
+            }
+        }
+    }
+
+    return false; // no cycles found
+}
+
+// Example Usage
+const gri
