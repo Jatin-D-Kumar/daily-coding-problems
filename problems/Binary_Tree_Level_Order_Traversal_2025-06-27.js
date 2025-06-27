@@ -19,4 +19,8 @@ function levelOrder(root) {
         
         for (let i = 0; i < levelSize; i++) {
             const currentNode = queue.shift(); // Dequeue the front node
-    
+            currentLevel.push(currentNode.val); // Add its value to the current level
+            
+            // Enqueue child nodes
+            if (currentNode.left) queue.push(currentNode.left);
+            if (cu
