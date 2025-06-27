@@ -23,4 +23,15 @@ function levelOrder(root) {
             
             // Enqueue child nodes
             if (currentNode.left) queue.push(currentNode.left);
-            if (cu
+            if (currentNode.right) queue.push(currentNode.right);
+        }
+        
+        // Add the current level to the result
+        result.push(currentLevel);
+    }
+    
+    return result;
+}
+
+// Example usage:
+const root =
