@@ -14,4 +14,9 @@ function levelOrder(root) {
     const queue = [root]; // Initialize the queue with the root node
     
     while (queue.length > 0) {
-        const levelSize = queue.length; // Number of nodes at the current leve
+        const levelSize = queue.length; // Number of nodes at the current level
+        const currentLevel = []; // Array to hold values of the current level
+        
+        for (let i = 0; i < levelSize; i++) {
+            const currentNode = queue.shift(); // Dequeue the front node
+    
