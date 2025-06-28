@@ -15,4 +15,12 @@ function buildArray(n, m, k) {
     // that allow us to perform K comparisons
     for (let i = 1; i < n; i++) {
         // Fill in values under `m`
-        result[i
+        result[i] = Math.min(m - 1, i);
+    }
+    
+    // Return the array
+    return result;
+}
+
+// Example usage:
+const n = 5, m = 10, 
