@@ -23,4 +23,6 @@ function buildArray(n, m, k) {
 }
 
 // Example usage:
-const n = 5, m = 10, 
+const n = 5, m = 10, k = 3;
+const result = buildArray(n, m, k);
+console.log(result); // Output will be an array fulfilling the conditions
