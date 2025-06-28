@@ -7,4 +7,6 @@ function integerBreak(n) {
     // Fill the dp array
     for (let i = 2; i <= n; i++) {
         for (let j = 1; j < i; j++) {
-            // Either we can use j and (i - j) or dp[j] and dp[i - j] fo
+            // Either we can use j and (i - j) or dp[j] and dp[i - j] for the maximum product
+            dp[i] = Math.max(dp[i], j * (i - j), j * dp[i - j]);
+       
