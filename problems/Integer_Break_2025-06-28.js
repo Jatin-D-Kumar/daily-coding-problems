@@ -9,4 +9,11 @@ function integerBreak(n) {
         for (let j = 1; j < i; j++) {
             // Either we can use j and (i - j) or dp[j] and dp[i - j] for the maximum product
             dp[i] = Math.max(dp[i], j * (i - j), j * dp[i - j]);
-       
+        }
+    }
+
+    return dp[n];
+}
+
+// Example usage
+console.log(integerBreak(10)); // Output: 36
