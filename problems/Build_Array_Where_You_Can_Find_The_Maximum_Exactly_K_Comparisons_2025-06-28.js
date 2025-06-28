@@ -12,4 +12,7 @@ function buildArray(n, m, k) {
     result[0] = m;
 
     // Start filling the rest of the array with values
-    // that 
+    // that allow us to perform K comparisons
+    for (let i = 1; i < n; i++) {
+        // Fill in values under `m`
+        result[i
