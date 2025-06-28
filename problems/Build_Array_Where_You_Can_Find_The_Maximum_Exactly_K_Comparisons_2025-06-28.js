@@ -8,4 +8,8 @@ function buildArray(n, m, k) {
     // The result array
     const result = new Array(n).fill(0);
     
-    /
+    // Set the largest element to `m`
+    result[0] = m;
+
+    // Start filling the rest of the array with values
+    // that 
