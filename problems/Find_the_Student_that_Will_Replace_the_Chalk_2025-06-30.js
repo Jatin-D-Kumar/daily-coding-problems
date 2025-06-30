@@ -13,3 +13,11 @@ function findStudentToReplaceChalk(chalk, dailyUsage) {
     // Determine which student will run out of chalk first
     for (let i = 0; i < totalStudents; i++) {
         // If the remaining chalk can cover the current student's usage
+        if (remainingChalk >= chalk[i]) {
+            remainingChalk -= chalk[i];
+        } else {
+            return i; // Return the index of the student who will run out first
+        }
+    }
+
+    return -1
