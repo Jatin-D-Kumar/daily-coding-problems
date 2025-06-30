@@ -20,4 +20,11 @@ function findStudentToReplaceChalk(chalk, dailyUsage) {
         }
     }
 
-    return -1
+    return -1; // In case no one runs out, though not expected in this problem.
+}
+
+// Example usage:
+const chalk = [5, 1, 5];
+const dailyUsage = 4;
+
+console.log(findStudentToReplaceChalk(chalk, dailyUsage)); // Output: 0
