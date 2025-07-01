@@ -13,4 +13,5 @@ const image = [
     [0, 0, 0]
 ];
 
-const fl
+const flippedAndInverted = flipAndInvertImage(image);
+console.log(flippedAndInve
