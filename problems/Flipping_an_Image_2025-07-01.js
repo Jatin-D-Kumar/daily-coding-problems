@@ -14,4 +14,12 @@ const image = [
 ];
 
 const flippedAndInverted = flipAndInvertImage(image);
-console.log(flippedAndInve
+console.log(flippedAndInverted);
+/*
+Output:
+[
+    [1, 0, 0],
+    [0, 1, 0],
+    [1, 1, 1]
+]
+*/
