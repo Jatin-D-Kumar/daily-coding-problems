@@ -34,4 +34,14 @@ function countDistinctPalindromicSubsequences(s) {
                 }
             } else {
                 // Different characters
-   
+                dp[i][j] = dp[i + 1][j] + dp[i][j - 1] - dp[i + 1][j - 1];
+            }
+        }
+    }
+
+    return dp[0][n - 1];
+}
+
+// Example Usage
+const s = "bccb";
+console.log(countDistinctPalindromicSubsequences(s)); // Output: 6
