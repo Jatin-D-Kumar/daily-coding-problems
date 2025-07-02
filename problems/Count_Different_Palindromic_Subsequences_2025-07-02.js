@@ -19,4 +19,9 @@ function countDistinctPalindromicSubsequences(s) {
                 let high = j - 1;
 
                 // Find boundaries for the same characters
-                while (
+                while (low <= high && s[low] !== s[i]) low++;
+                while (low <= high && s[high] !== s[j]) high--;
+
+                if (low > high) {
+                    // No same characters between
+                    dp[i][j] = dp[i + 1][j - 
