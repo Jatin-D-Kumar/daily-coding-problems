@@ -13,4 +13,10 @@ function countDistinctPalindromicSubsequences(s) {
         for (let i = 0; i <= n - len; i++) {
             const j = i + len - 1; // End index of the substring
 
-            
+            if (s[i] === s[j]) {
+                // Count palindromic subsequences for s[i..j]
+                let low = i + 1;
+                let high = j - 1;
+
+                // Find boundaries for the same characters
+                while (
