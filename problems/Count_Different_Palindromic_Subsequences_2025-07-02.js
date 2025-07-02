@@ -24,4 +24,8 @@ function countDistinctPalindromicSubsequences(s) {
 
                 if (low > high) {
                     // No same characters between
-                    dp[i][j] = dp[i + 1][j - 
+                    dp[i][j] = dp[i + 1][j - 1] + 2; // +2 for the two same characters
+                } else if (low === high) {
+                    // One same character between
+                    dp[i][j] = dp[i + 1][j - 1] + 1; // +1 for the two same characters
+           
