@@ -45,4 +45,16 @@ function printLinkedList(head) {
     let output = [];
     while (current !== null) {
         output.push(current.value);
-      
+        current = current.next;
+    }
+    console.log(output.join(' -> '));
+}
+
+// Example usage
+let head = createLinkedList([3, 2, 3, 5, 2, 4, 1, 5]);
+console.log("Original Linked List:");
+printLinkedList(head);
+
+head = removeDuplicates(head);
+console.log("Linked List after removing duplicates:");
+printLinkedList(head);
