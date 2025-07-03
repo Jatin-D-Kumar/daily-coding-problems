@@ -13,4 +13,12 @@ function removeDuplicates(head) {
     let prev = null;
 
     while (current !== null) {
-        if (seen.has(current.value)
+        if (seen.has(current.value)) {
+            // Duplicate detected, remove it
+            prev.next = current.next; // Bypass the current node
+        } else {
+            // Not a duplicate, add it to the seen set
+            seen.add(current.value);
+            prev = current; // Move prev to current
+        }
+        current = current.next; /
