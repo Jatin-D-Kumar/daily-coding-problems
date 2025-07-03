@@ -21,4 +21,15 @@ function removeDuplicates(head) {
             seen.add(current.value);
             prev = current; // Move prev to current
         }
-        current = current.next; /
+        current = current.next; // Move to the next node
+    }
+
+    return head; // Return the modified list
+}
+
+// Helper function to create a linked list from an array for testing
+function createLinkedList(arr) {
+    if (arr.length === 0) return null;
+    let head = new ListNode(arr[0]);
+    let current = head;
+    for (let i = 1; i < arr.length; i
