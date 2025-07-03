@@ -8,4 +8,4 @@ function minimumSecondsToMakeMountainHeightZero(mountains) {
 
 // Example usage:
 const mountains = [3, 2, 1, 4];
-co
+console.log(minimumSecondsToMakeMountainHeightZero(mountains)); // Output: 4
