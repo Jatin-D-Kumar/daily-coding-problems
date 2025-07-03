@@ -1,3 +1,4 @@
 
 function minimumSecondsToMakeMountainHeightZero(mountains) {
-    // Find th
+    // Find the maximum height from the mountains
+    let maxHeight = Math.max(...mountain
