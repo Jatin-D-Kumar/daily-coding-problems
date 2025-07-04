@@ -27,4 +27,5 @@ function closestRoom(rooms, queries) {
 
 // Example usage:
 const rooms = [[2, 3], [3, 4], [5, 6]];
-const
+const queries = [{ minArea: 6, index: 0 }, { minArea: 12, index: 1 }];
+console.log(closestRoom(rooms, queries)); // Output: [2, 2]
