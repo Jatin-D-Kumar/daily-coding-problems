@@ -10,4 +10,5 @@ function closestRoom(rooms, queries) {
     for (const query of sortedQueries) {
         const { minArea, index } = query;
 
-        // Add ro
+        // Add rooms that meet the area requirement
+        while (roomIndex < sortedRooms.length && (sortedRooms[roomIndex].width * sortedRoom
