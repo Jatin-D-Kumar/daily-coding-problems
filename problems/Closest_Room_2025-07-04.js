@@ -14,4 +14,8 @@ function closestRoom(rooms, queries) {
         while (roomIndex < sortedRooms.length && (sortedRooms[roomIndex].width * sortedRooms[roomIndex].height) >= minArea) {
             availableRooms.add(sortedRooms[roomIndex].index);
             roomIndex++;
-    
+        }
+
+        // Find the closest room
+        if (availableRooms.size > 0) {
+            results[index] = Math.max(...Array.
