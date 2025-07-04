@@ -5,3 +5,9 @@ function closestRoom(rooms, queries) {
     const sortedRooms = rooms.map((room, index) => ({ ...room, index })).sort((a, b) => b.width * b.height - a.width * a.height);
     
     const availableRooms = new Set();
+    let roomIndex = 0;
+
+    for (const query of sortedQueries) {
+        const { minArea, index } = query;
+
+        // Add ro
