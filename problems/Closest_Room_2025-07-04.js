@@ -18,4 +18,13 @@ function closestRoom(rooms, queries) {
 
         // Find the closest room
         if (availableRooms.size > 0) {
-            results[index] = Math.max(...Array.
+            results[index] = Math.max(...Array.from(availableRooms));
+        }
+    }
+
+    return results;
+}
+
+// Example usage:
+const rooms = [[2, 3], [3, 4], [5, 6]];
+const
