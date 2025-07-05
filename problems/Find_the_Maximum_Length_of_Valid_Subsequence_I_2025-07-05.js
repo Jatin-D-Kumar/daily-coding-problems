@@ -11,4 +11,9 @@ function lengthOfLIS(nums) {
             // If the current number is greater than the previous number
             if (nums[i] > nums[j]) {
                 // Update the dp array with the maximum length found
-         
+                dp[i] = Math.max(dp[i], dp[j] + 1);
+            }
+        }
+    }
+
+    // The maximum value i
