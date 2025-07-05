@@ -16,4 +16,8 @@ function lengthOfLIS(nums) {
         }
     }
 
-    // The maximum value i
+    // The maximum value in dp array is the length of the longest increasing subsequence
+    return Math.max(...dp);
+}
+
+// Exa
