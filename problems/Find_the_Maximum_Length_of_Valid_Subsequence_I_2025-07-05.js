@@ -7,4 +7,6 @@ function lengthOfLIS(nums) {
 
     // Iterate through the array
     for (let i = 1; i < nums.length; i++) {
-        for (let j = 0; j 
+        for (let j = 0; j < i; j++) {
+            // If the current number is greater than the previous number
+            if 
