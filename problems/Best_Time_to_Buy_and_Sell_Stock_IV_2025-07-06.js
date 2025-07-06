@@ -23,4 +23,14 @@ function maxProfit(k, prices) {
             // Update the dp table
             dp[i][j] = Math.max(dp[i][j - 1], prices[j] + maxDiff);
             // Update maxDiff for the next iteration
-            
+            maxDiff = Math.max(maxDiff, dp[i - 1][j] - prices[j]);
+        }
+    }
+
+    return dp[k][n - 1];
+}
+
+// Example usage:
+const k = 2;
+const prices = [3, 2, 6, 5, 0, 3];
+console.log(maxProfit(k, prices)); // Output: 7
