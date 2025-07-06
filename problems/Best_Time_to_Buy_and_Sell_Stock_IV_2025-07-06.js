@@ -18,4 +18,9 @@ function maxProfit(k, prices) {
     const dp = Array.from({ length: k + 1 }, () => Array(n).fill(0));
 
     for (let i = 1; i <= k; i++) {
-        let maxDiff = -prices[0]; // This will store the maximum dif
+        let maxDiff = -prices[0]; // This will store the maximum difference
+        for (let j = 1; j < n; j++) {
+            // Update the dp table
+            dp[i][j] = Math.max(dp[i][j - 1], prices[j] + maxDiff);
+            // Update maxDiff for the next iteration
+            
