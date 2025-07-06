@@ -11,4 +11,11 @@ function maxProfit(k, prices) {
                 maxProfit += prices[i] - prices[i - 1];
             }
         }
-        return max
+        return maxProfit;
+    }
+
+    // Create a DP table
+    const dp = Array.from({ length: k + 1 }, () => Array(n).fill(0));
+
+    for (let i = 1; i <= k; i++) {
+        let maxDiff = -prices[0]; // This will store the maximum dif
