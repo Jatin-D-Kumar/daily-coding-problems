@@ -5,4 +5,5 @@ function nextGreaterElement(nums1, nums2) {
 
     // Traverse nums2 to find the next greater elements
     for (let num of nums2) {
-        w
+        while (stack.length > 0 && stack[stack.length - 1] < num) {
+            const smallerNum = stack.
