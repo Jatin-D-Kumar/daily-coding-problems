@@ -13,4 +13,9 @@ function nextGreaterElement(nums1, nums2) {
     }
 
     // For any remaining elements in the stack, there is no next greater element
-    while (stack.leng
+    while (stack.length > 0) {
+        result.set(stack.pop(), -1);
+    }
+
+    // Build the result array for nums1
+  
