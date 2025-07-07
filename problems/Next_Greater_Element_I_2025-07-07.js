@@ -18,4 +18,9 @@ function nextGreaterElement(nums1, nums2) {
     }
 
     // Build the result array for nums1
-  
+    return nums1.map(num => result.get(num));
+}
+
+// Example usage:
+const nums1 = [4, 1, 2];
+const 
