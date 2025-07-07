@@ -23,4 +23,5 @@ function nextGreaterElement(nums1, nums2) {
 
 // Example usage:
 const nums1 = [4, 1, 2];
-const 
+const nums2 = [1, 3, 4, 2];
+console.log(nextGreaterElement(nums1, nums2)); // Output: [-1, 3, -1]
