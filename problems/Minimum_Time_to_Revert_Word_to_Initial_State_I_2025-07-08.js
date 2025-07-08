@@ -34,4 +34,7 @@ function minTimeToRevert(initial, target, operations) {
     return calculateRevertTime(target);
 }
 
-// Example function to apply an operation (
+// Example function to apply an operation (this needs to be defined based on the problem)
+function applyOperation(current, operation) {
+    // Implement the logic to apply the operation to the current string
+    // For example, if the operati
