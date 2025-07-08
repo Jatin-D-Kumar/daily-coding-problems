@@ -16,4 +16,8 @@ function minTimeToRevert(initial, target, operations) {
 
         // Try all possible operations
         for (const [op, time] of operations) {
-            // Apply the operation t
+            // Apply the operation to the current string
+            let newString = applyOperation(current, op);
+            if (newString !== null) {
+                // Recursively calculate the time for the new string
+              
