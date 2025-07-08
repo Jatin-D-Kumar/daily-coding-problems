@@ -45,4 +45,11 @@ function applyOperation(current, operation) {
 const initial = "abc";
 const target = "cba";
 const operations = [
-    ["replace_a_
+    ["replace_a_with_b", 1],
+    ["replace_b_with_c", 2],
+    ["replace_c_with_a", 3],
+    // Add more operations as needed
+];
+
+const result = minTimeToRevert(initial, target, operations);
+console.log(result);
