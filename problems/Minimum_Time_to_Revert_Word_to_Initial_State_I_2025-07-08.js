@@ -20,4 +20,7 @@ function minTimeToRevert(initial, target, operations) {
             let newString = applyOperation(current, op);
             if (newString !== null) {
                 // Recursively calculate the time for the new string
-              
+                const timeForNewString = calculateRevertTime(newString);
+                if (timeForNewString !== Infinity) {
+                    minTime = Math.min(minTime, time + timeForNewString);
+             
