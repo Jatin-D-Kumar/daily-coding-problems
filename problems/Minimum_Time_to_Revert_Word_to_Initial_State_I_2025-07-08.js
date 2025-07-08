@@ -37,4 +37,12 @@ function minTimeToRevert(initial, target, operations) {
 // Example function to apply an operation (this needs to be defined based on the problem)
 function applyOperation(current, operation) {
     // Implement the logic to apply the operation to the current string
-    // For example, if the operati
+    // For example, if the operation is a character replacement
+    // return newString or null if the operation is not applicable
+}
+
+// Example usage
+const initial = "abc";
+const target = "cba";
+const operations = [
+    ["replace_a_
