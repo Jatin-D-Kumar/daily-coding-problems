@@ -23,4 +23,15 @@ function minTimeToRevert(initial, target, operations) {
                 const timeForNewString = calculateRevertTime(newString);
                 if (timeForNewString !== Infinity) {
                     minTime = Math.min(minTime, time + timeForNewString);
-             
+                }
+            }
+        }
+
+        return minTime;
+    }
+
+    // Start the calculation from the target string
+    return calculateRevertTime(target);
+}
+
+// Example function to apply an operation (
