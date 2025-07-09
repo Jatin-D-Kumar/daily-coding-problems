@@ -9,4 +9,9 @@ class ProductOfNumbers {
             // If the number is 0, reset the products array
             this.products = [1];
         } else {
-            // Mul
+            // Multiply the last product with the new number
+            this.products.push(this.products[this.products.length - 1] * num);
+        }
+    }
+
+    getProdu
