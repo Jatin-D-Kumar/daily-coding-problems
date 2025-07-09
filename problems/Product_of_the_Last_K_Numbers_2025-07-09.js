@@ -5,4 +5,8 @@ class ProductOfNumbers {
     }
 
     add(num) {
-  
+        if (num === 0) {
+            // If the number is 0, reset the products array
+            this.products = [1];
+        } else {
+            // Mul
