@@ -18,4 +18,9 @@ class ProductOfNumbers {
         if (k >= this.products.length) {
             return 0; // If k is greater than the number of products, return 0
         }
-        // Re
+        // Return the product of the last k numbers
+        return this.products[this.products.length - 1] / this.products[this.products.length - 1 - k];
+    }
+}
+
+/
