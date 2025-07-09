@@ -14,4 +14,8 @@ class ProductOfNumbers {
         }
     }
 
-    getProdu
+    getProduct(k) {
+        if (k >= this.products.length) {
+            return 0; // If k is greater than the number of products, return 0
+        }
+        // Re
