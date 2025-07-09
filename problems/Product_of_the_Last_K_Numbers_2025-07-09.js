@@ -23,4 +23,8 @@ class ProductOfNumbers {
     }
 }
 
-/
+// Example usage:
+const productOfNumbers = new ProductOfNumbers();
+productOfNumbers.add(3); // Product: 3
+productOfNumbers.add(2); // Product: 6
+product
