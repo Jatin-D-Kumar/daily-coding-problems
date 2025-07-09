@@ -29,4 +29,7 @@ productOfNumbers.add(3); // Product: 3
 productOfNumbers.add(2); // Product: 6
 productOfNumbers.add(5); // Product: 30
 console.log(productOfNumbers.getProduct(2)); // Output: 10 (2 * 5)
-console.log(productOfNumbers.getProduct(3)); // Out
+console.log(productOfNumbers.getProduct(3)); // Output: 30 (3 * 2 * 5)
+productOfNumbers.add(0); // Reset
+productOfNumbers.add(4); // Product: 4
+console.log(productOfNumbers.getProduct(1)); // Output: 4
