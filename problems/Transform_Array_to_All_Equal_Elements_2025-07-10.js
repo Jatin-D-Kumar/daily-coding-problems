@@ -12,3 +12,8 @@ function minOperationsToEqual(arr) {
     }
 
     return operations;
+}
+
+// Example usage:
+const arr = [1, 2, 3, 4];
+const result =
