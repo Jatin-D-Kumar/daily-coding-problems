@@ -16,4 +16,5 @@ function minOperationsToEqual(arr) {
 
 // Example usage:
 const arr = [1, 2, 3, 4];
-const result =
+const result = minOperationsToEqual(arr);
+console.log(result); // Output: 2
