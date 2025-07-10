@@ -6,4 +6,4 @@ function minOperationsToEqual(arr) {
 
     let operations = 0;
 
-    // Calculate the t
+    // Calculate the total number of operations needed to make all elements equal to
