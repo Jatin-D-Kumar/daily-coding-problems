@@ -53,4 +53,9 @@ graph.addVertex('C');
 graph.addVertex('D');
 
 graph.addEdge('A', 'B', 3);
-gr
+graph.addEdge('A', 'C', 5);
+graph.addEdge('B', 'C', 1);
+graph.addEdge('B', 'D', 4);
+graph.addEdge('C', 'D', 2);
+
+console.log("Maximum Sum of Edge Values:", graph.maxEdgeSum());
