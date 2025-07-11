@@ -20,4 +20,9 @@ class Graph {
         let visited = new Set();
         let maxSum = 0;
 
-        const dfs = (node
+        const dfs = (node, currentSum) => {
+            visited.add(node);
+
+            for (let neighbor of this.adjacencyList[node]) {
+                if (!visited.has(neighbor.node)) {
+                
