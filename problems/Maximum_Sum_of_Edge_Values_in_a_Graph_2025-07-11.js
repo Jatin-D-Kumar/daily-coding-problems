@@ -28,4 +28,10 @@ class Graph {
                     currentSum += neighbor.value; // Add the edge value
                     maxSum = Math.max(maxSum, currentSum);
                     dfs(neighbor.node, currentSum);
-            
+                    currentSum -= neighbor.value; // Backtrack
+                }
+            }
+            visited.delete(node);
+        };
+
+        // Start DFS from each vertex to cover all
