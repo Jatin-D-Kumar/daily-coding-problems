@@ -25,4 +25,7 @@ class Graph {
 
             for (let neighbor of this.adjacencyList[node]) {
                 if (!visited.has(neighbor.node)) {
-                
+                    currentSum += neighbor.value; // Add the edge value
+                    maxSum = Math.max(maxSum, currentSum);
+                    dfs(neighbor.node, currentSum);
+            
