@@ -34,4 +34,11 @@ class Graph {
             visited.delete(node);
         };
 
-        // Start DFS from each vertex to cover all
+        // Start DFS from each vertex to cover all possible trees
+        for (let vertex in this.adjacencyList) {
+            if (!visited.has(vertex)) {
+                dfs(vertex, 0);
+            }
+        }
+
+        return ma
