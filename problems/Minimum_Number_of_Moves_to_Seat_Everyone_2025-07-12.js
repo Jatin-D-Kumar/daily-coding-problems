@@ -17,4 +17,4 @@ function minMovesToSeat(seats, students) {
 // Example usage:
 const seats = [3, 1, 5];
 const students = [2, 7, 4];
-console.l
+console.log(minMovesToSeat(seats, students)); // Output: 4
