@@ -7,3 +7,5 @@ function minMovesToSeat(seats, students) {
     let moves = 0;
     
     // Calculate the total moves required
+    for (let i = 0; i < seats.length; i++) {
+       
