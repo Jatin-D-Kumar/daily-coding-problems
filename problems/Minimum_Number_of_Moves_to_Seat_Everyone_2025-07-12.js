@@ -10,4 +10,9 @@ function minMovesToSeat(seats, students) {
     for (let i = 0; i < seats.length; i++) {
         moves += Math.abs(seats[i] - students[i]);
     }
-  
+    
+    return moves;
+}
+
+// Example usage:
+const seat
