@@ -15,4 +15,6 @@ function minMovesToSeat(seats, students) {
 }
 
 // Example usage:
-const seat
+const seats = [3, 1, 5];
+const students = [2, 7, 4];
+console.l
