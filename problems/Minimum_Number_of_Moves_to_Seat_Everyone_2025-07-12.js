@@ -4,4 +4,6 @@ function minMovesToSeat(seats, students) {
     seats.sort((a, b) => a - b);
     students.sort((a, b) => a - b);
     
-    let moves 
+    let moves = 0;
+    
+    // Calculate the total moves required
