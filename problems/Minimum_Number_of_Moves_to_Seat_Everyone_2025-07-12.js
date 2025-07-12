@@ -1,3 +1,5 @@
 
 function minMovesToSeat(seats, students) {
-    // S
+    // Sort both arrays
+    seats.sort((a, b) => a - b);
+   
