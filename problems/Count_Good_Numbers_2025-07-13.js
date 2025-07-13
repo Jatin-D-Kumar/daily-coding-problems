@@ -9,4 +9,6 @@ function countGoodNumbers(n) {
     const otherDigitOptions = 10; // Digits 0-9 for the other digits
 
     // Calculate the total number of good numbers
-    let totalGoodNumbers = 
+    let totalGoodNumbers = firstDigitOptions * Math.pow(otherDigitOptions, n - 1);
+    
+    return totalGoodNumbe
