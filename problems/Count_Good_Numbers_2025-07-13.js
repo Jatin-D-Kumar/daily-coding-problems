@@ -11,4 +11,9 @@ function countGoodNumbers(n) {
     // Calculate the total number of good numbers
     let totalGoodNumbers = firstDigitOptions * Math.pow(otherDigitOptions, n - 1);
     
-    return totalGoodNumbe
+    return totalGoodNumbers;
+}
+
+// Example usage:
+console.log(countGoodNumbers(1)); // Output: 10
+console.log(c
