@@ -5,4 +5,5 @@ function countGoodNumbers(n) {
     }
 
     // For n > 1
-    const firstDigitOptions = 9; // Digits
+    const firstDigitOptions = 9; // Digits 1-9 for the first digit
+    const otherDigitOptions = 10; // Digits 0-9 for the other
