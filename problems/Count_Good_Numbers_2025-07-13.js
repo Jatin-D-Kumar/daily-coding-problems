@@ -16,4 +16,5 @@ function countGoodNumbers(n) {
 
 // Example usage:
 console.log(countGoodNumbers(1)); // Output: 10
-console.log(c
+console.log(countGoodNumbers(2)); // Output: 90
+console.log(countGoodNumbers(3)); // Output: 900
