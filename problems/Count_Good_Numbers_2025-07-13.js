@@ -1,4 +1,8 @@
 
 function countGoodNumbers(n) {
     if (n === 1) {
-        return 10; // For n = 1, we
+        return 10; // For n = 1, we can use digits 0-9
+    }
+
+    // For n > 1
+    const firstDigitOptions = 9; // Digits
