@@ -6,4 +6,10 @@ function countPlayersAboveThreshold(scores, threshold) {
     // Iterate through the scores array
     for (let score of scores) {
         // Check if the current score is greater than the threshold
-        if (score > threshol
+        if (score > threshold) {
+            count++;
+        }
+    }
+
+    // Return the count of players above the threshold
+    
