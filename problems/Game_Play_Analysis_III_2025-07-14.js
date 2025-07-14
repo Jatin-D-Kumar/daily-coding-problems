@@ -17,4 +17,6 @@ function countPlayersAboveThreshold(scores, threshold) {
 
 // Example usage:
 const gameScores = [100, 200, 150, 300, 250];
-const threshold = 200
+const threshold = 200;
+const result = countPlayersAboveThreshold(gameScores, threshold);
+console.log(result); // Output: 3
