@@ -17,4 +17,13 @@ function evalBooleanExpr(expr) {
         } else if (token === '(') {
             operatorStack.push(token);
         } else if (token === ')') {
-            while (operatorStack.length && operator
+            while (operatorStack.length && operatorStack[operatorStack.length - 1] !== '(') {
+                outputQueue.push(operatorStack.pop());
+            }
+            operatorStack.pop();
+        }
+    }
+
+    while (operatorStack.length) {
+        outputQueue.push(operatorStack.pop());
+  
