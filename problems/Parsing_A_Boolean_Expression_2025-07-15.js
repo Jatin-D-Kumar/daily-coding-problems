@@ -11,4 +11,10 @@ function evalBooleanExpr(expr) {
         } else if (token in precedence) {
             while (operatorStack.length && 
                    precedence[operatorStack[operatorStack.length - 1]] >= precedence[token]) {
-                outputQu
+                outputQueue.push(operatorStack.pop());
+            }
+            operatorStack.push(token);
+        } else if (token === '(') {
+            operatorStack.push(token);
+        } else if (token === ')') {
+            while (operatorStack.length && operator
