@@ -6,4 +6,5 @@ function minIncrements(target) {
     for (let i = 0; i < target.length; i++) {
         // Calculate the difference between the current target value and the current max
         if (target[i] > currentMax) {
-            increments 
+            increments += target[i] - currentMax; // Increment the total increments
+            currentMax = target[
