@@ -7,4 +7,12 @@ function minIncrements(target) {
         // Calculate the difference between the current target value and the current max
         if (target[i] > currentMax) {
             increments += target[i] - currentMax; // Increment the total increments
-            currentMax = target[
+            currentMax = target[i]; // Update the current max
+        }
+    }
+
+    return increments;
+}
+
+// Example usage:
+co
