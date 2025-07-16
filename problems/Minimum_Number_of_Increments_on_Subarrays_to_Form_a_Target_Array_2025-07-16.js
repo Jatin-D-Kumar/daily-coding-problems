@@ -15,4 +15,5 @@ function minIncrements(target) {
 }
 
 // Example usage:
-co
+const targetArray = [1, 2, 3, 2, 1];
+console.log(minIncrements(targetArray)); // Output: 3
