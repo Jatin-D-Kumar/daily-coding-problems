@@ -11,4 +11,7 @@ function findMissingSubtasks(totalSubtasks, executedSubtasks) {
 
 // Example usage:
 const totalSubtasks = [1, 2, 3, 4, 5];
-const executedSubtasks = [2, 3, 
+const executedSubtasks = [2, 3, 5];
+
+const missing = findMissingSubtasks(totalSubtasks, executedSubtasks);
+console.log(missing); // Output: [1, 4]
