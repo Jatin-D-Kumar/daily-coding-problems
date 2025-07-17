@@ -6,4 +6,9 @@ function findMissingSubtasks(totalSubtasks, executedSubtasks) {
     // Filter the total subtasks to find those not in the executed set
     const missingSubtasks = totalSubtasks.filter(subtask => !executedSet.has(subtask));
     
-   
+    return missingSubtasks;
+}
+
+// Example usage:
+const totalSubtasks = [1, 2, 3, 4, 5];
+const executedSubtasks = [2, 3, 
