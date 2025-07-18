@@ -13,3 +13,5 @@ while (numSet.has(currentNum + 1)) {
 longest = Math.max(longest, streak);
         }
 }
+return longest;
+}
