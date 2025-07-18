@@ -4,3 +4,5 @@ const numSet = new Set(nums);
 for (let num of numSet) {
         // Check only starting points of sequences
         if (!numSet.has(num - 1)) {
+let currentNum = num;
+            let streak = 1;
