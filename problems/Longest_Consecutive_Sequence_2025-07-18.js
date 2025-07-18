@@ -6,3 +6,7 @@ for (let num of numSet) {
         if (!numSet.has(num - 1)) {
 let currentNum = num;
             let streak = 1;
+while (numSet.has(currentNum + 1)) {
+                currentNum++;
+                streak++;
+}
