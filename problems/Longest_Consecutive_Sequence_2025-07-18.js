@@ -10,3 +10,6 @@ while (numSet.has(currentNum + 1)) {
                 currentNum++;
                 streak++;
 }
+longest = Math.max(longest, streak);
+        }
+}
