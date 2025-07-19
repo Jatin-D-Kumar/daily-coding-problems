@@ -25,3 +25,6 @@ function countUniqueCluePairs(clues, target) {
       freq.set(complement, 0);
     }
   }
+
+return count;
+}
