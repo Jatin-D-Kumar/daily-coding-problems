@@ -19,3 +19,9 @@ function countUniqueCluePairs(clues, target) {
         const pairs = Math.min(freq.get(num), freq.get(complement));
         count += pairs;
       }
+
+    // Set both frequencies to 0 so they aren’t reused
+      freq.set(num, 0);
+      freq.set(complement, 0);
+    }
+  }
