@@ -18,4 +18,11 @@ function minPeopleToTeach(lang, knowledge) {
             if (!knownLanguages.has(desiredLang)) {
                 needsTeaching = true;
                 break;
-    
+            }
+        }
+        if (needsTeaching) {
+            peopleToTeach++;
+        }
+    }
+
+    return peopleTo
