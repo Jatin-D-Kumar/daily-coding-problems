@@ -12,4 +12,10 @@ function addStrings(num1, num2) {
         
         let sum = x + y + carry; // Calculate the sum
         carry = Math.floor(sum / 10); // Determine the carry for the next iteration
-        result = (sum % 10) + result; // Prepends the last digit
+        result = (sum % 10) + result; // Prepends the last digit of the sum to the result
+        
+        i--; // Move to the next digit in num1
+        j--; // Move to the next digit in num2
+    }
+
+    return res
