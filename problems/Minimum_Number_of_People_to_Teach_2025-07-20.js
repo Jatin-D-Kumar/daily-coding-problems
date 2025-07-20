@@ -12,4 +12,7 @@ function minPeopleToTeach(lang, knowledge) {
     let peopleToTeach = 0;
 
     // Determine which people need to be taught
+    for (const langs of knowledge) {
+        let needsTeaching = false;
+        for (const desiredLang of lang) {
    
