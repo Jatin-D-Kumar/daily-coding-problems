@@ -16,4 +16,12 @@ function stoneGameVIII(stones) {
         // Update maxScore; the optimal choice for player 1 between picking stones[i] or prefixSum[i-1]
         maxScore = Math.max(maxScore, prefixSum[i]);
         // This is the new prefix sum for the next iteration
-        prefixSum[i] = Mat
+        prefixSum[i] = Math.max(prefixSum[i], prefixSum[i - 1]);
+    }
+    
+    return maxScore;
+}
+
+// Example usage:
+const stones = [7, 8, 9];
+console.log(stoneGameVIII(stones)); // Output the result
