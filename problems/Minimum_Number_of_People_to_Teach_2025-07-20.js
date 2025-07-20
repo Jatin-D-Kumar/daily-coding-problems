@@ -5,4 +5,11 @@ function minPeopleToTeach(lang, knowledge) {
     // Gather all known languages from the people
     for (const langs of knowledge) {
         for (const l of langs) {
-            knownLang
+            knownLanguages.add(l);
+        }
+    }
+    
+    let peopleToTeach = 0;
+
+    // Determine which people need to be taught
+   
