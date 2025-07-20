@@ -37,4 +37,4 @@ const peopleKnowledge = [
     ['Chinese']
 ];
 
-console.log(minPeopleTo
+console.log(minPeopleToTeach(languagesToLearn, peopleKnowledge)); // Output should correspond to the number of people who need teaching.
