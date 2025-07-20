@@ -11,4 +11,6 @@ function stoneGameVIII(stones) {
     // Initialize the maximum value for the first choice
     let maxScore = prefixSum[n - 1];
     
-   
+    // Iterate from the end of the stones array to the second-to-last element
+    for (let i = n - 2; i >= 1; i--) {
+        // Update maxScore; the optimal choice for player 1 betwe
