@@ -4,4 +4,7 @@ function encodeNumber(num) {
 
     let result = '';
     while (num > 0) {
-        // Adjust num because 'a' should map to 1, not 
+        // Adjust num because 'a' should map to 1, not 0.
+        num--; 
+        let remainder = num % 26;
+        result = String.fromCharCode(remainder 
