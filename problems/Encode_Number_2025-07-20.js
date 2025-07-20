@@ -7,4 +7,10 @@ function encodeNumber(num) {
         // Adjust num because 'a' should map to 1, not 0.
         num--; 
         let remainder = num % 26;
-        result = String.fromCharCode(remainder 
+        result = String.fromCharCode(remainder + 'a'.charCodeAt(0)) + result;
+        num = Math.floor(num / 26);
+    }
+    return result;
+}
+
+// Ex
