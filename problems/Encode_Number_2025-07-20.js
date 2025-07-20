@@ -13,4 +13,6 @@ function encodeNumber(num) {
     return result;
 }
 
-// Ex
+// Example usage:
+console.log(encodeNumber(1));  // Output: "a"
+console.log(encodeNumber(2));  // Output:
