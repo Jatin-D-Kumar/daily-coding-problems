@@ -7,4 +7,7 @@ function addStrings(num1, num2) {
 
     // Loop until both numbers are fully processed
     while (i >= 0 || j >= 0 || carry > 0) {
-        let x = i >= 0 ? num1[i] - '0' : 0; // Convert char to int if i
+        let x = i >= 0 ? num1[i] - '0' : 0; // Convert char to int if in bounds
+        let y = j >= 0 ? num2[j] - '0' : 0; // Convert char to int if in bounds
+        
+        let sum = x + y + carry; // Calculate the su
