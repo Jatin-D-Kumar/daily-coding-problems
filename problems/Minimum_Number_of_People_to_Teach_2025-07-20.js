@@ -15,4 +15,7 @@ function minPeopleToTeach(lang, knowledge) {
     for (const langs of knowledge) {
         let needsTeaching = false;
         for (const desiredLang of lang) {
-   
+            if (!knownLanguages.has(desiredLang)) {
+                needsTeaching = true;
+                break;
+    
