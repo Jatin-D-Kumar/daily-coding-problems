@@ -25,4 +25,10 @@ function minPeopleToTeach(lang, knowledge) {
         }
     }
 
-    return peopleTo
+    return peopleToTeach;
+}
+
+// Example usage:
+const languagesToLearn = ['English', 'Spanish', 'French'];
+const peopleKnowledge = [
+ 
