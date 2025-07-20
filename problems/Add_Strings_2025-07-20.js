@@ -18,4 +18,10 @@ function addStrings(num1, num2) {
         j--; // Move to the next digit in num2
     }
 
-    return res
+    return result; // Return the final result
+}
+
+// Example usage:
+const num1 = "123";
+const num2 = "456";
+console.log(addStrings(num1, num2)); // Output: "579"
