@@ -31,4 +31,10 @@ function minPeopleToTeach(lang, knowledge) {
 // Example usage:
 const languagesToLearn = ['English', 'Spanish', 'French'];
 const peopleKnowledge = [
- 
+    ['German', 'Italian'],
+    ['Spanish'],
+    ['English', 'Spanish'],
+    ['Chinese']
+];
+
+console.log(minPeopleTo
