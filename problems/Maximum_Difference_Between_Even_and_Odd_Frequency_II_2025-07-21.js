@@ -19,4 +19,9 @@ function maxDifference(arr) {
         if (Number(key) % 2 === 0) {
             evenCount += freqMap[key];
         } else {
-            oddCount += 
+            oddCount += freqMap[key];
+        }
+    }
+
+    // Return the maximum difference
+    return Mat
