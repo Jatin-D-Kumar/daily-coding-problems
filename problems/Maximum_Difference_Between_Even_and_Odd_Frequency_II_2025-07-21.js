@@ -28,4 +28,5 @@ function maxDifference(arr) {
 }
 
 // Example usage
-const arr = [1, 2, 2, 3, 4, 4, 4]
+const arr = [1, 2, 2, 3, 4, 4, 4];
+console.log(maxDifference(arr)); // Output will be the maximum difference
