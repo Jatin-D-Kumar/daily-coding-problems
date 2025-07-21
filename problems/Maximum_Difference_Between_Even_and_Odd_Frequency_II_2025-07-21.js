@@ -10,3 +10,8 @@ function maxDifference(arr) {
             freqMap[num] = 1;
         }
     }
+
+    let evenCount = 0;
+    let oddCount = 0;
+
+    // Calculate frequency of even 
