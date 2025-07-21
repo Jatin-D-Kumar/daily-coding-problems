@@ -2,4 +2,7 @@
 function maxDifference(arr) {
     const freqMap = {};
 
-    // Count the frequenci
+    // Count the frequencies of each number
+    for (let num of arr) {
+        if (freqMap[num]) {
+         
