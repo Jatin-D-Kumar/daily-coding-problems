@@ -24,4 +24,8 @@ function maxDifference(arr) {
     }
 
     // Return the maximum difference
-    return Mat
+    return Math.abs(evenCount - oddCount);
+}
+
+// Example usage
+const arr = [1, 2, 2, 3, 4, 4, 4]
