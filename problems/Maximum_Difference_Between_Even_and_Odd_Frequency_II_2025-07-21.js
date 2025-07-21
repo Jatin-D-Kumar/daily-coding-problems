@@ -14,4 +14,6 @@ function maxDifference(arr) {
     let evenCount = 0;
     let oddCount = 0;
 
-    // Calculate frequency of even 
+    // Calculate frequency of even and odd numbers
+    for (let key in freqMap) {
+        if (Number(key) % 2 === 0) 
