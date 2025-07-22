@@ -59,3 +59,14 @@ head.next.next.next.next = new ListNode(5);
 const k = 2; // Size of groups to reverse
 const newHead = reverseKGroup(head, k);
 
+// Function to print list values
+const printList = (node) => {
+    let current = node;
+    while (current) {
+        process.stdout.write(current.val + ' ');
+        current = current.next;
+    }
+    console.log();
+};
+
+printList(newHead); // Output should be 2 1 4 3 5 if k = 2
