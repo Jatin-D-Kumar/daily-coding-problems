@@ -38,4 +38,13 @@ function reverseKGroup(head, k) {
         
         // Reverse the k nodes
         const nextGroupHead = kth.next; // Save the next group's head
-        const [newGroupHead, newGroupTail] = reverse(groupPrev
+        const [newGroupHead, newGroupTail] = reverse(groupPrev.next, k);
+        
+        // Connect reversed group with the previous part
+        groupPrev.next = newGroupHead;
+        newGroupTail.next = nextGroupHead;
+        
+        // Move the groupPrev pointer to the end of the reversed group
+        groupPrev = newGroupTail;
+    }
+}
