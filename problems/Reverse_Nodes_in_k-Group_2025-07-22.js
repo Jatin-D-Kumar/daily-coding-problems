@@ -32,4 +32,10 @@ function reverseKGroup(head, k) {
         // Check if there are at least k nodes left in the list
         let kth = groupPrev;
         for (let i = 0; i < k; i++) {
+            kth = kth.next;
+            if (!kth) return dummy.next; // Less than k nodes remaining, exit
+        }
         
+        // Reverse the k nodes
+        const nextGroupHead = kth.next; // Save the next group's head
+        const [newGroupHead, newGroupTail] = reverse(groupPrev
