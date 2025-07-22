@@ -21,4 +21,15 @@ function reverseKGroup(head, k) {
             count++;
         }
         
-        return [prev, curr]; // prev is the new head
+        return [prev, curr]; // prev is the new head, curr is the next group head
+    };
+
+    let dummy = new ListNode(0);
+    dummy.next = head;
+    let groupPrev = dummy;
+
+    while (true) {
+        // Check if there are at least k nodes left in the list
+        let kth = groupPrev;
+        for (let i = 0; i < k; i++) {
+        
