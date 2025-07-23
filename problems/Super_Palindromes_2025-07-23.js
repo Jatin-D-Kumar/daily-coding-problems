@@ -29,4 +29,15 @@ function superPalindromesInRange(L, R) {
         const palEven = BigInt(palStrEven);
         const palEvenSquare = palEven * palEven;
         
-        if (palEvenSq
+        if (palEvenSquare >= BigInt(L) && palEvenSquare <= BigInt(R) && isPalindrome(palEvenSquare)) {
+            count++;
+        }
+    }
+    
+    return count;
+}
+
+// Example usage:
+const L = "4";
+const R = "1000";
+console.log(superPalindromesInRange(L, R));  // Output: 4
