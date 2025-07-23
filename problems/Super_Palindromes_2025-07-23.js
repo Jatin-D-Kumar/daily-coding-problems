@@ -8,4 +8,10 @@ function superPalindromesInRange(L, R) {
     let count = 0;
 
     // Define the upper limit for the palindromic numbers to check.
-    const limi
+    const limit = Math.sqrt(R);
+    
+    // Generate odd-length palindromes
+    for (let i = 1; i <= limit; i++) {
+        const str = String(i);
+        const palStrOdd = str + str.slice(0, str.length - 1).split('').reverse().join('');
+        const palOdd = BigInt(p
