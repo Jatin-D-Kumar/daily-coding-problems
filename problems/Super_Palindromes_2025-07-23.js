@@ -23,4 +23,10 @@ function superPalindromesInRange(L, R) {
     }
     
     // Generate even-length palindromes
-    fo
+    for (let i = 1; i <= limit; i++) {
+        const str = String(i);
+        const palStrEven = str + str.split('').reverse().join('');
+        const palEven = BigInt(palStrEven);
+        const palEvenSquare = palEven * palEven;
+        
+        if (palEvenSq
