@@ -14,4 +14,13 @@ function superPalindromesInRange(L, R) {
     for (let i = 1; i <= limit; i++) {
         const str = String(i);
         const palStrOdd = str + str.slice(0, str.length - 1).split('').reverse().join('');
-        const palOdd = BigInt(p
+        const palOdd = BigInt(palStrOdd);
+        const palOddSquare = palOdd * palOdd;
+        
+        if (palOddSquare >= BigInt(L) && palOddSquare <= BigInt(R) && isPalindrome(palOddSquare)) {
+            count++;
+        }
+    }
+    
+    // Generate even-length palindromes
+    fo
