@@ -7,4 +7,10 @@ function sumOfPowerOfAllSubsequences(arr) {
     for (let i = 0; i < n; i++) {
         // Each element arr[i] appears in 2^(n-1) subsequences
         const contribution = arr[i] ** 2 * (1 << (n - 1)); // 1 << (n - 1) is 2^(n-1)
-   
+        totalSum += contribution;
+    }
+
+    return totalSum;
+}
+
+// Ex
