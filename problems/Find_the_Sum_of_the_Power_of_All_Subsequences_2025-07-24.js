@@ -6,4 +6,5 @@ function sumOfPowerOfAllSubsequences(arr) {
     // Calculate the sum of powers of all subsequences
     for (let i = 0; i < n; i++) {
         // Each element arr[i] appears in 2^(n-1) subsequences
-        const contribu
+        const contribution = arr[i] ** 2 * (1 << (n - 1)); // 1 << (n - 1) is 2^(n-1)
+   
