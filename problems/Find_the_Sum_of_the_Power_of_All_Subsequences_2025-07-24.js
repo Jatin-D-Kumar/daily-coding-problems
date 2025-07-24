@@ -15,4 +15,5 @@ function sumOfPowerOfAllSubsequences(arr) {
 
 // Example usage:
 const arr = [1, 2, 3];
-const result = sumOfPowerOfAllS
+const result = sumOfPowerOfAllSubsequences(arr);
+console.log(result); // Output the result
