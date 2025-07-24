@@ -13,4 +13,6 @@ function sumOfPowerOfAllSubsequences(arr) {
     return totalSum;
 }
 
-// Ex
+// Example usage:
+const arr = [1, 2, 3];
+const result = sumOfPowerOfAllS
