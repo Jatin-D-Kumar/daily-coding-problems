@@ -1,3 +1,6 @@
 
 function sumOfPowerOfAllSubsequences(arr) {
-    const n = arr.leng
+    const n = arr.length;
+    let totalSum = 0;
+
+    // Calculate the sum of powers of al
