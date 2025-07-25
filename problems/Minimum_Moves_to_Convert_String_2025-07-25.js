@@ -6,4 +6,9 @@ function minDistance(word1, word2) {
     // Create a 2D array to store the minimum edit distances
     const dp = Array(m + 1).fill(null).map(() => Array(n + 1).fill(0));
 
-    // Initialize the dp
+    // Initialize the dp table
+    for (let i = 0; i <= m; i++) {
+        dp[i][0] = i; // If word2 is empty, all characters of word1 need to be deleted
+    }
+    for (let j = 0; j <= n; j++) {
+        dp[0][j] = j; // If word1 is empty, all characters of word2 need to be inse
