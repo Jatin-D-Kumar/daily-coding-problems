@@ -11,4 +11,13 @@ function minDistance(word1, word2) {
         dp[i][0] = i; // If word2 is empty, all characters of word1 need to be deleted
     }
     for (let j = 0; j <= n; j++) {
-        dp[0][j] = j; // If word1 is empty, all characters of word2 need to be inse
+        dp[0][j] = j; // If word1 is empty, all characters of word2 need to be inserted
+    }
+
+    // Fill the dp table
+    for (let i = 1; i <= m; i++) {
+        for (let j = 1; j <= n; j++) {
+            if (word1[i - 1] === word2[j - 1]) {
+                dp[i][j] = dp[i - 1][j - 1]; // No change needed
+            } else {
+       
