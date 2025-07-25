@@ -24,4 +24,17 @@ function minDistance(word1, word2) {
                 dp[i][j] = Math.min(
                     dp[i - 1][j] + 1, // Deletion
                     dp[i][j - 1] + 1, // Insertion
-                    dp[i - 1][j - 1] + 1 // R
+                    dp[i - 1][j - 1] + 1 // Replacement
+                );
+            }
+        }
+    }
+
+    // The last cell contains the answer
+    return dp[m][n];
+}
+
+// Example usage:
+const word1 = "intention";
+const word2 = "execution";
+console.log(minDistance(word1, word2)); // Output: 5
