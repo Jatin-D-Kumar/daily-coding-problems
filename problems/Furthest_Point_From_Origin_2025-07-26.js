@@ -8,3 +8,5 @@ function furthestPoint(points) {
         const distance = Math.sqrt(point[0] ** 2 + point[1] ** 2);
         
         // Check if this distance is greater than the current max distance
+        if (distance > maxDistance) {
+            maxDistance = distance; // Update max distance
