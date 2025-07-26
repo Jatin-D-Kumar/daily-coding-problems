@@ -5,4 +5,6 @@ function furthestPoint(points) {
 
     for (let point of points) {
         // Calculate the distance from the origin (0, 0)
-        const distance = Math.sqrt(point[0] ** 2 + po
+        const distance = Math.sqrt(point[0] ** 2 + point[1] ** 2);
+        
+        // Check if this distance is greater than the current max distance
