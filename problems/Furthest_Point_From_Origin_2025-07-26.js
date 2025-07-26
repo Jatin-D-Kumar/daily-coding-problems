@@ -14,4 +14,8 @@ function furthestPoint(points) {
         }
     }
 
-    return furt
+    return furthestPoint; // Return the furthest point
+}
+
+// Example usage:
+const points = [[1, 2], [3, 4], [-1,
