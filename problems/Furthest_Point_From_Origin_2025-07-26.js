@@ -4,4 +4,5 @@ function furthestPoint(points) {
     let furthestPoint = null; // To store the furthest point
 
     for (let point of points) {
-        // Ca
+        // Calculate the distance from the origin (0, 0)
+        const distance = Math.sqrt(point[0] ** 2 + po
