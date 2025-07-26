@@ -10,3 +10,8 @@ function furthestPoint(points) {
         // Check if this distance is greater than the current max distance
         if (distance > maxDistance) {
             maxDistance = distance; // Update max distance
+            furthestPoint = point; // Update the furthest point
+        }
+    }
+
+    return furt
