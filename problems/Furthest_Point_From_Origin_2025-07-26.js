@@ -18,4 +18,6 @@ function furthestPoint(points) {
 }
 
 // Example usage:
-const points = [[1, 2], [3, 4], [-1,
+const points = [[1, 2], [3, 4], [-1, -1], [5, 5]];
+const result = furthestPoint(points);
+console.log(result); // Output: [5, 5]
