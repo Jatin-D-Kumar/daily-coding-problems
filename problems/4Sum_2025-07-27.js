@@ -28,4 +28,9 @@ function fourSum(nums, target) {
                     // Found a quadruplet
                     result.push([nums[i], nums[j], nums[left], nums[right]]);
 
-                    // Move le
+                    // Move left and right pointers and skip duplicates
+                    while (left < right && nums[left] === nums[left + 1]) left++;
+                    while (left < right && nums[right] === nums[right - 1]) right--;
+
+                    left++;
+              
