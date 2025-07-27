@@ -15,4 +15,11 @@ function fourSum(nums, target) {
 
             let left = j + 1;
             let right = n - 1;
-    
+            const remainingTarget = target - (nums[i] + nums[j]);
+
+            while (left < right) {
+                const currentSum = nums[left] + nums[right];
+
+                if (currentSum < remainingTarget) {
+                    left++;
+            
