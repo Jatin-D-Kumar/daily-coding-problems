@@ -33,4 +33,17 @@ function fourSum(nums, target) {
                     while (left < right && nums[right] === nums[right - 1]) right--;
 
                     left++;
-              
+                    right--;
+                }
+            }
+        }
+    }
+
+    return result;
+}
+
+// Example usage:
+const nums = [1, 0, -1, 0, -2, 2];
+const target = 0;
+console.log(fourSum(nums, target));
+// Output: [[-2, -1, 0, 1], [-2, 0, 0, 2], [-1, 0, 0, 1]]
