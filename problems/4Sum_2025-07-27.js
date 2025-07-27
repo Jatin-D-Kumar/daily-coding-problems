@@ -22,4 +22,10 @@ function fourSum(nums, target) {
 
                 if (currentSum < remainingTarget) {
                     left++;
-            
+                } else if (currentSum > remainingTarget) {
+                    right--;
+                } else {
+                    // Found a quadruplet
+                    result.push([nums[i], nums[j], nums[left], nums[right]]);
+
+                    // Move le
