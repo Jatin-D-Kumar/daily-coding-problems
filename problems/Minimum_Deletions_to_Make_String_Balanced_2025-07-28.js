@@ -7,4 +7,9 @@ function minDeletionsToMakeBalanced(s) {
     for (let char of s) {
         if (char === 'a') {
             countA++;
-        } else if (char === 'b') 
+        } else if (char === 'b') {
+            countB++;
+        }
+    }
+
+    // Calculate t
