@@ -18,4 +18,4 @@ function minDeletionsToMakeBalanced(s) {
 
 // Example usage:
 const str = "aababb";
-console
+console.log(minDeletionsToMakeBalanced(str)); // Output: 1
