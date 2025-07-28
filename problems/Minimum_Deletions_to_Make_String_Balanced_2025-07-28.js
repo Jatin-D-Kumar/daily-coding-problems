@@ -12,4 +12,5 @@ function minDeletionsToMakeBalanced(s) {
         }
     }
 
-    // Calculate t
+    // Calculate the minimum deletions required
+    return Math.abs(countA - 
