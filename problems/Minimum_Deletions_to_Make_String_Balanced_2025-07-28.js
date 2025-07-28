@@ -13,4 +13,9 @@ function minDeletionsToMakeBalanced(s) {
     }
 
     // Calculate the minimum deletions required
-    return Math.abs(countA - 
+    return Math.abs(countA - countB);
+}
+
+// Example usage:
+const str = "aababb";
+console
