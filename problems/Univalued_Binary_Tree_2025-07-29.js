@@ -8,4 +8,7 @@ class TreeNode {
 }
 
 function isUnivalTree(root) {
-    if (!root) return true; // An empty tree is c
+    if (!root) return true; // An empty tree is considered univalued
+
+    // Helper function to check if the tree is univalued
+    function checkUnival(
