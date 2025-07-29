@@ -13,4 +13,6 @@ function isUnivalTree(root) {
     // Helper function to check if the tree is univalued
     function checkUnival(node, value) {
         if (!node) return true; // Reached a leaf node
-        if (node.val !== value) r
+        if (node.val !== value) return false; // Value mismatch
+        // Check left and right subtrees
+        return checkUnival(node
