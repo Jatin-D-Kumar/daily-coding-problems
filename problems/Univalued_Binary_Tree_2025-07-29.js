@@ -19,4 +19,9 @@ function isUnivalTree(root) {
     }
 
     // Start the check with the root's value
-  
+    return checkUnival(root, root.val);
+}
+
+// Example usage:
+// Constructing a univalued binary tree
+cons
