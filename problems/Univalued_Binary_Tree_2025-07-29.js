@@ -24,4 +24,7 @@ function isUnivalTree(root) {
 
 // Example usage:
 // Constructing a univalued binary tree
-cons
+const root = new TreeNode(1);
+root.left = new TreeNode(1);
+root.right = new TreeNode(1);
+root.left.left = n
