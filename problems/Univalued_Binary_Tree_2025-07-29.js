@@ -27,4 +27,7 @@ function isUnivalTree(root) {
 const root = new TreeNode(1);
 root.left = new TreeNode(1);
 root.right = new TreeNode(1);
-root.left.left = n
+root.left.left = new TreeNode(1);
+root.left.right = new TreeNode(1);
+
+console.log(isUnivalTree(root)); // Output: true
