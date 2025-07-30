@@ -22,4 +22,12 @@ function maxDepth(root) {
     return Math.max(leftDepth, rightDepth) + 1;
 }
 
-// Example 
+// Example usage:
+// Constructing a binary tree:
+//        3
+//       / \
+//      9  20
+//         /  \
+//        15   7
+const root = new TreeNode(3);
+root.left = new Tree
