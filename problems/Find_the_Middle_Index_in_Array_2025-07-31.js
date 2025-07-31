@@ -1,3 +1,7 @@
 
 function findMiddleIndex(nums) {
-    const totalSum = nums.reduce((acc, num) => acc +
+    const totalSum = nums.reduce((acc, num) => acc + num, 0);
+    let leftSum = 0;
+
+    for (let i = 0; i < nums.length; i++) {
+        //
