@@ -11,4 +11,9 @@ function findMiddleIndex(nums) {
         leftSum += nums[i]; // Update leftSum for the next iteration
     }
 
-    return -1; // Return
+    return -1; // Return -1 if no middle index is found
+}
+
+// Example usage:
+const nums = [2, 3, -1, 8, 4];
+co
