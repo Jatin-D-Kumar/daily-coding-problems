@@ -5,4 +5,7 @@ function findMiddleIndex(nums) {
 
     for (let i = 0; i < nums.length; i++) {
         // Right sum is totalSum - leftSum - nums[i]
-        if (leftSum === totalSum - leftSum 
+        if (leftSum === totalSum - leftSum - nums[i]) {
+            return i; // Return the middle index
+        }
+        leftSu
