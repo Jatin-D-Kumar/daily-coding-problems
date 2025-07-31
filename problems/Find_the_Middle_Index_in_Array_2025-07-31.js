@@ -8,4 +8,7 @@ function findMiddleIndex(nums) {
         if (leftSum === totalSum - leftSum - nums[i]) {
             return i; // Return the middle index
         }
-        leftSu
+        leftSum += nums[i]; // Update leftSum for the next iteration
+    }
+
+    return -1; // Return
