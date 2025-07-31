@@ -16,4 +16,5 @@ function findMiddleIndex(nums) {
 
 // Example usage:
 const nums = [2, 3, -1, 8, 4];
-co
+const middleIndex = findMiddleIndex(nums);
+console.log(middleIndex); // Output: 3
