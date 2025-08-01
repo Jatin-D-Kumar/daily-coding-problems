@@ -35,4 +35,20 @@ const countWords = (words1, words2) => {
   const freq2 = {};
 
   for (const word of words1) {
-    freq1[word] = 
+    freq1[word] = (freq1[word] || 0) + 1;
+  }
+
+  for (const word of words2) {
+    freq2[word] = (freq2[word] || 0) + 1;
+  }
+
+  let count = 0;
+
+  for (const word in freq1) {
+    if (freq1[word] === 1 && freq2[word] === 1) {
+      count++;
+    }
+  }
+
+  return count;
+};
