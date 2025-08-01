@@ -26,4 +26,13 @@
  *
  * Constraints:
  *
- * 1 <= words1.length, words2.length <= 100
+ * 1 <= words1.length, words2.length <= 1000
+ * 1 <= words1[i].length, words2[i].length <= 30
+ * words1[i] and words2[i] consist of lowercase English letters.
+ */
+const countWords = (words1, words2) => {
+  const freq1 = {};
+  const freq2 = {};
+
+  for (const word of words1) {
+    freq1[word] = 
