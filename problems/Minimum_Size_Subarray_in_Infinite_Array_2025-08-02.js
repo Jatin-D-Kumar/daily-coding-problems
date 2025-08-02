@@ -5,4 +5,7 @@ function minSubArrayLen(target, nums) {
     let minLength = Infinity;
 
     for (let right = 0; right < nums.length; right++) {
-   
+        sum += nums[right];
+
+        while (sum >= target) {
+            minLength = M
