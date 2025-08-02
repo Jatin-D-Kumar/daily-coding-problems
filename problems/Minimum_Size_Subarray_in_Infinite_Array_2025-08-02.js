@@ -17,4 +17,7 @@ function minSubArrayLen(target, nums) {
     return minLength === Infinity ? 0 : minLength;
 }
 
-// Exa
+// Example usage:
+const target = 7;
+const nums = [2, 3, 1, 2, 4, 3];
+console.log(minSubAr
