@@ -10,4 +10,11 @@ function minSubArrayLen(target, nums) {
         while (sum >= target) {
             minLength = Math.min(minLength, right - left + 1);
             sum -= nums[left];
-            le
+            left++;
+        }
+    }
+
+    return minLength === Infinity ? 0 : minLength;
+}
+
+// Exa
