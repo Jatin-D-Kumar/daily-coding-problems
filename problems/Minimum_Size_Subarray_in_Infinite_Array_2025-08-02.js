@@ -20,4 +20,4 @@ function minSubArrayLen(target, nums) {
 // Example usage:
 const target = 7;
 const nums = [2, 3, 1, 2, 4, 3];
-console.log(minSubAr
+console.log(minSubArrayLen(target, nums)); // Output: 2 (the subarray [4,3] has the minimal length)
