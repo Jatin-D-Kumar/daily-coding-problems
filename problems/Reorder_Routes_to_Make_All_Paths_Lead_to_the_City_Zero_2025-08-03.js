@@ -6,4 +6,6 @@ function minReorder(n, connections) {
     // Populate the graph with the connections
     for (const [a, b] of connections) {
         if (!graph.has(a)) graph.set(a, []);
-    
+        if (!graph.has(b)) graph.set(b, []);
+        graph.get(a).push([b, 1]); // 1 indicates the route needs to be reversed
+        gr
