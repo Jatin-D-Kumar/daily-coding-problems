@@ -8,4 +8,7 @@ function minReorder(n, connections) {
         if (!graph.has(a)) graph.set(a, []);
         if (!graph.has(b)) graph.set(b, []);
         graph.get(a).push([b, 1]); // 1 indicates the route needs to be reversed
-        gr
+        graph.get(b).push([a, 0]); // 0 indicates the route is already correct
+    }
+
+    // DFS function to count the number of routes to rev
