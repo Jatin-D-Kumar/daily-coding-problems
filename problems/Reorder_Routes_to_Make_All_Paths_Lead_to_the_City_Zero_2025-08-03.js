@@ -31,4 +31,7 @@ function minReorder(n, connections) {
     return dfs(0, visited);
 }
 
-// Example usag
+// Example usage:
+const n = 6;
+const connections = [[0, 1], [1, 3], [2, 3], [4, 0], [4, 5]];
+console.log(minReorder(n, connections)); // Output: 3
