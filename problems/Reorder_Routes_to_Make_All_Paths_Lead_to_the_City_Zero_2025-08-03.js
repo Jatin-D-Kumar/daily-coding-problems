@@ -11,4 +11,9 @@ function minReorder(n, connections) {
         graph.get(b).push([a, 0]); // 0 indicates the route is already correct
     }
 
-    // DFS function to count the number of routes to rev
+    // DFS function to count the number of routes to reverse
+    const dfs = (node, visited) => {
+        visited.add(node);
+        let count = 0;
+
+        for (const [neighbor, needsReve
