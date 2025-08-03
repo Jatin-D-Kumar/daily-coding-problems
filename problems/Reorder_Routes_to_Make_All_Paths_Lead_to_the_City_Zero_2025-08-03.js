@@ -16,4 +16,6 @@ function minReorder(n, connections) {
         visited.add(node);
         let count = 0;
 
-        for (const [neighbor, needsReve
+        for (const [neighbor, needsReversal] of graph.get(node)) {
+            if (!visited.has(neighbor)) {
+                count += needsReversal; // Add to count if the
