@@ -23,4 +23,12 @@ function minReorder(n, connections) {
             }
         }
 
-    
+        return count;
+    };
+
+    // Start DFS from city 0
+    const visited = new Set();
+    return dfs(0, visited);
+}
+
+// Example usag
