@@ -18,4 +18,9 @@ function minReorder(n, connections) {
 
         for (const [neighbor, needsReversal] of graph.get(node)) {
             if (!visited.has(neighbor)) {
-                count += needsReversal; // Add to count if the
+                count += needsReversal; // Add to count if the route needs to be reversed
+                count += dfs(neighbor, visited); // Recur for the neighbor
+            }
+        }
+
+    
