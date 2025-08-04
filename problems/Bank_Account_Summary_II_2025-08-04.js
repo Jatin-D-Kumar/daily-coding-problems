@@ -1,3 +1,4 @@
 
 const transactions = [
-    { type: "depos
+    { type: "deposit", amount: 100 },
+ 
