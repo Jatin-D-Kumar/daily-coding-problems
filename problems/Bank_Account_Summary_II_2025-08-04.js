@@ -3,4 +3,4 @@ const transactions = [
     { type: "deposit", amount: 100 },
     { type: "withdrawal", amount: 50 },
     { type: "deposit", amount: 200 },
-    { t
+    { type: "withdrawal", am
