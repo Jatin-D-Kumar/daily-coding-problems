@@ -7,4 +7,7 @@ function findAddedInteger(arr, addedInt) {
         total ^= num; // XOR operation
     }
 
-    /
+    // Include the added integer in the total
+    total ^= addedInt;
+
+ 
