@@ -10,4 +10,8 @@ function findAddedInteger(arr, addedInt) {
     // Include the added integer in the total
     total ^= addedInt;
 
- 
+    return total;
+}
+
+// Example usage:
+const originalArray = [1, 2,
