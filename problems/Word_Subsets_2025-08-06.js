@@ -39,4 +39,6 @@ function wordSubsets(A, B) {
 }
 
 // Example usage:
-const A = ["amazon
+const A = ["amazon", "apple", "facebook", "google", "leetcode"];
+const B = ["e", "o"];
+console.log(wordSubsets(A, B)); // Output: ["facebook", "google", "leetcode"]
