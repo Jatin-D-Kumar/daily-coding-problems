@@ -6,4 +6,11 @@ function wordSubsets(A, B) {
     for (const word of B) {
         const count = Array(26).fill(0);
         for (const char of word) {
-            count[char.charCodeAt(0) - 'a'.charCodeAt(0
+            count[char.charCodeAt(0) - 'a'.charCodeAt(0)]++;
+        }
+        for (let i = 0; i < 26; i++) {
+            freqB[i] = Math.max(freqB[i], count[i]);
+        }
+    }
+
+    const result = [];
