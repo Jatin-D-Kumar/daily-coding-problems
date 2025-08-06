@@ -14,3 +14,8 @@ function wordSubsets(A, B) {
     }
 
     const result = [];
+    
+    // Check each word in A against the frequency count from B
+    for (const word of A) {
+        const count = Array(26).fill(0);
+        for
