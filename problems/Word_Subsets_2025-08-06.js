@@ -28,4 +28,15 @@ function wordSubsets(A, B) {
                 isUniversal = false;
                 break;
             }
+        }
         
+        if (isUniversal) {
+            result.push(word);
+        }
+    }
+    
+    return result;
+}
+
+// Example usage:
+const A = ["amazon
