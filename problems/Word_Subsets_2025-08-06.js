@@ -23,4 +23,9 @@ function wordSubsets(A, B) {
         }
         
         let isUniversal = true;
-        for 
+        for (let i = 0; i < 26; i++) {
+            if (count[i] < freqB[i]) {
+                isUniversal = false;
+                break;
+            }
+        
