@@ -8,4 +8,11 @@ function minimumMoves(target) {
         const [currentPosition, moves] = queue.shift();
 
         // Check if we have reached the target
-        if (curre
+        if (currentPosition === target) {
+            return moves;
+        }
+
+        // Possible next positions
+        const nextPositions = [currentPosition + 1, -currentPosition];
+
+  
