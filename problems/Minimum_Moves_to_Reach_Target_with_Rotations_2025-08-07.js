@@ -24,4 +24,9 @@ function minimumMoves(target) {
         }
     }
 
-    return -1; // In case there's no way to reach
+    return -1; // In case there's no way to reach the target (shouldn't happen in this problem)
+}
+
+// Example usage:
+const target = 5;
+console.log(minimumMoves(target)); // Output: Minimum moves to reach the target
