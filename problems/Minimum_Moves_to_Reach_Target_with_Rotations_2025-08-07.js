@@ -18,4 +18,10 @@ function minimumMoves(target) {
         for (const nextPosition of nextPositions) {
             // We only consider positions that haven't been visited
             if (!visited.has(nextPosition)) {
-       
+                visited.add(nextPosition);
+                queue.push([nextPosition, moves + 1]);
+            }
+        }
+    }
+
+    return -1; // In case there's no way to reach
