@@ -15,4 +15,7 @@ function minimumMoves(target) {
         // Possible next positions
         const nextPositions = [currentPosition + 1, -currentPosition];
 
-  
+        for (const nextPosition of nextPositions) {
+            // We only consider positions that haven't been visited
+            if (!visited.has(nextPosition)) {
+       
