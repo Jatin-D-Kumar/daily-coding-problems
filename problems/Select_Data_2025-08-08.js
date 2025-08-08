@@ -1,2 +1,3 @@
 
-function selectData
+function selectData(data, criteria) {
+ 
