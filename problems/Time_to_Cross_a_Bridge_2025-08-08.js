@@ -11,4 +11,9 @@ function minTimeToCrossBridge(times) {
     
     while (n > 3) {
         // Option 1: Two fastest cross, fastest returns, two slowest cross, second fastest returns
-        let option1 = times[1] + times[0] + times[n
+        let option1 = times[1] + times[0] + times[n - 1] + times[1];
+        
+        // Option 2: Two slowest cross, fastest returns, two fastest cross, fastest returns
+        let option2 = times[n - 1] + times[n - 2] + 2 * times[0];
+        
+        total_time += Math.min(
