@@ -1,4 +1,5 @@
 
 function selectData(data, criteria) {
     return data.filter(item => 
-        Object.keys(criteria)
+        Object.keys(criteria).every(key => 
+     
