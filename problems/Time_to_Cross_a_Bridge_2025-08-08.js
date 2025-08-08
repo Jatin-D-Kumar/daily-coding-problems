@@ -7,4 +7,8 @@ function minTimeToCrossBridge(times) {
     const n = times.length;
     
     if (n === 0) return 0; // No one to cross
-   
+    if (n === 1) return times[0]; // Only one person
+    
+    while (n > 3) {
+        // Option 1: Two fastest cross, fastest returns, two slowest cross, second fastest returns
+        let option1 = times[1] + times[0] + times[n
