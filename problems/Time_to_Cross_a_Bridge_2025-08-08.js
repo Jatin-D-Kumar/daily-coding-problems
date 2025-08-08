@@ -16,4 +16,12 @@ function minTimeToCrossBridge(times) {
         // Option 2: Two slowest cross, fastest returns, two fastest cross, fastest returns
         let option2 = times[n - 1] + times[n - 2] + 2 * times[0];
         
-        total_time += Math.min(
+        total_time += Math.min(option1, option2);
+        n -= 2; // Two people crossed
+    }
+    
+    // Handle the last few people
+    if (n === 3) {
+        total_time += times[2] + times[1] + times[0];
+    } else if (n === 2) {
+        total_time += ti
