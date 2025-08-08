@@ -24,4 +24,14 @@ function minTimeToCrossBridge(times) {
     if (n === 3) {
         total_time += times[2] + times[1] + times[0];
     } else if (n === 2) {
-        total_time += ti
+        total_time += times[1];
+    } else if (n === 1) {
+        total_time += times[0];
+    }
+    
+    return total_time;
+}
+
+// Test the function
+const crossingTimes = [1, 2, 5, 10];
+console.log(minTimeToCrossBridge(crossingTimes)); // Output: 17
