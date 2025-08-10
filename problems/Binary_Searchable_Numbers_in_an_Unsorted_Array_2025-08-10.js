@@ -8,4 +8,9 @@ function findBinarySearchableNumbers(arr) {
     // Fill leftMax array
     for (let i = 0; i < n; i++) {
         if (i > 0) {
-            leftMax[i] =
+            leftMax[i] = Math.max(leftMax[i - 1], arr[i - 1]);
+        }
+    }
+
+    // Fill rightMin array
+    for (let i = 
