@@ -5,4 +5,7 @@ function findBinarySearchableNumbers(arr) {
     const rightMin = new Array(n).fill(Infinity);
     const result = [];
 
-    /
+    // Fill leftMax array
+    for (let i = 0; i < n; i++) {
+        if (i > 0) {
+            leftMax[i] =
