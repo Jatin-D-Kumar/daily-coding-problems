@@ -7,4 +7,7 @@ function maxHoppingScore(arr) {
 
     // Create a dp array to store the maximum score at each index
     const dp = new Array(n);
-    dp[0
+    dp[0] = arr[0]; // Maximum score at the first index
+    dp[1] = Math.max(arr[0], arr[1]); // Maximum score at the second index
+
+    for (let
