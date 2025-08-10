@@ -13,4 +13,8 @@ function maxHoppingScore(arr) {
     for (let i = 2; i < n; i++) {
         // The maximum score at index i can be obtained by either:
         // 1. Taking the current score and adding it to the maximum score from two indices back
-        // 2. Taking the maximum score from the previous index (skipping the current sc
+        // 2. Taking the maximum score from the previous index (skipping the current score)
+        dp[i] = Math.max(dp[i - 1], arr[i] + dp[i - 2]);
+    }
+
+    // The last element in dp will contain the maximum score we can
