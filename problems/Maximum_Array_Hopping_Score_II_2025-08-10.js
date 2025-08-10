@@ -17,4 +17,10 @@ function maxHoppingScore(arr) {
         dp[i] = Math.max(dp[i - 1], arr[i] + dp[i - 2]);
     }
 
-    // The last element in dp will contain the maximum score we can
+    // The last element in dp will contain the maximum score we can achieve
+    return dp[n - 1];
+}
+
+// Example usage:
+const arr = [3, 2, 5, 10, 7];
+console.log(maxHoppingScore(arr)); // Output: 15
