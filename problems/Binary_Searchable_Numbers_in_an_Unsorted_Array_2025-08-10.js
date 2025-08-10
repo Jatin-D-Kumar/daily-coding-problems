@@ -21,3 +21,6 @@ function findBinarySearchableNumbers(arr) {
 
     // Find binary searchable numbers
     for (let i = 0; i < n; i++) {
+        if (arr[i] > leftMax[i] && arr[i] < rightMin[i]) {
+            result.push(arr[i]);
+       
