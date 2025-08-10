@@ -31,4 +31,5 @@ function findBinarySearchableNumbers(arr) {
 
 // Example usage:
 const arr = [3, 1, 4, 2, 5];
-const binarySearchabl
+const binarySearchableNumbers = findBinarySearchableNumbers(arr);
+console.log(binarySearchableNumbers); // Output: [4]
