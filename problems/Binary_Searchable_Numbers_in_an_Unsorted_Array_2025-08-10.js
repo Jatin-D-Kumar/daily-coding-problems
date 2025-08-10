@@ -23,4 +23,12 @@ function findBinarySearchableNumbers(arr) {
     for (let i = 0; i < n; i++) {
         if (arr[i] > leftMax[i] && arr[i] < rightMin[i]) {
             result.push(arr[i]);
-       
+        }
+    }
+
+    return result;
+}
+
+// Example usage:
+const arr = [3, 1, 4, 2, 5];
+const binarySearchabl
