@@ -13,4 +13,6 @@ function findBinarySearchableNumbers(arr) {
     }
 
     // Fill rightMin array
-    for (let i = 
+    for (let i = n - 1; i >= 0; i--) {
+        if (i < n - 1) {
+            rightMin[i] = Math.min(rightMin[i + 1], a
