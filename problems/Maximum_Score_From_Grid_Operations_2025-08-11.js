@@ -18,3 +18,8 @@ function maxScore(grid) {
 // Example Usage:
 const grid = [
     [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9]
+];
+
+console.log(maxScore(grid)); // Output: 18 (3 + 6 + 9)
