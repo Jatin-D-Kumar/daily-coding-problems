@@ -9,4 +9,7 @@ function maxScore(grid) {
     for (let i = 0; i < m; i++) {
         // Find the maximum value in each row
         let maxInRow = Math.max(...grid[i]);
-        score += maxInRow;
+        score += maxInRow;      // Add the maximum value of this row to the score
+    }
+
+    return score;           
