@@ -4,4 +4,5 @@ function maxScore(grid) {
     let n = grid[0].length;    // number of columns
     let score = 0;
 
-    // This approach assumes we ca
+    // This approach assumes we can choose the maximum from each row 
+    // and add it to the score, typical interpretation 
