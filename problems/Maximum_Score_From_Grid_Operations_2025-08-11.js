@@ -5,4 +5,6 @@ function maxScore(grid) {
     let score = 0;
 
     // This approach assumes we can choose the maximum from each row 
-    // and add it to the score, typical interpretation 
+    // and add it to the score, typical interpretation of maximizing grid operations.
+    for (let i = 0; i < m; i++) {
+        // Find the maximu
