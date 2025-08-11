@@ -12,4 +12,9 @@ function maxScore(grid) {
         score += maxInRow;      // Add the maximum value of this row to the score
     }
 
-    return score;           
+    return score;              // Return the final calculated score
+}
+
+// Example Usage:
+const grid = [
+    [1, 2, 3],
