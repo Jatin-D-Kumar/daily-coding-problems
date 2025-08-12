@@ -29,4 +29,9 @@ function isAdditiveNumber(num) {
             const second = num.substring(i, j);
 
             // Skip if the numbers have leading zeros
-        
+            if ((first.length > 1 && first[0] === '0') || (second.length > 1 && second[0] === '0')) {
+                continue;
+            }
+
+            // Convert to integers
+            const firstNum = parseI
