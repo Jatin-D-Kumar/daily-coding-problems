@@ -16,4 +16,11 @@ function isAdditiveNumber(num) {
         // If we reach the end of the string, we have a valid sequence
         if (nextStart === n) {
             return true;
-        
+        }
+
+        // Continue checking with the new sequence
+        return isValidSequence(nextStart, second, sum);
+    }
+
+    // Try every possible pair of first and second numbers
+    for (let i = 1; i < n; i+
