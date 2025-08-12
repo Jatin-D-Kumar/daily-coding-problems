@@ -23,4 +23,10 @@ function isAdditiveNumber(num) {
     }
 
     // Try every possible pair of first and second numbers
-    for (let i = 1; i < n; i+
+    for (let i = 1; i < n; i++) {
+        for (let j = i + 1; j < n; j++) {
+            const first = num.substring(0, i);
+            const second = num.substring(i, j);
+
+            // Skip if the numbers have leading zeros
+        
