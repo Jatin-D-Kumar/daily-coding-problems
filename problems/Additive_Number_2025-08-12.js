@@ -41,3 +41,13 @@ function isAdditiveNumber(num) {
             if (isValidSequence(j, firstNum, secondNum)) {
                 return true;
             }
+        }
+    }
+
+    return false;
+}
+
+// Example usage:
+console.log(isAdditiveNumber("112358")); // true
+console.log(isAdditiveNumber("123"));    // true
+console.log(isAdditiveNumber("1023"));   // false
