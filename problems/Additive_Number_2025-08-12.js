@@ -34,4 +34,10 @@ function isAdditiveNumber(num) {
             }
 
             // Convert to integers
-            const firstNum = parseI
+            const firstNum = parseInt(first);
+            const secondNum = parseInt(second);
+
+            // Start checking the sequence
+            if (isValidSequence(j, firstNum, secondNum)) {
+                return true;
+            }
