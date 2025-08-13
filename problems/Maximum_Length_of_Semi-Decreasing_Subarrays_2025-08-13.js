@@ -12,4 +12,12 @@ function maxLengthOfSemiDecreasingSubarrays(arr) {
             currentLength++; // Increase the current length of the semi-decreasing subarray
         } else {
             maxLength = Math.max(maxLength, currentLength); // Update the maximum length
-            currentLen
+            currentLength = 1; // Reset current length for a new subarray
+        }
+    }
+
+    // After the loop, we need to do a final check to update maxLength
+    maxLength = Math.max(maxLength, currentLength);
+
+    return maxLength;
+}
