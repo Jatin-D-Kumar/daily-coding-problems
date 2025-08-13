@@ -9,4 +9,7 @@ function maxLengthOfSemiDecreasingSubarrays(arr) {
     for (let i = 1; i < arr.length; i++) {
         // Check if the current element is less than or equal to the previous element
         if (arr[i] <= arr[i - 1]) {
-   
+            currentLength++; // Increase the current length of the semi-decreasing subarray
+        } else {
+            maxLength = Math.max(maxLength, currentLength); // Update the maximum length
+            currentLen
