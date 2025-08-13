@@ -21,3 +21,10 @@ function maxLengthOfSemiDecreasingSubarrays(arr) {
 
     return maxLength;
 }
+
+// Example usage:
+const arr = [5, 4, 4, 3, 2, 1];
+console.log(maxLengthOfSemiDecreasingSubarrays(arr)); // Output: 6
+
+const arr2 = [1, 3, 2, 1, 4];
+console.log(maxLengthOfSemiDecreasingSubarrays(arr2)); // Output: 3
