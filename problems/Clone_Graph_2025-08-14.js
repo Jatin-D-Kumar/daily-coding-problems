@@ -22,4 +22,19 @@ function cloneGraph(node) {
 
         // Iterate through the neighbors of the current node
         for (const neighbor of currentNode.neighbors) {
-            cloneNode.neighbors.push(dfs(neighbor)); // Recursively clone the nei
+            cloneNode.neighbors.push(dfs(neighbor)); // Recursively clone the neighbors
+        }
+
+        return cloneNode; // Return the cloned node
+    }
+
+    return dfs(node); // Start DFS from the input node
+}
+
+// Example of usage
+const node1 = new Node(1);
+const node2 = new Node(2);
+const node3 = new Node(3);
+const node4 = new Node(4);
+
+node1.neighbors.pus
