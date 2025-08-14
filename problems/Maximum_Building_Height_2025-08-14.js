@@ -39,3 +39,10 @@ function maxBuilding(n, restrictions) {
         maxHeight = Math.max(maxHeight, possibleHeight);
     }
     
+    return maxHeight;
+}
+
+// Example usage
+const n = 5;
+const restrictions = [[2, 1], [4, 1]];
+console.log(maxBuilding(n, restrictions)); // Output will depend on restrictions
