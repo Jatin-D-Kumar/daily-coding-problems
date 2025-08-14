@@ -24,4 +24,9 @@ function maxBuilding(n, restrictions) {
         const [x2, h2] = restrictions[i];
         
         // Calculate the maximum allowed height at x2
-        const maxH = h1 + ((x1 - x2
+        const maxH = h1 + ((x1 - x2) - (h1 - h2)) / 2;
+        restrictions[i][1] = Math.min(h2, maxH);
+    }
+
+    // Now calculate the max height possible between consecutive restrictions
+    let maxHeight = 0;
