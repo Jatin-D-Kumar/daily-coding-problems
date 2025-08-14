@@ -30,3 +30,8 @@ function maxBuilding(n, restrictions) {
 
     // Now calculate the max height possible between consecutive restrictions
     let maxHeight = 0;
+    for (let i = 0; i < m - 1; i++) {
+        const [x1, h1] = restrictions[i];
+        const [x2, h2] = restrictions[i + 1];
+
+        // The highest point between x1 and x2 is 
