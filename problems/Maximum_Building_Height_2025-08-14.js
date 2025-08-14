@@ -34,4 +34,8 @@ function maxBuilding(n, restrictions) {
         const [x1, h1] = restrictions[i];
         const [x2, h2] = restrictions[i + 1];
 
-        // The highest point between x1 and x2 is 
+        // The highest point between x1 and x2 is influenced by the two building heights
+        const possibleHeight = Math.floor((h1 + h2 + (x2 - x1)) / 2);
+        maxHeight = Math.max(maxHeight, possibleHeight);
+    }
+    
