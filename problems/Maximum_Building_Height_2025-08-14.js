@@ -10,4 +10,8 @@ function maxBuilding(n, restrictions) {
     let m = restrictions.length;
     // Propagate height constraints from left to right
     for (let i = 1; i < m; i++) {
-        con
+        const [x1, h1] = restrictions[i - 1];
+        const [x2, h2] = restrictions[i];
+        
+        // Calculate the maximum allowed height at x2
+        const maxH = h1 + ((x2 - x1) 
