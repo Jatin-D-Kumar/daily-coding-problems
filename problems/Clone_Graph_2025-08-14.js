@@ -17,4 +17,9 @@ function cloneGraph(node) {
         }
 
         // Create a new node for the current node
-        const cloneNode = new Node(currentN
+        const cloneNode = new Node(currentNode.val);
+        visited.set(currentNode, cloneNode); // Mark this node as visited
+
+        // Iterate through the neighbors of the current node
+        for (const neighbor of currentNode.neighbors) {
+            cloneNode.neighbors.push(dfs(neighbor)); // Recursively clone the nei
