@@ -9,4 +9,11 @@ function convert1DTo2D(arr, rows, cols) {
     for (let i = 0; i < rows; i++) {
         const row = [];
         for (let j = 0; j < cols; j++) {
-            row.pu
+            row.push(arr[i * cols + j]);
+        }
+        result.push(row);
+    }
+    return result;
+}
+
+// Example usa
