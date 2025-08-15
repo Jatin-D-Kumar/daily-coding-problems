@@ -21,4 +21,5 @@ const inputArray = [1, 2, 3, 4, 5, 6];
 const numberOfRows = 2;
 const numberOfColumns = 3;
 
-const o
+const outputArray = convert1DTo2D(inputArray, numberOfRows, numberOfColumns);
+console.log(outputArray);
