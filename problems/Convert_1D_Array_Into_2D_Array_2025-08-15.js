@@ -6,4 +6,7 @@ function convert1DTo2D(arr, rows, cols) {
     }
 
     const result = [];
-    for (let i = 0;
+    for (let i = 0; i < rows; i++) {
+        const row = [];
+        for (let j = 0; j < cols; j++) {
+            row.pu
