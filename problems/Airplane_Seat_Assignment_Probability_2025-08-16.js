@@ -11,4 +11,4 @@ function airplaneSeatProbability(numPassengers) {
 // Example usage:
 const numPassengers = 10; // You can change this number to test with different passenger counts
 const probability = airplaneSeatProbability(numPassengers);
-conso
+console.log(`The probability that the last passenger sits in their assigned seat is: ${probability}`);
