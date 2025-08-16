@@ -15,4 +15,10 @@ function minOperationsToMaximizeLastElement(arr, target) {
         operations++;
     }
 
-    return operations
+    return operations;
+}
+
+// Example usage:
+const arr = [1, 2, 3, 4];
+const target = 6;
+const result = minOperationsToMax
