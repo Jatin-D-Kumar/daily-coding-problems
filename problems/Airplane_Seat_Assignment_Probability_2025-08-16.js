@@ -4,4 +4,9 @@ function airplaneSeatProbability(numPassengers) {
     if (numPassengers === 1) {
         return 1;
     }
-    // For more than one passenger, the probability that the last passenger sits in their assigned seat is always 
+    // For more than one passenger, the probability that the last passenger sits in their assigned seat is always 0.5
+    return 0.5;
+}
+
+// Example usage:
+const numPassengers = 10; // You can change this number to t
