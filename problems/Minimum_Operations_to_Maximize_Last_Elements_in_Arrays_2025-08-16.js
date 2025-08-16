@@ -8,4 +8,6 @@ function minOperationsToMaximizeLastElement(arr, target) {
     let operations = 0;
     let lastElement = arr[n - 1];
 
-    // We will keep in
+    // We will keep increasing the last element until it reaches the target
+    while (lastElement < target) {
+        // 
