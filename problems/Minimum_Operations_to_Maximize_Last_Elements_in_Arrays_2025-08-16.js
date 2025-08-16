@@ -10,4 +10,9 @@ function minOperationsToMaximizeLastElement(arr, target) {
 
     // We will keep increasing the last element until it reaches the target
     while (lastElement < target) {
-        // 
+        // Increment the last element
+        lastElement++;
+        operations++;
+    }
+
+    return operations
