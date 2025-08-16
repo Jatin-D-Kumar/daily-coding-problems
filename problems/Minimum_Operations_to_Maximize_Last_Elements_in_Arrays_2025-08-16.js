@@ -21,4 +21,5 @@ function minOperationsToMaximizeLastElement(arr, target) {
 // Example usage:
 const arr = [1, 2, 3, 4];
 const target = 6;
-const result = minOperationsToMax
+const result = minOperationsToMaximizeLastElement(arr, target);
+console.log(`Minimum operations required: ${result}`); // Output: 2
