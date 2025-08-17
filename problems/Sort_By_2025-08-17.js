@@ -16,4 +16,10 @@ function sortBy(arr, key) {
         if (a[key] > b[key]) {
             return 1; // a comes after b
         }
-        return 0; // a an
+        return 0; // a and b are equal
+    });
+}
+
+// Sort by name
+const sortedByName = sortBy(people, 'name');
+console.log('Sorted by name:', s
