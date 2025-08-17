@@ -8,4 +8,7 @@ const people = [
 ];
 
 // Function to sort the array by a specific key
-function sortBy
+function sortBy(arr, key) {
+    return arr.sort((a, b) => {
+        if (a[key] < b[key]) {
+            return -1; // a comes before b
