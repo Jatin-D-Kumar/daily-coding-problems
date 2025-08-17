@@ -12,3 +12,8 @@ function sortBy(arr, key) {
     return arr.sort((a, b) => {
         if (a[key] < b[key]) {
             return -1; // a comes before b
+        }
+        if (a[key] > b[key]) {
+            return 1; // a comes after b
+        }
+        return 0; // a an
