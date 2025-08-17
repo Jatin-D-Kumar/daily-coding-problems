@@ -22,4 +22,8 @@ function sortBy(arr, key) {
 
 // Sort by name
 const sortedByName = sortBy(people, 'name');
-console.log('Sorted by name:', s
+console.log('Sorted by name:', sortedByName);
+
+// Sort by age
+const sortedByAge = sortBy(people, 'age');
+console.log('Sorted by age:', sortedByAge);
