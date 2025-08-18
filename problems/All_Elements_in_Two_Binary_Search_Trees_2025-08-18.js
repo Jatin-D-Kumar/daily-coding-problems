@@ -18,4 +18,14 @@ const inOrderTraversal = (root, result) => {
 
 // Function to merge two sorted arrays.
 const mergeSortedArrays = (arr1, arr2) => {
-    const merge
+    const merged = [];
+    let i = 0, j = 0;
+
+    // Merge both arrays in sorted order.
+    while (i < arr1.length && j < arr2.length) {
+        if (arr1[i] < arr2[j]) {
+            merged.push(arr1[i]);
+            i++;
+        } else {
+            merged.push(arr2[j]);
+         
