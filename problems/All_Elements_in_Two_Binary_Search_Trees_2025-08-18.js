@@ -53,4 +53,13 @@ const getAllElements = function(root1, root2) {
     const elements2 = [];
     
     // Get elements from both trees using in-order traversal.
-    inOr
+    inOrderTraversal(root1, elements1);
+    inOrderTraversal(root2, elements2);
+
+    // Merge the two sorted arrays and return the result.
+    return mergeSortedArrays(elements1, elements2);
+};
+
+// Example usage:
+// Create two binary search trees for testing
+let root1 = new
