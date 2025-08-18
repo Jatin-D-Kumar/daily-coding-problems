@@ -9,4 +9,13 @@ class TreeNode {
 }
 
 // Function to perform in-order traversal of the BST.
-const inOrderTr
+const inOrderTraversal = (root, result) => {
+    if (!root) return;
+    inOrderTraversal(root.left, result);
+    result.push(root.val);
+    inOrderTraversal(root.right, result);
+};
+
+// Function to merge two sorted arrays.
+const mergeSortedArrays = (arr1, arr2) => {
+    const merge
