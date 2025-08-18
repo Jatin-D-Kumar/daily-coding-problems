@@ -41,4 +41,16 @@ const mergeSortedArrays = (arr1, arr2) => {
     // If there are remaining elements in arr2.
     while (j < arr2.length) {
         merged.push(arr2[j]);
-     
+        j++;
+    }
+
+    return merged;
+};
+
+// Main function to return all elements in two BSTs.
+const getAllElements = function(root1, root2) {
+    const elements1 = [];
+    const elements2 = [];
+    
+    // Get elements from both trees using in-order traversal.
+    inOr
