@@ -28,4 +28,17 @@ const mergeSortedArrays = (arr1, arr2) => {
             i++;
         } else {
             merged.push(arr2[j]);
-         
+            j++;
+        }
+    }
+
+    // If there are remaining elements in arr1.
+    while (i < arr1.length) {
+        merged.push(arr1[i]);
+        i++;
+    }
+
+    // If there are remaining elements in arr2.
+    while (j < arr2.length) {
+        merged.push(arr2[j]);
+     
