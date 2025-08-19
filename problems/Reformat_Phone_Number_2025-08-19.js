@@ -22,4 +22,10 @@ function reformatPhoneNumber(phone) {
             result += digits.slice(i, i + 3) + '-';
             i += 3;
         } else {
-          
+            // Last chunk of remaining digits must be of length 2 or 3
+            result += digits.slice(i);
+            break;
+        }
+    }
+
+    return re
