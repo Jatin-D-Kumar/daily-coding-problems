@@ -8,4 +8,8 @@ function reformatPhoneNumber(phone) {
     while (i < digits.length) {
         const remainingDigits = digits.length - i;
 
-        // If there are 4 digits left, we need to spli
+        // If there are 4 digits left, we need to split into 2 and 2
+        if (remainingDigits === 4) {
+            // Push first two digits
+            result += digits.slice(i, i + 2) + '-';
+        
