@@ -17,4 +17,9 @@ function reformatPhoneNumber(phone) {
             break;
         }
         
-        // Otherwise, group them 
+        // Otherwise, group them in chunks of 3
+        if (remainingDigits > 3) {
+            result += digits.slice(i, i + 3) + '-';
+            i += 3;
+        } else {
+          
