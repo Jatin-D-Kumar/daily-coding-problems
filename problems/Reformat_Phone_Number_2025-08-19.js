@@ -28,4 +28,9 @@ function reformatPhoneNumber(phone) {
         }
     }
 
-    return re
+    return result;
+}
+
+// Example usage:
+console.log(reformatPhoneNumber("1-23-45 6")); // Output: "123-456"
+console.log(reformatPhoneNumber("123 4-567")); // Outp
