@@ -12,4 +12,9 @@ function reformatPhoneNumber(phone) {
         if (remainingDigits === 4) {
             // Push first two digits
             result += digits.slice(i, i + 2) + '-';
+            // Push last two digits
+            result += digits.slice(i + 2, i + 4);
+            break;
+        }
         
+        // Otherwise, group them 
