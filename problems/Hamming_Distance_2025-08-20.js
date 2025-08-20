@@ -10,4 +10,12 @@ function hammingDistance(str1, str2) {
     // Compare each character in the strings
     for (let i = 0; i < str1.length; i++) {
         if (str1[i] !== str2[i]) {
-            dista
+            distance++;
+        }
+    }
+
+    return distance;
+}
+
+// Example usage:
+const string1 = "karolin"
