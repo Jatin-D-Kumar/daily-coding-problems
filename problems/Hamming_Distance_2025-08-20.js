@@ -18,4 +18,6 @@ function hammingDistance(str1, str2) {
 }
 
 // Example usage:
-const string1 = "karolin"
+const string1 = "karolin";
+const string2 = "kathrin";
+console.log(hammingDistance(string1, string2)); // Output: 3
