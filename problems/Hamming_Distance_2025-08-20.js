@@ -8,4 +8,6 @@ function hammingDistance(str1, str2) {
     let distance = 0;
 
     // Compare each character in the strings
-    f
+    for (let i = 0; i < str1.length; i++) {
+        if (str1[i] !== str2[i]) {
+            dista
