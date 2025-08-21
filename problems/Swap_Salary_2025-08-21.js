@@ -12,4 +12,11 @@ function swapSalary(employees, nameA, nameB) {
     
     // Swap their salaries
     const tempSalary = employees[indexA].salary;
-    empl
+    employees[indexA].salary = employees[indexB].salary;
+    employees[indexB].salary = tempSalary;
+    
+    return employees;
+}
+
+// Example usage:
+l
