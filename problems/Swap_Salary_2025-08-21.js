@@ -19,4 +19,10 @@ function swapSalary(employees, nameA, nameB) {
 }
 
 // Example usage:
-l
+let employeeList = [
+    { name: "Alice", salary: 50000 },
+    { name: "Bob", salary: 60000 },
+    { name: "Charlie", salary: 70000 }
+];
+
+cons
