@@ -25,4 +25,6 @@ let employeeList = [
     { name: "Charlie", salary: 70000 }
 ];
 
-cons
+console.log("Before Swap:", employeeList);
+employeeList = swapSalary(employeeList, "Alice", "Bob");
+console.log("After Swap:", employeeList);
