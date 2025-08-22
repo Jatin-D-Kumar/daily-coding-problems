@@ -17,3 +17,4 @@ function prefixesDivBy5(A) {
 // Example usage:
 const binaryArray = [0, 1, 1];
 const result = prefixesDivBy5(binaryArray);
+console.log(result); // Output: [true, false, false]
