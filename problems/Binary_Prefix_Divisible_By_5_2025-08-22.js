@@ -7,4 +7,6 @@ function prefixesDivBy5(A) {
         // Shift current value to the left (multiply by 2) and add the current bit
         currentValue = (currentValue * 2 + A[i]) % 5;
 
-        // Check if current value is d
+        // Check if current value is divisible by 5
+        result.push(currentValue === 0);
+    
