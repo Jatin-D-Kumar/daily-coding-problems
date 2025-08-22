@@ -4,3 +4,4 @@ function prefixesDivBy5(A) {
     let currentValue = 0;
 
     for (let i = 0; i < A.length; i++) {
+        // Shift current value to the left (multiply by 2)
