@@ -15,4 +15,5 @@ function prefixesDivBy5(A) {
 }
 
 // Example usage:
-const binaryArra
+const binaryArray = [0, 1, 1];
+const result = prefixesDivBy5(binaryArray);
