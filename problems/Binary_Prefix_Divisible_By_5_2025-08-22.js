@@ -9,4 +9,10 @@ function prefixesDivBy5(A) {
 
         // Check if current value is divisible by 5
         result.push(currentValue === 0);
-    
+    }
+
+    return result;
+}
+
+// Example usage:
+const binaryArra
