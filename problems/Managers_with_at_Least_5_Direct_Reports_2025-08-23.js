@@ -23,4 +23,9 @@ function managersWithAtLeastFiveDirectReports(employees) {
     // Count the reports
     employees.forEach(employee => {
         const managerId = employee.managerId;
-        
+        if (managerId !== null) { // Only consider employees with a manager
+            reportCount[managerId] = (reportCount[managerId] || 0) + 1;
+        }
+    });
+
+    // Collect managers
