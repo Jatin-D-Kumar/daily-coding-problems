@@ -28,4 +28,8 @@ function managersWithAtLeastFiveDirectReports(employees) {
         }
     });
 
-    // Collect managers
+    // Collect managers with at least 5 direct reports
+    const managersWithReports = [];
+    employees.forEach(employee => {
+        if (reportCount[employee.id] >= 5) {
+            managersWithReports.p
