@@ -11,4 +11,10 @@ const employees = [
     { id: 9, name: 'Irving', managerId: 3 },
     { id: 10, name: 'Jack', managerId: 3 },
     { id: 11, name: 'Karen', managerId: 4 },
-    { id: 12, name: 'Larry', man
+    { id: 12, name: 'Larry', managerId: 5 },
+    { id: 13, name: 'Mallory', managerId: 6 },
+    // Add more employees as needed
+];
+
+function managersWithAtLeastFiveDirectReports(employees) {
+    // Create a map to 
