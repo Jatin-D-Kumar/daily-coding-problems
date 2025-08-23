@@ -17,4 +17,10 @@ const employees = [
 ];
 
 function managersWithAtLeastFiveDirectReports(employees) {
-    // Create a map to 
+    // Create a map to count direct reports for each manager
+    const reportCount = {};
+
+    // Count the reports
+    employees.forEach(employee => {
+        const managerId = employee.managerId;
+        
