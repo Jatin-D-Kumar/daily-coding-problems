@@ -32,4 +32,13 @@ function managersWithAtLeastFiveDirectReports(employees) {
     const managersWithReports = [];
     employees.forEach(employee => {
         if (reportCount[employee.id] >= 5) {
-            managersWithReports.p
+            managersWithReports.push(employee);
+        }
+    });
+
+    return managersWithReports;
+}
+
+// Using the function
+const result = managersWithAtLeastFiveDirectReports(employees);
+console.log(result);
