@@ -7,3 +7,5 @@ const purchases = [
     { customerId: 'B456', date: '2023-01-15' },
     { customerId: 'C789', date: '2023-01-01' },
     { customerId: 'C789', date: '2023-01-02' },
+    { customerId: 'C789', date: '2023-02-01' },
+];
