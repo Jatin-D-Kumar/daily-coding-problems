@@ -7,4 +7,7 @@ function doubleReversal(n) {
     const reversedOnce = strNum.split('').reverse().join('');
 
     // Reverse it again
-    const reversedTwice = reversed
+    const reversedTwice = reversedOnce.split('').reverse().join('');
+
+    // Convert it back to an integer and return
+    // Using Number() takes care of removing lea
