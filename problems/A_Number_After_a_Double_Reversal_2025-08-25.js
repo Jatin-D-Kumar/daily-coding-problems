@@ -16,4 +16,6 @@ function doubleReversal(n) {
 
 // Example usage
 console.log(doubleReversal(123)); // Output: 123
-console.log(double
+console.log(doubleReversal(1000)); // Output: 1
+console.log(doubleReversal(12345)); // Output: 12345
+console.log(doubleReversal(5000)); // Output: 5
