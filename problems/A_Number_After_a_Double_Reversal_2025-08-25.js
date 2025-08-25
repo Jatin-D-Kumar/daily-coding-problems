@@ -10,4 +10,10 @@ function doubleReversal(n) {
     const reversedTwice = reversedOnce.split('').reverse().join('');
 
     // Convert it back to an integer and return
-    // Using Number() takes care of removing lea
+    // Using Number() takes care of removing leading zeros
+    return Number(reversedTwice);
+}
+
+// Example usage
+console.log(doubleReversal(123)); // Output: 123
+console.log(double
