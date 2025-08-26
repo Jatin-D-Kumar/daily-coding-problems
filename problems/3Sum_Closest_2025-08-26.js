@@ -26,4 +26,12 @@ function threeSumClosest(nums, target) {
                 return currentSum;
             }
         }
- 
+    }
+
+    return closestSum;
+}
+
+// Example usage:
+const nums = [-1, 2, 1, -4];
+const target = 1;
+console.log(threeSumClosest(nums, target)); // Output: 2
