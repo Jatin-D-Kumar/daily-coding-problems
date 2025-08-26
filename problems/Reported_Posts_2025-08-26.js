@@ -39,4 +39,7 @@ manager.addPost("This is the second post.");
 manager.addPost("This is the third post.");
 
 manager.reportPost(2); // Report the second post
-manager.reportPost(4); // Attempt to repo
+manager.reportPost(4); // Attempt to report a non-existent post
+
+const reportedPosts = manager.getReportedPosts();
+console.log("Reported Posts:", reportedPosts);
