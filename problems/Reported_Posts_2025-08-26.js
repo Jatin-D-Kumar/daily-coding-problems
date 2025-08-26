@@ -21,4 +21,8 @@ class ReportedPostsManager {
         const post = this.posts.find(p => p.id === postId);
         if (post) {
             post.reported = true;
-            console
+            console.log(`Post ${postId} has been reported.`);
+        } else {
+            console.log(`Post ${postId} not found.`);
+        }
+   
