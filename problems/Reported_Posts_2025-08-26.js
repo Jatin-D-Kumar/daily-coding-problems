@@ -18,4 +18,7 @@ class ReportedPostsManager {
     }
 
     reportPost(postId) {
-      
+        const post = this.posts.find(p => p.id === postId);
+        if (post) {
+            post.reported = true;
+            console
