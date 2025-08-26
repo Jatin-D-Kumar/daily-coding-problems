@@ -25,4 +25,12 @@ class ReportedPostsManager {
         } else {
             console.log(`Post ${postId} not found.`);
         }
-   
+    }
+
+    getReportedPosts() {
+        return this.posts.filter(post => post.reported);
+    }
+}
+
+// Example usage:
+const manager 
