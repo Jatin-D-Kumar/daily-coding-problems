@@ -9,4 +9,7 @@ function threeSumClosest(nums, target) {
         let right = nums.length - 1;
 
         while (left < right) {
-            const currentSum = nums[i] 
+            const currentSum = nums[i] + nums[left] + nums[right];
+
+            // Update closestSum if the currentSum is closer to target
+            if (Math.abs(currentSum - target) < Math.ab
