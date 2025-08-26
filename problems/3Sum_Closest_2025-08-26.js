@@ -21,4 +21,9 @@ function threeSumClosest(nums, target) {
                 left++;
             } else if (currentSum > target) {
                 right--;
-            
+            } else {
+                // If currentSum is exactly equal to target, we found the closest sum
+                return currentSum;
+            }
+        }
+ 
