@@ -33,4 +33,7 @@ class ReportedPostsManager {
 }
 
 // Example usage:
-const manager 
+const manager = new ReportedPostsManager();
+manager.addPost("This is the first post.");
+manager.addPost("This is the second post.");
+manager.
