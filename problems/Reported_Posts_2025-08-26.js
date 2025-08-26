@@ -36,4 +36,7 @@ class ReportedPostsManager {
 const manager = new ReportedPostsManager();
 manager.addPost("This is the first post.");
 manager.addPost("This is the second post.");
-manager.
+manager.addPost("This is the third post.");
+
+manager.reportPost(2); // Report the second post
+manager.reportPost(4); // Attempt to repo
