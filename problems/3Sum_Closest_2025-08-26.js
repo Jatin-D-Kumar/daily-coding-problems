@@ -12,4 +12,8 @@ function threeSumClosest(nums, target) {
             const currentSum = nums[i] + nums[left] + nums[right];
 
             // Update closestSum if the currentSum is closer to target
-            if (Math.abs(currentSum - target) < Math.ab
+            if (Math.abs(currentSum - target) < Math.abs(closestSum - target)) {
+                closestSum = currentSum;
+            }
+
+            // Move the pointers based on the comparison of currentSum an
