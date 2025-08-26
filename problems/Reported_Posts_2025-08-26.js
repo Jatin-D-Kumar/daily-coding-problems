@@ -13,4 +13,9 @@ class ReportedPostsManager {
     }
 
     addPost(content) {
-        con
+        const newPost = new Post(this.posts.length + 1, content);
+        this.posts.push(newPost);
+    }
+
+    reportPost(postId) {
+      
