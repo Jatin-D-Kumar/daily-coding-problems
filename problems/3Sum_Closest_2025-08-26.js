@@ -16,4 +16,9 @@ function threeSumClosest(nums, target) {
                 closestSum = currentSum;
             }
 
-            // Move the pointers based on the comparison of currentSum an
+            // Move the pointers based on the comparison of currentSum and target
+            if (currentSum < target) {
+                left++;
+            } else if (currentSum > target) {
+                right--;
+            
