@@ -9,4 +9,5 @@ function minOperations(arr, target) {
     return operations;
 }
 
-/
+// Example usage:
+const arr = [1, 2, 3]
