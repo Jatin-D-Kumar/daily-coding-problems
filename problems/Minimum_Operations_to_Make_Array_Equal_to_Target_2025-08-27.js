@@ -10,4 +10,6 @@ function minOperations(arr, target) {
 }
 
 // Example usage:
-const arr = [1, 2, 3]
+const arr = [1, 2, 3];
+const target = 2;
+console.log(minOpe
