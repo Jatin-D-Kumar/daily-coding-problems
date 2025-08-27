@@ -1,0 +1,2 @@
+
+function minOperations(arr, target) {
