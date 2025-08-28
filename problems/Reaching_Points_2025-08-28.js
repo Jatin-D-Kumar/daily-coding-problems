@@ -18,4 +18,6 @@ function canReach(sx, sy, tx, ty) {
 
 // Example usage:
 console.log(canReach(1, 1, 3, 5)); // true
-console.log(canReach(1, 1, 
+console.log(canReach(1, 1, 2, 2)); // false
+console.log(canReach(1, 1, 1, 1)); // true
+console.log(canReach(1, 1, 4, 5)); // true
