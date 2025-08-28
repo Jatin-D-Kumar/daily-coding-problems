@@ -5,4 +5,6 @@ function canReach(sx, sy, tx, ty) {
             return true;
         }
         // If ty > tx, we check if we can reduce ty
-        if (t
+        if (ty > tx) {
+            // Move backward: we can subtract sy from ty
+            ty -= (ty - sy) >= tx ? Ma
