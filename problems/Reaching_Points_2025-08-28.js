@@ -9,4 +9,8 @@ function canReach(sx, sy, tx, ty) {
             // Move backward: we can subtract sy from ty
             ty -= (ty - sy) >= tx ? Math.floor((ty - sy) / tx) * tx : (ty - sy);
         } else {
-            // If tx >= ty, we do similar for
+            // If tx >= ty, we do similar for tx
+            tx -= (tx - sx) >= ty ? Math.floor((tx - sx) / ty) * ty : (tx - sx);
+        }
+    }
+    
