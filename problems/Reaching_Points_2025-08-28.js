@@ -13,4 +13,9 @@ function canReach(sx, sy, tx, ty) {
             tx -= (tx - sx) >= ty ? Math.floor((tx - sx) / ty) * ty : (tx - sx);
         }
     }
-    
+    return false;
+}
+
+// Example usage:
+console.log(canReach(1, 1, 3, 5)); // true
+console.log(canReach(1, 1, 
