@@ -7,4 +7,6 @@ function canReach(sx, sy, tx, ty) {
         // If ty > tx, we check if we can reduce ty
         if (ty > tx) {
             // Move backward: we can subtract sy from ty
-            ty -= (ty - sy) >= tx ? Ma
+            ty -= (ty - sy) >= tx ? Math.floor((ty - sy) / tx) * tx : (ty - sy);
+        } else {
+            // If tx >= ty, we do similar for
