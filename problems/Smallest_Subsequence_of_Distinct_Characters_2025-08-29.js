@@ -29,4 +29,11 @@ function smallestSubsequence(s) {
         seen[char] = true; // Mark it as seen
     }
 
-    // Join the result array to form the final 
+    // Join the result array to form the final string
+    return result.join('');
+}
+
+// Example usage
+const input = "cbacdcbc";
+const output = smallestSubsequence(input);
+console.log(output); // Output: "acdb"
