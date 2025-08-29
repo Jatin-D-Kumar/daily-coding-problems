@@ -19,4 +19,9 @@ function smallestSubsequence(s) {
 
         // Maintain characters in result that are lexicographically smaller
         // and can be found later in the string
-        while (result.length > 0 && result[result.length - 1] > char && lastOccurrence[result[r
+        while (result.length > 0 && result[result.length - 1] > char && lastOccurrence[result[result.length - 1]] > i) {
+            const removedChar = result.pop();
+            seen[removedChar] = false; // Mark the character as not seen
+        }
+
+        // 
