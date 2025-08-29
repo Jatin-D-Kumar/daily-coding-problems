@@ -17,4 +17,6 @@ function smallestSubsequence(s) {
             continue;
         }
 
-        // Maintain characters in result that are le
+        // Maintain characters in result that are lexicographically smaller
+        // and can be found later in the string
+        while (result.length > 0 && result[result.length - 1] > char && lastOccurrence[result[r
