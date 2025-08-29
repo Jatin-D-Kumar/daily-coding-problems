@@ -12,4 +12,9 @@ function smallestSubsequence(s) {
     for (let i = 0; i < s.length; i++) {
         const char = s[i];
 
-      
+        // If the character is already in the result, skip it
+        if (seen[char]) {
+            continue;
+        }
+
+        // Maintain characters in result that are le
