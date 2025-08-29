@@ -24,4 +24,9 @@ function smallestSubsequence(s) {
             seen[removedChar] = false; // Mark the character as not seen
         }
 
-        // 
+        // Add the current character to the result
+        result.push(char);
+        seen[char] = true; // Mark it as seen
+    }
+
+    // Join the result array to form the final 
