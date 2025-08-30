@@ -21,4 +21,13 @@ function removeDuplicates(s, k) {
     // Build the result string from the stack
     let result = '';
     for (let [char, count] of stack) {
-        result += char.repeat(count); // Repea
+        result += char.repeat(count); // Repeat the character count times
+    }
+
+    return result;
+}
+
+// Example usage:
+const str = "deeedbbcccbdaa";
+const k = 3;
+console.log(removeDuplicates(str, k)); // Output: "aa"
