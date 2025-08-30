@@ -14,4 +14,11 @@ function removeDuplicates(s, k) {
 
         // If the count reaches k, we need to remove it
         if (stack.length > 0 && stack[stack.length - 1][1] === k) {
-            stack.pop(); // Remove the last character group from the s
+            stack.pop(); // Remove the last character group from the stack
+        }
+    }
+
+    // Build the result string from the stack
+    let result = '';
+    for (let [char, count] of stack) {
+        result += char.repeat(count); // Repea
