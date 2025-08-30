@@ -12,4 +12,6 @@ function removeDuplicates(s, k) {
             stack.push([char, 1]);
         }
 
-        // If the co
+        // If the count reaches k, we need to remove it
+        if (stack.length > 0 && stack[stack.length - 1][1] === k) {
+            stack.pop(); // Remove the last character group from the s
