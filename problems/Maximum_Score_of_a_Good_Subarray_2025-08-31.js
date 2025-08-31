@@ -15,4 +15,10 @@ function maximumScore(arr, k) {
         }
     }
 
-    
+    return maxScore;
+}
+
+// Example usage
+const arr = [1, 2, 3, 4, 5];
+const k = 2;
+con
