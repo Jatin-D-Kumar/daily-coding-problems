@@ -21,4 +21,4 @@ function maximumScore(arr, k) {
 // Example usage
 const arr = [1, 2, 3, 4, 5];
 const k = 2;
-con
+console.log(maximumScore(arr, k)); // Call the function with your parameters
