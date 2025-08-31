@@ -37,4 +37,16 @@ function diff(obj1, obj2) {
     return result;
 }
 
-// 
+// Example usage
+const objA = {
+    name: "Alice",
+    age: 25,
+    address: {
+        city: "Wonderland",
+        zip: "12345"
+    },
+    hobbies: ["reading", "gardening"]
+};
+
+const objB = {
+    name: 
