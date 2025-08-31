@@ -5,4 +5,6 @@ function maximumScore(arr, k) {
 
     for (let start = 0; start < n; start++) {
         let currentSum = 0;
-        fo
+        for (let end = start; end < n; end++) {
+            currentSum += arr[end];
+        
