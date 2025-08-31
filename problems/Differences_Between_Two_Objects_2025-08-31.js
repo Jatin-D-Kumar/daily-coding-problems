@@ -28,4 +28,13 @@ function diff(obj1, obj2) {
 
     // Compare properties of obj2 that weren't in obj1
     for (const key in obj2) {
-        if (obj2
+        if (obj2.hasOwnProperty(key) && !obj1.hasOwnProperty(key)) {
+            // Key exists only in obj2
+            result[key] = { status: 'added', value: obj2[key] };
+        }
+    }
+
+    return result;
+}
+
+// 
