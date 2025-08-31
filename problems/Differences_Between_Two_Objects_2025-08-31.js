@@ -49,4 +49,14 @@ const objA = {
 };
 
 const objB = {
-    name: 
+    name: "Alice",
+    age: 30,
+    address: {
+        city: "Wonderland",
+        zip: "54321"
+    },
+    hobbies: ["reading", "biking"]
+};
+
+const differences = diff(objA, objB);
+console.log(differences);
