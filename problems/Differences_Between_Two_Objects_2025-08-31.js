@@ -21,4 +21,11 @@ function diff(obj1, obj2) {
                 }
             } else if (obj1[key] !== obj2[key]) {
                 // Key exists in both but values are different
-                result[key] =
+                result[key] = { status: 'changed', value: { old: obj1[key], new: obj2[key] } };
+            }
+        }
+    }
+
+    // Compare properties of obj2 that weren't in obj1
+    for (const key in obj2) {
+        if (obj2
