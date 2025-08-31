@@ -7,4 +7,5 @@ function maximumScore(arr, k) {
         let currentSum = 0;
         for (let end = start; end < n; end++) {
             currentSum += arr[end];
-        
+            // Assuming we want to maximize the score defined as:
+            // score = c
