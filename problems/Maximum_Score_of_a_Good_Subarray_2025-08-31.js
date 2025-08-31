@@ -9,4 +9,5 @@ function maximumScore(arr, k) {
             currentSum += arr[end];
             // Assuming we want to maximize the score defined as:
             // score = currentSum / (end - start + 1) + k
-            // You can adjust this formula based
+            // You can adjust this formula based on the problem's requirements
+            let score = (currentSum / (end - start 
