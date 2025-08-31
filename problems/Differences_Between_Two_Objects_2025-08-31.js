@@ -14,4 +14,7 @@ function diff(obj1, obj2) {
                 // Key exists only in obj1
                 result[key] = { status: 'removed', value: obj1[key] };
             } else if (isObject(obj1[key]) && isObject(obj2[key])) {
-                // If both valu
+                // If both values are objects, recursively compare them
+                const nestedDiff = diff(obj1[key], obj2[key]);
+                if (Object.keys(nestedDiff).length > 0) {
+                    result[key] = { s
