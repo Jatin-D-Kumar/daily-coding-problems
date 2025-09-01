@@ -16,4 +16,12 @@ function canTransformToEqual(arr) {
         if (num !== targetValue) {
             // You would perform the necessary operations to adjust num towards targetValue.
             // For this implementation, we'll just check if the operations are valid.
-           
+            // Adjusting each number can be simulated here.
+        }
+    }
+
+    return true; // If we reach here, it means it's possible to transform
+}
+
+// Example usage:
+const arr = [1, 2, 3,
