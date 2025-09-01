@@ -38,4 +38,9 @@ function minDepth(root) {
         depth++;
     }
 
-    return depth; 
+    return depth; // Should never reach here since we return when we find the first leaf
+}
+
+// Example usage:
+const root = new TreeNode(1);
+root.left = new TreeNode
