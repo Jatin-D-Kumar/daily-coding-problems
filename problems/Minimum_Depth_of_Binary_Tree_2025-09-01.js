@@ -31,4 +31,11 @@ function minDepth(root) {
 
             // Add left and right children to the queue if they exist
             if (node.left) queue.push(node.left);
-            if 
+            if (node.right) queue.push(node.right);
+        }
+
+        // Increment the depth at the end of each level
+        depth++;
+    }
+
+    return depth; 
