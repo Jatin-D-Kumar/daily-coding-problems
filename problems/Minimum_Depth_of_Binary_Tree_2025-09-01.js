@@ -24,4 +24,7 @@ function minDepth(root) {
         for (let i = 0; i < levelSize; i++) {
             const node = queue.shift();
 
-            // Check i
+            // Check if we've reached a leaf node
+            if (!node.left && !node.right) {
+                return depth; // Return the depth as we found a leaf
+    
