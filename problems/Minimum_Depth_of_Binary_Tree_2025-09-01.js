@@ -43,4 +43,8 @@ function minDepth(root) {
 
 // Example usage:
 const root = new TreeNode(1);
-root.left = new TreeNode
+root.left = new TreeNode(2);
+root.right = new TreeNode(3);
+root.left.left = new TreeNode(4);
+
+console.log(minDepth(root)); // Output: 2 (the minimum depth is to node 3)
