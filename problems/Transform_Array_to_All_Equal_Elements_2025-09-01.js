@@ -24,4 +24,8 @@ function canTransformToEqual(arr) {
 }
 
 // Example usage:
-const arr = [1, 2, 3,
+const arr = [1, 2, 3, 4];
+console.log(canTransformToEqual(arr)); // Output: false (since sum is 10, targetValue is 2.5)
+
+const arr2 = [2, 2, 2];
+console.log(canTransformToEqual(arr2)); // Output: true
