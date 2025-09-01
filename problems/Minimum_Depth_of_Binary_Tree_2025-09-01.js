@@ -27,4 +27,8 @@ function minDepth(root) {
             // Check if we've reached a leaf node
             if (!node.left && !node.right) {
                 return depth; // Return the depth as we found a leaf
-    
+            }
+
+            // Add left and right children to the queue if they exist
+            if (node.left) queue.push(node.left);
+            if 
