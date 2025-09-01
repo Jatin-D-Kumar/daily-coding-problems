@@ -19,4 +19,9 @@ function minDepth(root) {
 
     // Start BFS
     while (queue.length > 0) {
-    
+        const levelSize = queue.length;
+
+        for (let i = 0; i < levelSize; i++) {
+            const node = queue.shift();
+
+            // Check i
