@@ -18,3 +18,7 @@ function findTilt(root) {
         const rightSum = sumAndTilt(node.right);
 
         // Calculate the tilt for the current node
+        const tilt = Math.abs(leftSum - rightSum);
+        totalTilt += tilt; // Add the current tilt to the total tilt
+
+        // Return the sum of the values of t
