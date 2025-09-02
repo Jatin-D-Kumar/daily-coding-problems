@@ -13,4 +13,8 @@ function findTilt(root) {
     function sumAndTilt(node) {
         if (!node) return 0;
 
-        // Recursively get the sum of values in the left an
+        // Recursively get the sum of values in the left and right subtrees
+        const leftSum = sumAndTilt(node.left);
+        const rightSum = sumAndTilt(node.right);
+
+        // Calculate the tilt for the current node
