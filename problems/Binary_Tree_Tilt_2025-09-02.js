@@ -7,4 +7,10 @@ class TreeNode {
     }
 }
 
-functi
+function findTilt(root) {
+    let totalTilt = 0;
+
+    function sumAndTilt(node) {
+        if (!node) return 0;
+
+        // Recursively get the sum of values in the left an
