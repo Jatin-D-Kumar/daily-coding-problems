@@ -21,4 +21,9 @@ function findTilt(root) {
         const tilt = Math.abs(leftSum - rightSum);
         totalTilt += tilt; // Add the current tilt to the total tilt
 
-        // Return the sum of the values of t
+        // Return the sum of the values of this subtree
+        return leftSum + rightSum + node.val;
+    }
+
+    sumAndTilt(root); // Start the recursion
+    return totalTilt; // Return the total tilt of the t
