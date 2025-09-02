@@ -26,4 +26,9 @@ function findTilt(root) {
     }
 
     sumAndTilt(root); // Start the recursion
-    return totalTilt; // Return the total tilt of the t
+    return totalTilt; // Return the total tilt of the tree
+}
+
+// Example usage:
+const root = new TreeNode(1, new TreeNode(2), new TreeNode(3));
+console.log(findTilt(root)); // Output the total tilt of the binary tree
