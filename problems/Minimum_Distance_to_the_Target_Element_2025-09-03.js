@@ -12,4 +12,12 @@ function minimumDistanceToTarget(arr, target) {
                 minDistance = Math.min(minDistance, distance);
             }
             // Update the last occurrence index to the current index
-  
+            lastIndex = i;
+        }
+    }
+
+    // Return -1 if no target was found or if it occurs only once
+    return minDistance === Infinity ? -1 : minDistance;
+}
+
+// Example usage
