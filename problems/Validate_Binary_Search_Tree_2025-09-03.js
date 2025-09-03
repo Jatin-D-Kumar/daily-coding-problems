@@ -8,4 +8,11 @@ class TreeNode {
 }
 
 function isValidBST(root) {
-    // Helper function to validate the B
+    // Helper function to validate the BST with a range
+    const validate = (node, low = -Infinity, high = Infinity) => {
+        // An empty tree is a valid BST
+        if (!node) {
+            return true;
+        }
+
+        // Current 
