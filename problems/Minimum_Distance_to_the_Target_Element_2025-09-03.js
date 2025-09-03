@@ -20,4 +20,8 @@ function minimumDistanceToTarget(arr, target) {
     return minDistance === Infinity ? -1 : minDistance;
 }
 
-// Example usage
+// Example usage:
+const arr = [1, 2, 3, 2, 5, 3, 2, 1];
+const target = 2;
+const result = minimumDistanceToTarget(arr, target);
+console.log(result); // Expected output: 3 (from index 3 to index 6)
