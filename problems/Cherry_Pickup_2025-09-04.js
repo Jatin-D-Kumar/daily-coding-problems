@@ -8,4 +8,8 @@ function cherryPickup(grid) {
             if (grid[i][j] === -1) {
                 dp[i][j] = -1; // Mark as unreachable
             } else {
-                // Current cell
+                // Current cell is cherry
+                let cherries = grid[i][j] === 1 ? 1 : 0;
+
+                // Check the maximum cherries collected from the next positions
+                const right = 
