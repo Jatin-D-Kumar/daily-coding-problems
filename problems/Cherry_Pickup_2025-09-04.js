@@ -19,4 +19,14 @@ function cherryPickup(grid) {
 
                 // If both down and right are unreachable, set current dp to -1
                 if (dp[i][j] < 0) {
-                    dp
+                    dp[i][j] = -1;
+                }
+            }
+        }
+    }
+    
+    // Now we have the total cherries collected from (0,0) to (n-1,n-1)
+    return Math.max(dp[0][0], 0);
+}
+
+// E
