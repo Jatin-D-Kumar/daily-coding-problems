@@ -15,4 +15,8 @@ function cherryPickup(grid) {
                 const right = (j + 1 < n && dp[i][j + 1] !== -1) ? dp[i][j + 1] : -1;
                 const down = (i + 1 < n && dp[i + 1][j] !== -1) ? dp[i + 1][j] : -1;
                 
-                dp[i]
+                dp[i][j] = cherries + Math.max(right, down);
+
+                // If both down and right are unreachable, set current dp to -1
+                if (dp[i][j] < 0) {
+                    dp
