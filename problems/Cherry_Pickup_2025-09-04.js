@@ -12,4 +12,7 @@ function cherryPickup(grid) {
                 let cherries = grid[i][j] === 1 ? 1 : 0;
 
                 // Check the maximum cherries collected from the next positions
-                const right = 
+                const right = (j + 1 < n && dp[i][j + 1] !== -1) ? dp[i][j + 1] : -1;
+                const down = (i + 1 < n && dp[i + 1][j] !== -1) ? dp[i + 1][j] : -1;
+                
+                dp[i]
