@@ -29,4 +29,11 @@ function cherryPickup(grid) {
     return Math.max(dp[0][0], 0);
 }
 
-// E
+// Example usage:
+const grid = [
+    [0, 1, -1],
+    [1, 0, 0],
+    [-1, 0, 1]
+];
+
+console.log(cherryPickup(grid)); // Output the maximum number of cherries that can be collected
