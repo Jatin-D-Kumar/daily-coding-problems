@@ -4,4 +4,8 @@ const features = [
     { name: "Feature A", popularity: 150 },
     { name: "Feature B", popularity: 300 },
     { name: "Feature C", popularity: 200 },
-    { name: "Feature D", popularity: 5
+    { name: "Feature D", popularity: 50 },
+];
+
+// Function to sort features by popularity in descending order
+function sortFeaturesByPopularity(features) {
