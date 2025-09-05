@@ -13,4 +13,7 @@ function sortFeaturesByPopularity(features) {
 }
 
 // Using the function to sort the features
-const
+const sortedFeatures = sortFeaturesByPopularity(features);
+
+// Output the sorted features
+console.log(sortedFeatures);
