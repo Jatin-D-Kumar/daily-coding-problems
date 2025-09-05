@@ -9,3 +9,8 @@ const features = [
 
 // Function to sort features by popularity in descending order
 function sortFeaturesByPopularity(features) {
+    return features.sort((a, b) => b.popularity - a.popularity);
+}
+
+// Using the function to sort the features
+const
