@@ -11,4 +11,8 @@ function canBeMadeEqual(str1, str2) {
 
     // Get character frequencies for both strings
     const freq1 = getCharFrequency(str1);
- 
+    const freq2 = getCharFrequency(str2);
+
+    // Compare the frequency objects
+    if (Object.keys(freq1).length !== Object.keys(freq2).length) {
+        return false; // Different sets
