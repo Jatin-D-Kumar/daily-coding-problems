@@ -31,4 +31,7 @@ function canBeMadeEqual(str1, str2) {
     return sortedStr1 === sortedStr2;
 }
 
-//
+// Example usage:
+console.log(canBeMadeEqual("abc", "bca")); // true
+console.log(canBeMadeEqual("aabbcc", "abcabc")); // true
+console.log(canBeMadeEqual("aabbc", "abbbc")); // false
