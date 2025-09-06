@@ -24,4 +24,11 @@ function canBeMadeEqual(str1, str2) {
         }
     }
 
-    //
+    // Sort both strings and compare
+    const sortedStr1 = str1.split('').sort().join('');
+    const sortedStr2 = str2.split('').sort().join('');
+
+    return sortedStr1 === sortedStr2;
+}
+
+//
