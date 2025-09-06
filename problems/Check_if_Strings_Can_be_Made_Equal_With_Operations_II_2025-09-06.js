@@ -15,4 +15,13 @@ function canBeMadeEqual(str1, str2) {
 
     // Compare the frequency objects
     if (Object.keys(freq1).length !== Object.keys(freq2).length) {
-        return false; // Different sets
+        return false; // Different sets of characters
+    }
+
+    for (let key in freq1) {
+        if (freq1[key] !== freq2[key]) {
+            return false; // Different frequencies for some character
+        }
+    }
+
+    //
