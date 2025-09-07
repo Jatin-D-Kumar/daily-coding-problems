@@ -11,4 +11,11 @@ var goodNodes = function(root) {
     const dfs = (node, maxSoFar) => {
         if (!node) return;
 
-        // If the current node's value is greater 
+        // If the current node's value is greater than or equal to the maximum seen so far,
+        // it is a good node.
+        if (node.val >= maxSoFar) {
+            count++;
+            maxSoFar = node.val;
+        }
+
+        /
