@@ -32,4 +32,12 @@ var goodNodes = function(root) {
 let root = new TreeNode(3, 
     new TreeNode(1, 
         new TreeNode(3, null, null), 
-        ne
+        new TreeNode(2, null, null)
+    ), 
+    new TreeNode(4, 
+        new TreeNode(1, null, null), 
+        new TreeNode(5, null, null)
+    )
+);
+
+console.log(goodNodes(root)); // Output: 4
