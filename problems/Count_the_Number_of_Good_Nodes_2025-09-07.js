@@ -23,4 +23,13 @@ var goodNodes = function(root) {
         dfs(node.right, maxSoFar);
     };
 
-    dfs(root, -Infinity); // Start with negat
+    dfs(root, -Infinity); // Start with negative infinity since any node will be greater
+
+    return count;
+};
+
+// Example usage:
+let root = new TreeNode(3, 
+    new TreeNode(1, 
+        new TreeNode(3, null, null), 
+        ne
