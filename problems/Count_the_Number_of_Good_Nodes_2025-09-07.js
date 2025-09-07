@@ -18,4 +18,9 @@ var goodNodes = function(root) {
             maxSoFar = node.val;
         }
 
-        /
+        // Recurse for left and right children with updated maxSoFar
+        dfs(node.left, maxSoFar);
+        dfs(node.right, maxSoFar);
+    };
+
+    dfs(root, -Infinity); // Start with negat
