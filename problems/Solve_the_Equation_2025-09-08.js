@@ -35,4 +35,15 @@ function solveEquation(equation) {
         if (totalConstant === 0) {
             return "Infinite solutions"; // All values of x are solutions
         } else {
-            return "No solution"; // No val
+            return "No solution"; // No values of x can satisfy the equation
+        }
+    }
+
+    // Calculate the value of x
+    const x = totalConstant / totalX;
+    
+    return `x=${x}`;
+}
+
+// Example usage:
+console.log(solveEquation("3x+2=2x+3")); /
