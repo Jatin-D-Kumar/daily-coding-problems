@@ -23,4 +23,14 @@ function minimizeXor(arr) {
     let minXor = Infinity;
     for (let j = 1; j < dp.length; j++) {
         for (const xor of dp[j]) {
-            const current
+            const currentXor = xor ^ totalXor;
+            minXor = Math.min(minXor, currentXor);
+        }
+    }
+
+    return minXor;
+}
+
+// Example usage
+const arr = [1, 2, 3];
+console.log(minimizeXor(arr)); // Output will be the minimized XOR
