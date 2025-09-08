@@ -23,4 +23,11 @@ function solveEquation(equation) {
     }
 
     // Parse the left and right expressions
-    const [a, b] = parseExpression(left
+    const [a, b] = parseExpression(left);
+    const [c, d] = parseExpression(right);
+    
+    // Rearrange the equation to get all x terms on one side and constants on the other
+    const totalX = a - c;
+    const totalConstant = d - b;
+
+    // Hand
