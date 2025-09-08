@@ -30,4 +30,9 @@ function solveEquation(equation) {
     const totalX = a - c;
     const totalConstant = d - b;
 
-    // Hand
+    // Handle special cases
+    if (totalX === 0) {
+        if (totalConstant === 0) {
+            return "Infinite solutions"; // All values of x are solutions
+        } else {
+            return "No solution"; // No val
