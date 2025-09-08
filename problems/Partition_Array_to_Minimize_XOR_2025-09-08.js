@@ -10,4 +10,11 @@ function minimizeXor(arr) {
     // Iterate through each number in the array
     for (const num of arr) {
         // Update the DP table in reverse order to avoid overwriting
-        for (
+        for (let j = n - 1; j >= 0; j--) {
+            for (const xor of dp[j]) {
+                dp[j + 1].add(xor ^ num);
+            }
+        }
+        // Include current number as a single element subset
+        dp[1].add(num);
+ 
