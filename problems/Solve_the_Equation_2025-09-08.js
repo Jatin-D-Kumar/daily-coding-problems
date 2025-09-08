@@ -46,4 +46,7 @@ function solveEquation(equation) {
 }
 
 // Example usage:
-console.log(solveEquation("3x+2=2x+3")); /
+console.log(solveEquation("3x+2=2x+3")); // Output: x=1
+console.log(solveEquation("x+5=5"));     // Output: x=0
+console.log(solveEquation("x=x"));       // Output: Infinite solutions
+console.log(solveEquation("2x+3=2x+4")); // Output: No solution
