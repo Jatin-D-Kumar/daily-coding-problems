@@ -10,4 +10,8 @@ function solveEquation(equation) {
         let constant = 0;
 
         // Process each term
-        terms.forEac
+        terms.forEach(term => {
+            if (term.includes('x')) {
+                const coeff = term.replace('x', '');
+                coeffX += coeff === '' || coeff === '+' ? 1 : coeff === '-' ? -1 : parseInt(coeff);
+       
