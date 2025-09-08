@@ -14,4 +14,13 @@ function solveEquation(equation) {
             if (term.includes('x')) {
                 const coeff = term.replace('x', '');
                 coeffX += coeff === '' || coeff === '+' ? 1 : coeff === '-' ? -1 : parseInt(coeff);
-       
+            } else {
+                constant += parseInt(term);
+            }
+        });
+
+        return [coeffX, constant];
+    }
+
+    // Parse the left and right expressions
+    const [a, b] = parseExpression(left
