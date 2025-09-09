@@ -25,4 +25,11 @@ function countPartitions(nums, k) {
         // Shrink the window from the left if the condition is violated
         while (nums[maxDeque[0]] - nums[minDeque[0]] > k) {
             j++;
-            if (maxDe
+            if (maxDeque[0] < j) maxDeque.shift();
+            if (minDeque[0] < j) minDeque.shift();
+        }
+
+        // Count valid partitions
+        count += (i - j + 1);
+    }
+    
