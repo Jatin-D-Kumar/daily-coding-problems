@@ -22,4 +22,7 @@ function countPartitions(nums, k) {
         }
         minDeque.push(i);
         
-    
+        // Shrink the window from the left if the condition is violated
+        while (nums[maxDeque[0]] - nums[minDeque[0]] > k) {
+            j++;
+            if (maxDe
