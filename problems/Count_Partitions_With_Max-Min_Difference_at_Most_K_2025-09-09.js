@@ -11,4 +11,9 @@ function countPartitions(nums, k) {
     
     for (let i = 0; i < n; i++) {
         // Maintain the max deque
-        while (maxDe
+        while (maxDeque.length && nums[maxDeque[maxDeque.length - 1]] <= nums[i]) {
+            maxDeque.pop();
+        }
+        maxDeque.push(i);
+        
+        // Maintain the min d
