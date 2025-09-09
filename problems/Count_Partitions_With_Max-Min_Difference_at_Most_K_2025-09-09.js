@@ -33,3 +33,10 @@ function countPartitions(nums, k) {
         count += (i - j + 1);
     }
     
+    return count;
+}
+
+// Example Usage:
+const nums = [1, 3, 2, 4];
+const k = 2;
+console.log(countPartitions(nums, k)); // Output the number of valid partitions
