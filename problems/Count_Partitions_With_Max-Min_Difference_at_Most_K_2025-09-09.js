@@ -16,4 +16,10 @@ function countPartitions(nums, k) {
         }
         maxDeque.push(i);
         
-        // Maintain the min d
+        // Maintain the min deque
+        while (minDeque.length && nums[minDeque[minDeque.length - 1]] >= nums[i]) {
+            minDeque.pop();
+        }
+        minDeque.push(i);
+        
+    
