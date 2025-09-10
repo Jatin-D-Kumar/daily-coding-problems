@@ -20,4 +20,6 @@ function generateOddCountString(input) {
 }
 
 // Example usage:
-const inputString = "aabbccdd
+const inputString = "aabbccdde";
+const result = generateOddCountString(inputString);
+console.log(result); // Output: "d" if 'd' is the only character with odd counts
