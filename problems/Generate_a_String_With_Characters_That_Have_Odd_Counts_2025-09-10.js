@@ -8,4 +8,8 @@ function generateOddCountString(input) {
     }
 
     // Step 2: Collect characters with odd counts
-    const oddCo
+    const oddCountChars = [];
+    for (let char in charCount) {
+        if (charCount[char] % 2 !== 0) {
+            oddCountChars.push(char);
+        }
