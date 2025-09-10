@@ -13,3 +13,11 @@ function generateOddCountString(input) {
         if (charCount[char] % 2 !== 0) {
             oddCountChars.push(char);
         }
+    }
+
+    // Step 3: Generate and return the string
+    return oddCountChars.join('');
+}
+
+// Example usage:
+const inputString = "aabbccdd
