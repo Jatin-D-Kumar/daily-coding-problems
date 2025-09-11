@@ -7,4 +7,11 @@ function validateBinaryTreeNodes(n, leftChild, rightChild) {
     for (let i = 0; i < n; i++) {
         // Check left child
         if (leftChild[i] !== -1) {
-            parentCount[leftChild[i]]++
+            parentCount[leftChild[i]]++;
+            // If a node has more than one parent, return false
+            if (parentCount[leftChild[i]] > 1) {
+                return false;
+            }
+        }
+        
+ 
