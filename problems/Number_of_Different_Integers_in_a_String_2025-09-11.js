@@ -6,4 +6,7 @@ function numDifferentIntegers(word) {
     for (let char of word) {
         // If the character is a digit, append it to the current number
         if (char >= '0' && char <= '9') {
-         
+            currentNumber += char;
+        } else {
+            // If we hit a non-digit and we have a current number, process it
+        
