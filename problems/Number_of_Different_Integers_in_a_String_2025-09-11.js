@@ -3,4 +3,7 @@ function numDifferentIntegers(word) {
     const uniqueIntegers = new Set();
     let currentNumber = '';
 
-    for (let char of wo
+    for (let char of word) {
+        // If the character is a digit, append it to the current number
+        if (char >= '0' && char <= '9') {
+         
