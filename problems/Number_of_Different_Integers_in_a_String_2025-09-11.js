@@ -19,4 +19,8 @@ function numDifferentIntegers(word) {
 
     // If the string ends with a number, we need to add it as well
     if (currentNumber) {
-        uniqueIntegers.add(par
+        uniqueIntegers.add(parseInt(currentNumber, 10));
+    }
+
+    // The size of the set is the count of unique integers found
+    return uniqueIntegers.size
