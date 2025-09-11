@@ -14,4 +14,8 @@ function validateBinaryTreeNodes(n, leftChild, rightChild) {
             }
         }
         
- 
+        // Check right child
+        if (rightChild[i] !== -1) {
+            parentCount[rightChild[i]]++;
+            // If a node has more than one parent, return false
+         
