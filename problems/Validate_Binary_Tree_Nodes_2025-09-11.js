@@ -26,4 +26,14 @@ function validateBinaryTreeNodes(n, leftChild, rightChild) {
 
     // We need to check the root nodes
     let rootCount = 0;
-    for (let i 
+    for (let i = 0; i < n; i++) {
+        if (parentCount[i] === 0) {
+            rootCount++;
+        }
+    }
+
+    // There should be exactly one root
+    return rootCount === 1;
+}
+
+// Example 
