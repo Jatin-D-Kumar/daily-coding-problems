@@ -11,4 +11,7 @@ function numDifferentIntegers(word) {
             // If we hit a non-digit and we have a current number, process it
             if (currentNumber) {
                 // Parse as int and add to the set (leading zeros are ignored)
-                uniqueInt
+                uniqueIntegers.add(parseInt(currentNumber, 10));
+                currentNumber = ''; // Reset for the next number
+            }
+        }
