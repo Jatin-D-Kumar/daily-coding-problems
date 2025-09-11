@@ -9,4 +9,6 @@ function numDifferentIntegers(word) {
             currentNumber += char;
         } else {
             // If we hit a non-digit and we have a current number, process it
-        
+            if (currentNumber) {
+                // Parse as int and add to the set (leading zeros are ignored)
+                uniqueInt
