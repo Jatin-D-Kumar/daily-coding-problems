@@ -15,3 +15,8 @@ function numDifferentIntegers(word) {
                 currentNumber = ''; // Reset for the next number
             }
         }
+    }
+
+    // If the string ends with a number, we need to add it as well
+    if (currentNumber) {
+        uniqueIntegers.add(par
