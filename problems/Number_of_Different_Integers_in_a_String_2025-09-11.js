@@ -23,4 +23,9 @@ function numDifferentIntegers(word) {
     }
 
     // The size of the set is the count of unique integers found
-    return uniqueIntegers.size
+    return uniqueIntegers.size;
+}
+
+// Example usage:
+const exampleString = "a123bc34d8ef34";
+console.log(numDifferentIntegers(exampleString)); // Output: 3
