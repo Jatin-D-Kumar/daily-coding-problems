@@ -18,4 +18,12 @@ function validateBinaryTreeNodes(n, leftChild, rightChild) {
         if (rightChild[i] !== -1) {
             parentCount[rightChild[i]]++;
             // If a node has more than one parent, return false
-         
+            if (parentCount[rightChild[i]] > 1) {
+                return false;
+            }
+        }
+    }
+
+    // We need to check the root nodes
+    let rootCount = 0;
+    for (let i 
