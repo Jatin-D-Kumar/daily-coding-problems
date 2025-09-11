@@ -36,4 +36,9 @@ function validateBinaryTreeNodes(n, leftChild, rightChild) {
     return rootCount === 1;
 }
 
-// Example 
+// Example Usage
+const n = 5;
+const leftChild = [1, 3, -1, -1, -1];
+const rightChild = [2, 4, -1, -1, -1];
+
+console.log(validateBinaryTreeNodes(n, leftChild, rightChild)); // Output: true
