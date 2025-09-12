@@ -18,4 +18,8 @@ function calculateNPV(cashFlows, discountRate) {
 /**
  * Process NPV Queries
  * @param {number[]} cashFlows - Array of cash flows
- * @param {number[]} queries - Array of discount rates
+ * @param {number[]} queries - Array of discount rates (as percentages, e.g., 10 for 10%)
+ * @return {number[]} - Array of NPVs corresponding to each query
+ */
+function npvQueries(cashFlows, queries) {
+   
