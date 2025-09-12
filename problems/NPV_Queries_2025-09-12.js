@@ -12,4 +12,10 @@ function calculateNPV(cashFlows, discountRate) {
         npv += cashFlows[t] / Math.pow(1 + discountRate, t);
     }
     
-  
+    return npv;
+}
+
+/**
+ * Process NPV Queries
+ * @param {number[]} cashFlows - Array of cash flows
+ * @param {number[]} queries - Array of discount rates
