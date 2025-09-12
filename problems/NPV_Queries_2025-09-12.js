@@ -22,4 +22,7 @@ function calculateNPV(cashFlows, discountRate) {
  * @return {number[]} - Array of NPVs corresponding to each query
  */
 function npvQueries(cashFlows, queries) {
-   
+    return queries.map(rate => {
+        // Convert percentage to decimal
+        const discountRate = rate / 100;
+        return calculateNPV(cashFlows, 
