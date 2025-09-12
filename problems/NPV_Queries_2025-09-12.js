@@ -25,4 +25,10 @@ function npvQueries(cashFlows, queries) {
     return queries.map(rate => {
         // Convert percentage to decimal
         const discountRate = rate / 100;
-        return calculateNPV(cashFlows, 
+        return calculateNPV(cashFlows, discountRate);
+    });
+}
+
+// Example usage
+const cashFlows = [100, -50, 30, 40]; // Cash flows for years 0, 1, 2, and 3
+const queries = [10, 20, 30]; /
