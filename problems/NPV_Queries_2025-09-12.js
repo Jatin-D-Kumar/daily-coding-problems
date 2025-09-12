@@ -31,4 +31,7 @@ function npvQueries(cashFlows, queries) {
 
 // Example usage
 const cashFlows = [100, -50, 30, 40]; // Cash flows for years 0, 1, 2, and 3
-const queries = [10, 20, 30]; /
+const queries = [10, 20, 30]; // Discount rates in percentages
+
+const npvResults = npvQueries(cashFlows, queries);
+console.log(npvResults); // Output the NPV results for each query
