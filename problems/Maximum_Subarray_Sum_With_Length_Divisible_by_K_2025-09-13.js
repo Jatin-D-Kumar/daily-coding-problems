@@ -6,4 +6,8 @@ function maxSubarraySumDivK(nums, k) {
 
     // Step 1: Calculate prefix sums
     for (let i = 0; i < n; i++) {
-        prefi
+        prefixSums[i + 1] = prefixSums[i] + nums[i];
+    }
+
+    // Step 2: Iterate over possible lengths of subarrays that are multiples of k
+    for (let length 
