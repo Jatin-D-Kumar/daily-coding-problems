@@ -22,4 +22,5 @@ function minAdditionToMakeIntegerBeautiful(n, k) {
 }
 
 // Example usage:
-console.log(minAdditionToMakeIntegerBeautiful(38, 5)); /
+console.log(minAdditionToMakeIntegerBeautiful(38, 5)); // Output: 2
+console.log(minAdditionToMakeIntegerBeautiful(123, 9)); // Output: 6
