@@ -12,4 +12,8 @@ function minAdditionToMakeIntegerBeautiful(n, k) {
     let currentSum = digitSum(n);
     
     // If the current digit sum is already beautiful, return 0.
-    if (cur
+    if (currentSum % k === 0) {
+        return 0;
+    }
+
+    // Calculate the smallest number to ad
