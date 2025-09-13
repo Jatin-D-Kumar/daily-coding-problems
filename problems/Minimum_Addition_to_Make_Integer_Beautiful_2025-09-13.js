@@ -16,4 +16,6 @@ function minAdditionToMakeIntegerBeautiful(n, k) {
         return 0;
     }
 
-    // Calculate the smallest number to ad
+    // Calculate the smallest number to add to make the digit sum beautiful.
+    const remainder = currentSum % k;
+    return k - 
