@@ -9,4 +9,7 @@ function minAdditionToMakeIntegerBeautiful(n, k) {
         return sum;
     };
 
-    let currentSum = digit
+    let currentSum = digitSum(n);
+    
+    // If the current digit sum is already beautiful, return 0.
+    if (cur
