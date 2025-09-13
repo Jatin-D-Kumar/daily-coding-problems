@@ -21,4 +21,7 @@ function maxSubarraySumDivK(nums, k) {
     return maxSum;
 }
 
-// Example u
+// Example usage:
+const nums = [1, -2, 3, 4, 5, -3];
+const k = 2;
+console.log(maxSubarraySumDivK(nums, k)); // Output the maximum sum with length divisible by K
