@@ -10,4 +10,6 @@ function maxSubarraySumDivK(nums, k) {
     }
 
     // Step 2: Iterate over possible lengths of subarrays that are multiples of k
-    for (let length 
+    for (let length = k; length <= n; length += k) {
+        for (let i = 0; i <= n - length; i++) {
+            const currentSum = prefixSums[i + length] - prefixSums[i
