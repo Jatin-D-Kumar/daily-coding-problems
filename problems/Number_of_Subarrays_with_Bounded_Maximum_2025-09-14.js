@@ -10,4 +10,8 @@ function numSubarrayBoundedMax(nums, left, right) {
         } 
         // If the number is greater than right, reset totalValidSubarrays
         else if (num > right) {
-            totalVali
+            totalValidSubarrays = 0; 
+        } 
+        // If the number is less than left, we can still count the valid subarrays 
+        // that are formed from the previous valid elements
+        count += tot
