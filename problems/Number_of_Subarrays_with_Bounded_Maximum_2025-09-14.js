@@ -14,4 +14,14 @@ function numSubarrayBoundedMax(nums, left, right) {
         } 
         // If the number is less than left, we can still count the valid subarrays 
         // that are formed from the previous valid elements
-        count += tot
+        count += totalValidSubarrays;
+    }
+    return count;
+}
+
+// Example usage:
+const nums = [2, 1, 4, 3];
+const left = 2;
+const right = 3;
+
+console.log(numSubarrayBoundedMax(nums, left, right)); // Output: 3
