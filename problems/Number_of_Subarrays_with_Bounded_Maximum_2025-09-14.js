@@ -5,4 +5,9 @@ function numSubarrayBoundedMax(nums, left, right) {
     // Walk through each number in the array
     for (let num of nums) {
         // If the number is within the target range [left, right]
-        if (num >= left 
+        if (num >= left && num <= right) {
+            totalValidSubarrays++;
+        } 
+        // If the number is greater than right, reset totalValidSubarrays
+        else if (num > right) {
+            totalVali
