@@ -7,4 +7,7 @@ function convertDateFormat(dateString) {
     }
 
     // Split the date string into an array [YYYY, MM, DD]
+    const parts = dateString.split('-');
     
+    // Rearrange to "DD/MM/YYYY" format
+    const formattedDate = `${
