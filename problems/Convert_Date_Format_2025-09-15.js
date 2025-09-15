@@ -10,4 +10,10 @@ function convertDateFormat(dateString) {
     const parts = dateString.split('-');
     
     // Rearrange to "DD/MM/YYYY" format
-    const formattedDate = `${
+    const formattedDate = `${parts[2]}/${parts[1]}/${parts[0]}`;
+    
+    return formattedDate;
+}
+
+// Example usage:
+const inputDate = "2023
