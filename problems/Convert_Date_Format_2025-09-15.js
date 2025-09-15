@@ -16,4 +16,6 @@ function convertDateFormat(dateString) {
 }
 
 // Example usage:
-const inputDate = "2023
+const inputDate = "2023-10-05";
+const outputDate = convertDateFormat(inputDate);
+console.log(outputDate); // Output: "05/10/2023"
