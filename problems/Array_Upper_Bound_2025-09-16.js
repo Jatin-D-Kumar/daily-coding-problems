@@ -6,4 +6,7 @@ function upperBound(arr, target) {
     while (low < high) {
         const mid = Math.floor((low + high) / 2);
         
-        // Move right if mid value is less than or equal to tar
+        // Move right if mid value is less than or equal to target
+        if (arr[mid] <= target) {
+            low = mid + 1;
+        } e
