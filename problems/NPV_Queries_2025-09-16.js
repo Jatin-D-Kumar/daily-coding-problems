@@ -21,4 +21,16 @@ function calculateNPV(cashFlows, discountRate) {
  * @param {number[]} queries - Array of discount rate queries (as decimals).
  * @returns {number[]} - Array of resulting NPV values for each query.
  */
-function npvQueri
+function npvQueries(cashFlows, queries) {
+    const results = [];
+
+    for (let i = 0; i < queries.length; i++) {
+        const npv = calculateNPV(cashFlows, queries[i]);
+        results.push(npv);
+    }
+
+    return results;
+}
+
+// Example usage
+cons
