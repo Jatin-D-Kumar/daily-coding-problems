@@ -4,4 +4,6 @@ function upperBound(arr, target) {
     let high = arr.length;
 
     while (low < high) {
-        const mid = Math.floor((low + high) / 
+        const mid = Math.floor((low + high) / 2);
+        
+        // Move right if mid value is less than or equal to tar
