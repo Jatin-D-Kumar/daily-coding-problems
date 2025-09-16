@@ -14,4 +14,8 @@ function upperBound(arr, target) {
         }
     }
 
-    re
+    return low; // This is the upper bound index
+}
+
+// Example usage:
+const sorted
