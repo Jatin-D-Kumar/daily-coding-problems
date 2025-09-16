@@ -9,4 +9,9 @@ function upperBound(arr, target) {
         // Move right if mid value is less than or equal to target
         if (arr[mid] <= target) {
             low = mid + 1;
-        } e
+        } else {
+            high = mid; // Move left otherwise
+        }
+    }
+
+    re
