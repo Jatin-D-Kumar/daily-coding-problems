@@ -18,4 +18,6 @@ function upperBound(arr, target) {
 }
 
 // Example usage:
-const sorted
+const sortedArray = [1, 3, 5, 6];
+const target = 5;
+const result = upperBound(sortedArra
