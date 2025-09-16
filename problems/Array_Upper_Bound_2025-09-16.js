@@ -20,4 +20,5 @@ function upperBound(arr, target) {
 // Example usage:
 const sortedArray = [1, 3, 5, 6];
 const target = 5;
-const result = upperBound(sortedArra
+const result = upperBound(sortedArray, target);
+console.log(result); // Output: 3 (the index where 5 would go)
