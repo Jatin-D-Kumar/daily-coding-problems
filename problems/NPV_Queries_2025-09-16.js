@@ -16,4 +16,9 @@ function calculateNPV(cashFlows, discountRate) {
 }
 
 /**
- * Handles multiple NPV 
+ * Handles multiple NPV queries.
+ * @param {number[]} cashFlows - Array of cash flows.
+ * @param {number[]} queries - Array of discount rate queries (as decimals).
+ * @returns {number[]} - Array of resulting NPV values for each query.
+ */
+function npvQueri
