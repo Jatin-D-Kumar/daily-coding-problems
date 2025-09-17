@@ -22,4 +22,13 @@ function convertTime(current, correct) {
     // Calculate the minimum number of operations
     for (const op of operations) {
         count += Math.floor(difference / op); // Number of operations for that op
-        difference %= op; // Remainder
+        difference %= op; // Remainder after using that operation
+    }
+    
+    return count; // Return total count of operations
+}
+
+// Example usage:
+const startTime = "02:30";
+const endTime = "04:35";
+console.log(convertTime(startTime, endTime)); // Output: number of operations needed
