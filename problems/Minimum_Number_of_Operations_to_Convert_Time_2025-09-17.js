@@ -10,4 +10,10 @@ function convertTime(current, correct) {
     // Calculate the difference in minutes
     let difference = correctMinutes - currentMinutes;
     
-    // If the 
+    // If the difference is negative, it means we wrap around the next day
+    if (difference < 0) {
+        difference += 24 * 60; // Add 1440 minutes (24 hours)
+    }
+    
+    // Operations we can use: 60 minutes, 15 minutes, 5 minutes, and 1 minute
+    const ope
