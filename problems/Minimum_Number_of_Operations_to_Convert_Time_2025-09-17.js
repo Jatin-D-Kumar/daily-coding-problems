@@ -16,4 +16,10 @@ function convertTime(current, correct) {
     }
     
     // Operations we can use: 60 minutes, 15 minutes, 5 minutes, and 1 minute
-    const ope
+    const operations = [60, 15, 5, 1];
+    let count = 0;
+
+    // Calculate the minimum number of operations
+    for (const op of operations) {
+        count += Math.floor(difference / op); // Number of operations for that op
+        difference %= op; // Remainder
