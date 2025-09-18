@@ -36,4 +36,12 @@ function latestTimeCatchTheBus(bus, passenger, capacity) {
   // -------------------------------------------------
   // decide a starting candidate
   let candidate;
-  if (rema
+  if (remainingSeats > 0) {
+    // there is an empty seat on the last bus
+    candidate = lastBusTime;
+  } else {
+    // bus is full → we must sit before the last boarded passenger
+    candidate = lastBoarded - 1;
+  }
+
+  // -----------------------------------
