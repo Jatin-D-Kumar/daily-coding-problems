@@ -11,4 +11,9 @@ function latestTimeCatchTheBus(bus, passenger, capacity) {
   const occupied = new Set(passenger);
 
   let pIdx = 0;               // index in passenger[]
-  let
+  let lastBoarded = -1;       // last passenger that actually boarded
+  let remainingSeats = 0;     // seats left on the last processed bus
+  let lastBusTime = 0;        // time of the last bus (for later use)
+
+  for (let i = 0; i < bus.length; ++i) {
+  
