@@ -44,4 +44,14 @@ function latestTimeCatchTheBus(bus, passenger, capacity) {
     candidate = lastBoarded - 1;
   }
 
-  // -----------------------------------
+  // -------------------------------------------------
+  // move backwards while the minute is already taken
+  while (occupied.has(candidate)) {
+    --candidate;
+  }
+
+  return candidate;
+}
+
+/* -------------------------------------------------
+   Example usage (feel free to delete when cop
