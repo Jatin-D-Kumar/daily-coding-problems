@@ -26,4 +26,14 @@ function latestTimeCatchTheBus(bus, passenger, capacity) {
       --seats;
     }
 
-    
+    // remember info of the final bus
+    if (i === bus.length - 1) {
+      remainingSeats = seats;
+      lastBusTime = bTime;
+    }
+  }
+
+  // -------------------------------------------------
+  // decide a starting candidate
+  let candidate;
+  if (rema
