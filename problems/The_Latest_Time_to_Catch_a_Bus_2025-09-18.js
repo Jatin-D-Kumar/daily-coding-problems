@@ -16,4 +16,14 @@ function latestTimeCatchTheBus(bus, passenger, capacity) {
   let lastBusTime = 0;        // time of the last bus (for later use)
 
   for (let i = 0; i < bus.length; ++i) {
-  
+    const bTime = bus[i];
+    let seats = capacity;
+
+    // board earliest possible passengers
+    while (seats > 0 && pIdx < passenger.length && passenger[pIdx] <= bTime) {
+      lastBoarded = passenger[pIdx];
+      ++pIdx;
+      --seats;
+    }
+
+    
