@@ -54,4 +54,11 @@ function latestTimeCatchTheBus(bus, passenger, capacity) {
 }
 
 /* -------------------------------------------------
-   Example usage (feel free to delete when cop
+   Example usage (feel free to delete when copying to a judge)
+------------------------------------------------- */
+(function test() {
+  const bus = [10, 20];
+  const passenger = [2, 17, 18, 19];
+  const capacity = 2;
+  console.log(latestTimeCatchTheBus(bus, passenger, capacity)); // 16
+})();
