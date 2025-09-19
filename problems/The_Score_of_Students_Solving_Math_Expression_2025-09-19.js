@@ -17,4 +17,13 @@ function scoreStudents(equation, studentAnswers) {
                 scores.push(0); // No score for incorrect answers
             }
         } else {
-            scores.push(0); // No score for 
+            scores.push(0); // No score for invalid answers
+        }
+    });
+
+    return scores;
+}
+
+// Example Usage
+const equation = "3 + 5 * 2"; // This should evaluate to 13
+const studentAnswers = [13, "
