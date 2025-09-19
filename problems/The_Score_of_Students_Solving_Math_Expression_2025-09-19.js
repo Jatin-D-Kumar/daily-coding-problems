@@ -13,3 +13,8 @@ function scoreStudents(equation, studentAnswers) {
             const parsedAnswer = parseFloat(answer);
             if (!isNaN(parsedAnswer) && parsedAnswer === correctAnswer) {
                 scores.push(1); // Full score if the string answer is correct
+            } else {
+                scores.push(0); // No score for incorrect answers
+            }
+        } else {
+            scores.push(0); // No score for 
