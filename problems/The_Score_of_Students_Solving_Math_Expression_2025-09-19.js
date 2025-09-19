@@ -26,4 +26,7 @@ function scoreStudents(equation, studentAnswers) {
 
 // Example Usage
 const equation = "3 + 5 * 2"; // This should evaluate to 13
-const studentAnswers = [13, "
+const studentAnswers = [13, "13", 12, "12", "wrong answer", 14, "3 + 5 * 2"];
+const scores = scoreStudents(equation, studentAnswers);
+
+console.log(scores); // Output: [1, 1, 0, 0, 0, 0, 0]
