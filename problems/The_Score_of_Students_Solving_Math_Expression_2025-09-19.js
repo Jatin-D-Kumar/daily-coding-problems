@@ -7,4 +7,7 @@ function scoreStudents(equation, studentAnswers) {
     const scores = [];
 
     studentAnswers.forEach(answer => {
-        if (typeof answer === 'number' && answer === correctAnsw
+        if (typeof answer === 'number' && answer === correctAnswer) {
+            scores.push(1); // Full score if the answer is correct
+        } else if (typeof answer === 'string') {
+            const parsedAnswer = parseFlo
