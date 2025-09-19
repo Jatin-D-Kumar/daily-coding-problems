@@ -10,4 +10,6 @@ function scoreStudents(equation, studentAnswers) {
         if (typeof answer === 'number' && answer === correctAnswer) {
             scores.push(1); // Full score if the answer is correct
         } else if (typeof answer === 'string') {
-            const parsedAnswer = parseFlo
+            const parsedAnswer = parseFloat(answer);
+            if (!isNaN(parsedAnswer) && parsedAnswer === correctAnswer) {
+                scores.push(1); // Full score if the string answer is correct
