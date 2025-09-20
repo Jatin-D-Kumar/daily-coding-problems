@@ -13,4 +13,7 @@ function maximumSumOfEdgeValues(edges) {
 
 // Example usage:
 const edges = [
-    { u: 1, 
+    { u: 1, v: 2, weight: 4 },
+    { u: 2, v: 3, weight: 6 },
+    { u: 1, v: 3, weight: 1 },
+    { u:
