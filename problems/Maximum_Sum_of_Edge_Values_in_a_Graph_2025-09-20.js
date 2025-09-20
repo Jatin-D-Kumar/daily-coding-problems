@@ -5,4 +5,12 @@ function maximumSumOfEdgeValues(edges) {
     for (let edge of edges) {
         // Assume each edge is an object like {u: vertex1, v: vertex2, weight: edgeWeight}
         const { weight } = edge;
-        maxSum += weight;  // Accumulate the weigh
+        maxSum += weight;  // Accumulate the weight of the edge
+    }
+
+    return maxSum;
+}
+
+// Example usage:
+const edges = [
+    { u: 1, 
