@@ -8,4 +8,5 @@ function countLatticePoints(xCenter, yCenter, radius) {
     // Iterate through all integer points within the bounding box
     for (let x = xCenter - radius; x <= xCenter + radius; x++) {
         for (let y = yCenter - radius; y <= yCenter + radius; y++) {
- 
+            // Check if the point is inside the circle
+            if ((x - xCenter) * (x - xCenter) + (y - yCenter) * (y - yCente
