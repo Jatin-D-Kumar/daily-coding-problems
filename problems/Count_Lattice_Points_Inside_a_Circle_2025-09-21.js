@@ -9,4 +9,14 @@ function countLatticePoints(xCenter, yCenter, radius) {
     for (let x = xCenter - radius; x <= xCenter + radius; x++) {
         for (let y = yCenter - radius; y <= yCenter + radius; y++) {
             // Check if the point is inside the circle
-            if ((x - xCenter) * (x - xCenter) + (y - yCenter) * (y - yCente
+            if ((x - xCenter) * (x - xCenter) + (y - yCenter) * (y - yCenter) < radiusSquared) {
+                count++;
+            }
+        }
+    }
+    
+    return count;
+}
+
+// Example usage:
+const xC
