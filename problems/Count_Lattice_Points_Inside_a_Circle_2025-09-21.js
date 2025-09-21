@@ -19,4 +19,7 @@ function countLatticePoints(xCenter, yCenter, radius) {
 }
 
 // Example usage:
-const xC
+const xCenter = 0;
+const yCenter = 0;
+const radius = 1;
+console.log(countLatticePoints(xCenter, yCenter, radius)); // Output should be 5
