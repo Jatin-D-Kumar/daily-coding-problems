@@ -6,4 +6,6 @@ function countLatticePoints(xCenter, yCenter, radius) {
     const radiusSquared = radius * radius;
     
     // Iterate through all integer points within the bounding box
-    fo
+    for (let x = xCenter - radius; x <= xCenter + radius; x++) {
+        for (let y = yCenter - radius; y <= yCenter + radius; y++) {
+ 
