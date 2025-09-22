@@ -37,4 +37,7 @@ setTimeout(() => {
 
     const start = Date.now() - 10000; // 10 seconds ago
     const end = Date.now(); // now
-    const entri
+    const entries = logStorage.getLogs(start, end);
+
+    console.log(entries); // Outputs log entries within the specified time range
+}, 5000);
