@@ -11,4 +11,8 @@ class LogStorage {
         this.logs = [];
     }
 
-    // Method to add a log en
+    // Method to add a log entry
+    addLog(message) {
+        const timestamp = Date.now();
+        const logEntry = new LogEntry(timestamp, message);
+        t
