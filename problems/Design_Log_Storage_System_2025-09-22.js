@@ -28,4 +28,9 @@ class LogStorage {
 
 // Example usage
 const logStorage = new LogStorage();
-logStorage.addLog("Lo
+logStorage.addLog("Log entry 1");
+logStorage.addLog("Log entry 2");
+
+// Simulate some delay to show different timestamps
+setTimeout(() => {
+    logStorag
