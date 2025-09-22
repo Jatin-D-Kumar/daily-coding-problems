@@ -33,4 +33,8 @@ logStorage.addLog("Log entry 2");
 
 // Simulate some delay to show different timestamps
 setTimeout(() => {
-    logStorag
+    logStorage.addLog("Log entry 3");
+
+    const start = Date.now() - 10000; // 10 seconds ago
+    const end = Date.now(); // now
+    const entri
