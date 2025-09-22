@@ -20,4 +20,6 @@ class LogStorage {
 
     // Method to retrieve logs within a certain time range
     getLogs(startTime, endTime) {
-       
+        return this.logs
+            .filter(log => log.timestamp >= startTime && log.timestamp <= endTime)
+            .map(log => ({ time
