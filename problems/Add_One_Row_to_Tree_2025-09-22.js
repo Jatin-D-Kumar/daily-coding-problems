@@ -1,3 +1,3 @@
 
 class TreeNode {
-    constructor(val, left 
+    constructor(val, left = null, right = null) 
