@@ -2,4 +2,5 @@
 class TreeNode {
     constructor(val, left = null, right = null) {
         this.val = val;
-        this.left 
+        this.left = left;
+        this.r
