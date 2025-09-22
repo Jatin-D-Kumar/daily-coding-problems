@@ -15,4 +15,9 @@ class LogStorage {
     addLog(message) {
         const timestamp = Date.now();
         const logEntry = new LogEntry(timestamp, message);
-        t
+        this.logs.push(logEntry);
+    }
+
+    // Method to retrieve logs within a certain time range
+    getLogs(startTime, endTime) {
+       
