@@ -22,4 +22,10 @@ class LogStorage {
     getLogs(startTime, endTime) {
         return this.logs
             .filter(log => log.timestamp >= startTime && log.timestamp <= endTime)
-            .map(log => ({ time
+            .map(log => ({ timestamp: log.timestamp, message: log.message }));
+    }
+}
+
+// Example usage
+const logStorage = new LogStorage();
+logStorage.addLog("Lo
