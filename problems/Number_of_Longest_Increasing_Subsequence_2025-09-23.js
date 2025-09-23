@@ -15,4 +15,8 @@ function findNumberOfLIS(nums) {
                 // If nums[i] can extend the subsequence ending at nums[j]
                 if (lengths[j] + 1 > lengths[i]) {
                     lengths[i] = lengths[j] + 1; // Update the length
-   
+                    counts[i] = counts[j];        // Initialize counts
+                } else if (lengths[j] + 1 === lengths[i]) {
+                    counts[i] += counts[j];       // Update the counts
+                }
+         
