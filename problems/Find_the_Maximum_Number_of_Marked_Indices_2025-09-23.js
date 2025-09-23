@@ -13,4 +13,7 @@ function maxMarkedIndices(arr) {
         if (arr[j] >= 2 * arr[i]) {
             // If condition is met, mark the indices
             markedCount += 2; // Mark both i and j
-            i++; /
+            i++; // Move the pointer of the first half
+            j++; // Move the pointer of the second half
+        } else {
+            // If condition is not m
