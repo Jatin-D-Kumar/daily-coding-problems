@@ -6,4 +6,8 @@ function maxMarkedIndices(arr) {
   
     let markedCount = 0; // To count the maximum number of marked indices
     let i = 0; // Index for the first half
-    let j = Math.floor(n / 2); // I
+    let j = Math.floor(n / 2); // Index for the second half
+
+    // Use two pointers to mark indices according to the rules
+    while (i < Math.floor(n / 2) && j < n) {
+        if (
