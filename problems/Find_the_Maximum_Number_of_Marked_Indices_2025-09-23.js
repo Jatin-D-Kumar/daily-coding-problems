@@ -10,4 +10,7 @@ function maxMarkedIndices(arr) {
 
     // Use two pointers to mark indices according to the rules
     while (i < Math.floor(n / 2) && j < n) {
-        if (
+        if (arr[j] >= 2 * arr[i]) {
+            // If condition is met, mark the indices
+            markedCount += 2; // Mark both i and j
+            i++; /
