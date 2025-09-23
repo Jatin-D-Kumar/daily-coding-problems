@@ -21,4 +21,9 @@ function maxMarkedIndices(arr) {
         }
     }
     
-    return markedCount; // Return the maximum number of m
+    return markedCount; // Return the maximum number of marked indices
+}
+
+// Example usage:
+const arr = [1, 3, 2, 4, 5];
+console.log(maxMarkedIndices(arr)); // Output will depend on the input values
