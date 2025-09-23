@@ -16,4 +16,9 @@ function maxMarkedIndices(arr) {
             i++; // Move the pointer of the first half
             j++; // Move the pointer of the second half
         } else {
-            // If condition is not m
+            // If condition is not met, just check the next element in the second half
+            j++;
+        }
+    }
+    
+    return markedCount; // Return the maximum number of m
