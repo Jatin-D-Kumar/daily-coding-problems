@@ -27,4 +27,14 @@ function findNumberOfLIS(nums) {
     // Calculate the total number of longest increasing subsequences
     let totalCount = 0;
     for (let i = 0; i < n; i++) {
-      
+        if (lengths[i] === maxLen) {
+            totalCount += counts[i];
+        }
+    }
+
+    return totalCount;
+}
+
+// Example usage:
+const nums = [10, 9, 2, 5, 3, 7, 101, 18];
+console.log(findNumberOfLIS(nums)); // Output: 2
