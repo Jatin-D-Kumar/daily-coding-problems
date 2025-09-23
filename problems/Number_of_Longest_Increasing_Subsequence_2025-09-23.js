@@ -19,4 +19,12 @@ function findNumberOfLIS(nums) {
                 } else if (lengths[j] + 1 === lengths[i]) {
                     counts[i] += counts[j];       // Update the counts
                 }
-         
+            }
+        }
+        maxLen = Math.max(maxLen, lengths[i]); // Track maximum length
+    }
+
+    // Calculate the total number of longest increasing subsequences
+    let totalCount = 0;
+    for (let i = 0; i < n; i++) {
+      
