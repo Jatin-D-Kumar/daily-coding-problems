@@ -11,4 +11,8 @@ function findNumberOfLIS(nums) {
     // Fill lengths and counts arrays
     for (let i = 0; i < n; i++) {
         for (let j = 0; j < i; j++) {
-          
+            if (nums[i] > nums[j]) {
+                // If nums[i] can extend the subsequence ending at nums[j]
+                if (lengths[j] + 1 > lengths[i]) {
+                    lengths[i] = lengths[j] + 1; // Update the length
+   
