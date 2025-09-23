@@ -4,4 +4,6 @@ function maxMarkedIndices(arr) {
     // Sort the array in non-decreasing order
     arr.sort((a, b) => a - b);
   
-    le
+    let markedCount = 0; // To count the maximum number of marked indices
+    let i = 0; // Index for the first half
+    let j = Math.floor(n / 2); // I
