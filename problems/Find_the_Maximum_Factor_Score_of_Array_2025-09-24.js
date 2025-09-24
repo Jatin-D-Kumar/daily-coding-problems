@@ -22,4 +22,12 @@ function maxFactorScore(arr) {
         if (num > 1) { // Only consider numbers greater than 1
             const score = sumOfDivisors(num);
             maxScore = Math.max(maxScore, score);
-  
+        }
+    }
+    
+    return maxScore;
+}
+
+// Example usage:
+const inputArray = [12, 15, 6];
+const maximumF
