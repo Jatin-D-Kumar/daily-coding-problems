@@ -8,4 +8,11 @@ function sumOfDivisors(n) {
             sum += i; // i is a divisor
             if (i !== 1 && i !== n / i) {
                 sum += n / i; // Add the corresponding divisor
-       
+            }
+        }
+    }
+    
+    return sum; // Excludes the number itself
+}
+
+function maxFactorScore(arr) {
