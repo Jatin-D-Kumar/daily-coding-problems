@@ -16,3 +16,7 @@ function sumOfDivisors(n) {
 }
 
 function maxFactorScore(arr) {
+    let maxScore = 0;
+
+    for (const num of arr) {
+        if (num > 1) { // Only consider numbers greate
