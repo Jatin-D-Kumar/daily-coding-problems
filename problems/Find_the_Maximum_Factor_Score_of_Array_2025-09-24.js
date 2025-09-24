@@ -30,4 +30,5 @@ function maxFactorScore(arr) {
 
 // Example usage:
 const inputArray = [12, 15, 6];
-const maximumF
+const maximumFactorScore = maxFactorScore(inputArray);
+console.log(maximumFactorScore); // Output based on input array
