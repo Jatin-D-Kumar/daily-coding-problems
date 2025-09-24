@@ -19,4 +19,7 @@ function maxFactorScore(arr) {
     let maxScore = 0;
 
     for (const num of arr) {
-        if (num > 1) { // Only consider numbers greate
+        if (num > 1) { // Only consider numbers greater than 1
+            const score = sumOfDivisors(num);
+            maxScore = Math.max(maxScore, score);
+  
