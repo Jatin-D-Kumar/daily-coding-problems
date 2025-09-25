@@ -18,4 +18,7 @@ function sumOfNumberAndItsReverse(num) {
 
 // Example usage:
 const number = 123;
-const result = sumOfNumberAndItsReverse(numb
+const result = sumOfNumberAndItsReverse(number);
+console.log(`The sum of ${number} and its reverse is: ${result}`);
+
+// For n
