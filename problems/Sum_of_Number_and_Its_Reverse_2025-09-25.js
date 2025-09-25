@@ -9,4 +9,5 @@ function sumOfNumberAndItsReverse(num) {
     // Convert the reversed string back to a number
     const reversedNum = parseInt(reversedStr, 10);
     
-    
+    // Calculate the sum of the original number and the reversed number
+    const sum
