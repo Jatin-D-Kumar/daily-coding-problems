@@ -16,4 +16,6 @@ function sumOfNumberAndItsReverse(num) {
     return sum;
 }
 
-/
+// Example usage:
+const number = 123;
+const result = sumOfNumberAndItsReverse(numb
