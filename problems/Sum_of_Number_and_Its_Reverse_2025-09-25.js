@@ -6,4 +6,7 @@ function sumOfNumberAndItsReverse(num) {
     // Reverse the string
     const reversedStr = numStr.split('').reverse().join('');
     
-    // Convert the reversed str
+    // Convert the reversed string back to a number
+    const reversedNum = parseInt(reversedStr, 10);
+    
+    
