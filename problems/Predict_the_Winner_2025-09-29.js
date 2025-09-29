@@ -10,4 +10,7 @@ function PredictTheWinner(nums) {
         dp[i][i] = nums[i];
     }
 
-    // Fill the DP table for subarrays of len
+    // Fill the DP table for subarrays of length 2 to n
+    for (let length = 2; length <= n; length++) {
+        for (let i = 0; i <= n - length; i++) {
+  
