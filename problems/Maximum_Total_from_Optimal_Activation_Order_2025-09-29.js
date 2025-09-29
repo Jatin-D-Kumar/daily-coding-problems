@@ -6,4 +6,7 @@ function maxActivationTotal(values) {
     let total = 0;
     
     for (let i = 0; i < values.length; i++) {
-        // Add the c
+        // Add the current value to the total
+        total += values[i];
+        
+       
