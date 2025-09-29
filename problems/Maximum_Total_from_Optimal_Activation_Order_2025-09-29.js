@@ -12,4 +12,10 @@ function maxActivationTotal(values) {
         // Reduce all subsequent values that are less than current value by 1
         for (let j = i + 1; j < values.length; j++) {
             if (values[j] < values[i]) {
-                values[j] = Math.max(values[
+                values[j] = Math.max(values[j] - 1, 0);
+            }
+        }
+    }
+    
+    return total;
+}
