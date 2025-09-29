@@ -13,4 +13,5 @@ function PredictTheWinner(nums) {
     // Fill the DP table for subarrays of length 2 to n
     for (let length = 2; length <= n; length++) {
         for (let i = 0; i <= n - length; i++) {
-  
+            const j = i + length - 1;
+            // Current player chooses nums[i] or nums[j] and maximizes the 
