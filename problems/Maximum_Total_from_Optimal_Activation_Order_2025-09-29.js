@@ -9,4 +9,4 @@ function maxActivationTotal(values) {
         // Add the current value to the total
         total += values[i];
         
-       
+        // Reduce all subsequent values that are less than current value by 1
