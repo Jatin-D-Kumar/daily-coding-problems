@@ -14,4 +14,9 @@ function PredictTheWinner(nums) {
     for (let length = 2; length <= n; length++) {
         for (let i = 0; i <= n - length; i++) {
             const j = i + length - 1;
-            // Current player chooses nums[i] or nums[j] and maximizes the 
+            // Current player chooses nums[i] or nums[j] and maximizes the difference
+            dp[i][j] = Math.max(nums[i] - dp[i + 1][j], nums[j] - dp[i][j - 1]);
+        }
+    }
+
+  
