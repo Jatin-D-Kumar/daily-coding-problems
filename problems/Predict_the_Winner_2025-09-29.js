@@ -21,3 +21,8 @@ function PredictTheWinner(nums) {
 
     // If the maximum difference at the full array level is >= 0, Player 1 can win
     return dp[0][n - 1] >= 0;
+}
+
+// Example usage:
+const nums = [1, 5, 233, 7];
+console.log(PredictTheWinner(nums)); // Output: true
