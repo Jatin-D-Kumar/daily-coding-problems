@@ -10,4 +10,6 @@ let idx = 0;
 const T = input[idx++];       // number of test cases
 const outputs = [];
 
-for 
+for (let tc = 0; tc < T; ++tc) {
+    const N = input[idx++];
+    const arr = input.slice(idx, idx + 
