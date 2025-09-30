@@ -12,4 +12,8 @@ const outputs = [];
 
 for (let tc = 0; tc < T; ++tc) {
     const N = input[idx++];
-    const arr = input.slice(idx, idx + 
+    const arr = input.slice(idx, idx + N);
+    idx += N;
+
+    arr.sort((a, b) => a - b);          // ascending
+    const m = Math.floor
