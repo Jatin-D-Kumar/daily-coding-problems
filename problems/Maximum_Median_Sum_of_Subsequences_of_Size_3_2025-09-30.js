@@ -21,4 +21,10 @@ for (let tc = 0; tc < T; ++tc) {
     const start = N - 2 * m;            // first index of the 2m largest elements
 
     for (let i = 0; i < m; ++i) {
-        sum += arr[start + 2 * i];      // median
+        sum += arr[start + 2 * i];      // median of the i-th pair
+    }
+
+    outputs.push(String(sum));
+}
+
+console.log(outputs.join('\n'));
