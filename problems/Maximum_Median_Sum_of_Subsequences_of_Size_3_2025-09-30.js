@@ -16,4 +16,6 @@ for (let tc = 0; tc < T; ++tc) {
     idx += N;
 
     arr.sort((a, b) => a - b);          // ascending
-    const m = Math.floor
+    const m = Math.floor(N / 3);
+    let sum = 0;
+    const start = N - 2 * m;            // first index of the 2m large
