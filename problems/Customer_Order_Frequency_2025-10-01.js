@@ -7,4 +7,8 @@
  *  - Next N lines: a customer id (string or integer)
  *
  * Output format:
- *  - F
+ *  - First line: number of customers who ordered more than K times
+ *  - Following lines: those customer ids sorted lexicographically
+ *
+ * Usage:
+ *   node solution.js < input
