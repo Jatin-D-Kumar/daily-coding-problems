@@ -20,4 +20,11 @@
 // ---------- Fast input ----------
 const input = fs.readFileSync(0, 'utf8').trim().split(/\s+/);
 
-// ---------- Parsing ---
+// ---------- Parsing ----------
+let pos = 0;
+const N = parseInt(input[pos++], 10);
+const K = parseInt(input[pos++], 10);
+
+// ---------- Counting ----------
+const freq = new Map();
+for (let i = 0
