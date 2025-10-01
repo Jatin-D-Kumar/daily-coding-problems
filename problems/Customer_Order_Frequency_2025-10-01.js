@@ -33,4 +33,9 @@ for (let i = 0; i < N; ++i) {
 }
 
 // ---------- Collect frequent customers ----------
-const frequent = (const [id
+const frequent = (const [id, count] of freq.entries()) {
+    if (count > K) frequent.push(id);
+}
+
+// ---------- Sort ----------
+frequent.sort();   // lexicographic sort; numeric ids will sort as st
