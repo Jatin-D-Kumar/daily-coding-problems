@@ -27,4 +27,10 @@ const K = parseInt(input[pos++], 10);
 
 // ---------- Counting ----------
 const freq = new Map();
-for (let i = 0
+for (let i = 0; i < N; ++i) {
+    const id = input[pos++];
+    freq.set(id, (freq.get(id) || 0) + 1);
+}
+
+// ---------- Collect frequent customers ----------
+const frequent = (const [id
