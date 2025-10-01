@@ -38,4 +38,12 @@ const frequent = (const [id, count] of freq.entries()) {
 }
 
 // ---------- Sort ----------
-frequent.sort();   // lexicographic sort; numeric ids will sort as st
+frequent.sort();   // lexicographic sort; numeric ids will sort as strings
+
+// ---------- Output ----------
+const out = [];
+out.push(String(frequent.length));
+for (const id of frequent) {
+    out.push(id);
+}
+console.log(out.join('\n'));
