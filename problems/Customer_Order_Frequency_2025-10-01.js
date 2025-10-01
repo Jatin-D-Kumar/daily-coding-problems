@@ -11,4 +11,13 @@
  *  - Following lines: those customer ids sorted lexicographically
  *
  * Usage:
- *   node solution.js < input
+ *   node solution.js < input.txt
+ */
+
+'use strict';
+ fs = require('fs');
+
+// ---------- Fast input ----------
+const input = fs.readFileSync(0, 'utf8').trim().split(/\s+/);
+
+// ---------- Parsing ---
