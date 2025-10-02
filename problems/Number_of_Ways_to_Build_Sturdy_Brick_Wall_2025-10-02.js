@@ -9,4 +9,9 @@ function numWaysToBuildWall(n, h) {
   // Base case: There is 1 way to fill a width of 0 (empty wall)
   dp[0] = 1;
 
-  // Base
+  // Base case: 1 way to fill width 1 (a single 1-width brick)
+  dp[1] = 1;
+
+  // Fill the dp array for widths greater than 1
+  for (let i = 2; i <= n; i++) {
+    // At each width, we 
