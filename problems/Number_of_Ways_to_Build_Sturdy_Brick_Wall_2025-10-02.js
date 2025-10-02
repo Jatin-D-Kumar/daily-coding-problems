@@ -14,4 +14,8 @@ function numWaysToBuildWall(n, h) {
 
   // Fill the dp array for widths greater than 1
   for (let i = 2; i <= n; i++) {
-    // At each width, we 
+    // At each width, we can either use a 1-width brick or a 2-width brick
+    dp[i] = dp[i - 1] + dp[i - 2];
+  }
+
+  // Since the wall has a height of `h`, we need to raise the number of ways to the p
