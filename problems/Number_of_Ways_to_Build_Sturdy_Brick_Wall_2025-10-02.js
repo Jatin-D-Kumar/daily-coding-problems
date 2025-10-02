@@ -18,4 +18,11 @@ function numWaysToBuildWall(n, h) {
     dp[i] = dp[i - 1] + dp[i - 2];
   }
 
-  // Since the wall has a height of `h`, we need to raise the number of ways to the p
+  // Since the wall has a height of `h`, we need to raise the number of ways to the power of `h`
+  return Math.pow(dp[n], h);
+}
+
+// Example usage:
+const width = 4;
+const height = 3;
+console.log(numWaysToBuildWall(width, height)); // Output the number of ways
