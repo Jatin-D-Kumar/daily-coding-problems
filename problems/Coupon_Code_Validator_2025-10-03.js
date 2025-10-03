@@ -39,4 +39,14 @@ for (let i = 1; i <= t; i++) {
     }
 
     // Rule 3: at least one letter and one digit
-    if (!letterRe
+    if (!letterRegex.test(code) || !digitRegex.test(code)) {
+        results.push('INVALID');
+        continue;
+    }
+
+    // All rules satisfied
+    results.push('VALID');
+}
+
+// Output results
+console.log(results.join('\n'));
