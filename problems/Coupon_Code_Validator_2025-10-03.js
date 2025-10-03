@@ -29,4 +29,14 @@ for (let i = 1; i <= t; i++) {
     // Rule 1: length between 10 and 20
     if (code.length < 10 || code.length > 20) {
         results.push('INVALID');
-        contin
+        continue;
+    }
+
+    // Rule 2: allowed characters only
+    if (!allowedRegex.test(code)) {
+        results.push('INVALID');
+        continue;
+    }
+
+    // Rule 3: at least one letter and one digit
+    if (!letterRe
