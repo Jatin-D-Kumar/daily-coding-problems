@@ -18,4 +18,9 @@ const input = fs.readFileSync(0, 'utf8').trim().split(/\r?\n/);
 const t = parseInt(input[0], 10);
 const results = [];
 
-// Regular expressions used for valid
+// Regular expressions used for validation
+const allowedRegex = /^[A-Z0-9]+$/;   // Only uppercase letters and digits
+const letterRegex = /[A-Z]/;          // At least one letter
+const digitRegex = /[0-9]/;           // At least one digit
+
+for (le
