@@ -11,4 +11,11 @@
 
 const fs = require('fs');
 
-// R
+// Read entire input
+const input = fs.readFileSync(0, 'utf8').trim().split(/\r?\n/);
+
+// First line: number of test cases
+const t = parseInt(input[0], 10);
+const results = [];
+
+// Regular expressions used for valid
