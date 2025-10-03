@@ -23,4 +23,10 @@ const allowedRegex = /^[A-Z0-9]+$/;   // Only uppercase letters and digits
 const letterRegex = /[A-Z]/;          // At least one letter
 const digitRegex = /[0-9]/;           // At least one digit
 
-for (le
+for (let i = 1; i <= t; i++) {
+    const code = input[i] ? input[i].trim() : '';
+
+    // Rule 1: length between 10 and 20
+    if (code.length < 10 || code.length > 20) {
+        results.push('INVALID');
+        contin
