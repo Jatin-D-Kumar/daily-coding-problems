@@ -40,4 +40,13 @@ for (let d = 1; d < n; d++) {
             sum += 1;
         }
         while (sum > k) {
-           
+            if (sChars[left] !== sChars[left + d]) {
+                sum -= 1;
+            }
+            left += 1;
+        }
+        answer += BigInt(right - left + 1);
+    }
+}
+
+console.log(answer.toString());
