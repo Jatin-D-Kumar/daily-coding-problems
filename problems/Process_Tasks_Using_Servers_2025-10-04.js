@@ -91,4 +91,13 @@ function processTasks(k, tasks) {
 /* -------------------- Example usage -------------------- */
 // Suppose we have 2 servers and tasks with durations [5, 2, 3, 4, 1]
 const k = 2;
-const tasks = [5, 2, 3, 4,
+const tasks = [5, 2, 3, 4, 1];
+
+const result = processTasks(k, tasks);
+console.log('Finish times of each task:', result.finishTimes);
+console.log('Total time to finish all tasks:', result.totalTime);
+
+/* Expected output:
+Finish times of each task: [5, 2, 8, 6, 9]
+Total time to finish all tasks: 9
+*/
