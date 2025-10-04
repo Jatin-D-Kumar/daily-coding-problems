@@ -42,4 +42,12 @@ class MinHeap {
     const n = a.length;
     while (true) {
       let left = (idx << 1) + 1;
-    
+      let right = left + 1;
+      let smallest = idx;
+
+      if (left < n && a[left] < a[smallest]) smallest = left;
+      if (right < n && a[right] < a[smallest]) smallest = right;
+
+      if (smallest === idx) break;
+      [a[smallest], a[idx]] = [a[idx], a[smallest]];
+      id
