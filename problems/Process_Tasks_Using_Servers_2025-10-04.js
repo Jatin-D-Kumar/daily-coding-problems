@@ -65,4 +65,14 @@ class MinHeap {
  *
  * @param {number} k - number of servers
  * @param {number[]} tasks - array of task durations in the order they arrive
- * @returns {{finishTime
+ * @returns {{finishTimes: number[], totalTime: number}}
+ */
+function processTasks(k, tasks) {
+  const heap = new MinHeap();
+
+  // Initially all servers are idle at time 0
+  for (let i = 0; i < k; i++) heap.push(0);
+
+  const n = tasks.length;
+  const finishTimes = new Array(n);
+  let totalTime = 0;
