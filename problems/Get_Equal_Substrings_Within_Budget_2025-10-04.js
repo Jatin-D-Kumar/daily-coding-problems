@@ -34,4 +34,10 @@ let answer = 0n;
 for (let d = 1; d < n; d++) {
     let left = 0;
     let sum = 0;
-    // right runs over indice
+    // right runs over indices on the diagonal (0 .. n-d-1)
+    for (let right = 0; right < n - d; right++) {
+        if (sChars[right] !== sChars[right + d]) {
+            sum += 1;
+        }
+        while (sum > k) {
+           
