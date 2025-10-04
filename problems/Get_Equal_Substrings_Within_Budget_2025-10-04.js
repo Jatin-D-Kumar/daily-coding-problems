@@ -24,4 +24,14 @@ if (input.length >= 2 && /^[0-9]+$/.test(input[0]) && !isNaN(parseInt(input[0], 
     }
 } else {
     // fallback – not expected for this problem
-    throw new Error('Unexpected
+    throw new Error('Unexpected input format');
+}
+const n = s.length;
+const sChars = s.split(''); // for fast indexing
+
+let answer = 0n;
+
+for (let d = 1; d < n; d++) {
+    let left = 0;
+    let sum = 0;
+    // right runs over indice
