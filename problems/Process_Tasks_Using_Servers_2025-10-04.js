@@ -76,3 +76,9 @@ function processTasks(k, tasks) {
   const n = tasks.length;
   const finishTimes = new Array(n);
   let totalTime = 0;
+
+  for (let i = 0; i < n; i++) {
+    const serverFreeAt = heap.pop();           // earliest free server
+    const finish = serverFreeAt + tasks[i];    // finish time of this task
+    finishTimes[i] = finish;
+    heap.push(finish);                         // server busy unti
