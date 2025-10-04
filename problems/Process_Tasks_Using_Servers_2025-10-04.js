@@ -30,4 +30,16 @@ class MinHeap {
   _siftUp(idx) {
     const a = this.data;
     while (idx > 0) {
+      const parent = (idx - 1) >> 1;
+      if (a[parent] <= a[idx]) break;
+      [a[parent], a[idx]] = [a[idx], a[parent]];
+      idx = parent;
+    }
+  }
+
+  _siftDown(idx) {
+    const a = this.data;
+    const n = a.length;
+    while (true) {
+      let left = (idx << 1) + 1;
     
