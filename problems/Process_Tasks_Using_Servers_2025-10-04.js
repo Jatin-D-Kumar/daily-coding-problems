@@ -50,4 +50,19 @@ class MinHeap {
 
       if (smallest === idx) break;
       [a[smallest], a[idx]] = [a[idx], a[smallest]];
-      id
+      idx = smallest;
+    }
+  }
+
+  // For debugging
+  size() {
+    return this.data.length;
+  }
+}
+
+/**
+ * Process tasks using k servers.
+ *
+ * @param {number} k - number of servers
+ * @param {number[]} tasks - array of task durations in the order they arrive
+ * @returns {{finishTime
