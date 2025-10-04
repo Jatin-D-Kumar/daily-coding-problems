@@ -12,4 +12,9 @@ let k, s;
 //   first line : integer k
 //   second line: string s
 // if the first line contains two integers (n k) we ignore n
-if (input.length >= 2 && /^[0-9]+$/.test(input[0]) && !isNaN(parseI
+if (input.length >= 2 && /^[0-9]+$/.test(input[0]) && !isNaN(parseInt(input[0], 10))) {
+    k = BigInt(input[0]);   // k can be large
+    if (input.length >= 3 && /^\w+$/.test(input[2])) {
+        // input[0] = n, input[1] = k
+        k = BigInt(input[1]);
+        s =
