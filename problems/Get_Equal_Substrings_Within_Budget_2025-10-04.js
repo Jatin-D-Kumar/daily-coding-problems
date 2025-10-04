@@ -17,4 +17,11 @@ if (input.length >= 2 && /^[0-9]+$/.test(input[0]) && !isNaN(parseInt(input[0], 
     if (input.length >= 3 && /^\w+$/.test(input[2])) {
         // input[0] = n, input[1] = k
         k = BigInt(input[1]);
-        s =
+        s = input[2];
+    } else {
+        // typical format: k on first line, s on second line
+        s = input[1];
+    }
+} else {
+    // fallback – not expected for this problem
+    throw new Error('Unexpected
