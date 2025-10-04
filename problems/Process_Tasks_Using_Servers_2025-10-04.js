@@ -81,4 +81,14 @@ function processTasks(k, tasks) {
     const serverFreeAt = heap.pop();           // earliest free server
     const finish = serverFreeAt + tasks[i];    // finish time of this task
     finishTimes[i] = finish;
-    heap.push(finish);                         // server busy unti
+    heap.push(finish);                         // server busy until 'finish'
+    if (finish > totalTime) totalTime = finish;
+  }
+
+  return { finishTimes, totalTime };
+}
+
+/* -------------------- Example usage -------------------- */
+// Suppose we have 2 servers and tasks with durations [5, 2, 3, 4, 1]
+const k = 2;
+const tasks = [5, 2, 3, 4,
