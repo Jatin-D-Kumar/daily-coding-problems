@@ -7,4 +7,13 @@
  * @returns {number}       - number of subsets with product == target
  */
 function countWays(nums, target) {
-    // M
+    // Map: product -> number of ways to obtain it
+    const dp = new Map();
+    dp.set(1, 1);                // empty subset
+
+    for (const val of nums) {
+        // collect updates first to avoid influencing the current iteration
+        const updates = [];
+
+        for (const [prod, ways] of dp.entries()) {
+            const n
