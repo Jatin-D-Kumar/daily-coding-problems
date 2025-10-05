@@ -16,4 +16,15 @@ function countWays(nums, target) {
         const updates = [];
 
         for (const [prod, ways] of dp.entries()) {
-            const n
+            const newProd = prod * val;
+            if (newProd > target) continue;   // no need to track larger products
+            const current = dp.get(newProd) || 0;
+            updates.push([newProd, current + ways]);
+        }
+
+        for (const [prod, newWays] of updates) {
+            dp.set(prod, newWays);
+        }
+    }
+
+    le
