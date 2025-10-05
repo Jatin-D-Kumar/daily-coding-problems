@@ -38,4 +38,16 @@ function countWays(nums, target) {
 // Example 1
 const nums1 = [2, 3, 6, 1];
 const target1 = 6;
-console.log(countWays(nums1, target1)); // Output: 
+console.log(countWays(nums1, target1)); // Output: 3
+// Subsets: [6], [2,3], [2,3,1]
+
+// Example 2
+const nums2 = [1, 1, 1];
+const target2 = 1;
+console.log(countWays(nums2, target2)); // Output: 7
+// All non‑empty subsets of 3 ones -> 2^3 - 1 = 7
+
+// Example 3 – target unreachable
+const nums3 = [4, 5];
+const target3 = 3;
+console.log(countWays(nums3, target3)); // Output: 0
