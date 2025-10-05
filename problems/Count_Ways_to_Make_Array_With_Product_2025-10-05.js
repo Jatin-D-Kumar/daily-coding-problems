@@ -27,4 +27,15 @@ function countWays(nums, target) {
         }
     }
 
-    le
+    let ans = dp.get(target) || 0;
+    // Exclude the empty subset when target == 1
+    if (target === 1) ans -= 1;
+    return ans;
+}
+
+/* ---------- Sample usage below – not part of the required function ---------- */
+
+// Example 1
+const nums1 = [2, 3, 6, 1];
+const target1 = 6;
+console.log(countWays(nums1, target1)); // Output: 
