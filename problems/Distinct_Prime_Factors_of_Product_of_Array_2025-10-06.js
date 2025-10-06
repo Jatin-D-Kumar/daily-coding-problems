@@ -49,4 +49,15 @@ for (const x of arr) {
         if (p * p > temp) break;
         if (temp % p === 0) {
             distinct.add(p);
-            while (
+            while (temp % p === 0) temp /= p;
+        }
+    }
+    if (temp > 1) { // remaining prime factor
+        distinct.add(temp);
+    }
+}
+
+/**
+ * 3. Output result.
+ */
+console.log(distinct.size.toString());
