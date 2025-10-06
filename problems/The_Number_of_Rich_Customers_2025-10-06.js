@@ -10,4 +10,9 @@ const data = fs.readFileSync(0, 'utf8').trim().split(/\s+/).map(Number);
 if (data.length === 0) process.exit(0);
 
 const n = data[0];
-const a = data.slice(1, n + 1);   // safety: ignore any trail
+const a = data.slice(1, n + 1);   // safety: ignore any trailing input
+
+let sum = 0;
+for (const x of a) sum += x;
+
+const avg
