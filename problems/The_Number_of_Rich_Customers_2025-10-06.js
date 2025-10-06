@@ -5,4 +5,5 @@
 'use strict';
 const fs = require('fs');
 
-// r
+// read entire input, split by whitespace, convert to numbers
+const
