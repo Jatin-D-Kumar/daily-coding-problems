@@ -42,4 +42,11 @@ const primes = sieve(limit);
  */
 const distinct = new Set();
 
-for (const x
+for (const x of arr) {
+    if (x <= 1) continue;
+    let temp = x;
+    for (const p of primes) {
+        if (p * p > temp) break;
+        if (temp % p === 0) {
+            distinct.add(p);
+            while (
