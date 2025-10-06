@@ -15,4 +15,8 @@ const a = data.slice(1, n + 1);   // safety: ignore any trailing input
 let sum = 0;
 for (const x of a) sum += x;
 
-const avg
+const avg = sum / n;
+
+let richCount = 0;
+for (const x of a) {
+    if (x 
