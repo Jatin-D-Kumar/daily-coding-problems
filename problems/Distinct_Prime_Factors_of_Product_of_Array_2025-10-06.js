@@ -17,4 +17,10 @@ let maxVal = 0;
 for (const v of arr) if (v > maxVal) maxVal = v;
 
 /**
- * 1. Sieve of Eratosthenes up to sqrt(m
+ * 1. Sieve of Eratosthenes up to sqrt(maxVal).
+ */
+function sieve(limit) {
+    const isPrime = new Uint8Array(limit + 1);
+    isPrime.fill(1, 2); // indices 0,1 are not prime
+    const primes = [];
+    for (let i = 2; i <= limit; i++) 
