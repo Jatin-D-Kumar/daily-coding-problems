@@ -6,4 +6,4 @@
 const fs = require('fs');
 
 // read entire input, split by whitespace, convert to numbers
-const
+const data = fs.readFileSync(0, 'utf8').trim().split(/\s+/).map(Numb
