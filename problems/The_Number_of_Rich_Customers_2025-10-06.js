@@ -19,4 +19,7 @@ const avg = sum / n;
 
 let richCount = 0;
 for (const x of a) {
-    if (x 
+    if (x > avg) richCount++;
+}
+
+console.log(richCount.toString());
