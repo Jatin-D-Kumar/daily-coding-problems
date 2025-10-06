@@ -31,4 +31,15 @@ function sieve(limit) {
             }
         }
     }
-    
+    return primes;
+}
+
+const limit = Math.floor(Math.sqrt(maxVal));
+const primes = sieve(limit);
+
+/**
+ * 2. Factor each number and collect distinct primes.
+ */
+const distinct = new Set();
+
+for (const x
