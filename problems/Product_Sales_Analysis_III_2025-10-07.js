@@ -48,3 +48,16 @@ for (let qi = 0; qi < Q; qi++) {
                     bestProduct = prod;
                 }
             }
+            best.set(month, { product: bestProduct, count: bestCount });
+        }
+    }
+
+    const res = best.get(month);
+    if (!res) {
+        output.push('No');
+    } else {
+        output.push(`${res.product} ${res.count}`);
+    }
+}
+
+console.log(output.join('\n'));
