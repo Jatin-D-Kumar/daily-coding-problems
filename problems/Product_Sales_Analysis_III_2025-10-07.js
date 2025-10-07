@@ -39,4 +39,12 @@ for (let qi = 0; qi < Q; qi++) {
         } else {
             let bestProduct = null;
             let bestCount = -1;
-            for (const [prod
+            for (const [prod, cnt] of mp.entries()) {
+                if (
+                    cnt > bestCount ||
+                    (cnt === bestCount && prod < bestProduct)
+                ) {
+                    bestCount = cnt;
+                    bestProduct = prod;
+                }
+            }
