@@ -32,4 +32,11 @@ const output = [];
 for (let qi = 0; qi < Q; qi++) {
     const month = data[idx++];
 
-    if (
+    if (!best.has(month)) {
+        const mp = sales.get(month);
+        if (!mp) {
+            best.set(month, null);                     // remember that month is empty
+        } else {
+            let bestProduct = null;
+            let bestCount = -1;
+            for (const [prod
