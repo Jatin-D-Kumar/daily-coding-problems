@@ -19,4 +19,17 @@ for (let i = 0; i < N; i++) {
 
     if (!sales.has(month)) sales.set(month, new Map());
     const mp = sales.get(month);
-    mp.set(product, (mp.g
+    mp.set(product, (mp.get(product) || 0) + 1);
+}
+
+const Q = Number(data[idx++]);
+
+// Cache best product per month once it's needed
+const best = new Map();   // Map<month, {product: string, count: number}>
+
+const output = [];
+
+for (let qi = 0; qi < Q; qi++) {
+    const month = data[idx++];
+
+    if (
