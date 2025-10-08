@@ -35,4 +35,20 @@ function runTestCase() {
         constructor(m, b, l, r) {
             this.line = new Line(m, b);
             this.l = l; this.r = r;
-            this.lef
+            this.left = null; this.right = null;
+        }
+    }
+
+    class LiChao {
+        constructor(minX, maxX) { this.minX = minX; this.maxX = maxX; this.root = null; }
+
+        addLine(m, b) { this.root = this._add(this.root, this.minX, this.maxX, new Line(m, b)); }
+
+        _add(node, l, r, newLine) {
+            if (!node) return new Node(newLine.m, newLine.b, l, r);
+            const mid = Math.floor((l + r) / 2);
+            const cur = node.line;
+            const leftIsBetter = newLine.val(mid) < cur.val(mid);
+
+            if (leftIsBetter) {
+    
