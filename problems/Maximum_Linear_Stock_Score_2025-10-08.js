@@ -18,4 +18,21 @@ function runTestCase() {
     const P = new Array(n + 1);
     S[0] = 0;
     P[0] = 0;
-    let minX = 
+    let minX = 0, maxX = 0;
+    for (let i = 1; i <= n; ++i) {
+        S[i] = S[i - 1] + a[i - 1];
+        P[i] = P[i - 1] + a[i - 1] * i;
+        if (S[i] < minX) minX = S[i];
+        if (S[i] > maxX) maxX = S[i];
+    }
+
+    /* ------------  Li Chao Tree for minimum  ----------------- */
+    class Line {
+        constructor(m, b) { this.m = m; this.b = b; }
+        val(x) { return this.m * x + this.b; }
+    }
+    class Node {
+        constructor(m, b, l, r) {
+            this.line = new Line(m, b);
+            this.l = l; this.r = r;
+            this.lef
