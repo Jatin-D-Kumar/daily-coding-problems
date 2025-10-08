@@ -82,4 +82,21 @@ function runTestCase() {
     lc.addLine(0, 0);            // X[0] = 0, slope = 0
 
     let answer = -Infinity;
-    fo
+    for (let r = 1; r <= n; ++r) {
+        const x = S[r];
+        const bestVal = lc.query(x);           // B(r)
+        const curScore = P[r] - bestVal;       // best(r)
+        if (curScore > answer) answer = curScore;
+
+        const Xr = P[r] - r * S[r];
+        lc.addLine(r, Xr);                     // insert line for j = r
+    }
+    return answer;
+}
+
+// -----------------  Main ------------------------------------
+let outputs = [];
+for (let t = 0; t < T; ++t) {
+    outputs.push(String(runTestCase()));
+}
+console.log(outputs.join('\n'));
