@@ -67,4 +67,19 @@ function runTestCase() {
 
         query(x) { return this._query(this.root, this.minX, this.maxX, x); }
 
-  
+        _query(node, l, r, x) {
+            if (!node) return Infinity;
+            const res = node.line.val(x);
+            if (l === r) return res;
+            const mid = Math.floor((l + r) / 2);
+            if (x <= mid) return Math.min(res, this._query(node.left, l, mid, x));
+            return Math.min(res, this._query(node.right, mid + 1, r, x));
+        }
+    }
+
+    // initialise tree and first line j = 0
+    const lc = new LiChao(minX, maxX);
+    lc.addLine(0, 0);            // X[0] = 0, slope = 0
+
+    let answer = -Infinity;
+    fo
