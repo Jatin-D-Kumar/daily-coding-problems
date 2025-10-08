@@ -51,4 +51,20 @@ function runTestCase() {
             const leftIsBetter = newLine.val(mid) < cur.val(mid);
 
             if (leftIsBetter) {
-    
+                // swap lines, ensure node keeps the line better at mid
+                [node.line, newLine] = [newLine, node.line];
+            }
+
+            if (l === r) return node;
+
+            if (leftIsBetter !== (newLine.val(l) < node.line.val(l))) {
+                node.left = this._add(node.left, l, mid, newLine);
+            } else {
+                node.right = this._add(node.right, mid + 1, r, newLine);
+            }
+            return node;
+        }
+
+        query(x) { return this._query(this.root, this.minX, this.maxX, x); }
+
+  
