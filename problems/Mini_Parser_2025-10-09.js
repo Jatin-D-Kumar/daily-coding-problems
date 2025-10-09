@@ -24,4 +24,17 @@ function miniParser(s) {
         } else {                     // opening tag
           const [inner, nextPos] = parse(closeIdx + 1);
           res += inner;
-          pos 
+          pos = nextPos;             // skip over the closing tag
+        }
+      }
+    }
+    return [res, pos];
+  }
+
+  return parse(0)[0];
+}
+
+// ------------- example usage -----------------
+const examples = [
+  "<div>hello</div>",
+  "<di
