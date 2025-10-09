@@ -19,4 +19,9 @@ function miniParser(s) {
       } else {                       // a tag starts
         // find the matching '>'
         const closeIdx = s.indexOf('>', pos);
-        if
+        if (s[pos + 1] === '/') {   // closing tag
+          return [res, closeIdx + 1];
+        } else {                     // opening tag
+          const [inner, nextPos] = parse(closeIdx + 1);
+          res += inner;
+          pos 
