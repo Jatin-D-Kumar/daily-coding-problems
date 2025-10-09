@@ -19,4 +19,10 @@ const maxFreq = Math.max(...freq);
 const cost1 = n - maxFreq;
 
 // ---------- Condition 2 : palindrome ----------
+let cost2 = 0;
+for (let i = 0; i < n / 2; ++i) {
+    if (s[i] !== s[n - 1 - i]) cost2++;
+}
+
+// ---------- Condition  : no equal neighbours ----------
 le
