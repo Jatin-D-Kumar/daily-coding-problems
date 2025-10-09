@@ -31,4 +31,10 @@ while (i < n) {
     let j = i;
     while (j < n && s[j] === s[i]) j++;   // run [i, j)
     const runLen = j - i;
-    cost3 += 
+    cost3 += Math.floor(runLen / 2);
+    i = j;
+}
+
+// ---------- Final answer ----------
+const ans = Math.min(cost1, cost2, cost3);
+console.log(ans.toString());
