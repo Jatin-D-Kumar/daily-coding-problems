@@ -14,3 +14,9 @@ function miniParser(s) {
   function parse(pos) {
     let res = '';
     while (pos < s.length) {
+      if (s[pos] !== '<') {          // normal character
+        res += s[pos++];
+      } else {                       // a tag starts
+        // find the matching '>'
+        const closeIdx = s.indexOf('>', pos);
+        if
