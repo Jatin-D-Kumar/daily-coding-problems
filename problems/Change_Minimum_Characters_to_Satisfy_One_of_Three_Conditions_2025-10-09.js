@@ -5,4 +5,8 @@
 'use strict';
 
 const fs = require('fs');
-const in
+const input = fs.readFileSync(0, 'utf8').trim();   // read entire stdin
+const s = input;                                  // the string
+const n = s.length;
+
+/
