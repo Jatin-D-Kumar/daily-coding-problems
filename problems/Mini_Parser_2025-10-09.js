@@ -37,4 +37,13 @@ function miniParser(s) {
 // ------------- example usage -----------------
 const examples = [
   "<div>hello</div>",
-  "<di
+  "<div><p>ab</p>cd</div>",
+  "<a><b>hi</b><c>world</c></a>",
+  "<foo><bar>Text</bar>More</foo>"
+];
+
+for (const ex of examples) {
+  console.log(`Input : ${ex}`);
+  console.log(`Output: ${miniParser(ex)}`);
+  console.log('---');
+}
