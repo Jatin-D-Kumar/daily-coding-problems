@@ -25,4 +25,10 @@ for (let i = 0; i < n / 2; ++i) {
 }
 
 // ---------- Condition  : no equal neighbours ----------
-le
+let cost3 = 0;
+let i = 0;
+while (i < n) {
+    let j = i;
+    while (j < n && s[j] === s[i]) j++;   // run [i, j)
+    const runLen = j - i;
+    cost3 += 
