@@ -12,4 +12,11 @@ const n = s.length;
 // ---------- Condition 1 : all equal ----------
 const freq = new Array(26).fill(0);
 for (let i = 0; i < n; ++i) {
-    const idx = s.charCodeAt(i) - 97
+    const idx = s.charCodeAt(i) - 97;   // 'a' -> 0
+    freq[idx]++;
+}
+const maxFreq = Math.max(...freq);
+const cost1 = n - maxFreq;
+
+// ---------- Condition 2 : palindrome ----------
+le
