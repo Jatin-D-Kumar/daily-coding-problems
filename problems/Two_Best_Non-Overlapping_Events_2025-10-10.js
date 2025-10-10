@@ -6,4 +6,11 @@
  * @return {number}
  */
 function maxValue(events) {
-    if (events.leng
+    if (events.length < 2) return 0;          // not enough events
+
+    // 1. Sort by start time (ascending)
+    events.sort((a, b) => a[0] - b[0]);
+
+    const n = events.length;
+    const endTimes = new Array(n);
+    const prefixM
