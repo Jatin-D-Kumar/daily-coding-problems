@@ -29,4 +29,10 @@ function maxValue(events) {
         const start = events[i][0];
         const val   = events[i][2];
 
-        // binary search for
+        // binary search for last end <= start
+        let lo = 0, hi = i - 1, pos = -1;
+        while (lo <= hi) {
+            const mid = (lo + hi) >> 1;
+            if (endTimes[mid] <= start) {
+                pos = mid;
+               
