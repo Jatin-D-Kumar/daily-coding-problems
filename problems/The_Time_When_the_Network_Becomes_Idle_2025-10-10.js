@@ -28,4 +28,15 @@ for (let i = 0; i < n; i++) send[i] = input[idx++];
 
 // ----- DFS to compute distances -----------------------------------------
 const dist = Array(n).fill(0n);
-const stack = [[0, 0n, -1]];          
+const stack = [[0, 0n, -1]];            // node, dist, parent
+
+while (.length) {
+    const [u, d, p] = stack.pop();
+    dist[u] = d;
+    for (const [v, w] of adj[u]) {
+        if (v === p) continue;
+        stack.push([v, d + w, u]);
+    }
+}
+
+// ----- compute answer -----------------
