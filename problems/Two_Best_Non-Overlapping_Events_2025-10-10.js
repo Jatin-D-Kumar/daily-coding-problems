@@ -19,4 +19,14 @@ function maxValue(events) {
     for (let i = 0; i < n; i++) {
         endTimes[i] = events[i][1];
         const val = events[i][2];
-        prefixMax[i] = i === 0 ? val : Math.max(prefixMax[i - 1]
+        prefixMax[i] = i === 0 ? val : Math.max(prefixMax[i - 1], val);
+    }
+
+    let answer = 0;
+
+    // 3. For each event, find best pair
+    for (let i = 0; i < n; i++) {
+        const start = events[i][0];
+        const val   = events[i][2];
+
+        // binary search for
