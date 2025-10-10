@@ -35,4 +35,14 @@ function maxValue(events) {
             const mid = (lo + hi) >> 1;
             if (endTimes[mid] <= start) {
                 pos = mid;
-               
+                lo = mid + 1;
+            } else {
+                hi = mid - 1;
+            }
+        }
+
+        let total = val;
+        if (pos !== -1) total += prefixMax[pos];
+
+        if (total > answer) answer = total;
+  
