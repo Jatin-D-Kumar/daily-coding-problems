@@ -13,4 +13,10 @@ function maxValue(events) {
 
     const n = events.length;
     const endTimes = new Array(n);
-    const prefixM
+    const prefixMax = new Array(n);
+
+    // 2. Build helpers
+    for (let i = 0; i < n; i++) {
+        endTimes[i] = events[i][1];
+        const val = events[i][2];
+        prefixMax[i] = i === 0 ? val : Math.max(prefixMax[i - 1]
