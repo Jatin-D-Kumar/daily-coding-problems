@@ -15,4 +15,11 @@ const n = Number(input[idx++]);          // n fits into normal Number (<= 10^5)
 const adj = Array.from({length: n}, () => []);
 
 for (let i = 0; i < n - 1; i++) {
-    const u = N
+    const u = Number(input[idx++]);          // nodes are given as 0‑based integers
+    const v = Number(input[idx++]);
+    const w = input[idx++];
+    adj[u].push([v, w]);
+    adj[v].push([u, w]);
+}
+
+// ----- read sending periods ------------------------------
