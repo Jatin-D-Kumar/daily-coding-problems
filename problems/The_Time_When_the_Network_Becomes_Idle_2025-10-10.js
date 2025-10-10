@@ -22,4 +22,10 @@ for (let i = 0; i < n - 1; i++) {
     adj[v].push([u, w]);
 }
 
-// ----- read sending periods ------------------------------
+// ----- read sending periods --------------------------------------------
+const send = Array(n).fill(0n);
+for (let i = 0; i < n; i++) send[i] = input[idx++];
+
+// ----- DFS to compute distances -----------------------------------------
+const dist = Array(n).fill(0n);
+const stack = [[0, 0n, -1]];          
