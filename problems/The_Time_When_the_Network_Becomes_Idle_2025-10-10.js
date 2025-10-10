@@ -39,4 +39,11 @@ while (.length) {
     }
 }
 
-// ----- compute answer -----------------
+// ----- compute answer ---------------------------------------------------
+let ans = 0n;
+for (let v = 1; v < n; v++) {          // node 0 is the root, ignored
+    const candidate = dist[v] * (send[v] + 1n);
+    if (candidate > ans) ans = candidate;
+}
+
+console.log(ans.toString());
