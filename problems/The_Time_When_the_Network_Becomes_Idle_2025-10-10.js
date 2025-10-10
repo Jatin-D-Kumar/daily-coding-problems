@@ -9,4 +9,10 @@ const input = fs.readFileSync(0, 'utf8').trim().split(/\s+/).map(BigInt);
 let idx = 0;
 
 // first value: n
-const n 
+const n = Number(input[idx++]);          // n fits into normal Number (<= 10^5)
+
+// ----- read edges -------------------------------------------------------
+const adj = Array.from({length: n}, () => []);
+
+for (let i = 0; i < n - 1; i++) {
+    const u = N
