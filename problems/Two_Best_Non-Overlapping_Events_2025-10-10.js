@@ -45,4 +45,13 @@ function maxValue(events) {
         if (pos !== -1) total += prefixMax[pos];
 
         if (total > answer) answer = total;
-  
+    }
+
+    return answer;
+}
+
+/* --------------------   Testing   -------------------- */
+const tests = [
+    {ev: [[1,3,4],[2,5,2],[4,6,5]], exp: 9},
+    {ev: [[1,2,10],[3,4,20],[2,3,100],[4,5,30]], exp: 110},
+    
