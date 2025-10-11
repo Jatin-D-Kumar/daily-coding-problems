@@ -18,4 +18,7 @@ for (let caseNo = 0; caseNo < t; caseNo++) {
   let ans;
   if (scale === 'C') {
     // Celsius to Fahrenheit
-    ans = Math.trunc((9 * value) / 5
+    ans = Math.trunc((9 * value) / 5 + 32);
+  } else { // scale === 'F'
+    // Fahrenheit to Celsius
+    ans = Math.trunc((val
