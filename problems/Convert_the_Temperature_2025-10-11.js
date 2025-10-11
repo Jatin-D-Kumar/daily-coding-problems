@@ -15,4 +15,7 @@ for (let caseNo = 0; caseNo < t; caseNo++) {
   const value = Number(input[idx++]);     // temperature value
   const scale = input[idx++];             // 'C' or 'F'
 
-  let ans
+  let ans;
+  if (scale === 'C') {
+    // Celsius to Fahrenheit
+    ans = Math.trunc((9 * value) / 5
