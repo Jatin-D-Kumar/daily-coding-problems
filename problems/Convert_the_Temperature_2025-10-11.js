@@ -9,4 +9,7 @@ const input = fs.readFileSync(0, 'utf8').trim().split(/\s+/);
 
 let idx = 0;
 const t = Number(input[idx++]);           // number of test cases
-const out =
+const out = [];
+
+for (let caseNo = 0; caseNo < t; caseNo++) {
+  const value = Number(input[idx++]);  
