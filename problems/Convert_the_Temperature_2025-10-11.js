@@ -21,4 +21,10 @@ for (let caseNo = 0; caseNo < t; caseNo++) {
     ans = Math.trunc((9 * value) / 5 + 32);
   } else { // scale === 'F'
     // Fahrenheit to Celsius
-    ans = Math.trunc((val
+    ans = Math.trunc((value - 32) * 5 / 9);
+  }
+
+  out.push(ans.toString());
+}
+
+console.log(out.join('\n'));
