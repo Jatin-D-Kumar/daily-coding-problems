@@ -12,4 +12,7 @@ const t = Number(input[idx++]);           // number of test cases
 const out = [];
 
 for (let caseNo = 0; caseNo < t; caseNo++) {
-  const value = Number(input[idx++]);  
+  const value = Number(input[idx++]);     // temperature value
+  const scale = input[idx++];             // 'C' or 'F'
+
+  let ans
