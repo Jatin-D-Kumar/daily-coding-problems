@@ -18,4 +18,12 @@ function maxSetSizeAfterRemovals(nums) {
       removedCount += count - 1;  // Remove all but one of the occurrences
       setSize += 1;  // One element remains in the set
     } else {
-      setSize += 1;  // 
+      setSize += 1;  // This element can remain as is
+    }
+  }
+
+  return setSize;
+}
+
+// Example usage
+const nums = [4, 3, 1, 4, 
