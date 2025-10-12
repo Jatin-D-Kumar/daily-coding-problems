@@ -26,4 +26,5 @@ function maxSetSizeAfterRemovals(nums) {
 }
 
 // Example usage
-const nums = [4, 3, 1, 4, 
+const nums = [4, 3, 1, 4, 2, 1, 2, 3];
+console.log(maxSetSizeAfterRemovals(nums)); // Output the size of the resulting set
