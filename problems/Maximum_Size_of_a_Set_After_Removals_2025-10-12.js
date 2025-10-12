@@ -10,4 +10,7 @@ function maxSetSizeAfterRemovals(nums) {
   const freqArray = Array.from(freqMap.values()).sort((a, b) => b - a);
 
   let setSize = 0; // To store the final size of the set
-  let removedCount = 
+  let removedCount = 0; // Count of elements removed from the set
+
+  // Step 3: Try removing elements from the set
+  for (let 
