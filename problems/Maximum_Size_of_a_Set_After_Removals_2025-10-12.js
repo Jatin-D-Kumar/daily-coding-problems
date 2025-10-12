@@ -4,4 +4,7 @@ function maxSetSizeAfterRemovals(nums) {
   const freqMap = new Map();
   nums.forEach(num => {
     freqMap.set(num, (freqMap.get(num) || 0) + 1);
-  
+  });
+
+  // Step 2: Sort the frequencies in descending order
+  const freqArray = Array.from(freqMap.values(
