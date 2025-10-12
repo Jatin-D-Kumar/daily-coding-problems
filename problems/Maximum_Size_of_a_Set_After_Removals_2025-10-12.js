@@ -15,4 +15,7 @@ function maxSetSizeAfterRemovals(nums) {
   // Step 3: Try removing elements from the set
   for (let count of freqArray) {
     if (count > 1) {
-      removedCount += count - 1;  // Remove all but one of the
+      removedCount += count - 1;  // Remove all but one of the occurrences
+      setSize += 1;  // One element remains in the set
+    } else {
+      setSize += 1;  // 
