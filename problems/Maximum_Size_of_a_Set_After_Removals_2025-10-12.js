@@ -7,4 +7,7 @@ function maxSetSizeAfterRemovals(nums) {
   });
 
   // Step 2: Sort the frequencies in descending order
-  const freqArray = Array.from(freqMap.values(
+  const freqArray = Array.from(freqMap.values()).sort((a, b) => b - a);
+
+  let setSize = 0; // To store the final size of the set
+  let removedCount = 
