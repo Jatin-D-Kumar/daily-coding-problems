@@ -17,4 +17,16 @@ function hopperQueriesII(salaries, queries) {
             return prefixSum[y] - prefixSum[x - 1];
         } else if (type === 2) {
             // Query type 2: Count of salaries in the range [x, y]
-            return salaries.sl
+            return salaries.slice(x - 1, y).length;
+        }
+    });
+}
+
+// Example Usage:
+
+// Array of salaries of employees
+const salaries = [100, 200, 300, 400, 500];
+
+// Queries:
+const queries = [
+   
