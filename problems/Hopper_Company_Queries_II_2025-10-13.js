@@ -9,4 +9,9 @@ function hopperQueriesII(salaries, queries) {
     }
     
     // Step 2: Handle each query
-    
+    return queries.map(query => {
+        const [type, x, y] = query;
+        
+        if (type === 1) {
+            // Query type 1: Sum of salaries in the range [x, y]
+        
