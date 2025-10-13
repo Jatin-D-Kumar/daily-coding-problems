@@ -13,4 +13,5 @@ function replaceElements(arr) {
 }
 
 // Example usage:
-co
+console.log(replaceElements([17, 18, 5, 4, 6, 1])); 
+// Output: [18, 6, 6, 6, 1, -1]
