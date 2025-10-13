@@ -31,4 +31,9 @@ const salaries = [100, 200, 300, 400, 500];
 const queries = [
     [1, 1, 3],  // Total sum of salaries from employee 1 to employee 3
     [2, 1, 4],  // Count the employees from 1 to 4
-    [1, 2, 5],  // Total sum of salaries from employee 
+    [1, 2, 5],  // Total sum of salaries from employee 2 to employee 5
+    [2, 3, 5]   // Count employees from 3 to 5
+];
+
+const result = hopperQueriesII(salaries, queries);
+console.log(result); // Output: [600, 4, 1400, 3]
