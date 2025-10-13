@@ -6,4 +6,11 @@ function replaceElements(arr) {
     for (let i = arr.length - 1; i >= 0; i--) {
         let current = arr[i]; // Store the current element
         arr[i] = maxRight;    // Replace the current element with maxRight
-        maxRight = Math.max(maxRight, current); // Update maxRight to be the great
+        maxRight = Math.max(maxRight, current); // Update maxRight to be the greater of maxRight or the current element
+    }
+    
+    return arr;
+}
+
+// Example usage:
+co
