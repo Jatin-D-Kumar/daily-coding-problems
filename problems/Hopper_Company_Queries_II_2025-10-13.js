@@ -14,4 +14,7 @@ function hopperQueriesII(salaries, queries) {
         
         if (type === 1) {
             // Query type 1: Sum of salaries in the range [x, y]
-        
+            return prefixSum[y] - prefixSum[x - 1];
+        } else if (type === 2) {
+            // Query type 2: Count of salaries in the range [x, y]
+            return salaries.sl
