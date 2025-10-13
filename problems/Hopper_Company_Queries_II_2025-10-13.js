@@ -29,4 +29,6 @@ const salaries = [100, 200, 300, 400, 500];
 
 // Queries:
 const queries = [
-   
+    [1, 1, 3],  // Total sum of salaries from employee 1 to employee 3
+    [2, 1, 4],  // Count the employees from 1 to 4
+    [1, 2, 5],  // Total sum of salaries from employee 
