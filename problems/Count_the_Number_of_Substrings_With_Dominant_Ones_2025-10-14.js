@@ -14,4 +14,6 @@ function countDominantSubstrings(s) {
         }
 
         // Count how many times a balance >= current balance has occurred
-        for 
+        for (let prevBalance = balance; prevBalance >= -s.length; prevBalance--) {
+            if (balanceMap.has(prevBalance)) {
+     
