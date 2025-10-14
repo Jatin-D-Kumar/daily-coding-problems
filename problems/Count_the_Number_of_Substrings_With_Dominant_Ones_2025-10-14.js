@@ -28,3 +28,5 @@ function countDominantSubstrings(s) {
 }
 
 // Test case example:
+let binaryString = "1101001";
+console.log(countDominantSubstrings(binaryString)); // Output will depend on the string
