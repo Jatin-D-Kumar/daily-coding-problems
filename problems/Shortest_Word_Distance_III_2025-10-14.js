@@ -12,4 +12,6 @@ var shortestDistance = function(wordsDict, word1, word2) {
             index2 = i;
         }
         
-        // If both words have been found, c
+        // If both words have been found, calculate the distance
+        if (index1 !== -1 && index2 !== -1) {
+            minDistance = Ma
