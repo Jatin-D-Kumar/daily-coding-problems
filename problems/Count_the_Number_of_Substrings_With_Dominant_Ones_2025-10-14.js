@@ -9,4 +9,9 @@ function countDominantSubstrings(s) {
         // Update the balance based on the current character
         if (s[i] === '1') {
             balance++;
-        } else
+        } else {
+            balance--;
+        }
+
+        // Count how many times a balance >= current balance has occurred
+        for 
