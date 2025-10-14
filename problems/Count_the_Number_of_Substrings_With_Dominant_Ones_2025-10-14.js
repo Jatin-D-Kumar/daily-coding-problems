@@ -20,4 +20,11 @@ function countDominantSubstrings(s) {
             }
         }
 
-        // Store or update the count of this bala
+        // Store or update the count of this balance
+        balanceMap.set(balance, (balanceMap.get(balance) || 0) + 1);
+    }
+
+    return count;
+}
+
+// Test case example:
