@@ -8,4 +8,8 @@ var shortestDistance = function(wordsDict, word1, word2) {
         if (wordsDict[i] === word1) {
             index1 = i;
         }
-        if (wordsDict[i] ===
+        if (wordsDict[i] === word2) {
+            index2 = i;
+        }
+        
+        // If both words have been found, c
