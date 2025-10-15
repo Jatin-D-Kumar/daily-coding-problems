@@ -17,4 +17,6 @@ function simulateDiceRolls(numberOfRolls) {
 
 // Simulate rolling the dice 10 times
 const numberOfRolls = 10;
-const rolls = simulateDiceRolls(numberOf
+const rolls = simulateDiceRolls(numberOfRolls);
+
+console.log(`Rolling the dice ${numberOfRolls} times:`, rolls);
