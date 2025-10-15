@@ -9,4 +9,10 @@ function simulateDiceRolls(numberOfRolls) {
     let results = [];
     
     for (let i = 0; i < numberOfRolls; i++) {
-        results.push
+        results.push(rollDice());
+    }
+    
+    return results;
+}
+
+// Simulate rolling the dice
