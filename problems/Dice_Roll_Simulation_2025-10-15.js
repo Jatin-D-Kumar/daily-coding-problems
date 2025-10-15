@@ -4,4 +4,6 @@ function rollDice() {
     return Math.floor(Math.random() * 6) + 1;
 }
 
-// Example of rolling the dice 
+// Example of rolling the dice multiple times
+function simulateDiceRolls(numberOfRolls) {
+    let results =
