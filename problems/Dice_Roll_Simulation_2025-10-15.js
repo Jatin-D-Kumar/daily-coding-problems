@@ -6,4 +6,7 @@ function rollDice() {
 
 // Example of rolling the dice multiple times
 function simulateDiceRolls(numberOfRolls) {
-    let results =
+    let results = [];
+    
+    for (let i = 0; i < numberOfRolls; i++) {
+        results.push
