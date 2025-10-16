@@ -20,4 +20,6 @@ function calculateBowlingScore(frames) {
 }
 
 // Example usage:
-const playerOneFrames = [10, 7, 3, 9, 0, 10, 0, 8, 8, 2, 10, 1
+const playerOneFrames = [10, 7, 3, 9, 0, 10, 0, 8, 8, 2, 10, 10, 10]; // 12 rolls (including extras in 10th)
+const score = calculateBowlingScore(playerOneFrames);
+console.log("Player 1 Score:", score);
