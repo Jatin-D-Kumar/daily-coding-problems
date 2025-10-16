@@ -12,4 +12,12 @@ function calculateBowlingScore(frames) {
             frameIndex += 2;
         } else { // Open Frame
             totalScore += frames[frameIndex] + frames[frameIndex + 1];
-         
+            frameIndex += 2;
+        }
+    }
+
+    return totalScore;
+}
+
+// Example usage:
+const playerOneFrames = [10, 7, 3, 9, 0, 10, 0, 8, 8, 2, 10, 1
