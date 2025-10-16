@@ -8,4 +8,8 @@ function calculateBowlingScore(frames) {
             totalScore += 10 + frames[frameIndex + 1] + frames[frameIndex + 2];
             frameIndex++;
         } else if (frames[frameIndex] + frames[frameIndex + 1] === 10) { // Spare
-            totalScore += 10 + frames[frameIndex + 2
+            totalScore += 10 + frames[frameIndex + 2];
+            frameIndex += 2;
+        } else { // Open Frame
+            totalScore += frames[frameIndex] + frames[frameIndex + 1];
+         
