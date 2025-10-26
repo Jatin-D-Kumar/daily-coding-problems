@@ -29,4 +29,10 @@ for (let i = n - 2; i >= 0; --i) {
 }
 
 // 3. evaluate all split points
-let best = -
+let best = -Infinity;
+for (let i = 0; i < n - 1; ++i) {
+    const val = prefixXor[i] ^ suffixAnd[i + 1];
+    if (val > best) best = val;
+}
+
+console.log(best.toString());
