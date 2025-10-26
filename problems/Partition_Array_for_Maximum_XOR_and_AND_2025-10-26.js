@@ -15,4 +15,11 @@ const n = data[0];
 const A = data.slice(1, n + 1);
 
 // 1. prefix XOR
-const pref
+const prefixXor = new Array(n);
+prefixXor[0] = A[0];
+for (let i = 1; i < n; ++i) {
+    prefixXor[i] = prefixXor[i - 1] ^ A[i];
+}
+
+// 2. suffix AND
+const suffixAnd = new Arr
