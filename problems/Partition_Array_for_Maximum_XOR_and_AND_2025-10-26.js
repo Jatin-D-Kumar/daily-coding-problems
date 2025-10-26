@@ -22,4 +22,11 @@ for (let i = 1; i < n; ++i) {
 }
 
 // 2. suffix AND
-const suffixAnd = new Arr
+const suffixAnd = new Array(n);
+suffixAnd[n - 1] = A[n - 1];
+for (let i = n - 2; i >= 0; --i) {
+    suffixAnd[i] = suffixAnd[i + 1] & A[i];
+}
+
+// 3. evaluate all split points
+let best = -
