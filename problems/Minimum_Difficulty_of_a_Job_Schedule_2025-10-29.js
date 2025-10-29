@@ -19,4 +19,11 @@ function mnd(jobDifficulty, d) {
     for (let day = 1; day <= d; day++) {
         const dpCurr = new Array(n + 1).fill(INF);
 
-        
+        // i = number of jobs already scheduled
+        for (let i = day; i <= n; i++) {
+            let maxJob = 0;
+
+            // walk j backwards, compute max job in jobs[j … i-1]
+            for (let j = i; j >= day; j--) {
+                const job = jobDifficulty[j - 1];
+                i
