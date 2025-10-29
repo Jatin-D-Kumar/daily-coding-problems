@@ -21,4 +21,9 @@ B.reverse();                        // descending
 
 let maxSum = 0;
 for (let i = 0; i < N; ++i) {
-   
+    const sum = A[i] + B[i];
+    if (sum > maxSum) maxSum = sum;
+}
+
+// ----- Output -----
+console.log(maxSum.toString());
