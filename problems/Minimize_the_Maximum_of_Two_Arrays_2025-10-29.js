@@ -12,4 +12,8 @@ const N = data[idx++];
 const A = new Array(N);
 const B = new Array(N);
 for (let i = 0; i < N; ++i) A[i] = data[idx++];
-for (let i = 0; i < N; ++i) 
+for (let i = 0; i < N; ++i) B[i] = data[idx++];
+
+// ----- Algorithm -----
+A.sort((x, y) => x - y);            // ascending
+B.sort((x, y) => x - y);   
