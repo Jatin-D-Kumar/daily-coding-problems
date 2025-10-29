@@ -9,4 +9,7 @@ const fs = require('fs');
 const data = fs.readFileSync(0, 'utf8').trim().split(/\s+/).map(Number);
 let idx = 0;
 const N = data[idx++];
-co
+const A = new Array(N);
+const B = new Array(N);
+for (let i = 0; i < N; ++i) A[i] = data[idx++];
+for (let i = 0; i < N; ++i) 
