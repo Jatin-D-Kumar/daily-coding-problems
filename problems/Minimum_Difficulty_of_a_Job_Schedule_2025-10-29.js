@@ -35,4 +35,13 @@ function mnd(jobDifficulty, d) {
                 }
             }
         }
-        dpP
+        dpPrev = dpCurr;  // prepare for next day
+    }
+    return dpPrev[n];
+}
+
+/* ----- Quick tests ----- */
+console.log(mnd([6, 5, 4, 3, 2, 1], 2)); // 7
+console.log(mnd([9, 9, 9], 4));          // -1
+console.log(mnd([1, 1, 1], 3));          // 3
+console.log(mnd([4, 3, 2, 1], 2));       // 5
