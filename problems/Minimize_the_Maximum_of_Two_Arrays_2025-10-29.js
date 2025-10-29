@@ -16,4 +16,9 @@ for (let i = 0; i < N; ++i) B[i] = data[idx++];
 
 // ----- Algorithm -----
 A.sort((x, y) => x - y);            // ascending
-B.sort((x, y) => x - y);   
+B.sort((x, y) => x - y);            // ascending
+B.reverse();                        // descending
+
+let maxSum = 0;
+for (let i = 0; i < N; ++i) {
+   
