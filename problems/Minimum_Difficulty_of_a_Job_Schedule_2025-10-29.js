@@ -26,4 +26,13 @@ function mnd(jobDifficulty, d) {
             // walk j backwards, compute max job in jobs[j … i-1]
             for (let j = i; j >= day; j--) {
                 const job = jobDifficulty[j - 1];
-                i
+                if (job > maxJob) maxJob = job;
+
+                const prev = dpPrev[j - 1];
+                if (prev !== INF) {
+                    const candidate = prev + maxJob;
+                    if (candidate < dpCurr[i]) dpCurr[i] = candidate;
+                }
+            }
+        }
+        dpP
