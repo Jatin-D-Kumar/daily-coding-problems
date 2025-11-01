@@ -9,4 +9,10 @@ function sellersWithNoSales(sellers, sales) {
     });
 
     // Filter out the sellers who have no sales
-    return 
+    return sellers.filter(seller => !sellersWithSales.has(seller.name));
+}
+
+// Example usage:
+
+// Sellers list
+const sellers
