@@ -4,4 +4,9 @@ function sellersWithNoSales(sellers, sales) {
     let sellersWithSales = new Set();
 
     // Loop through the sales and add the seller's name to the set
-    sales.forEach(sale => 
+    sales.forEach(sale => {
+        sellersWithSales.add(sale.seller);
+    });
+
+    // Filter out the sellers who have no sales
+    return 
