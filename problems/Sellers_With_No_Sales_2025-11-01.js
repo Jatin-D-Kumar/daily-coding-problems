@@ -28,4 +28,6 @@ const sales = [
     { seller: 'Bob', amount: 200 }
 ];
 
-const result = sell
+const result = sellersWithNoSales(sellers, sales);
+
+console.log(result);  // Output: [{ name: 'Charlie' }, { name: 'David' }]
