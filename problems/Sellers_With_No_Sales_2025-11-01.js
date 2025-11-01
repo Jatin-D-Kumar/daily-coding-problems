@@ -15,4 +15,11 @@ function sellersWithNoSales(sellers, sales) {
 // Example usage:
 
 // Sellers list
-const sellers
+const sellers = [
+    { name: 'Alice' },
+    { name: 'Bob' },
+    { name: 'Charlie' },
+    { name: 'David' }
+];
+
+// Sales list
