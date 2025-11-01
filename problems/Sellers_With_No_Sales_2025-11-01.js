@@ -23,3 +23,9 @@ const sellers = [
 ];
 
 // Sales list
+const sales = [
+    { seller: 'Alice', amount: 100 },
+    { seller: 'Bob', amount: 200 }
+];
+
+const result = sell
