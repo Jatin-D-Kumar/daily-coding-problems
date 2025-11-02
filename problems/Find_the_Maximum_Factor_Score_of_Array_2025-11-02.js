@@ -14,4 +14,10 @@ const tests = [];
 let globalMaxVal = 0;
 
 for (let t = 0; t < T; ++t) {
-    con
+    const n = input[idx++];
+    const arr = input.slice(idx, idx + n);
+    idx += n;
+    tests.push({ n, arr });
+    for (const v of arr) {
+        const absv = Math.abs(v);
+        if (absv > globalMaxVal) globalMaxVal = 
