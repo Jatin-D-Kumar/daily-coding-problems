@@ -61,4 +61,11 @@ for (const { n, arr } of tests) {
     // Kadane
     let best = scores[0];
     let running = scores[0];
- 
+    for (let i = 1; i < n; ++i) {
+        running = Math.max(scores[i], running + scores[i]);
+        if (running > best) best = running;
+    }
+    outLines.push(String(best));
+}
+
+console.log(outLines.join('\n'));
