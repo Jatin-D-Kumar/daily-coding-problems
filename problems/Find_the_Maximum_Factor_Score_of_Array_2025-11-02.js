@@ -52,4 +52,13 @@ function factorScore(x) {
 
 // ----- solve each test case -----------------------------------------------
 const outLines = [];
-for (const { n, arr
+for (const { n, arr } of tests) {
+    const scores = new Int32Array(n);
+    for (let i = 0; i < n; ++i) {
+        scores[i] = factorScore(Math.abs(arr[i]));
+    }
+
+    // Kadane
+    let best = scores[0];
+    let running = scores[0];
+ 
