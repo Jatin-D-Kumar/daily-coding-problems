@@ -43,4 +43,13 @@ function factorScore(x) {
     if (x === 0 || x === 1) return 0;
     let cnt = 0;
     while (x > 1) {
-        const p = SP
+        const p = SPF[x];
+        cnt++;
+        while (x % p === 0) x = Math.trunc(x / p);
+    }
+    return cnt;
+}
+
+// ----- solve each test case -----------------------------------------------
+const outLines = [];
+for (const { n, arr
