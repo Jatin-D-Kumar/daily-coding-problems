@@ -35,3 +35,12 @@ for (let i = 2; i <= globalMaxVal; ++i) {
         }
     }
 }
+SPF[0] = 0;  // unused
+SPF[1] = 1;
+
+// helper: number of distinct prime factors of x (x >= 0)
+function factorScore(x) {
+    if (x === 0 || x === 1) return 0;
+    let cnt = 0;
+    while (x > 1) {
+        const p = SP
