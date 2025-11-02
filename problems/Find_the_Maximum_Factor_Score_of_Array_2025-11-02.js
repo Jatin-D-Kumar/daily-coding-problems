@@ -26,4 +26,12 @@ for (let t = 0; t < T; ++t) {
 // ----- pre‑compute smallest prime factors up to globalMaxVal ---------------
 const SPF = new Uint32Array(globalMaxVal + 1);
 for (let i = 2; i <= globalMaxVal; ++i) {
-    if (SPF[i] === 0) {           
+    if (SPF[i] === 0) {                // i is prime
+        SPF[i] = i;
+        if (i * i <= globalMaxVal) {
+            for (let j = i * i; j <= globalMaxVal; j += i) {
+                if (SPF[j] === 0) SPF[j] = i;
+            }
+        }
+    }
+}
